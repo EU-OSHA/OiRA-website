@@ -51,7 +51,7 @@ display:
       empty:
         area_text_custom:
           content: 'Nema sadržaja.'
-    display_title: Master
+    display_title: Zadano
   page_1:
     display_options:
       menu:

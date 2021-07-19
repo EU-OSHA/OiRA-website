@@ -58,7 +58,7 @@ display:
       empty:
         area_text_custom:
           content: 'Geen inhoud beschikbaar.'
-    display_title: Master
+    display_title: Standaard
   page_1:
     display_options:
       menu:
