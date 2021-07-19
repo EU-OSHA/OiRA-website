@@ -53,7 +53,7 @@ display:
           expose:
             label: Limba
       title: Conţinut
-    display_title: Expert
+    display_title: Implicit
   page_1:
     display_options:
       menu:

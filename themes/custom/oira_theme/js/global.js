@@ -13,7 +13,25 @@
     }
   };
 
+
+  /**** Show Hide Results Text in search ***/
+if ($('body').find('#edit-search-api-fulltext--2').length>0) {
+  let inputVal = $('#edit-search-api-fulltext--2').val();
+  let inputValLength = inputVal.length;
+  if (inputValLength > 0) {
+    $('#edit-search-api-fulltext--2').addClass("has-value");
+    $('#edit-search-api-fulltext--2').closest(".content-two-columns").find(".results-for").addClass("show-me");
+  } else {
+    $('#edit-search-api-fulltext--2').removeClass("has-value");
+    $('#edit-search-api-fulltext--2').closest(".content-two-columns").find(".results-for").removeClass("show-me");
+    $('#edit-search-api-fulltext--2').closest(".content-two-columns").find(".results-for").addClass("hide-me");
+  }
+}
+
+
 })(jQuery, Drupal);
+
+
 
 
 jQuery(document).ready(function($){
@@ -178,17 +196,6 @@ jQuery(document).ready(function($){
     $(this).parent('.result-item').find('.body-expanded').toggleClass('showme');
   });
 
-
-  $('#edit-search-api-fulltext--2').blur(function(){
-    if(!$(this).val()){
-      $(this).addClass("has-value");
-      $(this).parent(".content-two-columns").find(".results-for").addClass("show-me");
-    } else{
-      $(this).removeClass("has-value");
-      $(this).parent(".content-two-columns").find(".results-for").removeClass("show-me");
-      $(this).parent(".content-two-columns").find(".results-for").addClass("hide-me");
-    }
-  });
 
   /*** Show/Hide Private ZOne menu ***/
   $('#block-pzhidemenu .hide-link').click(function(){

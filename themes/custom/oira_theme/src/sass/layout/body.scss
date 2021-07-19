@@ -2063,14 +2063,19 @@ select.custom-select{
       display: none;
     }
     .form-item-sort-by {
-      margin: 0;
-      font-size: .8125rem;
+      margin: 0 !important;
+      font-size: .9rem;
+      display: block;
       label {
+        display: inline-block;
         margin: 0;
       }
-      select.custom-select {
-        background-color: transparent !important;
-        font-size: .8125rem;
+      select {
+        display: inline-block;
+        background: transparent !important;
+        border: none;
+        font-size: .9rem;
+        width: 130px;
       }
     }
     .form-actions {
@@ -2089,7 +2094,7 @@ select.custom-select{
     }
     .view-header {
       position: absolute;
-      top: -68px;
+      top: -72px;
       right: -0;
       font-size: .875rem;
     }
@@ -3725,9 +3730,14 @@ body[class*="private-zone-"] {
 }
 
 .section.oira-section > .results-for {
-  display: block;
   margin: 10px 0 -5px;
   line-height: 1;
+  &.show-me {
+    display: block;
+  }
+  &.hide-me {
+    display: none;
+  }
   .searched-text {
     font-family: $font-family-oswald;
     font-size: 2.6rem;

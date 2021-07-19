@@ -46,6 +46,7 @@ display:
           expose:
             label: Språk
       title: Innhald
+    display_title: Standard
   page_1:
     display_options:
       menu:

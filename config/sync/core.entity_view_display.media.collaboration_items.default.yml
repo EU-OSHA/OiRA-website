@@ -11,7 +11,6 @@ dependencies:
   module:
     - ds
     - file_download_link
-    - link
     - text
 id: media.collaboration_items.default
 targetEntityType: media
@@ -32,18 +31,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_col_item_links:
-    weight: 3
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
   field_media_file_1:
     label: hidden
@@ -71,6 +58,7 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_col_item_links: true
   langcode: true
   name: true
   search_api_excerpt: true

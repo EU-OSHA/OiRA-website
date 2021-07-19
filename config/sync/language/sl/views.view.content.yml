@@ -46,6 +46,7 @@ display:
       empty:
         area_text_custom:
           content: 'Na voljo ni nobene vsebine.'
+    display_title: Privzeto
   page_1:
     display_options:
       menu:

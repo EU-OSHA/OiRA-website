@@ -1,6 +1,7 @@
 label: 'Nye kommentarar'
 display:
   default:
+    display_title: Standard
     display_options:
       title: 'Nye kommentarar'
       empty:

@@ -49,6 +49,7 @@ display:
       empty:
         area_text_custom:
           content: 'Nav pieejams nekāds saturs.'
+    display_title: 'Noklusētā vērtība'
   page_1:
     display_options:
       menu:

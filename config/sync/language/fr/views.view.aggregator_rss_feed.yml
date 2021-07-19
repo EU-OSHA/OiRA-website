@@ -1,7 +1,7 @@
 label: 'Flux RSS Aggregator'
 display:
   default:
-    display_title: Master
+    display_title: 'Par défaut'
     display_options:
       exposed_form:
         options:

@@ -781,7 +781,7 @@ table tr td {
 }
 
 .page-view-partner-profile {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -2963,15 +2963,20 @@ select.custom-select {
   display: none;
 }
 .path-search .oira-content .form-item-sort-by {
-  margin: 0;
-  font-size: 0.8125rem;
+  margin: 0 !important;
+  font-size: 0.9rem;
+  display: block;
 }
 .path-search .oira-content .form-item-sort-by label {
+  display: inline-block;
   margin: 0;
 }
-.path-search .oira-content .form-item-sort-by select.custom-select {
-  background-color: transparent !important;
-  font-size: 0.8125rem;
+.path-search .oira-content .form-item-sort-by select {
+  display: inline-block;
+  background: transparent !important;
+  border: none;
+  font-size: 0.9rem;
+  width: 130px;
 }
 .path-search .oira-content .form-actions {
   display: none;
@@ -2989,7 +2994,7 @@ select.custom-select {
 }
 .path-search .view-search .view-header {
   position: absolute;
-  top: -68px;
+  top: -72px;
   right: 0;
   font-size: 0.875rem;
 }
@@ -4586,9 +4591,14 @@ body[class*=private-zone-] .page-header.h1 {
 }
 
 .section.oira-section > .results-for {
-  display: block;
   margin: 10px 0 -5px;
   line-height: 1;
+}
+.section.oira-section > .results-for.show-me {
+  display: block;
+}
+.section.oira-section > .results-for.hide-me {
+  display: none;
 }
 .section.oira-section > .results-for .searched-text {
   font-family: "Oswald", "Helvetica", Arial, sans-serif;

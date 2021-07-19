@@ -2,6 +2,7 @@ label: Folk
 description: 'Finn og handsama folk som brukar nettstaden din.'
 display:
   default:
+    display_title: Standard
     display_options:
       exposed_form:
         options:

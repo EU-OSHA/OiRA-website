@@ -1,7 +1,7 @@
 label: 'RSS-flöder för nyhetssamlare'
 display:
   default:
-    display_title: Master
+    display_title: Förvald
     display_options:
       exposed_form:
         options:

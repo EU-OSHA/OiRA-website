@@ -58,7 +58,7 @@ display:
       empty:
         area_text_custom:
           content: 'Sisu puudub.'
-    display_title: Master
+    display_title: Vaikimisi
   page_1:
     display_options:
       menu:
