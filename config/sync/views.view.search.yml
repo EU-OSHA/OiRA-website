@@ -2737,7 +2737,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: or
+          operator: and
           value: ''
           group: 1
           exposed: true
@@ -2785,7 +2785,9 @@ display:
             group_items: {  }
           parse_mode: terms
           min_length: null
-          fields: {  }
+          fields:
+            - body
+            - title
           plugin_id: search_api_fulltext
         status:
           id: status
