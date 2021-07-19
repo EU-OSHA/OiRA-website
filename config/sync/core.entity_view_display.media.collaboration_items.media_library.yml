@@ -11,32 +11,59 @@ dependencies:
     - media.type.collaboration_items
   module:
     - ds
-    - file
+    - file_download_link
     - link
+    - text
 id: media.collaboration_items.media_library
 targetEntityType: media
 bundle: collaboration_items
 mode: media_library
 content:
-  field_col_item_links:
-    type: link
+  field_col_item_desc:
+    type: text_default
     weight: 1
     region: content
-    label: hidden
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_col_item_label:
+    type: string
+    weight: 0
+    region: content
+    label: above
     settings:
-      trim_length: 80
+      link_to_entity: false
+    third_party_settings: {  }
+  field_col_item_links:
+    type: link_separate
+    weight: 3
+    region: content
+    label: above
+    settings:
+      trim_length: null
       target: _blank
       url_only: false
       url_plain: false
       rel: '0'
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_media_file_1:
-    type: file_default
-    weight: 0
+    type: file_download_link
+    weight: 2
     region: content
-    label: hidden
+    label: above
     settings:
-      use_description_as_link_text: true
+      link_text: ''
+      force_download: true
+      link_title: ''
+      custom_classes: ''
+      new_tab: false
     third_party_settings:
       ds:
         ds_limit: ''
@@ -52,8 +79,6 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
-  field_col_item_desc: true
-  field_col_item_label: true
   langcode: true
   name: true
   search_api_excerpt: true
