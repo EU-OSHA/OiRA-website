@@ -191,7 +191,6 @@ module:
   externalauth: 10
   views: 10
   linked_field: 100
-  login_redirect_per_role: 1000
   standard: 1000
   eu_cookie_compliance: 1001
 theme:
