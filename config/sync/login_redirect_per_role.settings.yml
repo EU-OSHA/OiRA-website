@@ -1,0 +1,106 @@
+login:
+  authenticated:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  administrator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  editor:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  approver:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  translation_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  translation_liaison:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  layout_validator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  content_validator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  project_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  partner:
+    redirect_url: /node/1158
+    allow_destination: true
+    weight: 0
+  oira_project_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  oira_supervisor:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  superadministrator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+logout:
+  authenticated:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  administrator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  editor:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  approver:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  translation_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  translation_liaison:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  layout_validator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  content_validator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  project_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  partner:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  oira_project_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  oira_supervisor:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  superadministrator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false

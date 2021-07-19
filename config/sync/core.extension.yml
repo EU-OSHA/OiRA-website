@@ -132,7 +132,6 @@ module:
   r4032login: 0
   rdf: 0
   redirect: 0
-  redirect_after_login: 0
   reroute_email: 0
   rest: 0
   search: 0
@@ -192,6 +191,7 @@ module:
   externalauth: 10
   views: 10
   linked_field: 100
+  login_redirect_per_role: 1000
   standard: 1000
   eu_cookie_compliance: 1001
 theme:
