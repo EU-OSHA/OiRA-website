@@ -1,7 +1,7 @@
 label: 'Fuentes del agregador'
 display:
   default:
-    display_title: Master
+    display_title: 'Por defecto'
     display_options:
       exposed_form:
         options:

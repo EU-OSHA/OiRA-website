@@ -1,7 +1,7 @@
 label: 'Hírcsatorna források'
 display:
   default:
-    display_title: Master
+    display_title: Alapértelmezés
     display_options:
       exposed_form:
         options:

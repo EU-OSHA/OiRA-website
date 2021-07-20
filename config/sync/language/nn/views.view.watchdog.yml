@@ -1,6 +1,7 @@
 description: 'Nyaste loggmeldingar'
 display:
   default:
+    display_title: Standard
     display_options:
       exposed_form:
         options:

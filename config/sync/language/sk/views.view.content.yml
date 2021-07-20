@@ -58,6 +58,7 @@ display:
       empty:
         area_text_custom:
           content: 'Žiaden obsah nie je dostupný.'
+    display_title: Predvolené
   page_1:
     display_options:
       menu:

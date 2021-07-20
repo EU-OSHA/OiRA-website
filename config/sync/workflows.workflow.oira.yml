@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.collaboration_document
     - node.type.news
     - node.type.practical_tool
     - node.type.promotional_material
@@ -193,6 +194,7 @@ type_settings:
   entity_types:
     node:
       - article
+      - collaboration_document
       - news
       - practical_tool
       - promotional_material

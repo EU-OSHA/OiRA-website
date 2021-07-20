@@ -1867,18 +1867,6 @@ display:
             group_items: {  }
           plugin_id: search_api_date
       sorts:
-        field_publication_date:
-          id: field_publication_date
-          table: search_api_index_oira_tools
-          field: field_publication_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: true
-          expose:
-            label: 'Latest first'
-          plugin_id: search_api
         title:
           id: title
           table: search_api_index_oira_tools
@@ -1891,6 +1879,18 @@ display:
           expose:
             label: Alphabetically
           plugin_id: search_api
+        field_publication_date:
+          id: field_publication_date
+          table: search_api_index_oira_tools
+          field: field_publication_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Latest first'
+          plugin_id: search_api
         name_3:
           id: name_3
           table: search_api_index_oira_tools
@@ -1899,7 +1899,7 @@ display:
           group_type: group
           admin_label: ''
           order: ASC
-          exposed: true
+          exposed: false
           expose:
             label: Sector
           plugin_id: search_api
