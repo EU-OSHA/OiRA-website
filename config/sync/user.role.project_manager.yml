@@ -8,7 +8,11 @@ weight: 9
 is_admin: null
 permissions:
   - 'accept job item translation'
+  - 'delete article revisions'
+  - 'delete certificates revisions'
   - 'delete news revisions'
+  - 'delete own article content'
+  - 'delete own collaboration_document content'
   - 'delete own news content'
   - 'delete own practical_tool content'
   - 'delete own promotional_material content'
