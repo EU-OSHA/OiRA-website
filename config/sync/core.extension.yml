@@ -10,6 +10,7 @@ module:
   big_pipe: 0
   blazy: 0
   block: 0
+  block_class: 0
   block_content: 0
   block_form_alter: 0
   breakpoint: 0
@@ -110,6 +111,7 @@ module:
   media_library: 0
   media_library_form_element: 0
   menu_item_extras: 0
+  menu_link_attributes: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
