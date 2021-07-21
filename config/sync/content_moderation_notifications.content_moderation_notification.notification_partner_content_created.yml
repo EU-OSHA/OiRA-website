@@ -16,6 +16,6 @@ site_mail: false
 emails: ''
 subject: 'OiRA - [node:content-type] - New content added for your organisation'
 body:
-  value: "<p>Subject: OiRA: New content added for your organisation</p>\r\n\r\n<p>Dear partner,</p>\r\n\r\n<p>Your [node:type] is currently in the “draft” status which means that you can still edit it before you decide to “submit” it for \"validation”.</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
+  value: "<p>Subject: OiRA: New content added for your organisation</p>\r\n\r\n<p>Dear partner,</p>\r\n\r\n<p>Your [node:type] is currently in the “draft” status which means that you can still edit it before you decide to “submit” it for \"validation”.</p>\r\n\r\n<p>[node:title]&nbsp;([node:url])</p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
   format: full_html
 label: 'Notification partner content created'

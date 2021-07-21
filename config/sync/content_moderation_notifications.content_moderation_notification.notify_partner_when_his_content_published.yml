@@ -17,6 +17,6 @@ site_mail: false
 emails: ''
 subject: 'OiRA - [node:content-type] - New content has been published for your organisation'
 body:
-  value: "<p>OiRA: New content has been published for your organisation</p>\r\n\r\n<p>Dear Partner,</p>\r\n\r\n<p>The [node:type] item that you submitted for publication on your organisation’s profile has been validated by EU-OSHA and has now been published.</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
+  value: "<p>OiRA: New content has been published for your organisation</p>\r\n\r\n<p>Dear Partner,</p>\r\n\r\n<p>The [node:type] item that you submitted for publication on your organisation’s profile has been validated by EU-OSHA and has now been published.</p>\r\n\r\n<p>[node:title]&nbsp;([node:url])</p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
   format: full_html
 label: 'Notify partner when his content published'
