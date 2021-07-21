@@ -21,6 +21,8 @@ display:
       fields:
         method:
           label: Method
+        error:
+          label: Eroare
         operations:
           label: Operations
       filters:

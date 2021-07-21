@@ -14,6 +14,6 @@ site_mail: false
 emails: ''
 subject: 'OiRA - [node:content-type] - New content has been sent for validation'
 body:
-  value: "<p>Subject: OiRA: New content has been sent for validation</p>\r\n\r\n<p>Dear Partner,</p>\r\n\r\n<p>Thank you for submitting a [node:type] item for publication on your organisation’s profile on OiRA website. Once validated by EU-OSHA, this update will be visible on your public profile. You will be informed when the update has been published.</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
+  value: "<p>Subject: OiRA: New content has been sent for validation</p>\r\n\r\n<p>Dear Partner,</p>\r\n\r\n<p>Thank you for submitting a [node:type] item for publication on your organisation’s profile on OiRA website. Once validated by EU-OSHA, this update will be visible on your public profile. You will be informed when the update has been published.</p>\r\n\r\n<p>[node:title]&nbsp;([node:url])</p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
   format: full_html
 label: 'Notification partners users when to be reviewed'
