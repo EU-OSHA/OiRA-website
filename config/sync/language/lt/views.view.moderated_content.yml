@@ -1,3 +1,4 @@
+label: 'Old Moderated content'
 display:
   default:
     display_title: Numatytasis
@@ -28,3 +29,6 @@ display:
         type:
           expose:
             label: 'Turinio tipas'
+      title: 'Old Moderated content'
+  moderated_content:
+    display_title: 'Old Moderated content'

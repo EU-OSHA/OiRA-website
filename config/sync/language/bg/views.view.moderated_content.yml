@@ -1,3 +1,4 @@
+label: 'Old Moderated content'
 display:
   default:
     display_title: 'По подразбиране'
@@ -22,3 +23,6 @@ display:
         type:
           expose:
             label: 'Тип на съдържанието'
+      title: 'Old Moderated content'
+  moderated_content:
+    display_title: 'Old Moderated content'

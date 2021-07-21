@@ -970,6 +970,16 @@ table tr td {
   opacity: 1;
 }
 
+.captcha {
+  color: white;
+}
+.captcha .text-muted {
+  color: white !important;
+}
+.captcha img {
+  display: block;
+}
+
 /* Common elements */
 body {
   position: relative;
