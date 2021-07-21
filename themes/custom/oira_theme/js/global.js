@@ -28,6 +28,10 @@ if ($('body').find('#edit-search-api-fulltext--2').length>0) {
   }
 }
 
+// Accesskey for custom elements
+  $('#edit-search-api-fulltext').attr('accessKey','4');
+  $('#edit-lang-dropdown-select').attr('accessKey','8');
+
 
 })(jQuery, Drupal);
 

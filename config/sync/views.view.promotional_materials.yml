@@ -8,7 +8,6 @@ dependencies:
     - field.storage.node.field_image_home_latest_material
     - field.storage.node.field_logo
     - field.storage.node.field_related_partners
-    - image.style.latest_materials
     - image.style.thumbnail
     - node.type.promotional_material
   module:
@@ -383,7 +382,7 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: latest_materials
+            image_style: ''
             image_link: ''
           group_column: target_id
           group_columns: {  }
@@ -892,7 +891,7 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: minute
+          granularity: second
           plugin_id: datetime
       header: {  }
       footer: {  }
