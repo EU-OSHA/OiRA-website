@@ -51,6 +51,9 @@ elements: |-
     '#title': Message
     '#type': textarea
     '#required': true
+  captcha:
+    '#type': captcha
+    '#captcha_type': image_captcha/Image
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
