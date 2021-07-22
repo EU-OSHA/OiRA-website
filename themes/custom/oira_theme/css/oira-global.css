@@ -1627,6 +1627,10 @@ select.custom-select {
 .page-view-oira-ws .form-item-sort-by .js-form-type-select > * {
   flex: 1;
 }
+.page-view-oira-ws .form-row > fieldset {
+  min-width: 200px;
+  padding: 0;
+}
 .page-view-oira-ws .form-item-sort-by .form-select {
   background-color: transparent !important;
   background-image: none;
@@ -1634,7 +1638,7 @@ select.custom-select {
   font-size: 0.875rem;
   font-weight: bold;
   color: #58585a;
-  max-width: 122px;
+  max-width: 125px;
 }
 .page-view-oira-ws .two-column section {
   position: relative;
