@@ -703,6 +703,10 @@ select.custom-select{
       }
     }
   }
+  .form-row>fieldset {
+    min-width: 200px;
+    padding: 0;
+  }
   .form-item-sort-by .form-select {
     background-color: transparent !important;
     background-image: none;
@@ -710,7 +714,7 @@ select.custom-select{
     font-size: .875rem;
     font-weight: bold;
     color: $text-color-black;
-    max-width: 122px;
+    max-width: 125px;
   }
   .two-column{
     section{
