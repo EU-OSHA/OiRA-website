@@ -14,6 +14,6 @@ site_mail: false
 emails: ''
 subject: 'OiRA - [node:type] - To be approved'
 body:
-  value: "<p>You have a new [node:type] to approve, added by [node:author:name] ([node:author:mail]).</p>\r\n\r\n<p>You can approve it by going to this link [node:url]</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n"
+  value: "<p>You have a new [node:type] to approve, added by [node:author:name] ([node:author:mail]).</p>\r\n\r\n<p>You can approve it by going to this link [node:url]</p>\r\n\r\n<p>[node:title]&nbsp;([node:url])</p>\r\n\r\n<p>&nbsp;</p>\r\n"
   format: full_html
 label: 'Notification when to be approved'

@@ -1,0 +1,17 @@
+uuid: 9943eb97-0f01-44d5-ac0f-387bb473bf61
+langcode: en
+status: true
+dependencies:
+  module:
+    - ncw_migration
+title: 'Default cron handler'
+id: ncw_migration_cron
+weight: 0
+module: ncw_migration
+callback: ncw_migration_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

@@ -19,6 +19,6 @@ site_mail: false
 emails: ''
 subject: 'OiRA - [node:type] - Draft'
 body:
-  value: "<p>A new [node:type] added by [node:author:name] ([node:author:mail]) has been sent back to Draft status.</p>\r\n\r\n<p>You can see it by going to this link [node:url]</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n"
+  value: "<p>A new [node:type] added by [node:author:name] ([node:author:mail]) has been sent back to Draft status.</p>\r\n\r\n<p>You can see it by going to this link [node:url]</p>\r\n\r\n<p>[node:title]&nbsp;([node:url])</p>\r\n\r\n<p>&nbsp;</p>\r\n"
   format: full_html
 label: 'Status is back to draft'
