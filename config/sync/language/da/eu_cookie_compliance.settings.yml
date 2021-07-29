@@ -2,8 +2,9 @@ popup_agreed:
   value: '<h2>Tak forfi du accepterede cookies</h2><p>Du kan nu skjule denne meddelelse eller lære mere om cookies.</p>'
 popup_hide_button_message: Skjul
 popup_info:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
-popup_link: '<front>'
-withdraw_message:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  value: "<p><span style=\"font-size: small;\"><strong>EU-OSHA-webstedet anvender cookies til at indsamle oplysninger, der er nødvendige for, at du kan søge på webstedet, i overensstemmelse med EU-OSHA&apos;s politik for beskyttelse af privatlivets fred.</strong></span></p><p>Når du klikker på et link på EU-OSHA&apos;s websted, accepterer du brugen af cookies.</p>\r\n"
+withdraw_message: {  }
 withdraw_tab_button_label: 'Indstillinger for privatliv'
+popup_agree_button_message: 'OK, jeg accepterer'
+popup_more_info_button_message: 'Nej, giv mig flere oplysninger'
+disagree_button_label: Afslå

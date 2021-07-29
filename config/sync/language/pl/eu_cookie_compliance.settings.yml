@@ -1,12 +1,11 @@
 popup_agreed:
   value: '<h2>Dziękujemy za akceptację ciasteczek</h2><p>Możesz teraz ukryć tą wiadomość lub dowiedzieć się więcej na temat ciasteczek.</p>'
-popup_agree_button_message: Akceptuj
-popup_more_info_button_message: 'Więcej informacji'
+popup_agree_button_message: 'OK, zgadzam się'
+popup_more_info_button_message: 'Nie, poproszę o więcej informacji'
 popup_find_more_button_message: 'Więcej informacji'
 popup_hide_button_message: Ukryj
 popup_info:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
-popup_link: '<front>'
-withdraw_message:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p><span style=\"font-size: small;\"><strong>Na stronie EU-OSHA używane są pliki cookies w celu gromadzenia informacji koniecznych do przeglądania strony, zgodnie z informacją o polityce prywatności EU-OSHA.</strong></span></p><p>Poprzez kliknięcie na dowolne łącze na stronach internetowych EU-OSHA wyrażasz zgodę na wykorzystanie plików cookies.</p>"
+withdraw_message: {  }
 save_preferences_button_label: 'Zapisz preferencje'
+disagree_button_label: Opadać

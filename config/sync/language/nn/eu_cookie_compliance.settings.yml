@@ -1,0 +1,5 @@
+popup_agree_button_message: 'Jeg samtykker'
+popup_more_info_button_message: 'Nei, gi meg mer informasjon'
+popup_info:
+  value: "<p><span style=\"font-size: small;\"><strong>EU-OSHAs nettsted bruker informasjonskapsler for å samle inn informasjon som er nødvendig for å søke på nettstedet (i henhold til EU-OSHAs personvernmeddelelse).</strong></span></p><p>Ved å klikke på en lenke på EU-OSHAs nettsider gir du din tillatelse til bruk av informasjonskapsler.</p>\r\n"
+disagree_button_label: Avslå

@@ -1,10 +1,10 @@
 popup_agreed:
   value: '<h2> Σας ευχαριστούμε για την αποδοχή των cookies </h2> <p> Μπορείτε τώρα να κρύψετε αυτό το μήνυμα ή να μάθετε περισσότερα σχετικά με τα cookies. </p>'
-popup_more_info_button_message: 'Περισσότερες πληροφορίες'
+popup_more_info_button_message: 'Όχι, χρειάζομαι περισσότερες πληροφορίες'
 popup_find_more_button_message: 'Περισσότερες πληροφορίες'
 popup_hide_button_message: Απόκρυψη
 popup_info:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
-popup_link: '<front>'
-withdraw_message:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  value: '<p><span style="font-size: small;"><strong>Ο δικτυακός τόπος του EU-OSHA χρησιμοποιεί cookies για τη συλλογή πληροφοριών σχετικά με τη διαδικασία που ακολουθείται για την περιήγηση σε αυτόν, σύμφωνα με τη δήλωση απορρήτου του EU-OSHA.</strong></span></p><p>Κάνοντας κλικ σε οποιονδήποτε σύνδεσμο των ιστοσελίδων του EU-OSHA παρέχετε τη συγκατάθεσή σας για τη χρήση των cookies.</p>'
+withdraw_message: {  }
+popup_agree_button_message: 'ΟΚ, συμφωνώ'
+disagree_button_label: αρνούμαι

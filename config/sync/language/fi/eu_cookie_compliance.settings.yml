@@ -1,9 +1,8 @@
-popup_agreed:
-  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
-popup_agree_button_message: Hyväksy
+popup_agreed: {  }
+popup_agree_button_message: 'Sallin evästeiden käytön'
 popup_hide_button_message: Piilossa
 popup_info:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
-popup_link: '<front>'
-withdraw_message:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  value: "<p><span style=\"font-size: small;\"><strong>EU-OSHAn verkkosivusto käyttää evästeitä EU-OSHAn tietosuojaselosteen mukaisesti sivuston selaamiseen tarvittavien tietojen keräämiseen.</strong></span></p><p>Voit antaa luvan evästeiden käyttöön napsauttamalla mitä tahansa linkkiä EU-OSHAn verkkosivustolla.</p>\r\n"
+withdraw_message: {  }
+popup_more_info_button_message: 'Ei, haluan lisätietoa'
+disagree_button_label: Kieltäytyä

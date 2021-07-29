@@ -1,15 +1,14 @@
 popup_agreed:
   value: '<h2>Tack för att du accepterade cookies</h2><p>Nu kan du dölja det här meddelandet eller ta reda på mer om cookies.</p>'
-popup_agree_button_message: Accepterar
-popup_more_info_button_message: 'Mer information'
+popup_agree_button_message: 'OK, jag samtycker'
+popup_more_info_button_message: 'Nej, ge mig mer info'
 popup_find_more_button_message: 'Mer information'
 popup_hide_button_message: Dölj
 popup_info:
-  value: '<h2>Vi använder cookies på denna webbplats för att förbättra din användarupplevelse</h2><p>Genom att klicka på knappen "acceptera" godkänner du att vi gör det.</p>'
+  value: '<p><span style="font-size: small;"><strong>På EU-Oshas webbplats används cookies för att sammanställa den information som behövs när du använder webbplatsen, vilket sker i enlighet med EU-Oshas policy för integritetsskydd.</strong></span></p><p>När du klickar på en länk på EU-Oshas webbsidor godkänner du samtidigt användningen av cookies.</p>'
 mobile_popup_info:
   value: '<h2>Vi använder cookies på denna webbplats för att förbättra din användarupplevelse.</h2><p>Genom att trycka på knappen "acceptera" godkänner du att vi gör det.</p>'
-popup_link: '<front>'
-disagree_button_label: 'Nej, tack'
+disagree_button_label: Avböja
 withdraw_message:
   value: '<h2>Vi använder cookies på denna webbplats för att förbättra din användarupplevelse.</h2><p>Du har gett ditt samtycke för oss att ställa in cookies.</p>'
 withdraw_action_button_label: 'Återkalla samtycke'
