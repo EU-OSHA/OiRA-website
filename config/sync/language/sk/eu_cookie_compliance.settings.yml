@@ -1,8 +1,8 @@
-popup_agreed:
-  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
+popup_agreed: {  }
 popup_hide_button_message: Skryť
 popup_info:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
-popup_link: '<front>'
-withdraw_message:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  value: '<p><span style="font-size: small;"><strong>Webová lokalita agentúry EU-OSHA používa cookies na získavanie informácií potrebných na prehľadávanie webovej lokality v súlade s vyhlásením agentúry EU-OSHA o používaní osobných údajov.</strong></span></p><p>Kliknutím na ktorýkoľvek odkaz na webových stránkach agentúry EU-OSHA udeľujete svoj súhlas s používaním cookies.</p>'
+withdraw_message: {  }
+popup_agree_button_message: 'Áno, súhlasím'
+popup_more_info_button_message: 'Nie, poskytnite mi viac informácií'
+disagree_button_label: Neprijať
