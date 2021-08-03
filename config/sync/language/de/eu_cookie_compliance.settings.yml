@@ -1,15 +1,14 @@
 popup_agreed:
   value: '<h2>Vielen Dank für das Akzeptieren der Cookies</h2><p>Sie können diese Meldung jetzt ausblenden oder mehr über Cookies erfahren.</p>'
-popup_agree_button_message: Akzeptieren
-popup_more_info_button_message: 'Weitere Informationen'
+popup_agree_button_message: 'Ok, ich stimme zu.'
+popup_more_info_button_message: 'Nein, ich möchte weitere Informationen'
 popup_find_more_button_message: 'Weitere Informationen'
 popup_hide_button_message: Ausblenden
 popup_info:
-  value: '<h2>Wir verwenden auf dieser Website Cookies, um die Gebrauchsfreundlichkeit zu verbessern</h2><p>Klicken Sie "Akzeptieren", um sich damit einverstanden zu erklären.</p>'
+  value: '<p><span style="font-size: small;"><strong>Die Website der EU-OSHA verwendet Cookies zur Erfassung der für die Nutzung der Website notwendigen Informationen in Einklang mit der Datenschutzerklärung der EU-OSHA.</strong></span></p><p>Wenn Sie auf einen Link auf den Webseiten der EU-OSHA klicken, stimmen Sie der Verwendung von Cookies zu.</p>'
 mobile_popup_info:
   value: '<h2>Auf dieser Seite werden Cookies verwendet.</h2><p>Mit dem Antippen der Schaltfläche <em>Akzeptieren</em> erklären Sie sich damit einverstanden, dass wir das tun.</p>'
-popup_link: '<front>'
-disagree_button_label: 'Nein, danke'
+disagree_button_label: Ablehnen
 withdraw_message:
   value: '<h2>Wir verwenden Cookies auf dieser Website, um das Besuchererlebnis zu verbessern</h2><p>Sie haben uns Ihre Zustimmung gegeben, Cookies zu setzen.</p>'
 withdraw_action_button_label: 'Zustimmung zurückziehen'

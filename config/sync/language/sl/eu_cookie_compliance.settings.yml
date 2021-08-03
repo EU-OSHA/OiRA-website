@@ -1,8 +1,8 @@
-popup_agreed:
-  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
+popup_agreed: {  }
 popup_hide_button_message: Skrij
 popup_info:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
-popup_link: '<front>'
-withdraw_message:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  value: "<p><span style=\"font-size: small;\"><strong>Spletna stran agencije EU-OSHA uporablja piškotke za zbiranje informacij, potrebnih za brskanje po spletišču, v skladu z obvestilom o zasebnosti.</strong></span></p><p>S klikom na katero koli povezavo na spletnih straneh agencije EU-OSHA se strinjate z uporabo piškotkov.</p>\r\n"
+withdraw_message: {  }
+popup_agree_button_message: 'Strinjam se'
+popup_more_info_button_message: 'Ne, želim podrobnejše informacije'
+disagree_button_label: Odkloniti
