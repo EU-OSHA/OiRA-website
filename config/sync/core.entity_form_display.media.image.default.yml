@@ -7,7 +7,8 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - image_widget_crop
+    - imce
     - path
 _core:
   default_config_hash: WeM0d1VqhuyGELo4SRiDJfhDQSLqfKavISEbrnlcTaE
@@ -24,10 +25,23 @@ content:
     third_party_settings: {  }
   field_media_image:
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
+      crop_preview_image_style: crop_thumbnail
+      progress_indicator: throbber
+      crop_list:
+        - crop_and_scale_600x350
+        - custom_crop_259x259_
+        - custom_crop_342x259
+        - rop_and_scale_1170x350
+        - _custom_crop_555x367
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings:
+      imce:
+        enabled: false
+    type: image_widget_crop
     weight: 0
     region: content
   langcode:
