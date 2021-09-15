@@ -1,4 +1,4 @@
-uuid: 71290223-78e9-4665-9106-9f97b687c4f9
+uuid: f5f154e2-4eae-4463-a2ed-a5e85a340984
 langcode: en
 status: true
 dependencies:
@@ -83,19 +83,9 @@ process:
   langcode: constants/lang
   title: title
   field_summary/0/value: field_summary/en/0/value
-  field_summary/0/format:
-    plugin: static_map
-    bypass: true
-    source: field_summary/en/0/format
-    map:
-      full_html_minimal: basic_html
+  field_summary/0/format: field_summary/en/0/format
   body/0/value: body/en/0/value
-  body/0/format:
-    plugin: static_map
-    bypass: true
-    source: body/en/0/format
-    map:
-      full_html_minimal: basic_html
+  body/0/format: body/en/0/format
   file_source:
     -
       plugin: nm_url_transform
@@ -155,14 +145,10 @@ process:
       default_value: '@media'
   field_publication_date:
     -
-      plugin: sub_process
-      source: field_publication_date/und
-      process:
-        value:
-          plugin: format_date
-          from_format: 'Y-m-d H:i:s'
-          to_format: 'Y-m-d\TH:i:s'
-          source: value
+      plugin: format_date
+      from_format: 'Y-m-d H:i:s'
+      to_format: 'Y-m-d\TH:i:s'
+      source: field_publication_date/und/value
   field_tags:
     -
       plugin: nm_taxonomy_term_news
