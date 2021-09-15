@@ -1,4 +1,4 @@
 highlights_endpoint: /export/list/highlight/oira+risk_assessment+microenterprises
 news_endpoint: /export/list/news/oira+risk_assessment+microenterprises
 wiki_pages_endpoint: /export/oira_wiki
-root_endpoint: 'https://osha.europa.eu'
+root_endpoint: 'https://testd9.osha.europa.eu'
