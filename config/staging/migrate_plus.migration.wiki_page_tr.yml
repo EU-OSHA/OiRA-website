@@ -95,14 +95,10 @@ process:
     source: field_wiki_categories
   field_updated:
     -
-      plugin: sub_process
-      source: field_updated/und
-      process:
-        value:
-          plugin: format_date
-          from_format: 'Y-m-d H:i:s'
-          to_format: 'Y-m-d\TH:i:s'
-          source: value
+      plugin: format_date
+      from_format: 'Y-m-d H:i:s'
+      to_format: 'Y-m-d\TH:i:s'
+      source: field_updated/und/value
   field_migration_source:
     plugin: default_value
     default_value: ncw
