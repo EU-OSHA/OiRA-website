@@ -1,0 +1,17 @@
+uuid: b109091a-f4f0-4541-b0c4-69e5aa5ff43c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - oira_import_export
+_core:
+  default_config_hash: u59Xly-tDqXE779UUdyi-8cdshCeuxcrKAJEN1W4Ceo
+id: oira_import_export
+label: 'OIRA Import/Export'
+description: 'Migration of partners from CRM'
+source_type: JSON
+module: null
+shared_configuration:
+  source:
+    key: migrate

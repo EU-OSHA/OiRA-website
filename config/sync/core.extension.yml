@@ -119,13 +119,13 @@ module:
   node: 0
   node_export: 0
   notification: 0
+  oira_import_export: 0
   oira_masquerade: 0
   oira_partner: 0
   oira_partner_content_count: 0
   oira_tool: 0
   oira_workflow: 0
   options: 0
-  osha_import_export: 0
   page_cache: 0
   pagerer: 0
   path: 0

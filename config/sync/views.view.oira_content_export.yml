@@ -7,7 +7,7 @@ dependencies:
   module:
     - datetime
     - node
-    - osha_import_export
+    - oira_import_export
     - rest
     - serialization
     - taxonomy
