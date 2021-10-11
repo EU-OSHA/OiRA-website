@@ -396,9 +396,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  rest_export_1:
+  rest_news:
     display_plugin: rest_export
-    id: rest_export_1
+    id: rest_news
     display_title: 'REST export'
     position: 1
     display_options:
