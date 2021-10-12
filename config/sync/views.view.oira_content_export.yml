@@ -403,7 +403,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: export/news/list
+      path: ncw-export/news
       pager:
         type: none
         options:
