@@ -5631,6 +5631,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   position: relative !important;
 }
 #navbar-main ul.navbar-nav li .nav-link {
+  font-size: 1rem;
   padding: 0 0.5rem;
 }
 #navbar-main ul.navbar-nav li a {
