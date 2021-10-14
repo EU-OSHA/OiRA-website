@@ -2450,7 +2450,7 @@ select.custom-select {
   background-color: #dfd8e4;
 }
 .path-private-zone .view-filters {
-  margin: 0 0 0.3rem;
+  margin: 1rem 0 0.3rem;
   padding: 1rem;
   background-color: #786586;
   color: white;
@@ -2466,6 +2466,7 @@ select.custom-select {
 }
 .path-private-zone .views-exposed-form .form-row fieldset {
   padding: 0;
+  margin-right: 10px;
 }
 .path-private-zone .views-exposed-form .form-group {
   width: 25%;
@@ -2484,16 +2485,21 @@ select.custom-select {
   background: #FFF;
   border-radius: 0;
   width: 100%;
+  height: calc(1.5em + 0.75rem + 0px);
 }
 .path-private-zone .views-exposed-form select {
   padding: 0.4rem;
   background: #fff url(../images/down-arrow-inputs-blue.png) right center no-repeat;
   background-size: contain;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .path-private-zone .views-exposed-form #edit-field-publication-date-value-wrapper {
   width: auto;
   min-width: auto;
   margin-right: 0;
+  margin-bottom: 0 !important;
 }
 .path-private-zone .views-exposed-form #edit-field-publication-date-value-wrapper .form-group {
   margin-right: 0.8rem;
@@ -6045,6 +6051,48 @@ body.toolbar-fixed.toolbar-tray-open #header {
   color: #333333;
   background-color: #f5f5f5;
   border-color: #dddddd;
+}
+
+/* Custom creater News form  */
+/* MOIRA-331 - PZ - Create News: differences in the form */
+.node-news-form #edit-field-summary-0-format,
+.node-news-form #edit-body-wrapper > div > fieldset > label > span,
+.node-news-form #edit-body-0-format,
+.node-news-form #edit-field-co-author-wrapper,
+.node-news-form #edit-field-aditional-resources-wrapper,
+.node-news-form #edit-field-character-count-wrapper,
+.node-news-form #edit-field-page-count-wrapper,
+.node-news-form #edit-langcode-wrapper,
+.node-news-form #edit-field-migration-source-wrapper,
+.node-promotional-material-form #edit-field-summary-0-format,
+.node-promotional-material-form #edit-body-wrapper > div > fieldset > label > span,
+.node-promotional-material-form #edit-body-0-format,
+.node-promotional-material-form #edit-field-co-author-wrapper,
+.node-promotional-material-form #edit-field-aditional-resources-wrapper,
+.node-promotional-material-form #edit-field-character-count-wrapper,
+.node-promotional-material-form #edit-field-page-count-wrapper,
+.node-promotional-material-form #edit-langcode-wrapper,
+.node-promotional-material-form #edit-field-migration-source-wrapper,
+.node-practical-tool-form #edit-field-summary-0-format,
+.node-practical-tool-form #edit-body-wrapper > div > fieldset > label > span,
+.node-practical-tool-form #edit-body-0-format,
+.node-practical-tool-form #edit-field-co-author-wrapper,
+.node-practical-tool-form #edit-field-aditional-resources-wrapper,
+.node-practical-tool-form #edit-field-character-count-wrapper,
+.node-practical-tool-form #edit-field-page-count-wrapper,
+.node-practical-tool-form #edit-langcode-wrapper,
+.node-practical-tool-form #edit-field-migration-source-wrapper {
+  display: none;
+}
+.node-news-form .layout-region-node-secondary .vertical-tabs,
+.node-promotional-material-form .layout-region-node-secondary .vertical-tabs,
+.node-practical-tool-form .layout-region-node-secondary .vertical-tabs {
+  flex-direction: column;
+}
+.node-news-form .layout-region-node-secondary .vertical-tabs__menu,
+.node-promotional-material-form .layout-region-node-secondary .vertical-tabs__menu,
+.node-practical-tool-form .layout-region-node-secondary .vertical-tabs__menu {
+  padding: 1rem;
 }
 
 @media (max-width: 1023px) {
