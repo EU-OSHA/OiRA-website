@@ -1867,18 +1867,6 @@ display:
             group_items: {  }
           plugin_id: search_api_date
       sorts:
-        title:
-          id: title
-          table: search_api_index_oira_tools
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: true
-          expose:
-            label: Alphabetically
-          plugin_id: search_api
         field_publication_date:
           id: field_publication_date
           table: search_api_index_oira_tools
@@ -1890,6 +1878,18 @@ display:
           exposed: true
           expose:
             label: 'Latest first'
+          plugin_id: search_api
+        title:
+          id: title
+          table: search_api_index_oira_tools
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: Alphabetically
           plugin_id: search_api
         name_3:
           id: name_3

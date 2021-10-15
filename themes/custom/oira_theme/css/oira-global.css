@@ -667,6 +667,10 @@ legend {
   color: #786586;
 }
 
+.facet-item__count {
+  padding-left: 5px;
+}
+
 .file-download.file-download-application.file-download-pdf:before {
   content: url(../images/application-pdf.png);
   padding-right: 5px;
