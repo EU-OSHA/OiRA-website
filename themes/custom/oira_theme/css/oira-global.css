@@ -1790,6 +1790,7 @@ select.custom-select {
   font-weight: 400;
   font-size: 1.75rem;
   font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  padding-right: 35px;
 }
 .page-view-oira-ws .content-view-tools-view .group-right h2:hover {
   color: #786586;
