@@ -876,6 +876,7 @@ select.custom-select{
         font-weight: $font-weight-normal;
         font-size: 1.75rem;
         font-family: $font-family-roboto;
+        padding-right: 35px;
         &:hover{
           color: $text-color-purple;
           text-decoration: none;
