@@ -205,4 +205,30 @@
   }
 }
 
+/* Custom creater News form  */
+/* MOIRA-331 - PZ - Create News: differences in the form */
+.node-news-form,
+.node-promotional-material-form,
+.node-practical-tool-form{
+  #edit-field-summary-0-format,
+  #edit-body-wrapper > div > fieldset > label > span,
+  #edit-body-0-format,
+  #edit-field-co-author-wrapper,
+  #edit-field-aditional-resources-wrapper,
+  #edit-field-character-count-wrapper,
+  #edit-field-page-count-wrapper,
+  #edit-langcode-wrapper,
+  #edit-field-migration-source-wrapper{
+    display: none;
+  }
+  .layout-region-node-secondary{
+    .vertical-tabs{
+      flex-direction: column;
+    }
+    .vertical-tabs__menu{
+      padding: 1rem;
+    }
+  }
+
+}
 

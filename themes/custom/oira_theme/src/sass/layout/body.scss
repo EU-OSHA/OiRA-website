@@ -876,6 +876,7 @@ select.custom-select{
         font-weight: $font-weight-normal;
         font-size: 1.75rem;
         font-family: $font-family-roboto;
+        padding-right: 35px;
         &:hover{
           color: $text-color-purple;
           text-decoration: none;
@@ -1554,7 +1555,7 @@ select.custom-select{
     background-color: $bg-color-purple-light;
   }
   .view-filters {
-    margin: 0 0 0.3rem;
+    margin: 1rem 0 0.3rem;
     padding: 1rem;
     background-color: $bg-color-purple;
     color: white;
@@ -1568,6 +1569,7 @@ select.custom-select{
       align-items: flex-start;
       fieldset {
         padding: 0;
+        margin-right: 10px;
       }
     }
     .form-group {
@@ -1587,16 +1589,21 @@ select.custom-select{
       background: $bg-color-white;
       border-radius: 0;
       width: 100%;
+      height: calc(1.5em + 0.75rem + 0px);
     }
     select {
       padding: 0.4rem;
       background: #fff url(../images/down-arrow-inputs-blue.png) right center no-repeat;
       background-size: contain;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
     }
     #edit-field-publication-date-value-wrapper {
       width: auto;
       min-width: auto;
       margin-right: 0;
+      margin-bottom: 0 !important;
       .form-group {
         margin-right: 0.8rem;
       }
