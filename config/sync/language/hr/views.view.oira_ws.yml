@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Naruči:'
+      fields:
+        field_tool_link:
+          alter:
+            text: 'Pristup alatu'
+            alt: 'Pristup alatu'
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Najprije najnovije'
+        title:
+          expose:
+            label: Abecedno
+      header:
+        area:
+          content:
+            value: "<div class=\"results-for\">Results for <span class=\"searched-text\">\"{{ filters.search_api_fulltext }}\" </span></div>\r\n"
+            format: full_html
+        result:
+          content: '<div class="global summary">Prikaz @start - @end od @total</div>'
+  tools_ws:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Pretraživanje

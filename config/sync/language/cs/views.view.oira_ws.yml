@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Seřadit:'
+      fields:
+        field_tool_link:
+          alter:
+            text: 'Přístup k tomuto nástroji'
+            alt: 'Přístup k tomuto nástroji'
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Od nejnovějších'
+        title:
+          expose:
+            label: 'Podle abecedy'
+      header:
+        area:
+          content:
+            value: "<div class=\"results-for\">Results for <span class=\"searched-text\">\"{{ filters.search_api_fulltext }}\" </span></div>\r\n"
+            format: full_html
+        result:
+          content: '<div class="global summary">Zobrazeno @start - @end z @total</div>'
+  tools_ws:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Vyhledávání

@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Ordni:'
+      fields:
+        field_tool_link:
+          alter:
+            text: 'Aċċessa l-għodda'
+            alt: 'Aċċessa l-għodda'
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Tal-aħħar l-ewwel'
+        title:
+          expose:
+            label: 'B''mod alfabetiku'
+      header:
+        area:
+          content:
+            value: "<div class=\"results-for\">Results for <span class=\"searched-text\">\"{{ filters.search_api_fulltext }}\" </span></div>\r\n"
+            format: full_html
+        result:
+          content: '<div class="global summary">Qed jintwerew @start - @end minn @total</div>'
+  tools_ws:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Fittex
