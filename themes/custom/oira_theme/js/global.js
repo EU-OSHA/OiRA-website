@@ -167,9 +167,11 @@ jQuery(document).ready(function($){
     });
 
     /*** Show clear button on active facet ***/
-    let searchApiVal = $('#edit-search-api-fulltext--2').val();
-    if ( searchApiVal.length>0 || $(".block-facets").hasClass("facet-active") ) {
-      $("#edit-search-api-fulltext--2, .block-facets").closest(".section").find('#edit-reset--2').addClass("show-me");
+    if ($("#edit-search-api-fulltext--2")[0]) {
+      let searchApiVal = $('#edit-search-api-fulltext--2').val();
+      if (searchApiVal.length > 0 || $(".block-facets").hasClass("facet-active")) {
+        $("#edit-search-api-fulltext--2, .block-facets").closest(".section").find('#edit-reset--2').addClass("show-me");
+      }
     }
 
     //Move the summary before the menu (in node 67)
@@ -226,6 +228,11 @@ jQuery(document).ready(function($){
 
   /*** Move intro text on node 67 ***/
   $('.page-node-67 .field--name-field-summary-article').insertBefore('.menu--oira-community');
+
+  //Move facets numbers filter - MDR-4579
+  $('.facets-widget-checkbox .facet-item__count').each(function(){
+    $(this).parent().find('.facet-item__value').append($(this));
+  });
 
 });
 
