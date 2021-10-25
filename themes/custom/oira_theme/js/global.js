@@ -227,6 +227,11 @@ jQuery(document).ready(function($){
   /*** Move intro text on node 67 ***/
   $('.page-node-67 .field--name-field-summary-article').insertBefore('.menu--oira-community');
 
+  //Move facets numbers filter - MDR-4579
+  $('.facets-widget-checkbox .facet-item__count').each(function(){
+    $(this).parent().find('.facet-item__value').append($(this));
+  });
+
 });
 
 
