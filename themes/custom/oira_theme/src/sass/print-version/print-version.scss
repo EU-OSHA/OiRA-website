@@ -1,0 +1,37 @@
+@media print {
+
+  body{
+    padding-top: 160px !important;
+  }
+
+  /* Home page */
+  body.path-frontpage{
+    #block-logoosha > div > div > div > div:nth-child(1) > div > a > div > div.field__item{
+      padding-top: 40px !important;
+    }
+    .content-purple{
+      padding-top: 0 !important;
+    }
+    .home-slider,
+    .header-menu-news,
+    .header-blocks,
+    .content-oira-partners,
+    .views-field-field-tool-link,
+    .see-more,
+    .more-link,
+    .materials-content-wrapper img{
+      display: none !important;
+    }
+    .view-news{
+      .views-field-nothing{
+        display: none !important;
+      }
+    }
+    .content-latest-news .view-news .attachment-before h3 a {
+      font-size: 18pt;
+    }
+  }
+  /* End Home page */
+
+
+}/* End media print */
