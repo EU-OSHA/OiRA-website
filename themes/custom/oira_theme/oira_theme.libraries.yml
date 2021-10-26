@@ -28,6 +28,7 @@ global-styling:
   css:
     component:
       css/oira-global.css: {}
+      css/oira-print-version.css: {}
     theme:
       https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap: { type: external, minified: true }
       https://fonts:googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap: { type: external, minified: true }
