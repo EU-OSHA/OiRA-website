@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Reihenfolge:'
+      fields:
+        field_tool_link:
+          alter:
+            text: 'Zum Werkzeug'
+            alt: 'Zum Werkzeug'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Aktuelles zuerst'
+        title:
+          expose:
+            label: Alphabetisch
+      header:
+        area:
+          content:
+            value: "<div class=\"results-for\">Results for <span class=\"searched-text\">\"{{ filters.search_api_fulltext }}\" </span></div>\r\n"
+            format: full_html
+        result:
+          content: '<div class="global summary">von @start - @end anzeigen @total</div>'
+  tools_ws:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Suche

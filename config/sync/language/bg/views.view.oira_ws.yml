@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Ред:'
+      fields:
+        field_tool_link:
+          alter:
+            text: 'Достъп до инструмента'
+            alt: 'Достъп до инструмента'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Покажи първо най-новите'
+        title:
+          expose:
+            label: 'По азбучен ред'
+      header:
+        area:
+          content:
+            value: "<div class=\"results-for\">Results for <span class=\"searched-text\">\"{{ filters.search_api_fulltext }}\" </span></div>\r\n"
+            format: full_html
+        result:
+          content: "<div class=\"global summary\">Показване @start - @end от @total</div>\r\n"
+  tools_ws:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Търсене
