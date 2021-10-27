@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: crop_and_scale_600x350
-label: 'Crop and scale 600x350'
+label: 'Generic thumb image MC (large)'
 description: ''
 aspect_ratio: ''
 soft_limit_width: 600

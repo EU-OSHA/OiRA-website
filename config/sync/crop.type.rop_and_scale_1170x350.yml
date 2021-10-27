@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: rop_and_scale_1170x350
-label: 'rop and scale 1170x350'
+label: 'Gallery cover'
 description: ''
 aspect_ratio: ''
 soft_limit_width: 1170
