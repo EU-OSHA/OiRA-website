@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Ordem:'
+      fields:
+        field_tool_link:
+          alter:
+            text: 'Aceder à ferramenta'
+            alt: 'Aceder à ferramenta'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'O mais recente primeiro'
+        title:
+          expose:
+            label: 'Por ordem alfabética'
+      header:
+        area:
+          content:
+            value: "<div class=\"results-for\">Results for <span class=\"searched-text\">\"{{ filters.search_api_fulltext }}\" </span></div>\r\n"
+            format: full_html
+        result:
+          content: '<div class="global summary">A mostrar @start - @end de @total</div>'
+  tools_ws:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Pesquisar

@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Ταξινόμηση:'
+      fields:
+        field_tool_link:
+          alter:
+            text: 'Πρόσβαση στο εργαλείο'
+            alt: 'Πρόσβαση στο εργαλείο'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Εμφάνιση πιο πρόσφατων'
+        title:
+          expose:
+            label: Αλφαβητικά
+      header:
+        area:
+          content:
+            value: "<div class=\"results-for\">Results for <span class=\"searched-text\">\"{{ filters.search_api_fulltext }}\" </span></div>\r\n"
+            format: full_html
+        result:
+          content: '<div class="global summary">Εμφάνιση @start - @end από @total</div>'
+  tools_ws:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Αναζήτηση

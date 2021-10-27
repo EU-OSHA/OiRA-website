@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: _custom_crop_555x367
-label: 'Custom crop 555x367'
+label: 'Latest news (Home page)'
 description: ''
 aspect_ratio: ''
 soft_limit_width: 555

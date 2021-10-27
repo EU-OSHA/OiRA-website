@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: custom_crop_342x259
-label: 'Custom crop 342x259'
+label: 'Latest materials'
 description: ''
 aspect_ratio: ''
 soft_limit_width: 342
