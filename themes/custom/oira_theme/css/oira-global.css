@@ -4878,6 +4878,7 @@ body[class*=private-zone-] .page-header.h1 {
 }
 .top-header-content .block__font-size .a_medium a {
   font-size: 1.35rem;
+  padding-right: 5px;
 }
 .top-header-content .block__font-size .a_big a {
   font-size: 2rem;
