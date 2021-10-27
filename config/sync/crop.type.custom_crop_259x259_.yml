@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: custom_crop_259x259_
-label: 'Custom crop 259x259'
+label: 'News list and node'
 description: ''
 aspect_ratio: ''
 soft_limit_width: 259
