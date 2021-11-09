@@ -1,6 +1,6 @@
 uuid: 287bd2e4-662f-4564-90e0-d4cc4ca9883b
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - linkchecker

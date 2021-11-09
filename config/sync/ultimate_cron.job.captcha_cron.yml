@@ -1,6 +1,6 @@
 uuid: dd6c07cc-c901-4a60-a64f-38b34ce43fa9
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - captcha

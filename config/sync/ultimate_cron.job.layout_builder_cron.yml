@@ -1,6 +1,6 @@
 uuid: 6d607cb4-777d-41fc-a208-972b458ba3b1
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - layout_builder
