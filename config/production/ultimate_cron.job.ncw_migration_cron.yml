@@ -10,10 +10,11 @@ weight: 0
 module: ncw_migration
 callback: ncw_migration_cron
 scheduler:
-  id: simple
+  id: crontab
   configuration:
     rules:
-      - '0+@ 0 * * *'
+      - '0 3 * * *'
+    catch_up: 0
 launcher:
   id: serial
   configuration:
