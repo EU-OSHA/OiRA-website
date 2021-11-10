@@ -1,6 +1,6 @@
 uuid: 6d607cb4-777d-41fc-a208-972b458ba3b1
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - layout_builder
@@ -11,7 +11,19 @@ module: layout_builder
 callback: layout_builder_cron
 scheduler:
   id: simple
+  configuration:
+    rules:
+      - '0+@ */3 * * *'
 launcher:
   id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
 logger:
   id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000
