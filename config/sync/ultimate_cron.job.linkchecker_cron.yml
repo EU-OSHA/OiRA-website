@@ -1,6 +1,6 @@
 uuid: 287bd2e4-662f-4564-90e0-d4cc4ca9883b
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - linkchecker
@@ -10,8 +10,21 @@ weight: 0
 module: linkchecker
 callback: linkchecker_cron
 scheduler:
-  id: simple
+  id: crontab
+  configuration:
+    rules:
+      - '0 * * * *'
+    catch_up: 0
 launcher:
   id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
 logger:
   id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

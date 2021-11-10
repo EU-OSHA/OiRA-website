@@ -157,9 +157,9 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: none
-  confirmation_title: ''
-  confirmation_message: ''
+  confirmation_type: modal
+  confirmation_title: Confirmation
+  confirmation_message: 'Thank you, your message has been received.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
