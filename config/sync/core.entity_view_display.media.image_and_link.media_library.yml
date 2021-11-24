@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.image_and_link.field_caption_copyright
     - field.field.media.image_and_link.field_external_link
     - field.field.media.image_and_link.field_link_image
     - field.field.media.image_and_link.field_media_image_1
@@ -26,10 +27,12 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  breadcrumbs: true
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_caption_copyright: true
   field_external_link: true
   field_link_image: true
   field_media_image_1: true
