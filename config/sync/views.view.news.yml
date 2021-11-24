@@ -490,14 +490,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: 500
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: true
-            trim: false
+            trim: true
             preserve_tags: ''
             html: false
           element_type: ''
@@ -701,7 +701,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{{ field_summary }} <span class=\"see-more\">{{view_node}}</span>\r\n"
+            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<span class=\"see-more\">{{view_node}}</span>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -907,7 +907,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -961,6 +961,117 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 200
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: true
+            preserve_tags: ''
+            html: true
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
         view_node:
           id: view_node
           table: node_field_revision
@@ -1031,6 +1142,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_publication_date'
         - 'config:field.storage.node.field_summary'
   block_2:
@@ -1478,7 +1590,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1532,6 +1644,117 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 120
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
         view_node:
           id: view_node
           table: node
@@ -1602,6 +1825,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_publication_date'
         - 'config:field.storage.node.field_summary'
   oshnews_list:
@@ -2015,7 +2239,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {{field_summary}}<span class=\"see-more\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
+            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {% if field_summary is empty %} \r\n       {{ body }}\r\n      {% else %}\r\n       {{field_summary}}\r\n      {% endif %}<span class=\"see-more\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
