@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image_and_link.field_caption_copyright
     - field.field.media.image_and_link.field_external_link
     - field.field.media.image_and_link.field_link_image
     - field.field.media.image_and_link.field_media_image_1
@@ -11,11 +12,19 @@ dependencies:
   module:
     - image
     - link
+    - text
 id: media.image_and_link.default
 targetEntityType: media
 bundle: image_and_link
 mode: default
 content:
+  field_caption_copyright:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_external_link:
     weight: 2
     label: above
@@ -48,6 +57,7 @@ content:
     type: image
     region: content
 hidden:
+  breadcrumbs: true
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image_and_link.field_caption_copyright
     - field.field.media.image_and_link.field_external_link
     - field.field.media.image_and_link.field_link_image
     - field.field.media.image_and_link.field_media_image_1
@@ -13,6 +14,7 @@ dependencies:
     - imce
     - link
     - path
+    - text
 id: media.image_and_link.default
 targetEntityType: media
 bundle: image_and_link
@@ -24,6 +26,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_caption_copyright:
+    weight: 103
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_external_link:
     weight: 102
     settings:
