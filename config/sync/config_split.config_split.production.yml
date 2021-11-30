@@ -27,7 +27,10 @@ blacklist: {  }
 graylist:
   - matomo.settings
   - search_api.server.apachesolr
+  - sitemap.settings
   - ultimate_cron.job.matomo_cron
+  - xmlsitemap.settings
+  - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
