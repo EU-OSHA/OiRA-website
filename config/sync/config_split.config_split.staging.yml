@@ -8,6 +8,7 @@ description: ''
 folder: sites/oira/config/staging
 module:
   hwc_crm_migration: 0
+  matomo: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0
@@ -24,6 +25,7 @@ module:
 theme: {  }
 blacklist: {  }
 graylist:
+  - matomo.settings
   - migrate_plus.migration.highlight
   - migrate_plus.migration.hwc_crm_partner
   - migrate_plus.migration.new
@@ -119,6 +121,10 @@ graylist:
   - migrate_plus.migration_group.oira_migrate_node
   - migrate_plus.migration_group.oira_migrate_tax
   - search_api.server.apachesolr
+  - sitemap.settings
+  - ultimate_cron.job.matomo_cron
+  - xmlsitemap.settings
+  - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
