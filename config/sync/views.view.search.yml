@@ -2842,7 +2842,6 @@ display:
             partner: partner
             practical_tool: practical_tool
             promotional_material: promotional_material
-            wiki_page: wiki_page
           group: 1
           exposed: false
           expose:
