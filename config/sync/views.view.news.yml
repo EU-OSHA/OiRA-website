@@ -10,7 +10,6 @@ dependencies:
     - field.storage.node.field_publication_date
     - field.storage.node.field_summary
     - image.style.large
-    - image.style.news_list_and_node
     - node.type.news
     - taxonomy.vocabulary.tags
   module:
@@ -168,8 +167,8 @@ display:
           value:
             min: ''
             max: ''
-            value: now
-            type: date
+            value: '+ 12 hours'
+            type: offset
           group: 1
           exposed: false
           expose:
@@ -1907,10 +1906,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: media_thumbnail
+          type: entity_reference_entity_view
           settings:
-            image_style: news_list_and_node
-            image_link: content
+            view_mode: default
           group_column: target_id
           group_columns: {  }
           group_rows: true

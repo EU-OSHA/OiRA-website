@@ -1,0 +1,15 @@
+uuid: 73b6fb08-54a9-46cb-81f0-7bb4335859f6
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_lt
+label: 'Partners Profile LT'
+description: ''
+entityType: node
+entityBundle: partner
+language: lt
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partneriai
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

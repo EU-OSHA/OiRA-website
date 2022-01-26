@@ -1,0 +1,15 @@
+uuid: 67d95c78-68c4-405d-986c-83c9c803a34e
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_sv
+label: 'Partners Profile SV'
+description: ''
+entityType: node
+entityBundle: partner
+language: sv
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Samarbetspartner
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

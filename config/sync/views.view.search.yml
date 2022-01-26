@@ -13,6 +13,9 @@ dependencies:
     - field.storage.node.field_multiple_sector
     - field.storage.node.field_publication_date
     - field.storage.node.field_resource_fc
+    - field.storage.node.field_resource_file
+    - field.storage.node.field_resource_language
+    - field.storage.node.field_resource_link
     - field.storage.node.field_revised_date
     - field.storage.node.field_sector
     - field.storage.node.field_sector_category
@@ -30,6 +33,7 @@ dependencies:
     - link
     - media
     - node
+    - options
     - pagerer
     - search_api
     - taxonomy
@@ -2680,6 +2684,222 @@ display:
             multi_separator: ', '
           entity_type: node
           plugin_id: search_api_field
+        field_resource_language:
+          id: field_resource_language
+          table: search_api_datasource_default_multilingual_node_index_entity_node
+          field: field_resource_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
+        field_resource_file:
+          id: field_resource_file
+          table: search_api_datasource_default_multilingual_node_index_entity_node
+          field: field_resource_file
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: file_default
+          settings:
+            use_description_as_link_text: true
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
+        field_resource_link:
+          id: field_resource_link
+          table: search_api_datasource_default_multilingual_node_index_entity_node
+          field: field_resource_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: null
+            url_only: false
+            url_plain: true
+            rel: '0'
+            target: _blank
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
         nothing:
           id: nothing
           table: views
@@ -2691,7 +2911,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"results\">\r\n\r\n  {% if (type == \"Article\") %}\r\n  <div class=\" result-item type-article\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{body}}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"News\") %}\r\n  <div class=\"result-item type-news\">\r\n    <div class=\"field-publication-date\"> {{ field_publication_date }} </div>\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"summary\">{{ field_summary }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Partner\" ) %}\r\n   <div class=\"result-item type-partner\">\r\n     <h3 class=\"title\">{{title}}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"tag tag-country\">{{ field_country }}</div>\r\n     <div class=\"see-more\">{{ url_2 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Wiki page\") %}\r\n  <div class=\"result-item type-wikipage\">\r\n     <h3 class=\"title\">{{ title_5 }}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"summary\">{{ field_summary }}</div>\r\n     <div class=\"see-more\">{{ field_wiki_page_url }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"OiRA Tools\" ) %}\r\n   <div class=\"result-item type-tools\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-sector\">{{ field_sector_category }}</p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_4}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body}}</div>\r\n    <div class=\"body-expanded\">{{body_1}}</div>\r\n    <div class=\"tool-link\">{{ field_tool_link }}</div>\r\n    <div class=\"expand\">\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Promotional resources\" ) %}\r\n  <div class=\"result-item type-promo\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-language\">{{ field_language }} </p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_3}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body}}</div>\r\n    <div class=\"body-expanded\">{{body_1}}</div>\r\n    <div class=\"resource-field-link\">{{ field_link }} </div>\r\n    <div class=\"resource-field-mediafile\">{{ field_media_file }}</div>\r\n\r\n    <div class=\"expand\">\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"FAQ\" ) %}\r\n   <div class=\"result-item type-faq\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n  \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>"
+            text: "<div class=\"results\">\r\n\r\n  {% if (type == \"Article\") %}\r\n  <div class=\" result-item type-article\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{body}}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"News\") %}\r\n  <div class=\"result-item type-news\">\r\n    <div class=\"field-publication-date\"> {{ field_publication_date }} </div>\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"summary\">{{ field_summary }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Partner\" ) %}\r\n   <div class=\"result-item type-partner\">\r\n     <h3 class=\"title\">{{title}}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"tag tag-country\">{{ field_country }}</div>\r\n     <div class=\"see-more\">{{ url_2 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Wiki page\") %}\r\n  <div class=\"result-item type-wikipage\">\r\n     <h3 class=\"title\">{{ title_5 }}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"summary\">{{ field_summary }}</div>\r\n     <div class=\"see-more\">{{ field_wiki_page_url }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"OiRA Tools\" ) %}\r\n   <div class=\"result-item type-tools\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-sector\">{{ field_sector_category }}</p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_4}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body}}</div>\r\n    <div class=\"body-expanded\">{{body_1}}</div>\r\n    <div class=\"tool-link\">{{ field_tool_link }}</div>\r\n    <div class=\"expand\">\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Promotional resources\" ) %}\r\n  <div class=\"result-item type-promo\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-language\">{{ field_resource_language }}</p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_3}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body}}</div>\r\n    <div class=\"body-expanded\">{{body_1}}</div>\r\n    <div class=\"resource-link pt-2 pb-2 text-break link\">{{ field_resource_link }} </div>\r\n    <div class=\"resource-file pt-2 pb-2\">{{ field_resource_file }}</div>\r\n\r\n    <div class=\"expand\">\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"FAQ\" ) %}\r\n   <div class=\"result-item type-faq\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n  \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -2842,7 +3062,6 @@ display:
             partner: partner
             practical_tool: practical_tool
             promotional_material: promotional_material
-            wiki_page: wiki_page
           group: 1
           exposed: false
           expose:
@@ -3272,6 +3491,9 @@ display:
         - 'config:field.storage.node.field_multiple_sector'
         - 'config:field.storage.node.field_publication_date'
         - 'config:field.storage.node.field_resource_fc'
+        - 'config:field.storage.node.field_resource_file'
+        - 'config:field.storage.node.field_resource_language'
+        - 'config:field.storage.node.field_resource_link'
         - 'config:field.storage.node.field_revised_date'
         - 'config:field.storage.node.field_sector'
         - 'config:field.storage.node.field_sector_category'
@@ -3312,6 +3534,9 @@ display:
         - 'config:field.storage.node.field_multiple_sector'
         - 'config:field.storage.node.field_publication_date'
         - 'config:field.storage.node.field_resource_fc'
+        - 'config:field.storage.node.field_resource_file'
+        - 'config:field.storage.node.field_resource_language'
+        - 'config:field.storage.node.field_resource_link'
         - 'config:field.storage.node.field_revised_date'
         - 'config:field.storage.node.field_sector'
         - 'config:field.storage.node.field_sector_category'

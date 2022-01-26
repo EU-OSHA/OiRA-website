@@ -1,0 +1,15 @@
+uuid: d3df8db4-c66e-42bc-8843-688a89cfd267
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_es
+label: 'Partners Profile ES'
+description: ''
+entityType: node
+entityBundle: partner
+language: es
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Socios
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

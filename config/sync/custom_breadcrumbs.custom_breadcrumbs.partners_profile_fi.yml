@@ -1,0 +1,15 @@
+uuid: b61999f8-1998-496a-a1d9-931913bee949
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_fi
+label: 'Partners Profile FI'
+description: ''
+entityType: node
+entityBundle: partner
+language: fi
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Yhteistyökumppanit
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        nothing_1:
+          alter:
+            text: "<div class=\"partner__address\">\r\n{% if (field_country or field_ph_address or field_ph_town or field_ph_cp) %}\r\n<div class=\"field__label field__label-widget\">Kontaktteave</div>\r\n<div class=\"field__content-wrapper\">\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_address }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_cp }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_town }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_country }}\r\n</div>\r\n{% endif %}\r\n<div class=\"field__content field__content-url\">\r\n{% if (field_website) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Website:</strong>\r\n{{ field_website }}\r\n</div>\r\n{% endif %}\r\n{% if (field_dedicated_oira_website) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Dedicated OiRA website:</strong>\r\n{{ field_dedicated_oira_website }}\r\n</div>\r\n{% endif %}\r\n{% if (field_general_email) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">E-post:</strong>\r\n{{ field_general_email }}\r\n</div>\r\n{% endif %}\r\n</div>\r\n</div>\r\n</div>\r\n"
+        nothing_2:
+          alter:
+            text: "<div class=\"partner__socialprofile\">\r\n{% if (field_social_profile)%}\r\n<div class=\"field__label field__label-widget\">Sotsiaalmeedia profiilid</div>\r\n{{ field_social_profile }}\r\n{% endif %}\r\n</div>"

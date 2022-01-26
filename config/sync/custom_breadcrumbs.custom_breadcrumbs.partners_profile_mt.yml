@@ -1,0 +1,15 @@
+uuid: c3f8ada6-9171-42f6-b01f-10c6253ad092
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_mt
+label: 'Partners Profile MT'
+description: ''
+entityType: node
+entityBundle: partner
+language: mt
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Sħab
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''
