@@ -11,7 +11,6 @@ dependencies:
     - field.storage.node.field_revised_date
     - field.storage.node.field_tool_link
     - field.storage.taxonomy_term.field_iso2
-    - image.style.medium
     - image.style.thumbnail
     - search_api.index.oira_tools
   module:
@@ -433,10 +432,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: media_thumbnail
+          type: entity_reference_entity_view
           settings:
-            image_style: medium
-            image_link: ''
+            view_mode: default
           group_column: ''
           group_columns: {  }
           group_rows: true
