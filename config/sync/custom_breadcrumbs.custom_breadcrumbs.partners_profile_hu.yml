@@ -1,0 +1,15 @@
+uuid: 61f0b821-efec-43bb-8cda-308af9fcd292
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_hu
+label: 'Partners Profile HU'
+description: ''
+entityType: node
+entityBundle: partner
+language: hu
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partnerek
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

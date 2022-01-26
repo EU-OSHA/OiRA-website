@@ -1,0 +1,15 @@
+uuid: 90e9c4d7-3a5b-4917-bd95-ee08fadb4573
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_el
+label: 'Partners Profile EL'
+description: ''
+entityType: node
+entityBundle: partner
+language: el
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Εταίροι
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

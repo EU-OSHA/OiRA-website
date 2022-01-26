@@ -1,0 +1,15 @@
+uuid: 0157e284-c854-49e3-a6c8-f678fe166ad5
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_hr
+label: 'Partners Profile HR'
+description: ''
+entityType: node
+entityBundle: partner
+language: hr
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partneri
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

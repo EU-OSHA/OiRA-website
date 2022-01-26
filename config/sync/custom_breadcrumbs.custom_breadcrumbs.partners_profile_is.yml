@@ -1,0 +1,15 @@
+uuid: 4faf9d9b-ddbe-46a5-b678-a9a9c26b3951
+langcode: en
+status: true
+dependencies: {  }
+id: partners_profile_is
+label: 'Partners Profile IS'
+description: ''
+entityType: node
+entityBundle: partner
+language: is
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Samstarfsaðilar
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''
