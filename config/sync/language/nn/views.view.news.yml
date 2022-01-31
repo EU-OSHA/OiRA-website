@@ -2,3 +2,35 @@ display:
   oshnews_list:
     display_options:
       title: Nyheter
+      fields:
+        view_node_1:
+          text: 'Vis mer'
+        body:
+          alter:
+            more_link_text: 'Vis mer'
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Vis mer'
+        nothing_1:
+          alter:
+            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/no/\"})|raw }}\">Vis mer</a>\r\n</div>\r\n"
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Vis mer'
+      use_more_text: 'Vis alle'
+  block_2:
+    display_options:
+      use_more_text: 'Vis alle'
+  oshnews_latest:
+    display_options:
+      fields:
+        view_node:
+          text: 'Vis mer'
+        nothing:
+          alter:
+            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/no/\"})|raw }}\">Vis mer</a>\r\n</div>"
+      use_more_text: 'Vis alle'

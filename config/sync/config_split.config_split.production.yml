@@ -7,25 +7,26 @@ label: Production
 description: ''
 folder: sites/oira/config/production
 module:
-  hwc_crm_migration: 0
-  matomo: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  ncw_migration: 0
   authorization: 0
   authorization_drupal_roles: 0
+  hwc_crm_migration: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
+  matomo: 0
   memcache: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  ncw_migration: 0
 theme: {  }
 blacklist: {  }
 graylist:
   - matomo.settings
+  - reroute_email.settings
   - search_api.server.apachesolr
   - sitemap.settings
   - ultimate_cron.job.matomo_cron

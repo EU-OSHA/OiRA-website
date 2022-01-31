@@ -4,6 +4,9 @@ display:
       fields:
         view_node:
           text: Lisateave
+        nothing_1:
+          alter:
+            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/et/\"})|raw }}\">Lisateave</a>\r\n</div>\r\n"
   block_1:
     display_options:
       title: 'Viimased uudised'
@@ -20,6 +23,9 @@ display:
       fields:
         view_node:
           text: Lisateave
+        nothing:
+          alter:
+            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/et/\"})|raw }}\">Lisateave</a>\r\n</div>"
   oshnews_list:
     display_options:
       title: Uudised
