@@ -14,6 +14,9 @@ display:
       fields:
         view_node:
           text: 'Εμφάνιση περισσότερων'
+        nothing:
+          alter:
+            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/el/\"})|raw }}\">Εμφάνιση περισσότερων</a>\r\n</div>"
       use_more_text: 'Προβολή όλων'
   oshnews_list:
     display_options:
@@ -29,3 +32,6 @@ display:
       fields:
         view_node:
           text: 'Εμφάνιση περισσότερων'
+        nothing_1:
+          alter:
+            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/el/\"})|raw }}\">Εμφάνιση περισσότερων</a>\r\n</div>\r\n"

@@ -4,6 +4,9 @@ display:
       fields:
         view_node:
           text: 'Frekari upplýsingar'
+        nothing_1:
+          alter:
+            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/is/\"})|raw }}\">Frekari upplýsingar</a>\r\n</div>\r\n"
   block_2:
     display_options:
       use_more_text: 'Skoða allt'
@@ -14,6 +17,9 @@ display:
       fields:
         view_node:
           text: 'Frekari upplýsingar'
+        nothing:
+          alter:
+            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/is/\"})|raw }}\">Frekari upplýsingar</a>\r\n</div>"
   block_1:
     display_options:
       fields:
