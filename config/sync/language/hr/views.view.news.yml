@@ -4,6 +4,9 @@ display:
       fields:
         view_node:
           text: 'Prikaži više'
+        nothing_1:
+          alter:
+            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/hr/\"})|raw }}\">Prikaži više</a>\r\n</div>\r\n"
   block_1:
     display_options:
       title: 'Najnovije vijesti'
@@ -16,6 +19,9 @@ display:
       fields:
         view_node:
           text: 'Prikaži više'
+        nothing:
+          alter:
+            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/hr/\"})|raw }}\">Prikaži više</a>\r\n</div>"
       use_more_text: 'Potpuni prikaz'
       block_description: 'Najnovije vijesti'
   oshnews_list:
