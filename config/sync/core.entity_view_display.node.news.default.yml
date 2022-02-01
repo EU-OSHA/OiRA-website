@@ -18,11 +18,10 @@ dependencies:
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
     - field.field.node.news.field_workbench_access
-    - image.style.news_list_and_node
     - node.type.news
   module:
     - datetime
-    - media
+    - ds
     - text
     - user
 id: node.news.default
@@ -51,10 +50,18 @@ content:
     weight: 4
     label: hidden
     settings:
-      image_style: news_list_and_node
-      image_link: ''
-    third_party_settings: {  }
-    type: media_thumbnail
+      view_mode: news_detail
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
     region: content
   field_publication_date:
     weight: 0
