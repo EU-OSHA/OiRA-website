@@ -3110,7 +3110,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: thumbnail
-            image_link: content
+            image_link: ''
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -3173,7 +3173,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -3236,7 +3236,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: '> See partner''s profile'
-          output_url_as_text: false
+          output_url_as_text: true
           absolute: true
           entity_type: node
           plugin_id: entity_link
@@ -3292,7 +3292,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: views_thumbail
-            image_link: content
+            image_link: ''
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -3355,7 +3355,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -3418,7 +3418,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: '> See partner''s profile'
-          output_url_as_text: false
+          output_url_as_text: true
           absolute: false
           entity_type: node
           plugin_id: entity_link
@@ -3474,7 +3474,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: views_thumbail
-            image_link: content
+            image_link: ''
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -3537,7 +3537,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -3600,7 +3600,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: '> See partner''s profile'
-          output_url_as_text: false
+          output_url_as_text: true
           absolute: false
           entity_type: node
           plugin_id: entity_link
@@ -3615,7 +3615,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"views-item-columns-container\">\r\n<div class=\"tool-teaser-content-wrapper\">\r\n<h3>{{ title }}</h3>\r\n{% if (field_language) %} <div><span class=\"field__label\">Language: </span> <strong>{{field_language}}</strong> </div>{% endif %}\r\n{% if (field_country) %} <div><span class=\"field__label\">Country: </span> <strong>{{field_country}}</strong></div> {% endif %}\r\n\r\n\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  \r\n  {% if (field_related_partners )%}\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n       {{field_logo}}\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4>{{ title_1 }}</h4>\r\n      {{ view_node }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_1 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_2 }}</h4>\r\n   {{ view_node_1 }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_2 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_3 }}</h4>\r\n   {{ view_node_2 }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n</div>\r\n<span class=\"more-link\"> See more</span>\r\n</div>\r\n</div>\r\n"
+            text: "<div class=\"views-item-columns-container\">\r\n<div class=\"tool-teaser-content-wrapper\">\r\n<h3>{{ title }}</h3>\r\n{% if (field_language) %} <div><span class=\"field__label\">Language: </span> <strong>{{field_language}}</strong> </div>{% endif %}\r\n{% if (field_country) %} <div><span class=\"field__label\">Country: </span> <strong>{{field_country}}</strong></div> {% endif %}\r\n\r\n\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  \r\n  {% if (field_related_partners )%}\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n        <a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">{{field_logo}}</a>\r\n\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4><a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">{{ title_1 }}</a></h4>\r\n        <a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">> See partner's profile</a>\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n        <a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">{{field_logo_1}}</a>\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">{{ title_2 }}</a></h4>\r\n        <a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">> See partner's profile</a>\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n        <a href=\"{{ view_node_2|replace({\"/en/\": \"/en/\"})|raw }}\">{{field_logo_2}}</a>\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4><a href=\"{{ view_node_2|replace({\"/en/\": \"/en/\"})|raw }}\">{{ title_3 }}</a></h4>\r\n        <a href=\"{{ view_node_2|replace({\"/en/\": \"/en/\"})|raw }}\">> See partner's profile</a>\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n</div>\r\n<span class=\"more-link\"> See more</span>\r\n</div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
