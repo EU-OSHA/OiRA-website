@@ -1,0 +1,25 @@
+display:
+  page_1:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n     <a href=\"{{ view_node|replace({\"/en/\": \"/lt/\"})|raw }}\">{{ title }}</a>\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n{{ node_type_flagger }}\r\n</div>"
+  page_2:
+    display_options:
+      fields:
+        nothing_1:
+          alter:
+            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n     <a href=\"{{ view_node|replace({\"/en/\": \"/lt/\"})|raw }}\">{{ title }}</a>\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n\r\n</div>"
+  page_3:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n     <a href=\"{{ view_node|replace({\"/en/\": \"/lt/\"})|raw }}\">{{ title }}</a>\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n{{ node_type_flagger }}\r\n</div>"
+  page_4:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n     <a href=\"{{ view_node|replace({\"/en/\": \"/lt/\"})|raw }}\">{{ title }}</a>\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n{{ node_type_flagger }}\r\n</div>\r\n"
