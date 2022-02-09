@@ -36,7 +36,7 @@ display:
           text: 'Ver más información'
         nothing:
           alter:
-            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {{field_summary}}<span class=\"Ver más información\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
+            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2><a href=\"{{ view_node_1|replace({\"/en/\": \"/es/\"})|raw }}\">{{ title }}</a></h2>\r\n      {% if field_summary is empty %} \r\n       {{ body }}\r\n      {% else %}\r\n       {{field_summary}}\r\n      {% endif %}<span class=\"see-more\"><a href=\"{{ view_node_1|replace({\"/en/\": \"/es/\"})|raw }}\">Ver más información</a></span>\r\n    </div>\r\n  </div>\r\n</div>"
       title: Noticias
   default:
     display_options:
