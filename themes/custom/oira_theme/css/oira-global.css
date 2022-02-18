@@ -1053,6 +1053,12 @@ a:hover {
   margin-left: auto;
 }
 
+/* Captions - MDR-4122 */
+.field--name-field-caption {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
 /* Share this on articles icons */
 #share-this-on {
   padding-top: 0;
@@ -1221,6 +1227,7 @@ select.custom-select {
 .view-news .views-row img {
   width: 100%;
   height: auto;
+  margin-bottom: 0;
 }
 .view-news .views-row:nth-child(even) {
   background-color: #FFF;
@@ -1292,8 +1299,11 @@ select.custom-select {
 
 /* End news detail */
 /**** Promotional Resources Search View ***/
-.page-view-promotional-resources-search .field--name-field-media-image img {
+.page-view-promotional-resources-search .field--name-field-media-image {
   border: 1px solid #808080;
+}
+.page-view-promotional-resources-search .field--name-field-media-image img {
+  margin-bottom: 0;
 }
 .page-view-promotional-resources-search .form-item-sort-by .form-select {
   background-color: transparent !important;
@@ -1622,6 +1632,9 @@ select.custom-select {
 }
 
 /* OiRA Tools View */
+.page-view-oira-ws .field--type-image img {
+  margin-bottom: 0;
+}
 .page-view-oira-ws .form-item-sort-by .js-form-type-select {
   display: flex;
   flex-wrap: nowrap;
