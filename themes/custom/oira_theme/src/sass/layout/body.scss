@@ -77,6 +77,12 @@ a{
   margin-left: auto;
 }
 
+/* Captions - MDR-4122 */
+.field--name-field-caption{
+  font-size: 10px;
+  padding-top: 5px;
+}
+
 /* Share this on articles icons */
 #share-this-on{
   padding-top: 0;
@@ -254,6 +260,7 @@ select.custom-select{
     img{
       width: 100%;
       height: auto;
+      margin-bottom: 0;
     }
   }
   .views-row:nth-child(even){
@@ -345,8 +352,9 @@ select.custom-select{
 /**** Promotional Resources Search View ***/
 .page-view-promotional-resources-search {
   .field--name-field-media-image {
+    border: 1px solid $bg-color-grey;
     img {
-      border: 1px solid $bg-color-grey;
+      margin-bottom: 0;
     }
   }
   .form-item-sort-by .form-select {
@@ -692,6 +700,11 @@ select.custom-select{
 
 /* OiRA Tools View */
 .page-view-oira-ws{
+  .field--type-image{
+    img{
+      margin-bottom: 0;
+    }
+  }
   .form-item-sort-by {
     .js-form-type-select {
       display: flex;
