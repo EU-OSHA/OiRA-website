@@ -5,8 +5,8 @@ smtp_port: '25'
 smtp_protocol: tls
 smtp_autotls: true
 smtp_timeout: 30
-smtp_username: oira_admin
-smtp_password: 4b21s1Z27R4R27c
+smtp_username: ''
+smtp_password: ''
 smtp_from: ''
 smtp_fromname: ''
 smtp_client_hostname: ''

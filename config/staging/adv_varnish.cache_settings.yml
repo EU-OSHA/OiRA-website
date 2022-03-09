@@ -1,0 +1,19 @@
+general:
+  varnish_purger: true
+  varnish_server: 'https://test.oiraproject.eu'
+  purger_maintenance_mode: false
+  logging: '1'
+  debug: '0'
+  noise: ''
+  secret: 962659e1c7ad3a2e71a6a8e24e0ab2b8dcf0e62a64ffce63dad3e971fb6de07d
+  grace: '10'
+  page_cache_maximum_age: '3600'
+available:
+  enable_cache: true
+  authenticated_users: false
+  esi: false
+  esi_purge_user_blocks: false
+  excluded_urls: ''
+cache_control:
+  anonymous: ''
+  authenticated: ''
