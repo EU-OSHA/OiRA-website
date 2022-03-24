@@ -13,6 +13,13 @@
     }
   };
 
+  //@ MRD 4929 ("Access the tool" link)
+  if (typeof _paq != 'undefined') {
+    $('.tool-link > a').click(function (e) {
+      let path = jQuery(this).attr('href');
+      _paq.push(['trackEvent', 'Tool', 'Click', path]);
+    });
+  }
 
   /**** Show Hide Results Text in search ***/
 if ($('body').find('#edit-search-api-fulltext--2').length>0) {
