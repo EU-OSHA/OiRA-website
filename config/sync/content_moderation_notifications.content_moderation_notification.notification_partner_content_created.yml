@@ -8,7 +8,6 @@ transitions:
   creating_final_draft: creating_final_draft
 roles:
   administrator: administrator
-  partner: partner
   oira_project_manager: oira_project_manager
   oira_supervisor: oira_supervisor
 author: true
