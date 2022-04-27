@@ -11,7 +11,6 @@ transitions:
   from_published_to_draft: from_published_to_draft
 roles:
   administrator: administrator
-  partner: partner
   oira_project_manager: oira_project_manager
   oira_supervisor: oira_supervisor
 author: false

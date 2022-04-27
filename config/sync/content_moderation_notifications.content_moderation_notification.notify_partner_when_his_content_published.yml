@@ -10,7 +10,6 @@ transitions:
 roles:
   administrator: administrator
   editor: editor
-  partner: partner
   oira_supervisor: oira_supervisor
 author: true
 site_mail: false
