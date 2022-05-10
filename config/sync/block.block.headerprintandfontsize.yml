@@ -18,16 +18,16 @@ plugin: 'block_content:bae9f851-0b15-4563-aa19-3729a45b19a6'
 settings:
   id: 'block_content:bae9f851-0b15-4563-aa19-3729a45b19a6'
   label: 'Header (print and font size)'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null

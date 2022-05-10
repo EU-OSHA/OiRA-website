@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: xu0yG13sSQJcXrOJJqsn44W_hUWAIFHVlphrzxT2ycU
 page_title: 'Site map'
 message:
   value: "<div class=\"container page-title-container\">\r\n<h1 class=\"page-header\">Site map</h1>\r\n</div>"
@@ -394,5 +396,3 @@ plugins:
       title: Workbench
       show_disabled: false
 include_css: true
-_core:
-  default_config_hash: xu0yG13sSQJcXrOJJqsn44W_hUWAIFHVlphrzxT2ycU

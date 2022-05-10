@@ -2,8 +2,8 @@ uuid: 0b29e688-f2f9-4ea5-a630-921d2e2a83ea
 langcode: en
 status: true
 dependencies: {  }
-id: rop_and_scale_1170x350
 label: 'Gallery cover'
+id: rop_and_scale_1170x350
 description: ''
 aspect_ratio: ''
 soft_limit_width: 1170

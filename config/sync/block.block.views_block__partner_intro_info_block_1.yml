@@ -19,24 +19,20 @@ plugin: 'views_block:partner_intro_info-block_1'
 settings:
   id: 'views_block:partner_intro_info-block_1'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: "/node/*/edit\r\n/node/add/news\r\n/node/add/practical-tool\r\n/node/add/promotional-material"
     negate: true
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion: {  }
+    pages: "/node/*/edit\r\n/node/add/news\r\n/node/add/practical-tool\r\n/node/add/promotional-material"
   node_type:
     id: node_type
-    bundles:
-      partner: partner
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      partner: partner

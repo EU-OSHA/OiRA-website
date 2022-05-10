@@ -30,24 +30,24 @@ bundle: news
 mode: default
 content:
   addtoany:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
   body:
-    label: hidden
     type: text_default
-    weight: 5
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 5
     region: content
   content_moderation_control:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_image:
-    weight: 4
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: news_detail
@@ -61,23 +61,23 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_entity_view
+    weight: 4
     region: content
   field_publication_date:
-    weight: 0
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
       format_type: day_only
     third_party_settings: {  }
-    type: datetime_default
+    weight: 0
     region: content
   field_summary:
-    weight: 3
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
 hidden:
   breadcrumbs: true

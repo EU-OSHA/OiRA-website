@@ -18,13 +18,13 @@ plugin: 'block_content:530896a3-eedf-4925-8faf-5a475074432c'
 settings:
   id: 'block_content:530896a3-eedf-4925-8faf-5a475074432c'
   label: 'Header View Promotional Resources Types'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /promotional-resources
     negate: false
+    pages: /promotional-resources

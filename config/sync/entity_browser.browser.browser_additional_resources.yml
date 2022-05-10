@@ -20,12 +20,12 @@ widget_selector: single
 widget_selector_configuration: {  }
 widgets:
   cc98f03a-e3c2-4927-bbbc-3f93ce8fa049:
+    id: view
+    uuid: cc98f03a-e3c2-4927-bbbc-3f93ce8fa049
+    label: 'Additional Resources'
+    weight: 1
     settings:
-      view: aditional_resources
-      view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false
-    uuid: cc98f03a-e3c2-4927-bbbc-3f93ce8fa049
-    weight: 1
-    label: 'Additional Resources'
-    id: view
+      view: aditional_resources
+      view_display: entity_browser_1

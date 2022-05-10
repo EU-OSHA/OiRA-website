@@ -36,32 +36,32 @@ bundle: practical_tool
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 2
     region: content
   content_moderation_control:
-    weight: -20
     settings: {  }
     third_party_settings: {  }
+    weight: -20
     region: content
   field_image:
     type: media_thumbnail
-    weight: 0
-    region: content
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-  links:
-    weight: 1
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   addtoany: true
   breadcrumbs: true

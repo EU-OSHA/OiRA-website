@@ -19,19 +19,19 @@ plugin: 'views_exposed_filter_block:oira_ws-tools_ws'
 settings:
   id: 'views_exposed_filter_block:oira_ws-tools_ws'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /oira-tools
     negate: false
+    pages: /oira-tools

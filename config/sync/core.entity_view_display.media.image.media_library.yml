@@ -20,20 +20,20 @@ mode: media_library
 content:
   field_caption:
     type: text_default
-    weight: 1
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   thumbnail:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
+      image_style: medium
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   breadcrumbs: true
   created: true

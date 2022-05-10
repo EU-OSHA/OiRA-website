@@ -19,21 +19,21 @@ plugin: 'block_content:cd9b92e3-ce4f-4cf2-9181-00a54e461d18'
 settings:
   id: 'block_content:cd9b92e3-ce4f-4cf2-9181-00a54e461d18'
   label: 'Your Profile'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/Partners/*'
     negate: false
+    pages: '/Partners/*'
   user_role:
     id: user_role
-    roles:
-      editor: editor
-      partner: partner
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      editor: editor
+      partner: partner

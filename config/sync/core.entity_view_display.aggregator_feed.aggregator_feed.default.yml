@@ -13,11 +13,11 @@ mode: default
 content:
   checked:
     type: timestamp_ago
-    weight: 1
-    region: content
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    label: inline
+    weight: 1
+    region: content
   description:
     weight: 3
     region: content
@@ -32,14 +32,16 @@ content:
     region: content
   link:
     type: uri_link
-    weight: 4
-    region: content
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    label: inline
+    weight: 4
+    region: content
 hidden:
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   langcode: true
   more_link: true
+  search_api_excerpt: true

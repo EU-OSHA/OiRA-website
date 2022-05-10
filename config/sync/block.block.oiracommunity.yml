@@ -18,21 +18,21 @@ plugin: 'system_menu_block:oira-community'
 settings:
   id: 'system_menu_block:oira-community'
   label: 'Oira Community'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /oira-community
     negate: false
+    pages: /oira-community

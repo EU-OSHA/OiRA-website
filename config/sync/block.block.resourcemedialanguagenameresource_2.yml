@@ -18,11 +18,11 @@ plugin: 'facet_block:resource_media_language_name_resource'
 settings:
   id: 'facet_block:resource_media_language_name_resource'
   label: Language
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: resourcemedialanguagenameresource_2
 visibility:
   request_path:
     id: request_path
-    pages: "/promotional-resources-search/*\r\n/promotional-resources-search"
     negate: false
+    pages: "/promotional-resources-search/*\r\n/promotional-resources-search"

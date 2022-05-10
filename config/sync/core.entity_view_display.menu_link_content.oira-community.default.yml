@@ -14,7 +14,7 @@ bundle: oira-community
 mode: default
 content:
   field_image:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: default
@@ -33,9 +33,10 @@ content:
         destination: link
         advanced: {  }
         token: ''
-    type: entity_reference_entity_view
+    weight: 0
     region: content
 hidden:
+  breadcrumbs: true
   children: true
   entity_print_view_epub: true
   entity_print_view_pdf: true

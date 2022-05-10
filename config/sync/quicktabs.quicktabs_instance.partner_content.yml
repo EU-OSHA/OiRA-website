@@ -5,13 +5,13 @@ dependencies: {  }
 id: partner_content
 label: 'Partner Content'
 renderer: quick_tabs
-options:
-  quick_tabs:
-    class: ''
-    style: ''
-    ajax: false
 hide_empty_tabs: false
 default_tab: 0
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: ''
 configuration_data:
   -
     title: 'Show all'

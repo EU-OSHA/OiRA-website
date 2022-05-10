@@ -11,15 +11,16 @@ bundle: collaboration
 mode: default
 content:
   field_image:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 0
     region: content
 hidden:
+  breadcrumbs: true
   children: true
   entity_print_view_epub: true
   entity_print_view_pdf: true

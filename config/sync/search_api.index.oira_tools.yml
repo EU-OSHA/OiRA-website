@@ -2,11 +2,6 @@ uuid: 07f6a43a-00d1-4959-9d33-59517df60293
 langcode: en
 status: true
 dependencies:
-  module:
-    - search_api_solr
-    - taxonomy
-    - node
-    - search_api
   config:
     - field.storage.node.field_alternative_body
     - field.storage.node.field_co_author
@@ -25,24 +20,26 @@ dependencies:
     - field.storage.node.field_tool_link
     - field.storage.node.field_tool_type
     - search_api.server.apachesolr
+  module:
+    - search_api_solr
+    - taxonomy
+    - node
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
-    multilingual:
-      limit_to_content_language: false
-      include_language_independent: true
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
       regex:
         slop: 0.5
         pattern: blank
         maxAnalyzedChars: 10000
-      usePhraseHighlighter: true
-      highlightMultiTerm: true
-      preserveMulti: false
       highlight:
         mergeContiguous: false
         requireFieldMatch: false
@@ -66,6 +63,9 @@ third_party_settings:
       index_prefix: ''
       collection: ''
       timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
 id: oira_tools
 name: 'OiRA Tools'
 description: ''
@@ -345,6 +345,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
 server: apachesolr

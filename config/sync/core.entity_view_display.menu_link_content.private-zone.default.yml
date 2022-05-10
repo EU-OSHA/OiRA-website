@@ -10,11 +10,12 @@ bundle: private-zone
 mode: default
 content:
   children:
-    weight: 1
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

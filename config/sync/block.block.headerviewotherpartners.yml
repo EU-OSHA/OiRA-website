@@ -19,21 +19,21 @@ plugin: 'block_content:0476c546-67e8-41f0-9f70-fc807b7829df'
 settings:
   id: 'block_content:0476c546-67e8-41f0-9f70-fc807b7829df'
   label: 'Header view Other Partners'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /others-partners
     negate: false
+    pages: /others-partners

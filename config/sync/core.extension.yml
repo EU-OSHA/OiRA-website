@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   webform_clientside_validation: -1
   action: 0
@@ -204,5 +206,3 @@ theme:
   oira_theme: 0
   claro: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

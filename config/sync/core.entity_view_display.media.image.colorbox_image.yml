@@ -15,8 +15,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
 id: media.image.colorbox_image
@@ -25,6 +25,7 @@ bundle: image
 mode: colorbox_image
 content:
   field_media_image:
+    type: colorbox
     label: visually_hidden
     settings:
       colorbox_node_style: medium_thumbnail_mc_525_x_360_
@@ -42,13 +43,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: colorbox
     weight: 0
     region: content
   name:
     type: string
-    weight: 1
-    region: content
     label: visually_hidden
     settings:
       link_to_entity: false
@@ -60,6 +58,8 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 1
+    region: content
 hidden:
   breadcrumbs: true
   created: true

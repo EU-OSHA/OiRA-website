@@ -19,21 +19,21 @@ plugin: 'block_content:d8ae632b-2569-4a81-81f4-ea0738801202'
 settings:
   id: 'block_content:d8ae632b-2569-4a81-81f4-ea0738801202'
   label: 'Private zone - Edit profile'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/node/*/edit'
     negate: false
+    pages: '/node/*/edit'
   user_role:
     id: user_role
-    roles:
-      editor: editor
-      partner: partner
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      editor: editor
+      partner: partner

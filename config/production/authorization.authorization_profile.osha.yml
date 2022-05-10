@@ -4,9 +4,7 @@ status: true
 dependencies: {  }
 id: osha
 label: Osha
-description: null
 provider: ldap_provider
-consumer: authorization_drupal_roles
 provider_config:
   status:
     server: osha
@@ -32,6 +30,7 @@ provider_mappings:
   -
     query: ''
     is_regex: false
+consumer: authorization_drupal_roles
 consumer_config: {  }
 consumer_mappings:
   -
@@ -49,5 +48,6 @@ consumer_mappings:
 synchronization_modes:
   user_logon: user_logon
 synchronization_actions:
-  revoke_provider_provisioned: revoke_provider_provisioned
   create_consumers: create_consumers
+  revoke_provider_provisioned: revoke_provider_provisioned
+description: null

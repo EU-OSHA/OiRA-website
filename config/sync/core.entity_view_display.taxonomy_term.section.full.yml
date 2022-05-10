@@ -11,29 +11,30 @@ dependencies:
     - text
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: taxonomy_term.section.full
 targetEntityType: taxonomy_term
 bundle: section
 mode: full
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 1
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_ldap_section_code:
-    weight: 0
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

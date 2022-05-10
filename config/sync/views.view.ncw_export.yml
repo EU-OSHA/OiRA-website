@@ -13,52 +13,11 @@ base_table: json
 base_field: ''
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: none
-        options: {  }
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          json_file: 'https://test.oiraproject.eu/ncw-export/news'
-          row_apath: item
-          headers: '{"Content-Type":"application/json"}'
-          show_errors: 1
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          offset: 0
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
-      row:
-        type: fields
-        options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
       fields:
         value:
           id: value
@@ -67,6 +26,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: views_json_source_field
           label: ''
           exclude: false
           alter:
@@ -109,9 +71,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           key: nid
-          entity_type: null
-          entity_field: null
-          plugin_id: views_json_source_field
         value_1:
           id: value_1
           table: json
@@ -119,6 +78,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: views_json_source_field
           label: ''
           exclude: false
           alter:
@@ -161,14 +121,54 @@ display:
           empty_zero: false
           hide_alter_empty: true
           key: changed
-          plugin_id: views_json_source_field
-      filters: {  }
+      pager:
+        type: none
+        options:
+          offset: 0
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
       sorts: {  }
+      arguments: {  }
+      filters: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          json_file: 'https://test.oiraproject.eu/ncw-export/news'
+          row_apath: item
+          headers: '{"Content-Type":"application/json"}'
+          show_errors: 1
+      relationships: {  }
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -176,9 +176,9 @@ display:
         - 'languages:language_interface'
       tags: {  }
   page_1:
-    display_plugin: page
     id: page_1
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

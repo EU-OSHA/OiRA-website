@@ -11,12 +11,12 @@ pattern: 'Partners/[node:title]'
 selection_criteria:
   acb072b7-1ff3-44e9-b1b9-2d20de235dbb:
     id: node_type
-    bundles:
-      partner: partner
     negate: false
+    uuid: acb072b7-1ff3-44e9-b1b9-2d20de235dbb
     context_mapping:
       node: node
-    uuid: acb072b7-1ff3-44e9-b1b9-2d20de235dbb
+    bundles:
+      partner: partner
 selection_logic: and
 weight: -5
 relationships: {  }

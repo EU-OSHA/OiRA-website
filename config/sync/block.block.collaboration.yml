@@ -18,21 +18,13 @@ plugin: 'system_menu_block:collaboration'
 settings:
   id: 'system_menu_block:collaboration'
   label: Collaboration
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
-  request_path_exclusion:
-    id: request_path_exclusion
-    pages: ''
-    negate: true
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/private-zone/collaboration-area/*\r\n"
     negate: false
+    pages: "/private-zone/collaboration-area/*\r\n"

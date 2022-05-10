@@ -19,16 +19,16 @@ mode: default
 content:
   field_language:
     type: languagefield_default
-    weight: 0
-    region: content
     label: above
     settings:
       link_to_entity: false
       format:
         name: name
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_link:
-    weight: 1
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -37,11 +37,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
   field_media_file:
+    type: file_default
     label: visually_hidden
-    weight: 2
     settings:
       use_description_as_link_text: true
     third_party_settings:
@@ -52,7 +52,7 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: file_default
+    weight: 2
     region: content
 hidden:
   breadcrumbs: true

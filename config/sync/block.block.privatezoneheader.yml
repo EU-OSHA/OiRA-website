@@ -20,29 +20,21 @@ plugin: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
 settings:
   id: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
   label: 'Private zone header'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
-  request_path_exclusion:
-    id: request_path_exclusion
-    pages: ''
-    negate: true
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/node/*/edit"
     negate: false
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/node/*/edit"
   user_role:
     id: user_role
-    roles:
-      editor: editor
-      partner: partner
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      editor: editor
+      partner: partner

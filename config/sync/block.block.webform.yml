@@ -19,21 +19,21 @@ plugin: webform_block
 settings:
   id: webform_block
   label: Webform
-  provider: webform
   label_display: '0'
+  provider: webform
   webform_id: contact_us
   default_data: ''
   redirect: false
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /node/58
     negate: false
+    pages: /node/58

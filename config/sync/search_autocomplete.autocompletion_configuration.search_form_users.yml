@@ -1,12 +1,11 @@
-uuid: ec7762ab-d559-4904-8775-c9a5d665d5a6
-langcode: en
-status: true
-dependencies: {  }
 _core:
   default_config_hash: g9NCIjKoz0Dn_IvvhopquSEzIXLlP7zRFEy_27ZxZYA
+langcode: en
 id: search_form_users
+uuid: ec7762ab-d559-4904-8775-c9a5d665d5a6
 label: 'Search Form (users tab)'
 selector: ''
+status: true
 minChar: 3
 autoSubmit: true
 autoRedirect: true
@@ -21,3 +20,4 @@ source: 'autocompletion_callbacks_users::users_autocompletion_callback'
 theme: basic-blue.css
 editable: true
 deletable: false
+dependencies: {  }

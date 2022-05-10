@@ -20,16 +20,16 @@ plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 2
   expand_all_items: true
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null

@@ -18,18 +18,14 @@ plugin: page_title_block
 settings:
   id: page_title_block
   label: 'Page title'
-  provider: core
   label_display: '0'
+  provider: core
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/node/*/edit"
     negate: true
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion: {  }
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/node/*/edit"
   request_path:
     id: request_path
-    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/promotional-resources\r\n/national-partners\r\n/sectoral-social-partners\r\n/others-partners\r\n/irat-network\r\n/oira-faqs\r\n/news"
     negate: true
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/promotional-resources\r\n/national-partners\r\n/sectoral-social-partners\r\n/others-partners\r\n/irat-network\r\n/oira-faqs\r\n/news"

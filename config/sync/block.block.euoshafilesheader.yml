@@ -18,13 +18,13 @@ plugin: 'block_content:59f9f1c0-8475-4592-baa4-3c0a39475ab0'
 settings:
   id: 'block_content:59f9f1c0-8475-4592-baa4-3c0a39475ab0'
   label: 'EU-OSHA Files header'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/private-zone/collaboration-area/*\r\n/private-zone/collaboration-area"
     negate: false
+    pages: "/private-zone/collaboration-area/*\r\n/private-zone/collaboration-area"
