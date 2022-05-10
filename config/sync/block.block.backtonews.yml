@@ -18,13 +18,13 @@ plugin: 'block_content:46b98142-2d6d-42b4-a5b2-f871acd087f8'
 settings:
   id: 'block_content:46b98142-2d6d-42b4-a5b2-f871acd087f8'
   label: 'Back to news'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/news/*'
     negate: false
+    pages: '/news/*'

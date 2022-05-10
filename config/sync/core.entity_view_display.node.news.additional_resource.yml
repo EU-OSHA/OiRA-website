@@ -31,42 +31,42 @@ bundle: news
 mode: additional_resource
 content:
   body:
-    label: above
     type: text_default
-    weight: 3
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   content_moderation_control:
-    weight: -20
     settings: {  }
     third_party_settings: {  }
+    weight: -20
     region: content
   field_image:
     type: media_thumbnail
-    weight: 0
-    region: content
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_publication_date:
-    weight: 1
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
       format_type: day_only
     third_party_settings: {  }
-    type: datetime_default
+    weight: 1
     region: content
   field_summary:
     type: text_default
-    weight: 2
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   addtoany: true
   breadcrumbs: true

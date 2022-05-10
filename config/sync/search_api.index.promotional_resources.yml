@@ -2,14 +2,6 @@ uuid: c131b57c-a008-4760-8181-295a1ba4f812
 langcode: en
 status: true
 dependencies:
-  module:
-    - search_api_solr
-    - node
-    - taxonomy
-    - path
-    - media
-    - file
-    - search_api
   config:
     - field.storage.node.field_country
     - field.storage.taxonomy_term.field_iso2
@@ -32,24 +24,29 @@ dependencies:
     - field.storage.media.field_link_image
     - field.storage.node.field_revised_date
     - search_api.server.apachesolr
+  module:
+    - search_api_solr
+    - node
+    - taxonomy
+    - path
+    - media
+    - file
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
-    multilingual:
-      limit_to_content_language: false
-      include_language_independent: true
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
       regex:
         slop: 0.5
         pattern: blank
         maxAnalyzedChars: 10000
-      usePhraseHighlighter: true
-      highlightMultiTerm: true
-      preserveMulti: false
       highlight:
         mergeContiguous: false
         requireFieldMatch: false
@@ -73,6 +70,9 @@ third_party_settings:
       index_prefix: ''
       collection: ''
       timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
 id: promotional_resources
 name: 'Promotional resources'
 description: ''
@@ -479,6 +479,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
 server: apachesolr

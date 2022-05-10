@@ -16,18 +16,18 @@ plugin: page_title_block
 settings:
   id: page_title_block
   label: 'Page title for private zone options'
-  provider: core
   label_display: '0'
+  provider: core
 visibility:
   request_path:
     id: request_path
-    pages: "Partners/*\r\noira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n"
     negate: false
+    pages: "Partners/*\r\noira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n"
   user_role:
     id: user_role
-    roles:
-      editor: editor
-      partner: partner
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      editor: editor
+      partner: partner

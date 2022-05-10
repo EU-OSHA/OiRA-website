@@ -19,22 +19,22 @@ plugin: 'block_content:73bce426-af39-4c4e-b9c3-3e29dc4cc125'
 settings:
   id: 'block_content:73bce426-af39-4c4e-b9c3-3e29dc4cc125'
   label: 'Back in private zone'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/private-zone/*\r\n/private-zone/collaboration-area/*\r\n/private-zone/collaboration-area/private-images/*\r\n/node/add/promotional_material\r\n/node/add/practical_tool\r\n/node/add/news\r\n/node/*/edit"
     negate: false
+    pages: "/private-zone/*\r\n/private-zone/collaboration-area/*\r\n/private-zone/collaboration-area/private-images/*\r\n/node/add/promotional_material\r\n/node/add/practical_tool\r\n/node/add/news\r\n/node/*/edit"
   user_role:
     id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
     roles:
       administrator: administrator
       editor: editor
       partner: partner
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

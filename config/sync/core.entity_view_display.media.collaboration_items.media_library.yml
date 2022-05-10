@@ -21,30 +21,28 @@ mode: media_library
 content:
   field_col_item_desc:
     type: text_default
-    weight: 1
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_col_item_label:
     type: string
-    weight: 0
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_col_item_links:
     type: link_separate
-    weight: 3
-    region: content
     label: above
     settings:
       trim_length: null
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings:
       ds:
         ft:
@@ -53,17 +51,17 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 3
+    region: content
   field_media_file_1:
     type: file_download_link
-    weight: 2
-    region: content
     label: above
     settings:
       link_text: ''
-      force_download: true
       link_title: ''
-      custom_classes: ''
       new_tab: false
+      force_download: true
+      custom_classes: ''
     third_party_settings:
       ds:
         ds_limit: ''
@@ -73,6 +71,8 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 2
+    region: content
 hidden:
   breadcrumbs: true
   created: true

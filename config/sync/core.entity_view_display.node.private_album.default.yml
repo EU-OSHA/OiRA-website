@@ -15,16 +15,15 @@ bundle: private_album
 mode: default
 content:
   field_multiple_sector:
-    weight: 103
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 103
     region: content
   field_private_images:
     type: entity_reference_entity_view
-    weight: 102
     label: hidden
     settings:
       view_mode: colorbox_image
@@ -38,12 +37,13 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 102
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
   addtoany: true
   breadcrumbs: true

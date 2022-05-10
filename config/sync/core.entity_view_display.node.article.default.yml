@@ -35,36 +35,36 @@ bundle: article
 mode: default
 content:
   addtoany:
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
   body:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
-    label: hidden
   content_moderation_control:
-    weight: -20
     settings: {  }
     third_party_settings: {  }
+    weight: -20
     region: content
   field_recommended_articles:
-    weight: 3
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 3
     region: content
   field_summary_article:
-    weight: 0
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 0
     region: content
 hidden:
   breadcrumbs: true

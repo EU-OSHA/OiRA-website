@@ -18,28 +18,28 @@ bundle: collaboration_items
 mode: default
 content:
   field_col_item_desc:
-    weight: 1
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_col_item_label:
-    weight: 0
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_media_file_1:
+    type: file_download_link
     label: hidden
-    weight: 2
     settings:
       link_text: '[media:name]'
+      link_title: ''
       new_tab: true
       force_download: true
-      link_title: ''
       custom_classes: ''
     third_party_settings:
       ds:
@@ -50,7 +50,7 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: file_download_link
+    weight: 2
     region: content
 hidden:
   breadcrumbs: true

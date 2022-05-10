@@ -32,8 +32,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   ds:
     layout:
       id: layout_onecol
@@ -53,10 +53,10 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: false
           wrapper: h1
           class: page-title
           exclude_node_title: '1'
-          link: false
         ft:
           id: minimal
           settings:
@@ -72,8 +72,7 @@ mode: header_view
 content:
   body:
     type: text_default
-    weight: 1
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings:
       ds:
@@ -83,7 +82,13 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    label: hidden
+    weight: 1
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
 hidden:
   addtoany: true
   breadcrumbs: true

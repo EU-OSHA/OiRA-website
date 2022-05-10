@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: UU4O0O7HBps8GkqpeZWeDF8nYdKkhMXJC7QScWXjVMA
 site_id: '33'
 url_http: 'http://piwik.osha.europa.eu/piwik/'
 url_https: 'https://piwik.osha.europa.eu/piwik/'
@@ -23,30 +25,30 @@ privacy:
 custom:
   variable:
     1:
+      slot: 1
       name: Activity
       value: '3.1 OiRA'
       scope: page
-      slot: 1
     2:
-      name: ''
-      value: ''
-      scope: page
       slot: 2
+      name: ''
+      value: ''
+      scope: page
     3:
-      name: ''
-      value: ''
-      scope: page
       slot: 3
-    4:
       name: ''
       value: ''
       scope: page
+    4:
       slot: 4
+      name: ''
+      value: ''
+      scope: page
     5:
+      slot: 5
       name: Language
       value: '[node:field_language]'
       scope: page
-      slot: 5
 codesnippet:
   before: ''
   after: ''
@@ -54,5 +56,3 @@ translation_set: false
 cache: false
 page_title_hierarchy: false
 page_title_hierarchy_exclude_home: true
-_core:
-  default_config_hash: UU4O0O7HBps8GkqpeZWeDF8nYdKkhMXJC7QScWXjVMA

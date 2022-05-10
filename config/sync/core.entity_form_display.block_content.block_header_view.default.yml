@@ -11,11 +11,11 @@ bundle: block_header_view
 mode: default
 content:
   field_article_header:
+    type: options_select
     weight: 26
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   info:
     type: string_textfield
     weight: -5
@@ -30,5 +30,10 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

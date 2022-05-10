@@ -19,20 +19,20 @@ plugin: 'views_block:oshwiki_featured_articles-oshwiki_related_articles'
 settings:
   id: 'views_block:oshwiki_featured_articles-oshwiki_related_articles'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /what-risk-assessment
     negate: false
+    pages: /what-risk-assessment

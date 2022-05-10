@@ -11,8 +11,8 @@ dependencies:
     - field.field.node.strategic_documentation.field_workbench_access
     - taxonomy.vocabulary.section
 id: partner
-label: Partner
 plural_label: Partners
+label: Partner
 scheme: taxonomy
 scheme_settings:
   vocabularies:

@@ -5,6 +5,7 @@ dependencies: {  }
 id: staging
 label: Staging
 description: ''
+weight: 0
 folder: sites/oira/config/staging
 module:
   adv_varnish: 0
@@ -127,4 +128,3 @@ graylist:
   - ultimate_cron.job.matomo_cron
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

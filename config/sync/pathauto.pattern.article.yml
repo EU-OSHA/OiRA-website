@@ -11,6 +11,10 @@ pattern: '[node:title]'
 selection_criteria:
   94434da7-7928-4e4a-9a35-9b8d2b3d3ecb:
     id: node_type
+    negate: false
+    uuid: 94434da7-7928-4e4a-9a35-9b8d2b3d3ecb
+    context_mapping:
+      node: node
     bundles:
       article: article
       certificates: certificates
@@ -22,10 +26,6 @@ selection_criteria:
       promotional_material: promotional_material
       slide: slide
       wiki_page: wiki_page
-    negate: false
-    context_mapping:
-      node: node
-    uuid: 94434da7-7928-4e4a-9a35-9b8d2b3d3ecb
 selection_logic: and
 weight: -5
 relationships:

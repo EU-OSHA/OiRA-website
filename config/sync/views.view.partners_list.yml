@@ -34,51 +34,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: none
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          offset: 0
-      style:
-        type: html_list
-        options:
-          grouping: {  }
-          row_class: partner__item
-          default_row_class: true
-          type: ul
-          wrapper_class: partners__wrapper
-          class: partners__list
-      row:
-        type: fields
+      title: 'Sectorial partners'
       fields:
         field_orgtype:
           id: field_orgtype
@@ -87,6 +48,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -142,7 +104,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         nid:
           id: nid
           table: node_field_data
@@ -150,6 +111,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -206,9 +170,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: nid
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -216,6 +177,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -271,9 +235,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         title_1:
           id: title_1
           table: node_field_data
@@ -281,6 +242,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -336,9 +300,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         field_logo:
           id: field_logo
           table: node__field_logo
@@ -346,6 +307,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -390,8 +352,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: media_library
             image_link: content
+            image_style: media_library
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -402,7 +364,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_country:
           id: field_country
           table: node__field_country
@@ -410,6 +371,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -465,7 +427,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -473,6 +434,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -514,30 +476,68 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
+      pager:
+        type: none
+        options:
+          offset: 0
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: none
+        options: {  }
+      empty: {  }
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: title
+          exposed: false
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            partner: partner
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            partner: partner
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -548,6 +548,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             22: 22
@@ -581,31 +582,30 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: partner_types
+          type: select
           hierarchy: true
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-      title: 'Sectorial partners'
-      header: {  }
-      footer: {  }
-      empty: {  }
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: partner__item
+          default_row_class: true
+          type: ul
+          wrapper_class: partners__wrapper
+          class: partners__list
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         field_orgtype:
           id: field_orgtype
@@ -614,11 +614,12 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_orgtype: Taxonomy term'
-          required: false
           plugin_id: standard
-      arguments: {  }
-      display_extenders: {  }
+          required: false
       css_class: hwc-alpha-pager-view
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -632,139 +633,12 @@ display:
         - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_orgtype'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: 'Others partners'
+    display_plugin: page
     position: 8
     display_options:
-      display_extenders: {  }
-      display_description: ''
       title: 'Other partners'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        relationships: false
-        sorts: false
-        css_class: false
-        style: false
-        row: false
-        fields: false
-        query: false
-        cache: false
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            partner: partner
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        field_partner_type_target_id:
-          id: field_partner_type_target_id
-          table: node__field_partner_type
-          field: field_partner_type_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            1214: 1214
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: partner_types
-          hierarchy: true
-          error_message: true
-          plugin_id: taxonomy_index_tid
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      relationships:
-        field_country:
-          id: field_country
-          table: node__field_country
-          field: field_country
-          relationship: none
-          group_type: group
-          admin_label: 'field_country: Taxonomy term'
-          required: false
-          plugin_id: standard
-      sorts:
-        field_country_target_id:
-          id: field_country_target_id
-          table: node__field_country
-          field: field_country_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      css_class: 'view-oira-partners container'
-      rendering_language: '***LANGUAGE_language_interface***'
-      style:
-        type: html_list
-        options:
-          grouping: {  }
-          row_class: partner__item
-          default_row_class: true
-          type: ul
-          wrapper_class: partners__wrapper
-          class: partners__list
-      row:
-        type: fields
-        options: {  }
       fields:
         field_orgtype:
           id: field_orgtype
@@ -773,6 +647,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -828,7 +703,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         name:
           id: name
           table: taxonomy_term_field_data
@@ -836,6 +710,9 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: ''
           exclude: true
           alter:
@@ -892,9 +769,6 @@ display:
           separator: ', '
           field_api_classes: false
           convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
         field_flag:
           id: field_flag
           table: taxonomy_term__field_flag
@@ -902,6 +776,7 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -946,8 +821,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
             image_link: ''
+            image_style: thumbnail
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -958,7 +833,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         nid:
           id: nid
           table: node_field_data
@@ -966,6 +840,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1022,9 +899,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: nid
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -1032,6 +906,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1087,9 +964,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         view_node:
           id: view_node
           table: node
@@ -1097,6 +971,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -1141,8 +1017,6 @@ display:
           text: view
           output_url_as_text: true
           absolute: false
-          entity_type: node
-          plugin_id: entity_link
         title_1:
           id: title_1
           table: node_field_data
@@ -1150,6 +1024,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1205,9 +1082,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         field_logo:
           id: field_logo
           table: node__field_logo
@@ -1215,6 +1089,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1259,8 +1134,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: medium
             image_link: ''
+            image_style: medium
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -1271,7 +1146,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_country:
           id: field_country
           table: node__field_country
@@ -1279,6 +1153,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1334,7 +1209,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         node_type_flagger:
           id: node_type_flagger
           table: node
@@ -1342,6 +1216,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: node_type_flagger
           label: ''
           exclude: true
           alter:
@@ -1384,8 +1260,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           node_type: partner
-          entity_type: node
-          plugin_id: node_type_flagger
         nothing:
           id: nothing
           table: views
@@ -1393,6 +1267,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -1434,83 +1309,46 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: true
-          replica: false
-          query_comment: ''
-          query_tags: null
-      path: others-partners
-      menu:
-        type: none
-        title: 'Other partners'
-        description: ''
-        expanded: false
-        parent: ''
-        weight: -42
-        context: '0'
-        menu_name: main
       cache:
         type: tag
         options: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_country'
-        - 'config:field.storage.node.field_logo'
-        - 'config:field.storage.node.field_orgtype'
-        - 'config:field.storage.taxonomy_term.field_flag'
-  page_2:
-    display_plugin: page
-    id: page_2
-    display_title: IRAT
-    position: 6
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: IRAT
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        relationships: false
-        sorts: false
-        style: false
-        row: false
-        fields: false
-        query: false
-        css_class: false
+      sorts:
+        field_country_target_id:
+          id: field_country_target_id
+          table: node__field_country
+          field: field_country_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_country_target_id
+          exposed: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            partner: partner
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            partner: partner
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1521,9 +1359,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
-            263: 263
+            1214: 1214
           group: 1
           exposed: false
           expose:
@@ -1554,47 +1393,19 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: partner_types
+          type: select
           hierarchy: true
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
-      relationships:
-        field_country:
-          id: field_country
-          table: node__field_country
-          field: field_country
-          relationship: none
-          group_type: group
-          admin_label: 'field_country: Taxonomy term'
-          required: false
-          plugin_id: standard
-      sorts:
-        field_country_target_id:
-          id: field_country_target_id
-          table: node__field_country
-          field: field_country_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
       style:
         type: html_list
         options:
-          grouping:
-            -
-              field: name
-              rendered: true
-              rendered_strip: false
+          grouping: {  }
           row_class: partner__item
           default_row_class: true
           type: ul
@@ -1603,7 +1414,69 @@ display:
       row:
         type: fields
         options: {  }
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: null
+      defaults:
+        cache: false
+        query: false
+        title: false
+        css_class: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships:
+        field_country:
+          id: field_country
+          table: node__field_country
+          field: field_country
+          relationship: none
+          group_type: group
+          admin_label: 'field_country: Taxonomy term'
+          plugin_id: standard
+          required: false
+      css_class: 'view-oira-partners container'
+      display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: others-partners
+      menu:
+        type: none
+        title: 'Other partners'
+        description: ''
+        weight: -42
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.node.field_orgtype'
+        - 'config:field.storage.taxonomy_term.field_flag'
+  page_2:
+    id: page_2
+    display_title: IRAT
+    display_plugin: page
+    position: 6
+    display_options:
+      title: IRAT
       fields:
         field_flag:
           id: field_flag
@@ -1612,6 +1485,7 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1656,8 +1530,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
             image_link: ''
+            image_style: thumbnail
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1668,7 +1542,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         name:
           id: name
           table: taxonomy_term_field_data
@@ -1676,6 +1549,9 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: ''
           exclude: true
           alter:
@@ -1732,9 +1608,6 @@ display:
           separator: ', '
           field_api_classes: false
           convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
         field_orgtype:
           id: field_orgtype
           table: node__field_orgtype
@@ -1742,6 +1615,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1797,7 +1671,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         nid:
           id: nid
           table: node_field_data
@@ -1805,6 +1678,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1861,9 +1737,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: nid
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -1871,6 +1744,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -1926,9 +1802,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         view_node:
           id: view_node
           table: node
@@ -1936,6 +1809,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -1980,8 +1855,6 @@ display:
           text: view
           output_url_as_text: true
           absolute: false
-          entity_type: node
-          plugin_id: entity_link
         title_1:
           id: title_1
           table: node_field_data
@@ -1989,6 +1862,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -2044,9 +1920,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         field_logo:
           id: field_logo
           table: node__field_logo
@@ -2054,6 +1927,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -2098,8 +1972,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: medium
             image_link: ''
+            image_style: medium
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -2110,7 +1984,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -2118,6 +1991,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: custom
           label: ''
           exclude: true
           alter:
@@ -2159,7 +2033,6 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
         node_type_flagger:
           id: node_type_flagger
           table: node
@@ -2167,6 +2040,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: node_type_flagger
           label: ''
           exclude: true
           alter:
@@ -2209,8 +2084,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           node_type: partner
-          entity_type: node
-          plugin_id: node_type_flagger
         nothing_1:
           id: nothing_1
           table: views
@@ -2218,6 +2091,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -2259,83 +2133,43 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: true
-          replica: false
-          query_comment: ''
-          query_tags: null
-      path: irat-network
-      menu:
-        type: none
-        title: 'IRAT partners'
-        description: ''
-        expanded: false
-        parent: ''
-        weight: -43
-        context: '0'
-        menu_name: main
-      css_class: 'view-oira-partners container hwc-alpha-pager-view'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_logo'
-        - 'config:field.storage.node.field_orgtype'
-        - 'config:field.storage.taxonomy_term.field_flag'
-  page_3:
-    display_plugin: page
-    id: page_3
-    display_title: 'OiRA National partners details'
-    position: 5
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'OiRA National partners'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        relationships: false
-        sorts: false
-        css_class: false
-        fields: false
-        arguments: false
-        group_by: false
-        query: false
-        header: false
-        style: false
-        row: false
+      sorts:
+        field_country_target_id:
+          id: field_country_target_id
+          table: node__field_country
+          field: field_country_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_country_target_id
+          exposed: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            partner: partner
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            partner: partner
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2346,9 +2180,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
-            262: 262
+            263: 263
           group: 1
           exposed: false
           expose:
@@ -2378,17 +2213,51 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: true
-          type: select
-          limit: true
+          reduce_duplicates: false
           vid: partner_types
+          type: select
           hierarchy: true
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      style:
+        type: html_list
+        options:
+          grouping:
+            -
+              field: name
+              rendered: true
+              rendered_strip: false
+          row_class: partner__item
+          default_row_class: true
+          type: ul
+          wrapper_class: partners__wrapper
+          class: partners__list
+      row:
+        type: fields
+        options: {  }
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: null
+      defaults:
+        query: false
+        title: false
+        css_class: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        filters: false
+        filter_groups: false
       relationships:
         field_country:
           id: field_country
@@ -2397,22 +2266,40 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_country: Taxonomy term'
-          required: true
           plugin_id: standard
-      sorts:
-        field_country_target_id:
-          id: field_country_target_id
-          table: node__field_country
-          field: field_country_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      css_class: 'view-oira-partners view-oira-national-partners-page container'
+          required: false
+      css_class: 'view-oira-partners container hwc-alpha-pager-view'
+      display_description: ''
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: irat-network
+      menu:
+        type: none
+        title: 'IRAT partners'
+        description: ''
+        weight: -43
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.node.field_orgtype'
+        - 'config:field.storage.taxonomy_term.field_flag'
+  page_3:
+    id: page_3
+    display_title: 'OiRA National partners details'
+    display_plugin: page
+    position: 5
+    display_options:
+      title: 'OiRA National partners'
       fields:
         field_flag:
           id: field_flag
@@ -2421,6 +2308,7 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -2465,8 +2353,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
             image_link: ''
+            image_style: thumbnail
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -2477,7 +2365,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         name:
           id: name
           table: taxonomy_term_field_data
@@ -2485,6 +2372,9 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: ''
           exclude: true
           alter:
@@ -2541,9 +2431,6 @@ display:
           separator: ', '
           field_api_classes: false
           convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
         field_orgtype:
           id: field_orgtype
           table: node__field_orgtype
@@ -2551,6 +2438,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -2606,7 +2494,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         nid:
           id: nid
           table: node_field_data
@@ -2614,6 +2501,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -2670,9 +2560,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: nid
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -2680,6 +2567,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -2735,9 +2625,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         view_node:
           id: view_node
           table: node
@@ -2745,6 +2632,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -2789,8 +2678,6 @@ display:
           text: view
           output_url_as_text: true
           absolute: false
-          entity_type: node
-          plugin_id: entity_link
         field_logo:
           id: field_logo
           table: node__field_logo
@@ -2798,6 +2685,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -2842,8 +2730,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: medium
             image_link: ''
+            image_style: medium
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -2854,7 +2742,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         node_type_flagger:
           id: node_type_flagger
           table: node
@@ -2862,6 +2749,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: node_type_flagger
           label: ''
           exclude: true
           alter:
@@ -2904,8 +2793,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           node_type: partner
-          entity_type: node
-          plugin_id: node_type_flagger
         nothing:
           id: nothing
           table: views
@@ -2913,6 +2800,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -2954,101 +2842,44 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
+      sorts:
+        field_country_target_id:
+          id: field_country_target_id
+          table: node__field_country
+          field: field_country_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_country_target_id
+          exposed: false
       arguments: {  }
-      group_by: false
-      rendering_language: '***LANGUAGE_language_interface***'
-      path: national-partners
-      menu:
-        type: none
-        title: 'OiRA National partners'
-        description: ''
-        expanded: false
-        parent: 'menu_link_content:944658e1-3c00-481d-abf9-de4af9d3433f'
-        weight: 1
-        context: '0'
-        menu_name: main
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: true
-          replica: false
-          query_comment: ''
-          query_tags: null
-      header: {  }
-      style:
-        type: html_list
-        options:
-          grouping:
-            -
-              field: name
-              rendered: true
-              rendered_strip: false
-          row_class: partner__item
-          default_row_class: true
-          type: ul
-          wrapper_class: item-list
-          class: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_logo'
-        - 'config:field.storage.node.field_orgtype'
-        - 'config:field.storage.taxonomy_term.field_flag'
-  page_4:
-    display_plugin: page
-    id: page_4
-    display_title: 'Sectorial partners'
-    position: 7
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      css_class: 'view-oira-partners view-oira-national-partners-page container'
-      defaults:
-        css_class: false
-        filters: false
-        filter_groups: false
-        style: false
-        row: false
-        query: false
-        fields: false
-        relationships: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            partner: partner
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            partner: partner
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3059,9 +2890,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
-            284: 284
+            262: 262
           group: 1
           exposed: false
           expose:
@@ -3091,13 +2923,12 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
+          reduce_duplicates: true
           vid: partner_types
+          type: select
           hierarchy: true
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
@@ -3105,34 +2936,88 @@ display:
       style:
         type: html_list
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: name
+              rendered: true
+              rendered_strip: false
           row_class: partner__item
           default_row_class: true
           type: ul
-          wrapper_class: partners__wrapper
-          class: partners__list
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
-        options: {  }
-      rendering_language: '***LANGUAGE_language_interface***'
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
+          query_comment: ''
           disable_sql_rewrite: false
           distinct: true
           replica: false
-          query_comment: ''
           query_tags: null
-      path: sectoral-social-partners
+      defaults:
+        query: false
+        title: false
+        css_class: false
+        group_by: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      relationships:
+        field_country:
+          id: field_country
+          table: node__field_country
+          field: field_country
+          relationship: none
+          group_type: group
+          admin_label: 'field_country: Taxonomy term'
+          plugin_id: standard
+          required: true
+      css_class: 'view-oira-partners view-oira-national-partners-page container'
+      group_by: false
+      display_description: ''
+      header: {  }
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: national-partners
       menu:
         type: none
-        title: 'EU sectoral social dialogue'
+        title: 'OiRA National partners'
         description: ''
+        weight: 1
         expanded: false
-        parent: ''
-        weight: -40
-        context: '0'
         menu_name: main
+        parent: 'menu_link_content:944658e1-3c00-481d-abf9-de4af9d3433f'
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.node.field_orgtype'
+        - 'config:field.storage.taxonomy_term.field_flag'
+  page_4:
+    id: page_4
+    display_title: 'Sectorial partners'
+    display_plugin: page
+    position: 7
+    display_options:
       fields:
         name:
           id: name
@@ -3141,6 +3026,9 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: ''
           exclude: true
           alter:
@@ -3197,9 +3085,6 @@ display:
           separator: ', '
           field_api_classes: false
           convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
         field_flag:
           id: field_flag
           table: taxonomy_term__field_flag
@@ -3207,6 +3092,7 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -3251,8 +3137,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
             image_link: ''
+            image_style: thumbnail
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -3263,7 +3149,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_orgtype:
           id: field_orgtype
           table: node__field_orgtype
@@ -3271,6 +3156,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -3326,7 +3212,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         nid:
           id: nid
           table: node_field_data
@@ -3334,6 +3219,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -3390,9 +3278,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: nid
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -3400,6 +3285,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -3455,9 +3343,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         view_node:
           id: view_node
           table: node
@@ -3465,6 +3350,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -3509,8 +3396,6 @@ display:
           text: view
           output_url_as_text: true
           absolute: false
-          entity_type: node
-          plugin_id: entity_link
         title_1:
           id: title_1
           table: node_field_data
@@ -3518,6 +3403,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -3573,9 +3461,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         field_logo:
           id: field_logo
           table: node__field_logo
@@ -3583,6 +3468,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -3627,8 +3513,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: medium
             image_link: ''
+            image_style: medium
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -3639,7 +3525,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_country:
           id: field_country
           table: node__field_country
@@ -3647,6 +3532,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -3702,7 +3588,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         node_type_flagger:
           id: node_type_flagger
           table: node
@@ -3710,6 +3595,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: node_type_flagger
           label: ''
           exclude: true
           alter:
@@ -3752,8 +3639,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           node_type: partner
-          entity_type: node
-          plugin_id: node_type_flagger
         nothing:
           id: nothing
           table: views
@@ -3761,6 +3646,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -3802,7 +3688,111 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            partner: partner
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_partner_type_target_id:
+          id: field_partner_type_target_id
+          table: node__field_partner_type
+          field: field_partner_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            284: 284
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: partner_types
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: partner__item
+          default_row_class: true
+          type: ul
+          wrapper_class: partners__wrapper
+          class: partners__list
+      row:
+        type: fields
+        options: {  }
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: null
+      defaults:
+        query: false
+        css_class: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        filters: false
+        filter_groups: false
       relationships:
         field_country:
           id: field_country
@@ -3811,8 +3801,22 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_country: Taxonomy term'
-          required: false
           plugin_id: standard
+          required: false
+      css_class: 'view-oira-partners view-oira-national-partners-page container'
+      display_description: ''
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: sectoral-social-partners
+      menu:
+        type: none
+        title: 'EU sectoral social dialogue'
+        description: ''
+        weight: -40
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

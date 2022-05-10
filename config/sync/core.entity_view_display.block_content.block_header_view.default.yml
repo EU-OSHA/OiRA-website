@@ -11,15 +11,16 @@ bundle: block_header_view
 mode: default
 content:
   field_article_header:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: header_view
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 0
     region: content
 hidden:
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
