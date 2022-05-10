@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: hjgcuHpcsme6SW-7MKpZm3bhnR76f1yX2Y8Xe0STesw
 drupalAcctProvisionServer: osha
 ldapEntryProvisionServer: osha_write
 drupalAcctProvisionTriggers:
@@ -5,15 +7,13 @@ drupalAcctProvisionTriggers:
   - drupal_on_update_create
 ldapEntryProvisionTriggers:
   - ldap_on_update_create
-userUpdateCronQuery: none
-userUpdateCronInterval: always
 orphanedDrupalAcctBehavior: user_cancel_block
 orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
 userConflictResolve: resolve
 manualAccountConflict: conflict_associate
 acctCreation: ldap_behaviour
-ldapUserSyncMappings: {  }
-_core:
-  default_config_hash: hjgcuHpcsme6SW-7MKpZm3bhnR76f1yX2Y8Xe0STesw
 disableAdminPasswordField: false
+userUpdateCronQuery: none
+userUpdateCronInterval: always
+ldapUserSyncMappings: {  }
