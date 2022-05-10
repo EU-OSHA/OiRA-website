@@ -17,29 +17,29 @@ type_settings:
   states:
     draft:
       label: Draft
-      published: false
-      default_revision: false
       weight: -3
-    final_draft:
       published: false
       default_revision: false
+    final_draft:
       label: 'Final Draft'
       weight: -2
-    needs_review:
       published: false
       default_revision: false
+    needs_review:
       label: 'To Be Reviewed'
       weight: -1
-    published:
-      label: Published
-      published: true
-      default_revision: true
-      weight: 1
-    to_be_approved:
       published: false
       default_revision: false
+    published:
+      label: Published
+      weight: 1
+      published: true
+      default_revision: true
+    to_be_approved:
       label: 'To Be Approved'
       weight: 0
+      published: false
+      default_revision: false
   transitions:
     creating_final_draft:
       label: 'Creating Final Draft'
@@ -157,10 +157,10 @@ type_settings:
       weight: 4
     publish:
       label: 'Publishing Draft'
-      to: published
-      weight: -5
       from:
         - draft
+      to: published
+      weight: -5
     publishing:
       label: 'Publishing Approved Draft'
       from:

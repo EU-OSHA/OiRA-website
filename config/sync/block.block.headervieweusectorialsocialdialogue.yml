@@ -19,21 +19,21 @@ plugin: 'block_content:9efa7896-6851-409b-9711-3af1f228d770'
 settings:
   id: 'block_content:9efa7896-6851-409b-9711-3af1f228d770'
   label: 'Header view EU Sectorial Social Dialogue'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /sectoral-social-partners
     negate: false
+    pages: /sectoral-social-partners

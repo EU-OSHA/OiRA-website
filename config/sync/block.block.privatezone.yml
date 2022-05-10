@@ -19,29 +19,21 @@ plugin: 'system_menu_block:private-zone'
 settings:
   id: 'system_menu_block:private-zone'
   label: 'Private zone'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
-  request_path_exclusion:
-    id: request_path_exclusion
-    pages: ''
-    negate: true
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/*/edit\r\n/node/add/*\r\n/node/*/view-profile\r\n"
     negate: false
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/*/edit\r\n/node/add/*\r\n/node/*/view-profile\r\n"
   user_role:
     id: user_role
-    roles:
-      editor: editor
-      partner: partner
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      editor: editor
+      partner: partner

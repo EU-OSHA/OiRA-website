@@ -19,21 +19,21 @@ plugin: 'block_content:c1393ca9-9dde-48bc-91ba-36326a12047c'
 settings:
   id: 'block_content:c1393ca9-9dde-48bc-91ba-36326a12047c'
   label: 'PZ Hide Menu'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/Partners/*'
     negate: false
+    pages: '/Partners/*'
   user_role:
     id: user_role
-    roles:
-      editor: editor
-      partner: partner
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      editor: editor
+      partner: partner

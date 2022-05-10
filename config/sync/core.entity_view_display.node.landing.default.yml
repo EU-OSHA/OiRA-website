@@ -11,15 +11,17 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
     enabled: true
+    allow_custom: true
 id: node.landing.default
 targetEntityType: node
 bundle: landing
 mode: default
 content: {  }
 hidden:
+  addtoany: true
   body: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

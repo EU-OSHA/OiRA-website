@@ -14,20 +14,21 @@ mode: default
 content:
   field_file:
     type: entity_reference_entity_view
-    weight: 101
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

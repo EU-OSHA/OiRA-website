@@ -2,8 +2,8 @@ uuid: 14c217d4-91cb-4c33-b248-8a2beefc00fa
 langcode: en
 status: true
 dependencies: {  }
-id: manualcrop
 label: ManualCrop
+id: manualcrop
 description: ''
 aspect_ratio: ''
 soft_limit_width: null

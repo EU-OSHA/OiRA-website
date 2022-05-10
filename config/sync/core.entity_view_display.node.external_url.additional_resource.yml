@@ -16,28 +16,29 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.external_url.additional_resource
 targetEntityType: node
 bundle: external_url
 mode: additional_resource
 content:
   field_external_url:
-    weight: 0
+    type: link
     label: hidden
     settings:
       trim_length: 80
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings: {  }
-    type: link
+    weight: 0
     region: content
 hidden:
   addtoany: true
   body: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

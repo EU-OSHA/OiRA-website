@@ -17,19 +17,19 @@ plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
-  provider: core
   label_display: '0'
+  provider: core
   primary: true
   secondary: true
 visibility:
   user_role:
     id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
     roles:
       anonymous: anonymous
       administrator: administrator
       oira_project_manager: oira_project_manager
       oira_supervisor: oira_supervisor
       superadministrator: superadministrator
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

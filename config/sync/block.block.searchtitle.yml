@@ -18,13 +18,13 @@ plugin: 'block_content:4fe65a73-522b-45ee-8fd6-f0376058dfa0'
 settings:
   id: 'block_content:4fe65a73-522b-45ee-8fd6-f0376058dfa0'
   label: 'Search title'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /search/site
     negate: false
+    pages: /search/site

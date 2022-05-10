@@ -2,8 +2,8 @@ uuid: 1489d7a3-47ca-489c-9612-5e0d9543e36f
 langcode: en
 status: true
 dependencies: {  }
-id: custom_crop_259x259_
 label: 'News list and node'
+id: custom_crop_259x259_
 description: ''
 aspect_ratio: ''
 soft_limit_width: 259

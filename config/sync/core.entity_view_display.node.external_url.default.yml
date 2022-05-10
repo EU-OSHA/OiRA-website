@@ -21,21 +21,21 @@ bundle: external_url
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_external_url:
-    weight: 0
+    type: link
     label: inline
     settings:
       trim_length: null
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings:
       ds:
         ft:
@@ -44,22 +44,22 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: link
+    weight: 0
     region: content
   field_image:
-    weight: 2
+    type: media_thumbnail
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: media_thumbnail
+    weight: 2
     region: content
   links:
-    weight: 3
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   addtoany: true
   breadcrumbs: true

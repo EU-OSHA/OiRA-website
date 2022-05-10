@@ -37,39 +37,39 @@ bundle: promotional_material
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   content_moderation_control:
-    weight: -20
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: -20
+    region: content
   field_co_author:
-    weight: 6
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 6
     region: content
   field_country:
-    weight: 9
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 9
     region: content
   field_image:
-    weight: 1
+    type: media_thumbnail
     label: above
     settings:
-      image_style: generic_thumb_image_mc_large_
       image_link: ''
+      image_style: generic_thumb_image_mc_large_
     third_party_settings:
       ds:
         ds_limit: ''
@@ -79,81 +79,81 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: media_thumbnail
+    weight: 1
     region: content
   field_image_home_latest_material:
     type: entity_reference_entity_view
-    weight: 11
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 11
     region: content
   field_oira:
-    weight: 3
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 3
     region: content
   field_promotional_material_type:
-    weight: 5
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 5
     region: content
   field_publication_date:
-    weight: 4
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 4
     region: content
   field_related_partners:
-    weight: 12
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 12
     region: content
   field_resource_fc:
     type: entity_reference_entity_view
-    weight: 8
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 8
     region: content
   field_resource_file:
-    weight: 15
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 15
     region: content
   field_resource_language:
-    weight: 13
+    type: languagefield_default
     label: above
     settings:
       link_to_entity: false
       format:
         name: name
     third_party_settings: {  }
-    type: languagefield_default
+    weight: 13
     region: content
   field_resource_link:
-    weight: 14
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -162,32 +162,32 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 14
     region: content
   field_revised_date:
-    weight: 7
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 7
     region: content
   field_wf_notification:
-    weight: 10
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 10
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   addtoany: true
   breadcrumbs: true

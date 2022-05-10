@@ -17,22 +17,22 @@ plugin: addtoany_block
 settings:
   id: addtoany_block
   label: 'AddToAny buttons'
-  provider: addtoany
   label_display: '0'
+  provider: addtoany
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: "/oira-community\r\n/node/58\r\n/page-not-found"
     negate: null
+    pages: "/oira-community\r\n/node/58\r\n/page-not-found"
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   node_type:
     id: node_type
-    bundles:
-      article: article
-      news: news
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      news: news

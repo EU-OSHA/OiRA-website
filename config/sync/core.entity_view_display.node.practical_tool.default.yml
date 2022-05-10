@@ -40,13 +40,14 @@ third_party_settings:
     group_image:
       children:
         - field_image
+      label: Image
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: oita-tool-image
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -54,7 +55,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: Image
     group_content:
       children:
         - field_publication_date
@@ -65,13 +65,14 @@ third_party_settings:
         - field_related_partners
         - field_co_author_node
         - field_third_partner_node
+      label: Content
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: oita-tool-content
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -79,66 +80,65 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: Content
 id: node.practical_tool.default
 targetEntityType: node
 bundle: practical_tool
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_co_author_node:
-    weight: 9
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: related_partner
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 9
     region: content
   field_country:
-    weight: 6
+    type: entity_reference_label
     label: above
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 6
     region: content
   field_image:
-    weight: 1
+    type: media_thumbnail
     label: hidden
     settings:
-      image_style: media_library
       image_link: ''
+      image_style: media_library
     third_party_settings: {  }
-    type: media_thumbnail
+    weight: 1
     region: content
   field_language:
-    weight: 5
+    type: languagefield_default
     label: above
     settings:
       link_to_entity: false
       format:
         name: name
     third_party_settings: {  }
-    type: languagefield_default
+    weight: 5
     region: content
   field_publication_date:
-    weight: 2
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
       format_type: day_only
     third_party_settings: {  }
-    type: datetime_default
+    weight: 2
     region: content
   field_related_partners:
-    weight: 8
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: oira_partner
@@ -151,10 +151,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_entity_view
+    weight: 8
     region: content
   field_third_partner_node:
-    weight: 10
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: related_partner
@@ -167,10 +167,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_entity_view
+    weight: 10
     region: content
   field_tool_link:
-    weight: 7
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -179,7 +179,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 7
     region: content
 hidden:
   addtoany: true

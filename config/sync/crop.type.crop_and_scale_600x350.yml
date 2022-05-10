@@ -2,8 +2,8 @@ uuid: 89245cde-9aa1-4f37-928f-9e1a25a44e02
 langcode: en
 status: true
 dependencies: {  }
-id: crop_and_scale_600x350
 label: 'Generic thumb image MC (large)'
+id: crop_and_scale_600x350
 description: ''
 aspect_ratio: ''
 soft_limit_width: 600

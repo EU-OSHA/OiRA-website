@@ -20,12 +20,12 @@ widget_selector: single
 widget_selector_configuration: {  }
 widgets:
   a7961c38-b8a9-4cc4-b408-1d17a2f9d883:
+    id: view
+    uuid: a7961c38-b8a9-4cc4-b408-1d17a2f9d883
+    label: 'Recommended articles'
+    weight: 1
     settings:
-      view: articles
-      view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false
-    uuid: a7961c38-b8a9-4cc4-b408-1d17a2f9d883
-    weight: 1
-    label: 'Recommended articles'
-    id: view
+      view: articles
+      view_display: entity_browser_1

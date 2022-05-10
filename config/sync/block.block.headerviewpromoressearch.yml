@@ -18,13 +18,13 @@ plugin: 'block_content:17369ec5-44ba-453b-9ed1-dfa64c9a8524'
 settings:
   id: 'block_content:17369ec5-44ba-453b-9ed1-dfa64c9a8524'
   label: 'Header View Promo-res Search'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/promotional-resources-search\r\n/promotional-resources-search/*\r\n/promotional-resources-search?*"
     negate: false
+    pages: "/promotional-resources-search\r\n/promotional-resources-search/*\r\n/promotional-resources-search?*"

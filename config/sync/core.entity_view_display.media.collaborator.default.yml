@@ -15,31 +15,32 @@ bundle: collaborator
 mode: default
 content:
   field_collaborator_name:
-    weight: 2
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_media_image:
-    label: visually_hidden
-    weight: 1
-    settings:
-      image_style: large
-      image_link: ''
-    third_party_settings: {  }
     type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+    third_party_settings: {  }
+    weight: 1
     region: content
   name:
     type: string
-    weight: 0
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
+  breadcrumbs: true
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true

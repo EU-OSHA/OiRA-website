@@ -11,12 +11,12 @@ pattern: 'private-zone/collaboration-area/private-images/[node:title]'
 selection_criteria:
   4015375e-d57c-4b2d-8310-22791173aef4:
     id: node_type
-    bundles:
-      private_album: private_album
     negate: false
+    uuid: 4015375e-d57c-4b2d-8310-22791173aef4
     context_mapping:
       node: node
-    uuid: 4015375e-d57c-4b2d-8310-22791173aef4
+    bundles:
+      private_album: private_album
 selection_logic: and
 weight: -5
 relationships: {  }

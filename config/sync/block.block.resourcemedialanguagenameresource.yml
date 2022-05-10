@@ -19,19 +19,19 @@ plugin: 'facet_block:resource_media_language_name_resource'
 settings:
   id: 'facet_block:resource_media_language_name_resource'
   label: Language
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: resourcemedialanguagenameresource
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: '/promotional-resources-search/*'
     negate: false
+    pages: '/promotional-resources-search/*'

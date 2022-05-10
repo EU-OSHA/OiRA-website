@@ -20,21 +20,19 @@ bundle: slide
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
     type: media_thumbnail
-    weight: 0
-    region: content
     label: above
     settings:
-      image_style: article_image
       image_link: ''
+      image_style: article_image
     third_party_settings:
       linked_field:
         linked: '1'
@@ -42,13 +40,16 @@ content:
         destination: field_link
         advanced: {  }
         token: ''
-  links:
-    weight: 1
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

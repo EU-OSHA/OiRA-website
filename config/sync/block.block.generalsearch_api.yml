@@ -17,8 +17,8 @@ plugin: 'block_content:6f2adf4b-a9e5-428b-9768-76a7bcbebb98'
 settings:
   id: 'block_content:6f2adf4b-a9e5-428b-9768-76a7bcbebb98'
   label: 'General search_api'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

@@ -2,8 +2,8 @@ uuid: 64503b9c-905a-47b1-a1ad-577a528d4b8b
 langcode: en
 status: true
 dependencies: {  }
-id: _custom_crop_555x367
 label: 'Latest news (Home page)'
+id: _custom_crop_555x367
 description: ''
 aspect_ratio: ''
 soft_limit_width: 555

@@ -19,20 +19,12 @@ plugin: 'views_block:news-block_1'
 settings:
   id: 'views_block:news-block_1'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
-  request_path_exclusion:
-    id: request_path_exclusion
-    pages: ''
-    negate: true
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /node/450
     negate: false
+    pages: /node/450

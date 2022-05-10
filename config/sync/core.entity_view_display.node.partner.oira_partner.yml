@@ -34,8 +34,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   ds:
     layout:
       id: layout_twocol_section
@@ -86,13 +86,13 @@ mode: oira_partner
 content:
   field_logo:
     type: media_thumbnail
-    weight: 0
-    region: first
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
+    weight: 0
+    region: first
 hidden:
   addtoany: true
   breadcrumbs: true
