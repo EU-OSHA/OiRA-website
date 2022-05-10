@@ -1,0 +1,29 @@
+uuid: 1133c0e8-6d62-418e-88de-75386f924486
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country_taxonomy_term_name_promo_resources
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: countrytaxonomytermnamepromoresources
+theme: oira_theme
+region: sidebar_first
+weight: -21
+provider: null
+plugin: 'facet_block:country_taxonomy_term_name_promo_resources'
+settings:
+  id: 'facet_block:country_taxonomy_term_name_promo_resources'
+  label: Country
+  label_display: visible
+  provider: facets
+  block_id: countrytaxonomytermnamepromoresources
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/promotional-resources-search/*\r\n/promotional-resources-search"
