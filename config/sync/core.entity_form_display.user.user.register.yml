@@ -1,9 +1,9 @@
-uuid: c6e5589e-39d2-40b6-b443-fb025866562a
+uuid: ecc9a7af-acd4-4da7-9438-44104a057af6
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.user.compact
+    - core.entity_form_mode.user.register
     - field.field.user.user.field_cmw_mail_notifications
     - field.field.user.user.field_crm_guid
     - field.field.user.user.field_metatag
@@ -11,42 +11,52 @@ dependencies:
     - field.field.user.user.field_user_partner_guid
     - field.field.user.user.tmgmt_translation_skills
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
+    - path
+    - tmgmt_language_combination
     - user
-_core:
-  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
-id: user.user.compact
+id: user.user.register
 targetEntityType: user
 bundle: user
-mode: compact
+mode: register
 content:
-  masquerade:
+  account:
+    weight: -10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    weight: 50
+  contact:
+    weight: 5
     region: content
-  user_picture:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: thumbnail
+    settings: {  }
     third_party_settings: {  }
+  language:
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  matomo:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  tmgmt_translation_skills:
+    type: tmgmt_language_combination_default
+    weight: 31
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  breadcrumbs: true
-  entity_print_view_epub: true
-  entity_print_view_pdf: true
-  entity_print_view_word_docx: true
   field_cmw_mail_notifications: true
   field_crm_guid: true
   field_metatag: true
   field_phone: true
   field_user_partner_guid: true
   langcode: true
-  member_for: true
-  search_api_excerpt: true
-  tmgmt_translation_skills: true
+  user_picture: true
