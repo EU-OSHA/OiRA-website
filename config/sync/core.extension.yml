@@ -163,11 +163,18 @@ module:
   text: 0
   textfield_counter: 0
   tmgmt: 0
+  tmgmt_content: 0
+  tmgmt_file: 0
+  tmgmt_language_combination: 0
+  tmgmt_local: 0
   tmgmt_locale: 0
   token: 0
   toolbar: 0
   tour: 0
   translation_views: 0
+  translation_workflow: 0
+  translation_workflow_node_block: 0
+  translation_workflow_update: 0
   twig_tweak: 0
   ultimate_cron: 0
   update: 0
