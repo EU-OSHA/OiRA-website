@@ -8,6 +8,7 @@ dependencies:
     - field.field.user.user.field_metatag
     - field.field.user.user.field_phone
     - field.field.user.user.field_user_partner_guid
+    - field.field.user.user.tmgmt_translation_skills
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -79,3 +80,4 @@ hidden:
   field_metatag: true
   langcode: true
   search_api_excerpt: true
+  tmgmt_translation_skills: true
