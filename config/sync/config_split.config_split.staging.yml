@@ -9,21 +9,21 @@ weight: 0
 folder: sites/oira/config/staging
 module:
   adv_varnish: 0
-  hwc_crm_migration: 0
-  matomo: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  ncw_migration: 0
   authorization: 0
   authorization_drupal_roles: 0
+  hwc_crm_migration: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
+  matomo: 0
   memcache: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  ncw_migration: 0
 theme: {  }
 blacklist: {  }
 graylist:
@@ -31,6 +31,39 @@ graylist:
   - migrate_plus.migration.highlight
   - migrate_plus.migration.hwc_crm_partner
   - migrate_plus.migration.new
+  - migrate_plus.migration.wiki_page
+  - migrate_plus.migration.wiki_page_bg
+  - migrate_plus.migration.wiki_page_ca
+  - migrate_plus.migration.wiki_page_cs
+  - migrate_plus.migration.wiki_page_da
+  - migrate_plus.migration.wiki_page_de
+  - migrate_plus.migration.wiki_page_el
+  - migrate_plus.migration.wiki_page_es
+  - migrate_plus.migration.wiki_page_et
+  - migrate_plus.migration.wiki_page_fi
+  - migrate_plus.migration.wiki_page_fr
+  - migrate_plus.migration.wiki_page_hr
+  - migrate_plus.migration.wiki_page_hu
+  - migrate_plus.migration.wiki_page_is
+  - migrate_plus.migration.wiki_page_it
+  - migrate_plus.migration.wiki_page_lt
+  - migrate_plus.migration.wiki_page_lv
+  - migrate_plus.migration.wiki_page_mt
+  - migrate_plus.migration.wiki_page_nl
+  - migrate_plus.migration.wiki_page_no
+  - migrate_plus.migration.wiki_page_pl
+  - migrate_plus.migration.wiki_page_pt
+  - migrate_plus.migration.wiki_page_ro
+  - migrate_plus.migration.wiki_page_ru
+  - migrate_plus.migration.wiki_page_sk
+  - migrate_plus.migration.wiki_page_sl
+  - migrate_plus.migration.wiki_page_sv
+  - migrate_plus.migration.wiki_page_tr
+  - migrate_plus.migration_group.default
+  - migrate_plus.migration_group.hwc_crm_migration
+  - migrate_plus.migration_group.ncw_migration
+  - search_api.server.apachesolr
+  - ultimate_cron.job.matomo_cron
   - migrate_plus.migration.oira_menu
   - migrate_plus.migration.oira_menu_i18n
   - migrate_plus.migration.oira_node_article
@@ -86,45 +119,11 @@ graylist:
   - migrate_plus.migration.oira_taxonomy_tags_i18n
   - migrate_plus.migration.oira_taxonomy_wiki_categories
   - migrate_plus.migration.oira_taxonomy_wiki_categories_i18n
-  - migrate_plus.migration.wiki_page
-  - migrate_plus.migration.wiki_page_bg
-  - migrate_plus.migration.wiki_page_ca
-  - migrate_plus.migration.wiki_page_cs
-  - migrate_plus.migration.wiki_page_da
-  - migrate_plus.migration.wiki_page_de
-  - migrate_plus.migration.wiki_page_el
-  - migrate_plus.migration.wiki_page_es
-  - migrate_plus.migration.wiki_page_et
-  - migrate_plus.migration.wiki_page_fi
-  - migrate_plus.migration.wiki_page_fr
-  - migrate_plus.migration.wiki_page_hr
-  - migrate_plus.migration.wiki_page_hu
-  - migrate_plus.migration.wiki_page_is
-  - migrate_plus.migration.wiki_page_it
-  - migrate_plus.migration.wiki_page_lt
-  - migrate_plus.migration.wiki_page_lv
-  - migrate_plus.migration.wiki_page_mt
-  - migrate_plus.migration.wiki_page_nl
-  - migrate_plus.migration.wiki_page_no
-  - migrate_plus.migration.wiki_page_pl
-  - migrate_plus.migration.wiki_page_pt
-  - migrate_plus.migration.wiki_page_ro
-  - migrate_plus.migration.wiki_page_ru
-  - migrate_plus.migration.wiki_page_sk
-  - migrate_plus.migration.wiki_page_sl
-  - migrate_plus.migration.wiki_page_sv
-  - migrate_plus.migration.wiki_page_tr
-  - migrate_plus.migration_group.default
-  - migrate_plus.migration_group.hwc_crm_migration
-  - migrate_plus.migration_group.ncw_migration
   - migrate_plus.migration_group.oira_migrate
   - migrate_plus.migration_group.oira_migrate_media
   - migrate_plus.migration_group.oira_migrate_menus
   - migrate_plus.migration_group.oira_migrate_node
   - migrate_plus.migration_group.oira_migrate_tax
-  - search_api.server.apachesolr
-  - ultimate_cron.job.matomo_cron
-  - matomo.settings
-  - ultimate_cron.job.matomo_cron
+  - reroute_email.settings
 graylist_dependents: true
 graylist_skip_equal: true
