@@ -109,7 +109,6 @@ module:
   locale: 0
   mailsystem: 0
   masquerade: 0
-  matomo: 0
   media: 0
   media_library: 0
   media_library_form_element: 0
@@ -177,6 +176,7 @@ module:
   translation_workflow_update: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unpublish_redirects: 0
   update: 0
   url_redirect: 0
   user: 0
