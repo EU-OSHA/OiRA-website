@@ -177,6 +177,7 @@ module:
   translation_workflow_update: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unpublish_redirects: 0
   update: 0
   url_redirect: 0
   user: 0
