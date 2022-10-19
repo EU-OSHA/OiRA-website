@@ -3,7 +3,7 @@ _core:
 theme: current
 defaults:
   sender: SMTPMailSystem
-  formatter: webform_php_mail
+  formatter: SMTPMailSystem
 modules:
   swiftmailer:
     none:

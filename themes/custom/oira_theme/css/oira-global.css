@@ -1543,10 +1543,11 @@ select.custom-select {
 .page-view-promotional-resources-search main .views-row .partners-wrapper {
   display: none;
   padding: 15px;
-  color: #FFF;
+  color: #786586;
 }
 .page-view-promotional-resources-search main .views-row .partners-wrapper a {
-  color: #FFF;
+  color: #786586;
+  font-size: 0.9rem;
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper {
   display: flex;
@@ -1554,7 +1555,8 @@ select.custom-select {
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--img {
   width: 40%;
   padding: 15px;
-  background: #786586;
+  background: #FFF;
+  border-right: 1px solid #d2c7da;
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--img a {
   display: flex;
@@ -1568,12 +1570,18 @@ select.custom-select {
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--data {
   width: 60%;
   padding: 15px;
-  background: #786586;
+  background: #FFF;
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--data h4 {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  color: #786586;
+  font-style: normal;
+  line-height: 28.8px;
+  padding-bottom: 2rem;
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--data h4 a {
+  font-size: 1rem;
+  color: #786586;
   font-style: normal;
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper-co-author {
