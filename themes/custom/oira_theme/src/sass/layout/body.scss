@@ -607,10 +607,9 @@ select.custom-select{
       .partners-wrapper {
         display: none;
         padding: 15px;
-        color: $text-color-purple;
+        color: $text-color-white;
         a {
-          color: $text-color-purple;
-          font-size: 0.9rem;
+          color: $text-color-white;
         }
       }
       .partner-wrapper {
@@ -618,8 +617,7 @@ select.custom-select{
         .partner-inner-group--img {
           width: 40%;
           padding: 15px;
-          background: $bg-color-white;
-          border-right: 1px solid $bg-color-purple-light-3;
+          background: $bg-color-purple;
           a {
             display: flex;
             align-items: center;
@@ -633,16 +631,10 @@ select.custom-select{
         .partner-inner-group--data {
           width: 60%;
           padding: 15px;
-          background: $bg-color-white;
+          background: $bg-color-purple;
           h4 {
-            font-size: 1rem;
-            color: $text-color-purple;
-            font-style: normal;
-            line-height: 28.8px;
-            padding-bottom: 2rem;
+            font-size: 1.25rem;
             a {
-              font-size: 1rem;
-              color: $text-color-purple;
               font-style: normal;
             }
           }
