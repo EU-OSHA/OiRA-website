@@ -7,11 +7,6 @@ dependencies:
     - node.type.external_url
   module:
     - link
-    - linkchecker
-third_party_settings:
-  linkchecker:
-    scan: true
-    extractor: link_link_extractor
 id: node.external_url.field_external_url
 field_name: field_external_url
 entity_type: node
