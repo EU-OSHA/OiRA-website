@@ -11,7 +11,6 @@ module:
   adv_varnish: 0
   authorization: 0
   authorization_drupal_roles: 0
-  hwc_crm_migration: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
@@ -24,6 +23,7 @@ module:
   migrate_plus: 0
   migrate_tools: 0
   ncw_migration: 0
+  oira_crm_partners_migration: 0
 theme: {  }
 blacklist: {  }
 graylist:

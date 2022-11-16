@@ -1,14 +1,14 @@
-uuid: 1964f111-7cb6-4510-b565-28a02ddf7a0c
+uuid: c60e8462-8c6e-43e8-8fc0-ca10bbbb35cf
 langcode: en
 status: false
 dependencies:
   module:
-    - hwc_crm_migration
+    - oira_crm_partners_migration
 title: 'Default cron handler'
-id: hwc_crm_migration_cron
+id: oira_crm_partners_migration_cron
 weight: 0
-module: hwc_crm_migration
-callback: hwc_crm_migration_cron
+module: oira_crm_partners_migration
+callback: oira_crm_partners_migration_cron
 scheduler:
   id: simple
   configuration:
