@@ -5,5 +5,5 @@ dependencies: {  }
 id: fi
 label: Finnish
 direction: ltr
-weight: -5
+weight: 11
 locked: false
