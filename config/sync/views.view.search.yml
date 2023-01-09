@@ -3464,7 +3464,11 @@ display:
           entity_type: node
           plugin_id: search_api
       arguments: {  }
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            robots: noindex
+          tokenize: false
       filter_groups:
         operator: AND
         groups:

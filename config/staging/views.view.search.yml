@@ -3515,7 +3515,11 @@ display:
       defaults:
         cache: false
       exposed_block: true
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            robots: noindex
+          tokenize: false
       path: search/site
     cache_metadata:
       max-age: -1
