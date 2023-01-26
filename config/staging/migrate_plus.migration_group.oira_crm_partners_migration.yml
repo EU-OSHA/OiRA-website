@@ -1,4 +1,4 @@
-uuid: 4958fce5-5788-4139-a763-849997921024
+uuid: 5807fad1-0265-4383-8270-2a5726ecd901
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - oira_crm_partners_migration
 id: oira_crm_partners_migration
-label: 'Oira CRM Migration'
+label: 'oira CRM Migration'
 description: 'Migration of oira partners from CRM'
 source_type: XML
 module: null
