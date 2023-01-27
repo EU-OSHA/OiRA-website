@@ -1,4 +1,4 @@
-uuid: 717b3408-563c-4aad-9747-b1909937e564
+uuid: ff2a11ff-f466-40c4-9987-ff0214e2dd73
 langcode: en
 status: true
 dependencies:
@@ -51,10 +51,6 @@ source:
       name: field_logo
       label: field_logo
       selector: '@Textbox5'
-    -
-      name: field_logo_type
-      label: field_logo_type
-      selector: '@Textbox6'
     -
       name: field_orgtype
       label: field_orgtype
