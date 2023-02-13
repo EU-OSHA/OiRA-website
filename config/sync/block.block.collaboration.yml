@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.collaboration
   module:
-    - context
     - system
   theme:
     - oira_theme

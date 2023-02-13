@@ -1,8 +1,8 @@
 .site-footer{
   width: 100%;
   height: auto;
-  background-color: $bg-color-blue-light;
-  padding: 0 0 15px 0;
+  background-color: $bg-grey;
+  padding: 15px 0 15px 0;
   position: absolute;
   bottom: 0;
   .site-footer__bottom {
@@ -34,11 +34,17 @@
     ul{
       li{
         display: inline-block;
-        border-right: 2px solid $bg-color-white;
+        &:nth-child(4) {
+          display: none;
+        }
+        &:nth-child(5) {
+          display: inline-block;
+        }
         a{
           color: $text-color-white;
           font-weight: normal;
           font-style: normal;
+          padding: 0 10px 0 10px;
           padding: 0 10px 0 10px;
           &:hover{
             text-decoration: underline;
@@ -83,19 +89,7 @@
       }
     }
   }
-}
 
-.site-footer{
-  #block-footermenu {
-    ul li {
-      &:nth-child(4) {
-        display: none;
-      }
-      &:nth-child(5) {
-        display: inline-block;
-      }
-    }
-  }
 }
 
 .role-authenticated {

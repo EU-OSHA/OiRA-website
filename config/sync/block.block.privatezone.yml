@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.private-zone
   module:
-    - context
     - system
     - user
   theme:

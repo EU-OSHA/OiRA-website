@@ -1,6 +1,6 @@
 uuid: ffe83342-cd70-4655-91f3-537f089cd3b7
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: oira_theme_branding
 theme: oira_theme
-region: medium_header_logos
-weight: -26
+region: top_header_logos
+weight: -33
 provider: null
 plugin: system_branding_block
 settings:
