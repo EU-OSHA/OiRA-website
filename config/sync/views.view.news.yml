@@ -16,7 +16,6 @@ dependencies:
     - datetime
     - media
     - node
-    - pagerer
     - text
     - user
 id: news
@@ -222,7 +221,17 @@ display:
       relationships: {  }
       use_ajax: true
       header: {  }
-      footer: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '<div class="container">@start-@end/@total</div>'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -2217,7 +2226,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">{{ title }}</a></h2>\r\n      {% if field_summary is empty %} \r\n       {{ body }}\r\n      {% else %}\r\n       <p>{{field_summary}}</p>\r\n      {% endif %}<span class=\"see-more\"><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a></span>\r\n    </div>\r\n  </div>\r\n</div>"
+            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">{{ title }}</a></h2>\r\n      {% if field_summary is empty %} \r\n       <p>{{ body }}</p>\r\n      {% else %}\r\n       <p>{{field_summary}}</p>\r\n      {% endif %}<span class=\"see-more\"><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a></span>\r\n    </div>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -2255,21 +2264,26 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: pagerer
+        type: full
         options:
-          offset: 0
+          offset: 5
           items_per_page: 10
-          preset: custom_minimal
-          id: '0'
-          total_pages: ''
+          total_pages: null
+          id: 0
+          tags:
+            next: '>'
+            previous: '<'
+            first: '<<'
+            last: '>>'
           expose:
-            items_per_page: 0
+            items_per_page: false
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: 0
+            items_per_page_options_all: false
             items_per_page_options_all_label: '- All -'
-            offset: 0
+            offset: false
             offset_label: Offset
+          quantity: 5
       style:
         type: default
         options:
@@ -2303,7 +2317,10 @@ display:
           empty: false
           content: "<div class=\"container page-title-container\">\r\n<h1 class=\"page-header\">[view:title] </h1>\r\n</div>"
           tokenize: false
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: news
     cache_metadata:
       max-age: -1
