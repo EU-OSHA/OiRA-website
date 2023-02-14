@@ -70,6 +70,7 @@
   background: #FFF;
 }
 
+/**Pagination style - 2 colours required**/
 img {
   max-width: 100%;
   height: auto;
@@ -420,6 +421,54 @@ div.pagerer-right-pane {
   width: 70%;
 }
 
+/***New pagination**/
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+ul.pagination > li {
+  min-width: 35px;
+  min-height: 35px;
+  text-align: center;
+}
+ul.pagination > li:focus {
+  background: transparent;
+  outline: none;
+  box-shadow: #10b2e4;
+}
+ul.pagination > li span, ul.pagination > li a {
+  background: #FFF;
+  border-radius: 15px;
+  color: #10b2e4;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+ul.pagination > li span:hover, ul.pagination > li a:hover {
+  background: rgba(16, 178, 228, 0.1);
+  border-radius: 25px;
+  color: #10b2e4;
+}
+ul.pagination > li span:hover span, ul.pagination > li a:hover span {
+  background: transparent;
+}
+ul.pagination > li.active span.page-link, ul.pagination > li.active a {
+  background: rgba(16, 178, 228, 0.1);
+  border-radius: 25px;
+  color: #10b2e4;
+}
+ul.pagination > li.active span.page-link.page-link, ul.pagination > li.active a.page-link {
+  border: none;
+}
+ul.pagination > li[role=presentation] span.page-link--ellipses:hover {
+  background: transparent;
+}
+
+/***End comment - new pagination**/
 /*** Tabs in partner ***/
 .partners-related-content .nav-wrapper {
   margin: 0 0 1rem;
@@ -1002,20 +1051,35 @@ table tr td {
     width: 100%;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px 0px;
     border-bottom: 3px dashed #EAE5ED;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row img {
+    object-fit: cover;
     width: 220px;
     height: 220px;
     min-width: 220px;
     min-height: 220px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news__image {
+    display: flex;
+    align-items: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
+    display: grid;
+    grid-template-rows: 25px auto 1fr 25px;
+    gap: 0.5rem;
+  }
+  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content.col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content .datetime {
     color: #58585A;
@@ -1023,13 +1087,15 @@ table tr td {
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content h2 a {
     color: #10b2e4;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content p {
     color: #58585A;
     font-size: 1.1em;
+    margin-bottom: 0px;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more {
+    place-self: end;
     display: grid;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more a {
@@ -1050,17 +1116,30 @@ table tr td {
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more a:before {
     content: "";
   }
+  .page-view-news .view-footer {
+    text-align: end;
+    font-size: 0.9rem;
+    color: #10b2e4;
+    margin-left: 1rem;
+  }
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .page-view-news .view-display-id-oshnews_list > .view-content.row {
     margin-left: 0;
     margin-right: 0;
   }
+  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row {
+    display: grid;
+    grid-template-columns: 250px auto;
+  }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content {
-    padding-left: 35px;
+    padding-left: 45px;
+  }
+  .page-view-news .view-footer {
+    margin-top: -47px;
   }
 }
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 992px) {
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content {
     padding-left: 0px;
   }

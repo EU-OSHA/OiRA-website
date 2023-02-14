@@ -85,3 +85,8 @@ div.pagerer-right-pane {
   }
 }
 
+/***New pagination**/
+@include paginationStyle($bg-color-blue-light-opacity, $text-color-blue-light);
+/***End comment - new pagination**/
+
+
