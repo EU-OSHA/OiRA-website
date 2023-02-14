@@ -1,14 +1,3 @@
-#block-oira-theme-main-menu{
-  > ul{
-    > li:nth-child(1){
-      > a{
-        width: 37px;
-        background: url("../images/oira-home.png") no-repeat;
-        text-indent: -9999px;
-      }
-    }
-  }
-}
 #navbar-main{
   font-family: 'Oswald',sans-serif;
   background-color: $bg-color-blue-light;
@@ -17,68 +6,83 @@
     justify-content: center;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
+      #block-oira-theme-main-menu{
+        width: 100%;
+        > ul{
+          display: flex;
+          justify-content: space-between;
+          & > li:nth-child(1){
+            > a{
+              width: 37px;
+              background: url("../images/home-icon.png") no-repeat;
+              text-indent: -9999px;
+            }
+          }
+          li{
+            position: relative !important;
+            .nav-link{
+              font-size: 1rem;
+              padding: 0 0.5rem;
+            }
+            a, span{
+              font: {
+                family: "Open Sans", sans-serif;
+                weight: 500;
+                style: normal;
+              }
+              color: $text-color-white;
+              padding-top: 0;
+              padding-bottom: 0;
+              display: block;
+            }
+            ul.dropdown-menu{
+              background-color: $bg-color-blue-light;
+              color: $text-color-white;
+              border: 0;
+              margin: 0;
+              -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+              box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+              li{
+                background-color: $bg-color-blue-light;
+                border: 0;
+                border-bottom: 2px solid $bg-color-white;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                a{
+                  &:hover{
+                    text-decoration: none;
+                  }
+                }
+                &:hover{
+                  background-color: $bg-color-blue-light-hover;
+                }
+              }
+            }
+            &:hover{
+              ul.dropdown-menu{
+                display: block;
+                padding-bottom: 0;
+              }
+            }
+            &:last-child{
+              border-right: 0;
+            }
+            &.active{
+              & > a{
+                font-weight: 600;
+              }
+            }
+          }
+          .dropdown-toggle::after{
+            content: none;
+          }
+        }
+      }
   }
   .nav-item.menu-item--expanded {
     position: relative !important;
   }
-  ul.navbar-nav{
-    li{
-      border-right: 2px solid $bg-color-white ;
-      position: relative !important;
-      .nav-link{
-        font-size: 1rem;
-        padding: 0 0.5rem;
-      }
-      a{
-        font-family: 'Oswald',sans-serif;
-        font-weight: normal;
-        font-style: normal;
-        color: $text-color-white;
-        padding-top: 0;
-        padding-bottom: 0;
-        display: block;
-        @media(min-width: 1024px) {
-          text-align: center;
-        }
-      }
-      ul.dropdown-menu{
-        background-color: $bg-color-blue-light;
-        color: $text-color-white;
-        border: 0;
-        margin: 0;
-        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-        li{
-          background-color: $bg-color-blue-light;
-          border: 0;
-          border-bottom: 2px solid $bg-color-white;
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
-          a{
-            &:hover{
-              text-decoration: none;
-            }
-          }
-          &:hover{
-            background-color: $bg-color-blue-light-hover;
-          }
-        }
-      }
-      &:hover{
-        ul.dropdown-menu{
-          display: block;
-          padding-bottom: 0;
-        }
-      }
-    }
-    li:last-child{
-      border-right: 0;
-    }
 
-    .dropdown-toggle::after{
-      content: none;
-    }
-  }
 }
 
 

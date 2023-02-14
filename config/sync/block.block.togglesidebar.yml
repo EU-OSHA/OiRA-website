@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
   module:
     - block_content
-    - context
     - system
   theme:
     - oira_theme

@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:8605ea21-9290-4675-854c-ada9b02ce9e7'
   module:
     - block_content
-    - context
     - system
     - user
   theme:
