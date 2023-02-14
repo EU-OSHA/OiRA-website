@@ -4866,14 +4866,24 @@ body[class*=private-zone-] .page-header.h1 {
   height: 100%;
   display: grid;
 }
-.top-header-content .region-top-header-logos #block-logoosha > div.content > div > div .field__item img, .top-header-content .region-top-header-logos #block-logooira > div.content > div > div .field__item img {
+.top-header-content .region-top-header-logos #block-logoosha > div.content > div > div > .field__item img, .top-header-content .region-top-header-logos #block-logooira > div.content > div > div > .field__item img {
   min-height: 40px;
   max-height: 40px;
   min-width: 100%;
 }
-.top-header-content .region-top-header-logos #block-logoosha > div.content > div > div .field__item:nth-child(2), .top-header-content .region-top-header-logos #block-logooira > div.content > div > div .field__item:nth-child(2) {
-  min-height: 20px;
-  max-height: 20px;
+.top-header-content .region-top-header-logos #block-logoosha > div.content > div > div > .field__item:nth-child(2), .top-header-content .region-top-header-logos #block-logooira > div.content > div > div > .field__item:nth-child(2) {
+  padding-left: 1rem;
+}
+.top-header-content .region-top-header-logos #block-logoosha > div.content > div > div > .field__item:nth-child(2) img, .top-header-content .region-top-header-logos #block-logooira > div.content > div > div > .field__item:nth-child(2) img {
+  min-height: 30px;
+  max-height: 30px;
+}
+.top-header-content .region-top-header-logos #block-logoosha > div.content > div > div > .field__item:first-of-type {
+  padding-left: 1rem;
+  border-left: 1px solid #003399;
+}
+.top-header-content .region-top-header-logos #block-logooira > div.content > div > div > .field__item:first-of-type {
+  padding-right: 1rem;
 }
 .top-header-content .region-top-header-logos .field--name-field-image {
   display: flex;
@@ -5145,14 +5155,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
     height: 100%;
     display: grid;
   }
-  .top-header-content .region-top-header-logos #block-logoosha > div.content > div > div .field__item img, .top-header-content .region-top-header-logos #block-logooira > div.content > div > div .field__item img {
+  .top-header-content .region-top-header-logos #block-logoosha > div.content > div > div > .field__item img, .top-header-content .region-top-header-logos #block-logooira > div.content > div > div > .field__item img {
     min-height: 60px;
     max-height: 60px;
     min-width: 100%;
-  }
-  .top-header-content .region-top-header-logos #block-logoosha > div.content > div > div .field__item:nth-child(2), .top-header-content .region-top-header-logos #block-logooira > div.content > div > div .field__item:nth-child(2) {
-    min-height: 30px;
-    max-height: 30px;
   }
   .top-header-content .header-blocks {
     display: block;
