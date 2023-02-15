@@ -13,6 +13,53 @@
     }
   };
 
+  /*This variable tells us if the responsive menu is currently collapsed (true)*/
+  let menuSM = false;
+
+  jQuery(window).on("load",function(){
+    checkResponsiveMenu(jQuery(window).width(), menuSM);
+  });
+
+  /*Menu responsive*/
+/*Check window width and if the menu is collapsed or not
+  * 2 parameters: window width and menu status*/
+  function checkResponsiveMenu(windowWidth, menuSmall){
+    if (windowWidth < 992) {
+      if(!menuSmall){
+        /*Add header elements to menu navbar and create new element for icon*/
+        jQuery("#navbar-main").append("<div class='responsive-menu-oira'></div>");
+        jQuery("#block-languagedropdownswitcher").appendTo(".responsive-menu-oira");
+        jQuery("<div id='search-icon-responsive'></div>").appendTo(".responsive-menu-oira");
+        jQuery("#block-generalsearch-api").appendTo(".responsive-menu-oira");
+
+        /*When the magnifying glass icon is clicked, show the search block and hide the magnifying glass icon*/
+        jQuery("#search-icon-responsive").click(function(){
+          jQuery("#block-generalsearch-api").show();
+          jQuery(this).hide();
+        });
+
+        /*Hide the header elements not requied for the responsive version*/
+        //jQuery("#block-generalsearch-api").hide();
+        //jQuery(".font-size-print").hide();
+
+        menuSM = true;
+      }
+    }else{
+      if(menuSmall){
+        /*Move the elements from the menu back to the header*/
+        jQuery("#block-generalsearch-api").appendTo(".header-language-search .region-top-header-form");
+        jQuery("#block-languagedropdownswitcher").appendTo(".header-language-search .region-top-header-form");
+
+        /*Toggle and remove required elements*/
+        jQuery(".responsive-menu-oira").remove();
+        jQuery("#block-generalsearch-api").show();
+        jQuery(".font-size-print").toggle();
+        menuSM = false;
+      }
+    }
+  }
+  /*End comment - menu responsive*/
+
   //@ MRD 4929 ("Access the tool" link)
   if (typeof _paq != 'undefined') {
     $('.tool-link > a').click(function (e) {
@@ -80,11 +127,11 @@ jQuery(document).ready(function($){
 
   if(windowWidth <= 992){
     //search header al hacer click
-    $("#edit-actions").click(function(){
+/*    $("#edit-actions").click(function(){
       $('#edit-search-api-fulltext').stop().show({direction: 'left'}, 500);
       $('.form-item-search-api-fulltext').show();
       $('#edit-actions .btn-primary').css("pointer-events" , "auto");
-    });
+    });*/
   }
 
     // See more - less
