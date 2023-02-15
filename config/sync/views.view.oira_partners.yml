@@ -363,7 +363,7 @@ display:
       use_ajax: true
       use_more: true
       use_more_always: true
-      use_more_text: 'View all'
+      use_more_text: 'View all the partners'
       link_display: custom_url
       link_url: oira-community
       header: {  }
@@ -536,7 +536,10 @@ display:
         style: false
         row: false
       display_description: 'OiRA Partners Home page Block'
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:

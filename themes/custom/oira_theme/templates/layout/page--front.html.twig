@@ -4,14 +4,16 @@
   <div class="home-intro container">
     {{ drupal_view('home_page_banners', 'block_1') }}
   </div>
-  <div class="home-slider">
-    {{ drupal_view('slideshow', 'block_1') }}
-  </div>
   <div class="content-home content-oira-tools content-purple ">
     <div class="container">
-      <h2>{{ 'OiRA tools' | trans }}</h2>
-      <div class="intro-text-view">{{ 'Latest tools' | trans }}</div>
+      <h2>{{ 'Latest OiRA tools' | trans }}</h2>
       {{ drupal_view('tools', 'block_1') }}
+    </div>
+  </div>
+  <div class="content-home content-oira-partners content-white">
+    <div class="container">
+      <h2>{{ 'OiRA partners' | trans }}</h2>
+      {{ drupal_view('oira_partners', 'oira_partners_homepage') }}
     </div>
   </div>
   <div class="content-home content-latest-news content-white ">
@@ -20,17 +22,5 @@
       {{ drupal_view('news', 'oshnews_latest') }}
     </div>
   </div>
-  <div class="content-home content-promotional-materials content-purple ">
-    <div class="container">
-      <h2>{{ 'Promotional materials' | trans }}</h2>
-      <div class="intro-text-view">{{ 'Latest materials' | trans }}</div>
-      {{ drupal_view('promotional_materials', 'block') }}
-    </div>
-  </div>
-  <div class="content-home content-oira-partners content-white">
-    <div class="container">
-      <h2>{{ 'OiRA Partners' | trans }}</h2>
-      {{ drupal_view('oira_partners', 'oira_partners_homepage') }}
-    </div>
-  </div>
+
 {% endblock %}
