@@ -247,26 +247,6 @@ select.custom-select{
   .section.container {
     position: relative;
   }
-  #block-backtonews {
-    position: absolute;
-    top: -50px;
-    right: 0;
-    a {
-      color: $text-color-blue-light;
-      font-style: normal;
-      font-weight: $font-weight-normal;
-      &:after {
-        content: "";
-        background: url(../images/back-news.png) no-repeat;
-        background-size: 100%;
-        display: inline-block;
-        width: 22px;
-        height: 20px;
-        vertical-align: middle;
-        margin-left: 5px;
-      }
-    }
-  }
   h1 {
     margin-top: 80px;
     margin-bottom: 20px;

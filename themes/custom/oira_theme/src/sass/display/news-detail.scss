@@ -1,0 +1,84 @@
+@media screen{
+  .node--type-news{
+    /**Back to OiRA news button**/
+    #block-backtonews {
+      position: absolute;
+      top: -35px;
+      left: 0;
+      a {
+        color: $text-color-blue-light;
+        font-style: normal;
+        font-weight: $font-weight-normal;
+        &:after {
+          display: inline-block;
+          content: "";
+          background: {
+            image: url(../images/back-news.png);
+            repeat: no-repeat;
+            size: 100%;
+          }
+          width: 22px;
+          height: 20px;
+          vertical-align: middle;
+          margin-left: 12px;
+        }
+      }
+    }
+    /**End comment - back to OiRA news button**/
+    .no-container{
+      #block-oira-theme-page-title{
+        h1.title{
+          color: $text-color-blue-light;
+          font-weight: 500;
+          margin-top: 40px;
+        }
+      }
+      .node__content{
+        display: grid;
+        grid-template-areas: 'image'
+        'text';
+        grid-template-rows: 250px auto;
+        .field--name-field-image{
+          display: flex;
+          justify-self: center;
+          grid-area: image;
+          object-fit: cover;
+          width: 220px;
+          height: 220px;
+          min-width: 220px;
+          min-height: 220px;
+        }
+        .field--type-text-with-summary, .field--name-field-summary{
+          grid-area: text;
+          font-weight: normal;
+          color: $text-grey;
+          line-height: 24px;
+          a, a > span{
+            color: $text-color-blue-light !important;
+            text-decoration: underline;
+            font-style: normal;
+            &:hover{
+              color: $text-color-blue-light !important;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 768px){
+    .node--type-news{
+      .no-container{
+        .node__content{
+          display: grid;
+          grid-template-areas: 'image text';
+          grid-template-columns: 220px auto;
+          grid-template-rows: auto;
+          .field--name-field-image{
+            justify-content: start;
+          }
+        }
+      }
+    }
+  }
+}
