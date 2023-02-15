@@ -14,9 +14,7 @@
   .block-oira-masquerade {
     display: none;
   }
-  #block-logoosha {
-    min-width: 80%;
-  }
+
   #page {
     padding-bottom: 180px;
   }
@@ -47,21 +45,6 @@
         padding-top: 75px;
       }
     }
-  }
-
-  .region-top-header-logos,
-  .region-medium-header-logos {
-    width: 50%;
-  }
-  .region-medium-header-logos {
-    justify-content: flex-end;
-  }
-  .top-header-content .block__font-size,
-  .block__print {
-    display: none;
-  }
-  .top-header-content #block-logooira img {
-    width: 84px;
   }
 
   .block-lang-dropdown {
@@ -103,45 +86,9 @@
     margin-left: 0;
     margin-right: 0;
   }
-  /* Header Logos mobile */
-  .top-header-content{
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    .region-top-header-logos{
-      .field--name-field-image{
-        > .field__item:nth-child(1){
-          img{
-            width: 190px;
-            height: auto;
-            margin: 0;
-          }
-        }
-        > .field__item:nth-child(2){
-          margin: 0 0 0 10px;
-          img {
-            width: 47px;
-            height: auto;
-            margin: 0;
-          }
-        }
-        > .field__item:nth-child(3){
-          img {
-            width: 145px;
-            height: auto;
-          }
-        }
-        .field__item {
-          margin-right: 0;
-        }
-      }
-    }
-  }
 
-  .top-header-content .region-top-header-logos .field--name-field-image .field__item:first-child {
-    width: auto;
-  }
+
+
 
   .top-header-content{
     .header-menu-news {
@@ -753,10 +700,8 @@
 
 @media only screen and (max-width : 480px) {
   .top-header-content{
-    justify-content: space-between;
     .col {
       padding: 0;
-      flex-grow: auto;
     }
     .region-medium-header-logos {
       max-width: 80px;
@@ -769,31 +714,7 @@
         font-size: 0;
       }
     }
-    .region-top-header-logos{
-      .field--name-field-image{
-        > .field__item:nth-child(1){
-          img{
-            width: 124px;
-            height: auto;
-          }
-        }
-        > .field__item:nth-child(2){
-          img {
-            width: 35px;
-            height: auto;
-          }
-        }
-        > .field__item:nth-child(3){
-          img {
-            width: 84px;
-            height: auto;
-          }
-        }
-      }
-    }
-    .region-wrapper {
-      position: absolute;
-    }
+
   }
 
   #block-oira-theme-breadcrumbs {
