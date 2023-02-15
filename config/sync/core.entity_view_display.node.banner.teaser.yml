@@ -1,0 +1,37 @@
+uuid: b54270ac-5583-4e01-92ae-4801745383e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.banner.field_banner_link
+    - field.field.node.banner.field_copyright
+    - field.field.node.banner.field_description
+    - field.field.node.banner.field_image_banner
+    - field.field.node.banner.field_subtitle
+    - node.type.banner
+  module:
+    - user
+id: node.banner.teaser
+targetEntityType: node
+bundle: banner
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_banner_link: true
+  field_copyright: true
+  field_description: true
+  field_image_banner: true
+  field_subtitle: true
+  langcode: true
+  search_api_excerpt: true

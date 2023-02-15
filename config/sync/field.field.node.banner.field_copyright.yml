@@ -1,0 +1,24 @@
+uuid: 81baa372-21bd-4177-b7c9-c55f75c4f658
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright
+    - node.type.banner
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.banner.field_copyright
+field_name: field_copyright
+entity_type: node
+bundle: banner
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
