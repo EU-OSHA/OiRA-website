@@ -20,7 +20,6 @@ dependencies:
     - field.field.node.news.field_workbench_access
     - node.type.news
   module:
-    - datetime
     - ds
     - text
     - user
@@ -32,19 +31,19 @@ content:
   addtoany:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 3
     region: content
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_image:
     type: entity_reference_entity_view
@@ -61,23 +60,7 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    weight: 4
-    region: content
-  field_publication_date:
-    type: datetime_default
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: day_only
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_summary:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
 hidden:
   breadcrumbs: true
@@ -91,7 +74,9 @@ hidden:
   field_image_home_latest_news: true
   field_migration_source: true
   field_page_count: true
+  field_publication_date: true
   field_related_partners: true
+  field_summary: true
   field_tags: true
   field_wf_notification: true
   field_workbench_access: true
