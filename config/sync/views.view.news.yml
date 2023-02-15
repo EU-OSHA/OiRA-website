@@ -226,12 +226,7 @@ display:
           id: result
           table: views
           field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
           plugin_id: result
-          empty: false
-          content: '<div class="container">@start-@end/@total</div>'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1137,10 +1132,12 @@ display:
         style: false
         row: false
         fields: false
+        footer: false
       display_description: ''
       use_more: true
       use_more_always: true
       use_more_text: 'View all'
+      footer: {  }
       display_extenders: {  }
       block_description: 'Latest news what''s new'
     cache_metadata:
@@ -2304,6 +2301,7 @@ display:
         row: false
         fields: false
         header: false
+        footer: false
       display_description: ''
       header:
         area_text_custom:
@@ -2317,6 +2315,17 @@ display:
           empty: false
           content: "<div class=\"container page-title-container\">\r\n<h1 class=\"page-header\">[view:title] </h1>\r\n</div>"
           tokenize: false
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '<div class="container">@start-@end/@total</div>'
       display_extenders:
         metatag_display_extender:
           metatags: {  }

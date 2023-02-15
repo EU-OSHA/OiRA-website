@@ -81,11 +81,11 @@ jQuery(document).ready(function($){
   if(windowWidth <= 992){
     //search header al hacer click
     $("#edit-actions").click(function(){
-      $('#views-exposed-form-search-api-search-api-block #edit-search-api-fulltext').stop().show({direction: 'left'}, 500);
+      $('#edit-search-api-fulltext').stop().show({direction: 'left'}, 500);
+      $('.form-item-search-api-fulltext').show();
       $('#edit-actions .btn-primary').css("pointer-events" , "auto");
     });
   }
-
 
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){
