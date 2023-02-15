@@ -18,9 +18,11 @@ dependencies:
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
     - field.field.node.news.field_workbench_access
+    - image.style.media_library
     - node.type.news
   module:
     - ds
+    - media
     - text
     - user
 id: node.news.default
@@ -46,11 +48,11 @@ content:
     weight: 0
     region: content
   field_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: news_detail
-      link: false
+      image_link: ''
+      image_style: media_library
     third_party_settings:
       ds:
         ds_limit: ''
