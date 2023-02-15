@@ -5105,10 +5105,22 @@ body[class*=private-zone-] .page-header.h1 {
   grid-area: socialmedia;
   place-self: end;
 }
-.top-header-content .header-blocks .region-header-form #block-generalsearch-api {
+
+#navbar-main {
+  display: grid;
+  grid-template-columns: auto 0px 1fr;
+}
+#navbar-main .responsive-menu-oira {
+  display: flex;
+}
+#navbar-main .responsive-menu-oira #block-generalsearch-api {
+  display: grid;
   grid-area: search;
 }
-.top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row {
+#navbar-main .responsive-menu-oira #block-generalsearch-api > .content {
+  place-self: center;
+}
+#navbar-main .responsive-menu-oira #block-generalsearch-api > .content .block-search-form-block .form-row {
   display: grid;
   grid-template-columns: auto 30px;
   grid-template-rows: auto;
@@ -5118,7 +5130,7 @@ body[class*=private-zone-] .page-header.h1 {
   border: transparent solid 0px;
   border-radius: 4px;
 }
-.top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row fieldset input.form-control {
+#navbar-main .responsive-menu-oira #block-generalsearch-api > .content .block-search-form-block .form-row fieldset input.form-control {
   padding: 2px 3px;
   border-radius: 4px 0px 0px 4px;
   border: none;
@@ -5129,12 +5141,12 @@ body[class*=private-zone-] .page-header.h1 {
   max-height: 28px !important;
   font-size: 0.8rem;
 }
-.top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row #edit-actions {
+#navbar-main .responsive-menu-oira #block-generalsearch-api > .content .block-search-form-block .form-row #edit-actions {
   width: 30px;
   height: 30px;
   padding: 0px;
 }
-.top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row #edit-actions .btn-primary {
+#navbar-main .responsive-menu-oira #block-generalsearch-api > .content .block-search-form-block .form-row #edit-actions .btn-primary {
   cursor: pointer;
   border-radius: 0px;
   border: none;
@@ -5144,15 +5156,15 @@ body[class*=private-zone-] .page-header.h1 {
   background-position: 50% 50% !important;
   font-size: 0;
 }
-.top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher {
+#navbar-main .responsive-menu-oira #block-languagedropdownswitcher {
   grid-area: lang;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
-.top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select {
+#navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select {
   margin: 0;
   /**Language select**/
 }
-.top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select #edit-lang-dropdown-select {
+#navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select #edit-lang-dropdown-select {
   border: none;
   border-radius: 4px;
   height: 30px;
@@ -5166,7 +5178,7 @@ body[class*=private-zone-] .page-header.h1 {
   -webkit-appearance: none;
   appearance: none;
 }
-.top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .language-icon {
+#navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .language-icon {
   display: none !important;
 }
 
@@ -5237,35 +5249,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   width: 100%;
 }
 
-.block-oira-masquerade a {
-  background-color: #003399;
-  border-radius: 0;
-  border: none;
-  padding: 3px 12px;
-  font-size: 1rem;
-  float: right;
-  color: white;
-  font-weight: normal;
-  font-style: normal;
-}
-.block-oira-masquerade a:before {
-  content: "> ";
-}
-.block-oira-masquerade a:hover {
-  color: #FFF;
-}
-
-.role-partner .block-oira-masquerade a {
-  padding: 0;
-  background: transparent;
-  color: #003399;
-  font-style: italic;
-  font-weight: 700;
-}
-
-#block-generalsearch-api {
-  margin-bottom: 0.5rem;
-}
 #block-generalsearch-api .views-exposed-form .form-row {
   flex-wrap: nowrap;
   margin: 0;

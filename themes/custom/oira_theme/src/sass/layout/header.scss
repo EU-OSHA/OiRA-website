@@ -187,8 +187,19 @@
         grid-area: socialmedia;
         place-self: end;
       }
-      #block-generalsearch-api{
-        grid-area: search;
+    }
+  }
+}
+#navbar-main{
+  display: grid;
+  grid-template-columns: auto 0px 1fr;
+  .responsive-menu-oira{
+    display: flex;
+    #block-generalsearch-api{
+      display: grid;
+      grid-area: search;
+      & > .content{
+        place-self: center;
         .block-search-form-block {
           .form-row{
             display: grid;
@@ -230,34 +241,34 @@
           }
         }
       }
-      #block-languagedropdownswitcher{
-        grid-area: lang;
-        margin-bottom: 6px;
-        #lang_dropdown_form_lang-dropdown-form {
-          .form-type-select {
-            margin: 0;
-            /**Language select**/
-            #edit-lang-dropdown-select{
-              border: none;
-              border-radius: 4px;
-              height: 30px;
-              padding: 2px 3px;
-              background: transparent url(../images/select-arrow.svg) no-repeat !important;
-              background-position: 97% 50% !important;
-              color: $text-color-white;
-              width: 120px !important;
-              font-size: 0.8rem;
-              font-weight: $font-weight-normal;
-              -webkit-appearance: none;
-              appearance: none;
-            }
-          }
-          .language-icon {
-            display: none !important;
+    }
+    #block-languagedropdownswitcher{
+      grid-area: lang;
+      margin-bottom: 0px;
+      #lang_dropdown_form_lang-dropdown-form {
+        .form-type-select {
+          margin: 0;
+          /**Language select**/
+          #edit-lang-dropdown-select{
+            border: none;
+            border-radius: 4px;
+            height: 30px;
+            padding: 2px 3px;
+            background: transparent url(../images/select-arrow.svg) no-repeat !important;
+            background-position: 97% 50% !important;
+            color: $text-color-white;
+            width: 120px !important;
+            font-size: 0.8rem;
+            font-weight: $font-weight-normal;
+            -webkit-appearance: none;
+            appearance: none;
           }
         }
+        .language-icon {
+          display: none !important;
+        }
       }
-  }
+    }
   }
 }
 
@@ -332,39 +343,8 @@ body.toolbar-fixed {
   }
 }
 
-.block-oira-masquerade {
-  a {
-    background-color: $text-color-blue;
-    border-radius: 0;
-    border: none;
-    padding: 3px 12px;
-    font-size: 1rem;
-    float: right;
-    color: white;
-    font-weight: normal;
-    font-style: normal;
-    &:before {
-      content: "> ";
-    }
-    &:hover {
-      color: $text-color-white;
-    }
-  }
-}
-
-.role-partner {
-  .block-oira-masquerade a {
-    padding: 0;
-    background: transparent;
-    color: $text-color-blue;
-    font-style: italic;
-    font-weight: $font-weight-bold;
-  }
-}
-
 
 #block-generalsearch-api {
-  margin-bottom: 0.5rem;
   .views-exposed-form {
     .form-row {
       flex-wrap: nowrap;
