@@ -21,8 +21,6 @@
     max-width: 280px;
   }
   .block-lang-dropdown {
-    margin-right: 45px;
-    margin-top: -8px;
     .form-select {
       width: 137px !important;
     }
@@ -38,25 +36,6 @@
       align-items: center;
       flex-wrap: wrap;
       cursor: pointer;
-      .nav-link {
-        &:after {
-          display: inline-block;
-          border: none !important;
-          display: inline-block;
-          margin-left: 15px;
-          content: "\e250" !important;
-          font-family: "Glyphicons Halflings";
-          color: $text-color-white;
-          text-indent: normal;
-        }
-      }
-      &.clicked {
-        .nav-link {
-          &:after {
-            content: "\e252" !important;
-          }
-        }
-      }
       .dropdown-menu {
         width: 100%;
         padding-left: 1rem;
@@ -261,10 +240,6 @@
         img {
           margin: 0;
         }
-      }
-      > .field__item:last-child {
-        margin-top: 0;
-        margin-left: 4px;
       }
     }
   }
