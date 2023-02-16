@@ -420,6 +420,9 @@ body.toolbar-fixed {
 }
 
 @media only screen and (min-width: 992px) {
+  #navbar-main{
+    grid-template-columns: 100%;
+  }
   .top-header-content{
     padding-bottom: 0px;
     .region-top-header-logos{

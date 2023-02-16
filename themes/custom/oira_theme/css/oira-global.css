@@ -5299,6 +5299,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 }
 @media only screen and (min-width: 992px) {
+  #navbar-main {
+    grid-template-columns: 100%;
+  }
+
   .top-header-content {
     padding-bottom: 0px;
   }
