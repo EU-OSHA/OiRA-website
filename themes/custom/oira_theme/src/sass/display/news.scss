@@ -20,7 +20,14 @@
             flex-direction: column;
             justify-content: center;
             padding: 18px 0px;
-            border-bottom: 3px dashed $bg-light-purple;
+            //border-bottom: 3px dashed $bg-light-purple;
+            background: {
+              color: transparent;
+              image: url("../images/dashed-border-for-news-view.png");
+              repeat: repeat-x;
+              position: 0% 100%;
+              size: 40px;
+            };
             img{
               object-fit: cover;
               width: 220px;
@@ -70,7 +77,7 @@
                   text-decoration: none;
                   padding: {
                     left: 0rem;
-                    right: 20px;
+                    right: 30px;
                   }
                   color: $text-color-blue-light;
                   font : {
@@ -82,10 +89,13 @@
                     image: url("../images/icon-arrow-blue.png");
                     repeat: no-repeat;
                     position: 100% 47%;
-                    size: 11px;
+                    size: 17px;
                   }
                   &:before{
                     content: "";
+                  }
+                  &:hover{
+                    text-decoration: underline;
                   }
                 }
               }
@@ -116,7 +126,10 @@
                 justify-content: start;
               }
               .news--content{
-                padding-left: 45px;
+                padding: {
+                  top: 1rem;
+                  left: 45px;
+                }
               }
             }
           }

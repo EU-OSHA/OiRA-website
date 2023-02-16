@@ -18,6 +18,16 @@
 
   jQuery(window).on("load",function(){
     checkResponsiveMenu(jQuery(window).width(), menuSM);
+    if($("body").hasClass("page-view-frontpage")){
+      //To be changed
+/*      $(".home-boxes > a").mouseenter(function(){
+       $(this).find(".description").slideToggle(10);
+      });*/
+    }
+  });
+
+  jQuery(window).resize(function(){
+    checkResponsiveMenu(jQuery(window).width(), menuSM);
   });
 
   /*Menu responsive*/
@@ -29,17 +39,10 @@
         /*Add header elements to menu navbar and create new element for icon*/
         jQuery("#navbar-main").append("<div class='responsive-menu-oira'></div>");
         jQuery("#block-languagedropdownswitcher").appendTo(".responsive-menu-oira");
-        jQuery("<div id='search-icon-responsive'></div>").appendTo(".responsive-menu-oira");
         jQuery("#block-generalsearch-api").appendTo(".responsive-menu-oira");
 
-        /*When the magnifying glass icon is clicked, show the search block and hide the magnifying glass icon*/
-        jQuery("#search-icon-responsive").click(function(){
-          jQuery("#block-generalsearch-api").show();
-          jQuery(this).hide();
-        });
-
         /*Hide the header elements not requied for the responsive version*/
-        //jQuery("#block-generalsearch-api").hide();
+        jQuery("section.region-wrapper").hide();
         //jQuery(".font-size-print").hide();
 
         menuSM = true;
@@ -47,12 +50,12 @@
     }else{
       if(menuSmall){
         /*Move the elements from the menu back to the header*/
-        jQuery("#block-generalsearch-api").appendTo(".header-language-search .region-top-header-form");
-        jQuery("#block-languagedropdownswitcher").appendTo(".header-language-search .region-top-header-form");
+        jQuery("#block-generalsearch-api").appendTo("section.region.region-header-form");
+        jQuery("#block-languagedropdownswitcher").appendTo("section.region.region-header-form");
 
         /*Toggle and remove required elements*/
         jQuery(".responsive-menu-oira").remove();
-        jQuery("#block-generalsearch-api").show();
+        jQuery("section.region-wrapper").show();
         jQuery(".font-size-print").toggle();
         menuSM = false;
       }
