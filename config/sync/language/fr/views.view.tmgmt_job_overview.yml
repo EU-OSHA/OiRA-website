@@ -25,23 +25,23 @@ display:
           label: État
           separator: ', '
         label:
-          label: Libellé
+          label: Label
         source_language_1:
-          label: 'A partir de'
+          label: From
           separator: ', '
         target_language:
-          label: À
+          label: To
           separator: ', '
         translator:
-          label: Fournisseur
+          label: Provider
         progress:
-          label: Progression
+          label: Progress
         word_count:
-          label: Mots
+          label: Words
         tags_count:
           label: Étiquettes
         changed:
-          label: Modifié
+          label: Changed
         operations:
           label: Actions
       filters:
@@ -50,10 +50,10 @@ display:
             label: État
         source_language:
           expose:
-            label: 'Langue d''origine'
+            label: 'Source language'
         translator:
           expose:
-            label: Fournisseur
+            label: Provider
   page_1:
     display_title: Page
     display_options:

@@ -15,7 +15,7 @@ display:
         in_draft:
           label: Juodraštis
         created:
-          label: Sukurta
+          label: Created
         remote_addr:
           label: 'IP adresas'
         view_webform_submission:
@@ -37,9 +37,9 @@ display:
         locked:
           label: Užrakinta
         created:
-          label: Sukurta
+          label: Created
         completed:
-          label: Pabaigtas
+          label: Completed
         remote_addr:
           label: 'IP adresas'
         operations:
@@ -63,9 +63,9 @@ display:
         locked:
           label: Užrakinta
         created:
-          label: Sukurta
+          label: Created
         completed:
-          label: Pabaigtas
+          label: Completed
         remote_addr:
           label: 'IP adresas'
         view_webform_submission:
@@ -91,9 +91,9 @@ display:
         locked:
           label: Užrakinta
         created:
-          label: Sukurta
+          label: Created
         completed:
-          label: Pabaigtas
+          label: Completed
         remote_addr:
           label: 'IP adresas'
         view_webform_submission:

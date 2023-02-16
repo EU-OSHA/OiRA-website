@@ -2,13 +2,9 @@ label: Saturs
 description: 'Meklēt un pārvaldīt saturu.'
 display:
   default:
+    display_title: 'Noklusētā vērtība'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrēt
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
+      title: Saturs
       fields:
         title:
           label: Title
@@ -19,12 +15,21 @@ display:
         status:
           label: Statuss
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Darbības
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nav pieejams nekāds saturs.'
       filters:
         title:
           expose:
@@ -45,15 +50,10 @@ display:
         langcode:
           expose:
             label: Valoda
-      title: Saturs
-      empty:
-        area_text_custom:
-          content: 'Nav pieejams nekāds saturs.'
-    display_title: 'Noklusētā vērtība'
   page_1:
+    display_title: Lapa
     display_options:
       menu:
         title: Saturs
       tab_options:
         title: Saturs
-    display_title: Lapa

@@ -16,7 +16,7 @@ tips:
     label: 'Suchkriterien anwenden'
     body: 'Um die Suchkriterien anzuwenden, auf den <em>Filter</em>-Button klicken.'
   locale-translate:
-    label: Übersetzen
+    label: Translate
     body: 'Die eigene Übersetzung kann in die Textfelder in der rechten Spalte eingegeben werden. Es sollte versucht werden herauszufinden in welchem Kontext der Text verwendet werden soll, um ihn sachgemäß zu übersetzen.'
   locale-validate:
     label: 'Die Übersetzungen prüfen und speichern'

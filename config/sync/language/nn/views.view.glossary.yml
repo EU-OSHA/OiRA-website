@@ -2,15 +2,6 @@ display:
   default:
     display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Apply
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- All -'
       fields:
         title:
           label: Title
@@ -18,6 +9,15 @@ display:
           label: Author
         changed:
           label: 'Siste oppdatering'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
   attachment_1:
     display_title: Vedlegg
   page_1:

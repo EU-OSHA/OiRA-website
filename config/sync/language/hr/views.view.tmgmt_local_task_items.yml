@@ -1,0 +1,29 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        status:
+          label: Status
+        label:
+          label: Label
+        item_type:
+          label: Type
+          separator: ', '
+        word_count:
+          separator: ', '
+        operations:
+          label: Operacije
+      arguments:
+        tltid:
+          exception:
+            title: All
+  block_1:
+    display_title: Blok

@@ -25,18 +25,18 @@ display:
           label: Title
           separator: ', '
         langcode:
-          label: Kellelt
+          label: From
           separator: ', '
         translation_target_language:
-          label: Kellele
+          label: To
         translation_status:
           label: 'Tõlkimise olek'
         translation_changed:
-          label: Muudetud
+          label: Changed
       filters:
         langcode:
           expose:
-            label: 'Algne keel'
+            label: 'Source language'
         content_translation_outdated:
           expose:
             label: 'Tõlge on aegunud'

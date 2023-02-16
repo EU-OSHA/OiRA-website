@@ -18,7 +18,7 @@ display:
         in_draft:
           label: Melnraksts
         created:
-          label: Izveidots
+          label: Created
         remote_addr:
           label: 'IP adrese'
         view_webform_submission:
@@ -40,9 +40,9 @@ display:
         locked:
           label: Slēgts
         created:
-          label: Izveidots
+          label: Created
         completed:
-          label: Pabeigts
+          label: Completed
         remote_addr:
           label: 'IP adrese'
         operations:
@@ -66,9 +66,9 @@ display:
         locked:
           label: Slēgts
         created:
-          label: Izveidots
+          label: Created
         completed:
-          label: Pabeigts
+          label: Completed
         remote_addr:
           label: 'IP adrese'
         view_webform_submission:
@@ -94,9 +94,9 @@ display:
         locked:
           label: Slēgts
         created:
-          label: Izveidots
+          label: Created
         completed:
-          label: Pabeigts
+          label: Completed
         remote_addr:
           label: 'IP adrese'
         view_webform_submission:

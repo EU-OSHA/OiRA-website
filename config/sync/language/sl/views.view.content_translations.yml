@@ -8,8 +8,8 @@ display:
         title:
           label: Title
         langcode:
-          label: Od
+          label: From
         translation_target_language:
-          label: Za
+          label: To
   page_1:
     display_title: Stran

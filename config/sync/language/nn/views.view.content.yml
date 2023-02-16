@@ -2,12 +2,9 @@ label: Innhald
 description: 'Finn og behandle innhald.'
 display:
   default:
+    display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+      title: Innhald
       fields:
         title:
           label: Title
@@ -19,12 +16,17 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Upublisert
+            format_custom_true: Published
         changed:
           label: Oppdatert
         operations:
           label: Operasjonar
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         title:
           expose:
@@ -45,12 +47,10 @@ display:
         langcode:
           expose:
             label: Språk
-      title: Innhald
-    display_title: Standard
   page_1:
+    display_title: Nettside
     display_options:
       menu:
         title: Innhald
       tab_options:
         title: Innhald
-    display_title: Nettside

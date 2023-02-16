@@ -9,13 +9,13 @@ display:
         state:
           label: Статус
         label:
-          label: Заглавие
+          label: Label
         type:
           label: Type
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         tags_count:
           label: Таг
         operations:

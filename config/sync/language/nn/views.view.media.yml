@@ -3,15 +3,7 @@ display:
   default:
     display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- All -'
+      title: Media
       fields:
         thumbnail__target_id:
           separator: ', '
@@ -26,14 +18,23 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Upublisert
+            format_custom_true: Published
           separator: ', '
         changed:
           label: Oppdatert
           separator: ', '
         operations:
           label: Operasjonar
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         bundle:
           expose:
@@ -49,7 +50,6 @@ display:
         langcode:
           expose:
             label: Språk
-      title: Media
   media_page_list:
     display_title: Media
     display_options:

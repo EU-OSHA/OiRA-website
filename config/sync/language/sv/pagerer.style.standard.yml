@@ -27,9 +27,9 @@ default_config:
       page_reader: Artikel
       first_reader: 'Första posten'
     item_ranges:
-      prefix_label: Poster
+      prefix_label: Items
       first: '« First'
       previous: '‹ Previous'
       next: 'Next ›'
       last: 'Last »'
-      page_reader: Poster
+      page_reader: Items

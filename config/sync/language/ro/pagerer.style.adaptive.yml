@@ -24,7 +24,7 @@ default_config:
       page_reader: Produs
       first_reader: 'Primul articol'
     item_ranges:
-      prefix_label: Articole
+      prefix_label: Items
       previous: ‹
       next: ›
-      page_reader: Articole
+      page_reader: Items

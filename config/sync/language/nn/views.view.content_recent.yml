@@ -3,15 +3,15 @@ display:
   default:
     display_title: Standard
     display_options:
+      title: 'Nyaste innhald'
+      fields:
+        changed:
+          separator: ', '
       exposed_form:
         options:
           submit_button: Apply
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-      fields:
-        changed:
-          separator: ', '
-      title: 'Nyaste innhald'
       use_more_text: Meir
   block_1:
     display_title: Blokk

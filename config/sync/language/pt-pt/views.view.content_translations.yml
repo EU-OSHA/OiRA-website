@@ -25,18 +25,18 @@ display:
           label: Title
           separator: ', '
         langcode:
-          label: De
+          label: From
           separator: ', '
         translation_target_language:
-          label: Para
+          label: To
         translation_status:
           label: 'Estado da tradução'
         translation_changed:
-          label: Alterado
+          label: Changed
       filters:
         langcode:
           expose:
-            label: 'Idioma fonte'
+            label: 'Source language'
         content_translation_outdated:
           expose:
             label: 'Tradução desatualizada'

@@ -20,6 +20,6 @@ default_config:
       next: ›
       first_reader: 'Első listaelem'
     item_ranges:
-      prefix_label: Tételek
+      prefix_label: Items
       previous: ‹
       next: ›

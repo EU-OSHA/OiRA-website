@@ -2,14 +2,9 @@ label: Sadržaj
 description: 'Pretraga i upravljanje sadržajem'
 display:
   default:
+    display_title: Zadano
     display_options:
-      exposed_form:
-        options:
-          submit_button: Pročisti
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      title: Sadržaj
       fields:
         title:
           label: Title
@@ -21,12 +16,22 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Operacije
+      exposed_form:
+        options:
+          submit_button: Pročisti
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nema sadržaja.'
       filters:
         title:
           expose:
@@ -47,15 +52,10 @@ display:
         langcode:
           expose:
             label: Jezik
-      title: Sadržaj
-      empty:
-        area_text_custom:
-          content: 'Nema sadržaja.'
-    display_title: Zadano
   page_1:
+    display_title: Stranica
     display_options:
       menu:
         title: Sadržaj
       tab_options:
         title: Sadržaj
-    display_title: Stranica

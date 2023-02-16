@@ -21,18 +21,18 @@ display:
             offset_label: Offset
       fields:
         redirect_bulk_form:
-          action_title: 'S výberom'
+          action_title: 'With selection'
         redirect_source__path:
-          label: Od
+          label: From
           separator: ', '
         created:
-          label: Vytvorené
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Od
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Komu
+            label: To
   page_1:
     display_title: Stránka

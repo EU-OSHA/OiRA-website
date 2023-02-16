@@ -24,18 +24,18 @@ display:
         state:
           label: Estado
         label:
-          label: Etiqueta
+          label: Label
         type:
           label: Type
         progress:
-          label: Progresso
+          label: Progress
         word_count:
           separator: ', '
         tags_count:
           label: Etiquetas
           separator: ', '
         changed:
-          label: Alterado
+          label: Changed
         operations:
           label: Operações
       arguments:
@@ -47,13 +47,13 @@ display:
     display_options:
       fields:
         label:
-          label: Etiqueta
+          label: Label
         type:
           label: Type
         word_count:
           separator: ', '
         changed:
-          label: Alterado
+          label: Changed
           separator: ', '
   submitted:
     display_title: Submetido

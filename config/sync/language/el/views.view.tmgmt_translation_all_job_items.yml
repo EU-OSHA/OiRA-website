@@ -21,14 +21,14 @@ display:
         state:
           label: Κατάσταση
         label:
-          label: Ετικέτα
+          label: Label
         type:
           label: Type
         source_language:
-          label: Από
+          label: From
           separator: ', '
         target_language:
-          label: Προς
+          label: To
           separator: ', '
         word_count:
           separator: ', '
@@ -36,7 +36,7 @@ display:
           label: Ετικέτες
           separator: ', '
         changed:
-          label: Τροποποιημένο
+          label: Changed
           separator: ', '
         operations:
           label: Λειτουργίες
@@ -46,7 +46,7 @@ display:
             label: Κατάσταση
         source_language:
           expose:
-            label: 'Γλώσσα προέλευσης'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

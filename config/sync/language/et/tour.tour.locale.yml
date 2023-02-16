@@ -15,7 +15,7 @@ tips:
     label: 'Rakenda otsingutingimus'
     body: 'Otsingukriteeriumi rakendamiseks kliki <em>Filtreeri</em> nupul.'
   locale-translate:
-    label: Tõlge
+    label: Translate
     body: 'Saad kirjutada oma isikliku tõlke paremas tulbas olevatele tekstiväljadele. Selleks, et teksti õigesti tõlkida ürita aru saada millises kontekstis seda kasutatakse.'
   locale-validate:
     label: 'Valideeri tõlge'

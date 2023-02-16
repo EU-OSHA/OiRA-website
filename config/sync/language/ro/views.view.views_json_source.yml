@@ -30,6 +30,6 @@ display:
     display_options:
       fields:
         value:
-          label: Identificator
+          label: ID
         value_1:
           label: Author

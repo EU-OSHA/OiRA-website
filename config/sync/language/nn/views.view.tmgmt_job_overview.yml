@@ -19,12 +19,12 @@ display:
         state:
           separator: ', '
         label:
-          label: Etikett
+          label: Label
         source_language_1:
-          label: Frå
+          label: From
           separator: ', '
         target_language:
-          label: Til
+          label: To
           separator: ', '
         operations:
           label: Operasjonar

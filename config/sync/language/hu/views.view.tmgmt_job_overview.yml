@@ -25,23 +25,23 @@ display:
           label: Állapot
           separator: ', '
         label:
-          label: Címke
+          label: Label
         source_language_1:
-          label: Honnan
+          label: From
           separator: ', '
         target_language:
-          label: Hova
+          label: To
           separator: ', '
         translator:
-          label: Szolgáltató
+          label: Provider
         progress:
-          label: Feldolgozottság
+          label: Progress
         word_count:
-          label: Szavak
+          label: Words
         tags_count:
           label: Címkék
         changed:
-          label: Módosítva
+          label: Changed
         operations:
           label: Műveletek
       filters:
@@ -50,9 +50,9 @@ display:
             label: Állapot
         source_language:
           expose:
-            label: 'Forrás nyelve'
+            label: 'Source language'
         translator:
           expose:
-            label: Szolgáltató
+            label: Provider
   page_1:
     display_title: Oldal

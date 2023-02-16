@@ -25,18 +25,18 @@ display:
           label: Title
           separator: ', '
         langcode:
-          label: De
+          label: From
           separator: ', '
         translation_target_language:
-          label: Per
+          label: To
         translation_status:
           label: 'Estat de la traducció'
         translation_changed:
-          label: Canviat
+          label: Changed
       filters:
         langcode:
           expose:
-            label: 'Llengua de la font'
+            label: 'Source language'
         translation_outdated:
           expose:
             label: Obsoleta

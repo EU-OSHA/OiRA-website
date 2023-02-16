@@ -1,6 +1,6 @@
 tips:
   search-api-index-fields-label:
-    label: Popisek
+    label: Label
   search-api-index-fields-machine-name:
     label: 'Strojový název'
   search-api-index-fields-type:

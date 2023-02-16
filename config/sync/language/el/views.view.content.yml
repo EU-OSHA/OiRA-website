@@ -2,19 +2,9 @@ label: Περιεχόμενο
 description: 'Εύρεση και διαχείριση περιεχομένου'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
-      exposed_form:
-        options:
-          submit_button: Φίλτρο
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+      title: Περιεχόμενο
       fields:
         title:
           label: Title
@@ -26,12 +16,27 @@ display:
         status:
           label: Κατάσταση
           settings:
-            format_custom_true: Published
             format_custom_false: 'Μη δημοσιευμένο'
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Λειτουργίες
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+      exposed_form:
+        options:
+          submit_button: Φίλτρο
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Δεν υπάρχει διαθέσιμη ύλη.'
       filters:
         title:
           expose:
@@ -52,16 +57,11 @@ display:
         langcode:
           expose:
             label: Γλώσσα
-      title: Περιεχόμενο
-      empty:
-        area_text_custom:
-          content: 'Δεν υπάρχει διαθέσιμη ύλη.'
-    display_title: Προεπιλεγμένο
   page_1:
+    display_title: Σελίδα
     display_options:
       menu:
         title: Περιεχόμενο
       tab_options:
         title: Περιεχόμενο
         description: 'Αναζήτηση και διαχείριση περιεχομένου'
-    display_title: Σελίδα

@@ -24,7 +24,7 @@ default_config:
       page_reader: Item
       first_reader: 'Primeiro item'
     item_ranges:
-      prefix_label: Itens
+      prefix_label: Items
       previous: ‹
       next: ›
-      page_reader: Itens
+      page_reader: Items

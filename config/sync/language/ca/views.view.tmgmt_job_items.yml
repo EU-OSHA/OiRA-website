@@ -24,7 +24,7 @@ display:
         state:
           label: Estat
         label:
-          label: Etiqueta
+          label: Label
         type:
           label: Type
         word_count:
@@ -33,7 +33,7 @@ display:
           label: Etiquetes
           separator: ', '
         changed:
-          label: Canviat
+          label: Changed
         operations:
           label: Operacions
       arguments:
@@ -45,13 +45,13 @@ display:
     display_options:
       fields:
         label:
-          label: Etiqueta
+          label: Label
         type:
           label: Type
         word_count:
           separator: ', '
         changed:
-          label: Canviat
+          label: Changed
           separator: ', '
   submitted:
     display_title: Tramès

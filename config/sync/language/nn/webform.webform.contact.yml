@@ -1,3 +1,4 @@
 title: Kontakt
 settings:
   confirmation_message: 'Meldinga di er sent.'
+  confirmation_url: '<front>'

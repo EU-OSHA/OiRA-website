@@ -24,7 +24,7 @@ display:
         state:
           label: Tila
         label:
-          label: Tunnus
+          label: Label
         type:
           label: Type
         word_count:
@@ -33,7 +33,7 @@ display:
           label: Tagit
           separator: ', '
         changed:
-          label: Muuttunut
+          label: Changed
         operations:
           label: Toimenpiteet
       arguments:
@@ -45,13 +45,13 @@ display:
     display_options:
       fields:
         label:
-          label: Tunnus
+          label: Label
         type:
           label: Type
         word_count:
           separator: ', '
         changed:
-          label: Muuttunut
+          label: Changed
           separator: ', '
   submitted:
     display_title: Lisätty

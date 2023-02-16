@@ -20,6 +20,13 @@ display:
             next: 'următor ›'
             first: '« primul'
             last: 'ultima »'
+      fields:
+        title:
+          separator: ', '
+        name:
+          separator: ', '
+        type:
+          separator: ', '
       filters:
         title:
           expose:

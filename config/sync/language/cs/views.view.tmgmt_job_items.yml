@@ -24,17 +24,17 @@ display:
         state:
           label: Stav
         label:
-          label: Popisek
+          label: Label
         type:
           label: Type
         word_count:
-          label: Slov
+          label: Words
           separator: ', '
         tags_count:
           label: Štítky
           separator: ', '
         changed:
-          label: Změněno
+          label: Changed
         operations:
           label: Operace
       arguments:
@@ -46,14 +46,14 @@ display:
     display_options:
       fields:
         label:
-          label: Popisek
+          label: Label
         type:
           label: Type
         word_count:
-          label: Slov
+          label: Words
           separator: ', '
         changed:
-          label: Změněno
+          label: Changed
           separator: ', '
   submitted:
     display_title: Odesláno

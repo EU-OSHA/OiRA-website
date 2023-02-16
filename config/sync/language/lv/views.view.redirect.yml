@@ -19,16 +19,16 @@ display:
             items_per_page_options_all_label: '- All -'
       fields:
         redirect_source__path:
-          label: 'No'
+          label: From
         created:
-          label: Izveidots
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: 'No'
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Kam
+            label: To
       title: Pārsūtīšana
   page_1:
     display_title: Lapa

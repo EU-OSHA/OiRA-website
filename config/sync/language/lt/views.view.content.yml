@@ -2,12 +2,9 @@ label: Turinys
 description: 'Surasti ir valdyti turinį.'
 display:
   default:
+    display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtruoti
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+      title: Turinys
       fields:
         title:
           label: Title
@@ -18,12 +15,20 @@ display:
         status:
           label: Būsena
           settings:
-            format_custom_true: Published
             format_custom_false: Nepaskelbtas
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Veiksmai
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Turinio nėra.'
       filters:
         title:
           expose:
@@ -44,15 +49,10 @@ display:
         langcode:
           expose:
             label: Kalba
-      title: Turinys
-      empty:
-        area_text_custom:
-          content: 'Turinio nėra.'
-    display_title: Numatytasis
   page_1:
+    display_title: Puslapis
     display_options:
       menu:
         title: Turinys
       tab_options:
         title: Turinys
-    display_title: Puslapis

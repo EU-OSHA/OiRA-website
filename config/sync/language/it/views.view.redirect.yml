@@ -22,19 +22,19 @@ display:
             offset_label: Offset
       fields:
         redirect_bulk_form:
-          action_title: 'Con la selezione'
+          action_title: 'With selection'
         redirect_source__path:
-          label: Da
+          label: From
           separator: ', '
         created:
-          label: Creato
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Da
+            label: From
         redirect_redirect__uri:
           expose:
-            label: A
+            label: To
         language:
           expose:
             label: 'Lingua originale'

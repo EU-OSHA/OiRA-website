@@ -32,11 +32,11 @@ display:
         translation_status:
           label: 'Stav překladu'
         translation_changed:
-          label: Změněno
+          label: Changed
       filters:
         langcode:
           expose:
-            label: 'Zdrojový jazyk'
+            label: 'Source language'
         content_translation_outdated:
           expose:
             label: 'Zastaralý překlad'

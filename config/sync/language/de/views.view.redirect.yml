@@ -24,19 +24,19 @@ display:
             offset_label: Offset
       fields:
         redirect_bulk_form:
-          action_title: Auswahl
+          action_title: 'With selection'
         redirect_source__path:
-          label: Von
+          label: From
           separator: ', '
         created:
-          label: Erstellt
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Von
+            label: From
         redirect_redirect__uri:
           expose:
-            label: An
+            label: To
         status_code:
           expose:
             label: Statuscode

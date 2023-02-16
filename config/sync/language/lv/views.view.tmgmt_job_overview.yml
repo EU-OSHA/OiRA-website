@@ -20,17 +20,17 @@ display:
         state:
           label: Stāvoklis
         label:
-          label: Etiķete
+          label: Label
         source_language_1:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         translator:
-          label: 'Pakalpojumu sniedzējs'
+          label: Provider
         tags_count:
           label: Iezīmes
         changed:
-          label: Labots
+          label: Changed
         operations:
           label: Darbības
       filters:
@@ -39,6 +39,6 @@ display:
             label: Stāvoklis
         translator:
           expose:
-            label: 'Pakalpojumu sniedzējs'
+            label: Provider
   page_1:
     display_title: Lapa

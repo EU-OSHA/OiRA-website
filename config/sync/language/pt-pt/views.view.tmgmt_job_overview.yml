@@ -25,21 +25,21 @@ display:
           label: Estado
           separator: ', '
         label:
-          label: Etiqueta
+          label: Label
         source_language_1:
-          label: De
+          label: From
           separator: ', '
         target_language:
-          label: Para
+          label: To
           separator: ', '
         translator:
-          label: Fornecedor
+          label: Provider
         progress:
-          label: Progresso
+          label: Progress
         tags_count:
           label: Etiquetas
         changed:
-          label: Alterado
+          label: Changed
         operations:
           label: Operações
       filters:
@@ -48,10 +48,10 @@ display:
             label: Estado
         source_language:
           expose:
-            label: 'Idioma fonte'
+            label: 'Source language'
         translator:
           expose:
-            label: Fornecedor
+            label: Provider
   page_1:
     display_title: Página
     display_options:

@@ -26,23 +26,23 @@ display:
           label: Status
           separator: ', '
         label:
-          label: Beschriftung
+          label: Label
         source_language_1:
-          label: Von
+          label: From
           separator: ', '
         target_language:
-          label: An
+          label: To
           separator: ', '
         translator:
-          label: Anbieter
+          label: Provider
         progress:
-          label: Fortschritt
+          label: Progress
         word_count:
-          label: Wörter
+          label: Words
         tags_count:
           label: Tags
         changed:
-          label: Geändert
+          label: Changed
         operations:
           label: Aktionen
       filters:
@@ -51,17 +51,17 @@ display:
             label: Status
         source_language:
           expose:
-            label: Ausgangssprache
+            label: 'Source language'
         target_language:
           expose:
-            label: Zielsprache
+            label: 'Target language'
         translator:
           expose:
-            label: Anbieter
+            label: Provider
       title: Auftragsübersicht
       empty:
         area_text_custom:
-          content: 'Keine Aufträge verfügbar.'
+          content: 'No jobs available.'
   page_1:
     display_title: Seite
     display_options:

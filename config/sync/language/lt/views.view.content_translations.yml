@@ -15,10 +15,10 @@ display:
         title:
           label: Title
         langcode:
-          label: Nuo
+          label: From
         translation_target_language:
-          label: Kam
+          label: To
         translation_changed:
-          label: Pakeista
+          label: Changed
   page_1:
     display_title: Puslapis

@@ -23,14 +23,14 @@ display:
         state:
           label: Stav
         label:
-          label: Označenie
+          label: Label
         type:
           label: Type
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Komu
+          label: To
           separator: ', '
         word_count:
           separator: ', '
@@ -38,7 +38,7 @@ display:
           label: Značky
           separator: ', '
         changed:
-          label: Zmenené
+          label: Changed
           separator: ', '
         operations:
           label: Operácie
@@ -48,7 +48,7 @@ display:
             label: Stav
         source_language:
           expose:
-            label: 'Zdrojový jazyk'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

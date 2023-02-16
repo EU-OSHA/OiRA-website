@@ -24,14 +24,14 @@ display:
         state:
           label: Olek
         label:
-          label: Nimetus
+          label: Label
         type:
           label: Type
         source_language:
-          label: Kellelt
+          label: From
           separator: ', '
         target_language:
-          label: Kellele
+          label: To
           separator: ', '
         word_count:
           separator: ', '
@@ -39,7 +39,7 @@ display:
           label: Sildid
           separator: ', '
         changed:
-          label: Muudetud
+          label: Changed
           separator: ', '
         operations:
           label: Toimingud
@@ -51,7 +51,7 @@ display:
             label: Olek
         source_language:
           expose:
-            label: 'Algne keel'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

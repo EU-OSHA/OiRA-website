@@ -25,21 +25,21 @@ display:
           label: Läge
           separator: ', '
         label:
-          label: Etikett
+          label: Label
         source_language_1:
-          label: Från
+          label: From
           separator: ', '
         target_language:
-          label: Till
+          label: To
           separator: ', '
         translator:
-          label: Leverantör
+          label: Provider
         progress:
-          label: Framsteg
+          label: Progress
         tags_count:
           label: Etiketter
         changed:
-          label: Ändrad
+          label: Changed
         operations:
           label: Funktioner
       filters:
@@ -48,9 +48,9 @@ display:
             label: Läge
         source_language:
           expose:
-            label: Källspråk
+            label: 'Source language'
         translator:
           expose:
-            label: Leverantör
+            label: Provider
   page_1:
     display_title: Sida

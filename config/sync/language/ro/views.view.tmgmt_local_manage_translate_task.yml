@@ -1,0 +1,247 @@
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtru
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Actualizare în masă'
+          action_title: 'Cu cele selectate'
+        title:
+          label: Title
+          separator: ', '
+        item_count:
+          label: Items
+  assigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Actualizare în masă'
+          action_title: 'Cu cele selectate'
+        status:
+          label: Stare
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: 'De la'
+          separator: ', '
+        target_language:
+          label: Către
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        source_language:
+          expose:
+            label: 'Limbă sursă'
+        uid:
+          expose:
+            label: Furnizor
+        title:
+          expose:
+            label: Title
+  closed:
+    display_title: Closed
+    display_options:
+      menu:
+        title: Closed
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Actualizare în masă'
+          action_title: 'Cu cele selectate'
+        status:
+          label: Stare
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: 'De la'
+          separator: ', '
+        target_language:
+          label: Către
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        source_language:
+          expose:
+            label: 'Limbă sursă'
+        uid:
+          expose:
+            label: Furnizor
+        title:
+          expose:
+            label: Title
+  completed:
+    display_title: Completed
+    display_options:
+      menu:
+        title: Completed
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Actualizare în masă'
+          action_title: 'Cu cele selectate'
+        status:
+          label: Stare
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: 'De la'
+          separator: ', '
+        target_language:
+          label: Către
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        source_language:
+          expose:
+            label: 'Limbă sursă'
+        uid:
+          expose:
+            label: Furnizor
+        title:
+          expose:
+            label: Title
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Actualizare în masă'
+          action_title: 'Cu cele selectate'
+        status:
+          label: Stare
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: 'De la'
+          separator: ', '
+        target_language:
+          label: Către
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        source_language:
+          expose:
+            label: 'Limbă sursă'
+        uid:
+          expose:
+            label: Furnizor
+        title:
+          expose:
+            label: Title
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Actualizare în masă'
+          action_title: 'Cu cele selectate'
+        status:
+          label: Stare
+        created:
+          label: Creat
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: 'De la'
+          separator: ', '
+        target_language:
+          label: Către
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        source_language:
+          expose:
+            label: 'Limbă sursă'
+        uid:
+          expose:
+            label: Furnizor
+        title:
+          expose:
+            label: Title
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Actualizare în masă'
+          action_title: 'Cu cele selectate'
+        status:
+          label: Stare
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: 'De la'
+          separator: ', '
+        target_language:
+          label: Către
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operations

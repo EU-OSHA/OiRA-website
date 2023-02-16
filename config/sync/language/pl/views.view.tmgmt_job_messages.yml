@@ -22,7 +22,7 @@ display:
             offset_label: Offset
       fields:
         created:
-          label: Utworzono
+          label: Created
         label:
           label: Element
         name:

@@ -18,16 +18,16 @@ display:
             last: 'posljednja »'
       fields:
         redirect_source__path:
-          label: Od
+          label: From
           separator: ', '
         created:
-          label: Stvoreno
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Od
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Za
+            label: To
   page_1:
     display_title: Stranica

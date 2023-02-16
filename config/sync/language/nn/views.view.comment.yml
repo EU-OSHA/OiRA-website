@@ -3,20 +3,7 @@ display:
   default:
     display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          tags:
-            previous: '< forrige'
-            next: 'neste >'
-            first: '« første'
-            last: 'siste »'
-          expose:
-            items_per_page_options_all_label: '- All -'
+      title: Kommentarar
       fields:
         subject:
           label: Emne
@@ -36,6 +23,23 @@ display:
           label: Operasjonar
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'neste >'
+            previous: '< forrige'
+            first: '« første'
+            last: 'siste »'
+          expose:
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Ingen kommentarar er tilgjengelege'
       filters:
         subject:
           expose:
@@ -43,10 +47,6 @@ display:
         langcode:
           expose:
             label: Språk
-      title: Kommentarar
-      empty:
-        area_text_custom:
-          content: 'Ingen kommentarar er tilgjengelege'
       use_more_text: meir
   page_published:
     display_title: 'Publiserte kommentarar'
@@ -55,13 +55,6 @@ display:
         title: Kommentarar
   page_unapproved:
     display_options:
-      filters:
-        subject:
-          expose:
-            label: Emne
-        langcode:
-          expose:
-            label: Språk
       fields:
         subject:
           label: Emne
@@ -81,3 +74,10 @@ display:
           label: Operasjonar
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Emne
+        langcode:
+          expose:
+            label: Språk

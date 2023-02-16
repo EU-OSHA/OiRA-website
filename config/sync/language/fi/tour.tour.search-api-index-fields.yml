@@ -1,6 +1,6 @@
 tips:
   search-api-index-fields-label:
-    label: Tunnus
+    label: Label
   search-api-index-fields-machine-name:
     label: 'Koneluettava nimi'
   search-api-index-fields-type:

@@ -7,7 +7,7 @@ tips:
     label: 'Felder hinzufügen'
     body: 'Mit dem Button „Felder hinzufügen" können Sie diesem Index zusätzliche Felder hinzufügen.'
   search-api-index-fields-label:
-    label: Beschriftung
+    label: Label
     body: 'Eine Beschriftung für das Feld, die verwendet wird, um an den meisten Stellen in der Benutzeroberfläche auf dieses Feld zu verweisen.'
   search-api-index-fields-machine-name:
     label: Systemname

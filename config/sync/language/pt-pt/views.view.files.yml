@@ -4,22 +4,7 @@ display:
   default:
     display_title: Predefinido
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtro
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+      title: Ficheiros
       fields:
         fid:
           label: Fid
@@ -41,6 +26,25 @@ display:
           label: 'Data alterada'
         count:
           label: 'Utilizado em'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Sem ficheiros disponíveis.'
       filters:
         filename:
           expose:
@@ -51,10 +55,6 @@ display:
         status:
           expose:
             label: Estado
-      title: Ficheiros
-      empty:
-        area_text_custom:
-          content: 'Sem ficheiros disponíveis.'
   page_1:
     display_title: 'Resumo de ficheiros'
     display_options:
@@ -63,15 +63,7 @@ display:
   page_2:
     display_title: 'uso de ficheiros'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+      title: 'uso de ficheiros'
       fields:
         entity_label:
           label: Entidade
@@ -82,7 +74,15 @@ display:
         count:
           label: 'Nº de Utilizações'
           format_plural_string: !!binary MQNAY291bnQ=
-      title: 'uso de ficheiros'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       arguments:
         fid:
           exception:

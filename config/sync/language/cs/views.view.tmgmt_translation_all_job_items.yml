@@ -24,7 +24,7 @@ display:
         state:
           label: Stav
         label:
-          label: Popisek
+          label: Label
         type:
           label: Type
         source_language:
@@ -39,7 +39,7 @@ display:
           label: Štítky
           separator: ', '
         changed:
-          label: Změněno
+          label: Changed
           separator: ', '
         operations:
           label: Operace
@@ -51,7 +51,7 @@ display:
             label: Stav
         source_language:
           expose:
-            label: 'Zdrojový jazyk'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

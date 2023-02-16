@@ -24,7 +24,7 @@ display:
         state:
           label: Olek
         label:
-          label: Nimetus
+          label: Label
         type:
           label: Type
         word_count:
@@ -33,7 +33,7 @@ display:
           label: Sildid
           separator: ', '
         changed:
-          label: Muudetud
+          label: Changed
         operations:
           label: Toimingud
       arguments:
@@ -45,13 +45,13 @@ display:
     display_options:
       fields:
         label:
-          label: Nimetus
+          label: Label
         type:
           label: Type
         word_count:
           separator: ', '
         changed:
-          label: Muudetud
+          label: Changed
           separator: ', '
   submitted:
     display_title: Vastatud

@@ -18,16 +18,16 @@ display:
             items_per_page_options_all_label: '- All -'
       fields:
         redirect_source__path:
-          label: Frá
+          label: From
           separator: ', '
         created:
-          label: Stofnað
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Frá
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Til
+            label: To
   page_1:
     display_title: Síða

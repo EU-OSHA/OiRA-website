@@ -27,7 +27,7 @@ display:
           label: Entwurf
           separator: ', '
         created:
-          label: Erstellt
+          label: Created
           separator: ', '
         remote_addr:
           label: IP-Adresse
@@ -59,10 +59,10 @@ display:
           label: Gesperrt
           separator: ', '
         created:
-          label: Erstellt
+          label: Created
           separator: ', '
         completed:
-          label: Abgeschlossen
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-Adresse
@@ -93,10 +93,10 @@ display:
           label: Gesperrt
           separator: ', '
         created:
-          label: Erstellt
+          label: Created
           separator: ', '
         completed:
-          label: Abgeschlossen
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-Adresse
@@ -129,10 +129,10 @@ display:
           label: Gesperrt
           separator: ', '
         created:
-          label: Erstellt
+          label: Created
           separator: ', '
         completed:
-          label: Abgeschlossen
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-Adresse

@@ -2,7 +2,7 @@ tips:
   search-api-index-fields-add:
     label: 'Ajouter des champs'
   search-api-index-fields-label:
-    label: Libellé
+    label: Label
   search-api-index-fields-machine-name:
     label: 'Nom système'
   search-api-index-fields-type:

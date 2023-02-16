@@ -24,19 +24,19 @@ display:
         state:
           label: Stan
         label:
-          label: Etykieta
+          label: Label
         type:
           label: Type
         progress:
-          label: Postęp
+          label: Progress
         word_count:
-          label: Słowa
+          label: Words
           separator: ', '
         tags_count:
           label: Tagi
           separator: ', '
         changed:
-          label: Zmieniono
+          label: Changed
         operations:
           label: Operacje
       arguments:
@@ -48,14 +48,14 @@ display:
     display_options:
       fields:
         label:
-          label: Etykieta
+          label: Label
         type:
           label: Type
         word_count:
-          label: Słowa
+          label: Words
           separator: ', '
         changed:
-          label: Zmieniono
+          label: Changed
           separator: ', '
   submitted:
     display_title: Przesłano

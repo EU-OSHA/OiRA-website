@@ -13,7 +13,7 @@ display:
             last: 'zadnja »'
       fields:
         created:
-          label: Ustvarjeno
+          label: Created
         name:
           label: Ime
       arguments:

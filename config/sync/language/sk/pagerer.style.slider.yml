@@ -14,4 +14,4 @@ default_config:
       prefix_label: Položka
       first_reader: 'Prvá položka'
     item_ranges:
-      prefix_label: Položky
+      prefix_label: Items

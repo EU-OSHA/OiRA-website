@@ -24,24 +24,24 @@ display:
         state:
           label: Állapot
         label:
-          label: Címke
+          label: Label
         type:
           label: Type
         source_language:
-          label: Honnan
+          label: From
           separator: ', '
         target_language:
-          label: Hova
+          label: To
           separator: ', '
         progress:
-          label: Feldolgozottság
+          label: Progress
         word_count:
           separator: ', '
         tags_count:
           label: Címkék
           separator: ', '
         changed:
-          label: Módosítva
+          label: Changed
           separator: ', '
         operations:
           label: Műveletek
@@ -53,7 +53,7 @@ display:
             label: Állapot
         source_language:
           expose:
-            label: 'Forrás nyelve'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

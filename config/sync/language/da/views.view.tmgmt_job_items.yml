@@ -24,18 +24,18 @@ display:
         state:
           label: Status
         label:
-          label: Etiket
+          label: Label
         type:
           label: Type
         progress:
-          label: Fremdrift
+          label: Progress
         word_count:
           separator: ', '
         tags_count:
           label: Tags
           separator: ', '
         changed:
-          label: Ændret
+          label: Changed
         operations:
           label: Handlinger
       arguments:
@@ -47,13 +47,13 @@ display:
     display_options:
       fields:
         label:
-          label: Etiket
+          label: Label
         type:
           label: Type
         word_count:
           separator: ', '
         changed:
-          label: Ændret
+          label: Changed
           separator: ', '
   submitted:
     display_title: Indsendt

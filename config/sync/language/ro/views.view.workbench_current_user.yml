@@ -9,3 +9,12 @@ display:
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
           sort_desc_label: Desc
+      fields:
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        access:
+          separator: ', '
+        roles:
+          separator: ', '

@@ -10,4 +10,4 @@ default_config:
       prefix_label: Elementas
       first_reader: 'Pirmas elementas'
     item_ranges:
-      prefix_label: Elementai
+      prefix_label: Items

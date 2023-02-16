@@ -27,7 +27,7 @@ display:
           label: Vázlat
           separator: ', '
         created:
-          label: Létrehozva
+          label: Created
           separator: ', '
         remote_addr:
           label: IP-cím
@@ -59,10 +59,10 @@ display:
           label: Zárolt
           separator: ', '
         created:
-          label: Létrehozva
+          label: Created
           separator: ', '
         completed:
-          label: Teljesítve
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-cím
@@ -93,10 +93,10 @@ display:
           label: Zárolt
           separator: ', '
         created:
-          label: Létrehozva
+          label: Created
           separator: ', '
         completed:
-          label: Teljesítve
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-cím
@@ -129,10 +129,10 @@ display:
           label: Zárolt
           separator: ', '
         created:
-          label: Létrehozva
+          label: Created
           separator: ', '
         completed:
-          label: Teljesítve
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-cím

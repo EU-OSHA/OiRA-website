@@ -2,6 +2,25 @@ display:
   default:
     display_title: Implicit
     display_options:
+      fields:
+        filename:
+          label: Name
+          separator: ', '
+        filesize:
+          label: Mărime
+        status:
+          label: Stare
+          settings:
+            format_custom_true: Permanent
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
       exposed_form:
         options:
           submit_button: Filtru
@@ -9,44 +28,26 @@ display:
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
           sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elemente pe pagină'
-            items_per_page_options_all_label: '- Toate -'
-            offset_label: Decalaj
-      fields:
-        filename:
-          label: Name
-        filesize:
-          label: Mărime
-        status:
-          label: Stare
-          settings:
-            format_custom_true: Permanent
       filters:
         status:
           expose:
             label: Stare
   page_2:
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elemente pe pagină'
-            items_per_page_options_all_label: '- Toate -'
-            offset_label: Decalaj
       fields:
         entity_label:
           label: Entitate
         type:
           label: 'Tip de entitate'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
       arguments:
         fid:
           exception:

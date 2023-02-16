@@ -16,7 +16,7 @@ tips:
     label: 'Zastosuj swoje kryteria wyszukiwania'
     body: 'Żeby zastosować swoje kryteria wyświetlania, kliknij przycisk <em>Filtruj</em>.'
   locale-translate:
-    label: Tłumaczenia
+    label: Translate
     body: 'Możesz wprowadzić własne tłumaczenia w pola tekstowe prawej kolumny. Musisz spróbować domyślić się w jakim kontekście wykorzystany będzie tekst, tak żeby przetłumaczyć go najlepiej jak to możliwe.'
   locale-validate:
     label: 'Potwierdź tłumaczenie'

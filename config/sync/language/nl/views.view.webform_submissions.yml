@@ -27,7 +27,7 @@ display:
           label: Concept
           separator: ', '
         created:
-          label: Aangemaakt
+          label: Created
           separator: ', '
         remote_addr:
           label: IP-adres
@@ -59,10 +59,10 @@ display:
           label: Gesloten
           separator: ', '
         created:
-          label: Aangemaakt
+          label: Created
           separator: ', '
         completed:
-          label: Voltooid
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-adres
@@ -93,10 +93,10 @@ display:
           label: Gesloten
           separator: ', '
         created:
-          label: Aangemaakt
+          label: Created
           separator: ', '
         completed:
-          label: Voltooid
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-adres
@@ -129,10 +129,10 @@ display:
           label: Gesloten
           separator: ', '
         created:
-          label: Aangemaakt
+          label: Created
           separator: ', '
         completed:
-          label: Voltooid
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-adres

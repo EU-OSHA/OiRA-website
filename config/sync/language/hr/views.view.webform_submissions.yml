@@ -20,7 +20,7 @@ display:
         in_draft:
           separator: ', '
         created:
-          label: Stvoreno
+          label: Created
           separator: ', '
         remote_addr:
           label: 'IP adresa'
@@ -48,7 +48,7 @@ display:
           label: Zaključano
           separator: ', '
         created:
-          label: Stvoreno
+          label: Created
           separator: ', '
         completed:
           separator: ', '
@@ -80,7 +80,7 @@ display:
           label: Zaključano
           separator: ', '
         created:
-          label: Stvoreno
+          label: Created
           separator: ', '
         completed:
           separator: ', '
@@ -114,7 +114,7 @@ display:
           label: Zaključano
           separator: ', '
         created:
-          label: Stvoreno
+          label: Created
           separator: ', '
         completed:
           separator: ', '

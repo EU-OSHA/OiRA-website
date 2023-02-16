@@ -23,6 +23,6 @@ display:
     display_options:
       fields:
         value:
-          label: Kenni
+          label: ID
         value_1:
           label: Author

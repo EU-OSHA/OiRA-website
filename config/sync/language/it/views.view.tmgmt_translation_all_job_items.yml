@@ -24,14 +24,14 @@ display:
         state:
           label: Stato
         label:
-          label: Etichetta
+          label: Label
         type:
           label: Type
         source_language:
-          label: Da
+          label: From
           separator: ', '
         target_language:
-          label: A
+          label: To
           separator: ', '
         word_count:
           separator: ', '
@@ -39,7 +39,7 @@ display:
           label: Etichette
           separator: ', '
         changed:
-          label: Modificato
+          label: Changed
           separator: ', '
         operations:
           label: Operazioni
@@ -51,7 +51,7 @@ display:
             label: Stato
         source_language:
           expose:
-            label: 'Lingua di origine'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

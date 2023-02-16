@@ -3,18 +3,7 @@ display:
   default:
     display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Sía
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-          expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
+      title: Notendur
       fields:
         name:
           label: Notendanafn
@@ -30,6 +19,18 @@ display:
           label: Aðgerðir
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         status:
           group_info:
@@ -43,7 +44,6 @@ display:
         permission:
           expose:
             label: Réttindi
-      title: Notendur
       use_more_text: meira
   page_1:
     display_title: Síða

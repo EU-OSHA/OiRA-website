@@ -12,7 +12,7 @@ tips:
     label: 'Použít vaše vyhledavací kritéria.'
     body: 'Pro použití vyhledavacích kritérií, klikněte na tlačítko<em>Filtrovat</em>.'
   locale-translate:
-    label: Přeložit
+    label: Translate
   locale-validate:
     label: 'Validovat překlad'
   locale-continue:

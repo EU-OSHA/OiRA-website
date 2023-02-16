@@ -14,7 +14,7 @@ display:
             last: 'последна »'
       fields:
         created:
-          label: Създадено
+          label: Created
         name:
           label: Име
       title: Съобщения

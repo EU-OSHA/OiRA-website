@@ -22,18 +22,18 @@ display:
           label: Title
           separator: ', '
         langcode:
-          label: Από
+          label: From
           separator: ', '
         translation_target_language:
-          label: Προς
+          label: To
         translation_status:
           label: 'Κατάσταση μετάφρασης'
         translation_changed:
-          label: Τροποποιημένο
+          label: Changed
       filters:
         langcode:
           expose:
-            label: 'Γλώσσα προέλευσης'
+            label: 'Source language'
         translation_status:
           expose:
             label: 'Κατάσταση μετάφρασης'

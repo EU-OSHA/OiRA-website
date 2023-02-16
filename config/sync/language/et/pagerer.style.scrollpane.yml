@@ -23,7 +23,7 @@ default_config:
       page_reader: Kirje
       first_reader: 'Esimene element'
     item_ranges:
-      prefix_label: Kirjed
+      prefix_label: Items
       previous: ‹
       next: ›
-      page_reader: Kirjed
+      page_reader: Items

@@ -24,18 +24,18 @@ display:
         state:
           label: Läge
         label:
-          label: Etikett
+          label: Label
         type:
           label: Type
         progress:
-          label: Framsteg
+          label: Progress
         word_count:
           separator: ', '
         tags_count:
           label: Etiketter
           separator: ', '
         changed:
-          label: Ändrad
+          label: Changed
         operations:
           label: Funktioner
       arguments:
@@ -47,13 +47,13 @@ display:
     display_options:
       fields:
         label:
-          label: Etikett
+          label: Label
         type:
           label: Type
         word_count:
           separator: ', '
         changed:
-          label: Ändrad
+          label: Changed
           separator: ', '
   submitted:
     display_title: Skickad

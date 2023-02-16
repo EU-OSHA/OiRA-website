@@ -25,7 +25,7 @@ display:
           label: Status
           separator: ', '
         label:
-          label: Etiket
+          label: Label
         source_language_1:
           label: Fra
           separator: ', '
@@ -33,13 +33,13 @@ display:
           label: Til
           separator: ', '
         translator:
-          label: Udbyder
+          label: Provider
         progress:
-          label: Fremdrift
+          label: Progress
         tags_count:
           label: Tags
         changed:
-          label: Ændret
+          label: Changed
         operations:
           label: Handlinger
       filters:
@@ -48,9 +48,9 @@ display:
             label: Status
         source_language:
           expose:
-            label: Kildesprog
+            label: 'Source language'
         translator:
           expose:
-            label: Udbyder
+            label: Provider
   page_1:
     display_title: Side

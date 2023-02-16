@@ -18,17 +18,17 @@ display:
             items_per_page_options_all_label: '- All -'
       fields:
         redirect_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         redirect_source__path:
-          label: Nuo
+          label: From
         created:
-          label: Sukurta
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Nuo
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Kam
+            label: To
   page_1:
     display_title: Puslapis

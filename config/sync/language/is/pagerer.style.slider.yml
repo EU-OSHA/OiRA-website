@@ -13,4 +13,4 @@ default_config:
     items:
       prefix_label: Hlutur
     item_ranges:
-      prefix_label: Hlutir
+      prefix_label: Items

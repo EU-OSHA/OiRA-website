@@ -8,6 +8,6 @@ display:
         area_text_custom:
           content: 'Ni komentarjev.'
   block_1:
-    display_title: Blok
+    display_title: Block
     display_options:
       block_description: 'Nedavni komentarji'

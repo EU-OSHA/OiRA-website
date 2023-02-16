@@ -3,15 +3,7 @@ display:
   default:
     display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- All -'
+      title: 'Nyaste loggmeldingar'
       fields:
         severity:
           label: Alvorlighetsgrad
@@ -26,6 +18,19 @@ display:
           separator: ', '
         link:
           label: Operasjonar
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area:
+          admin_label: 'Ingen loggmeldingar er tilgjengelege.'
+          content: 'Ingen loggmeldingar er tilgjengelege.'
       filters:
         type:
           expose:
@@ -33,10 +38,5 @@ display:
         severity:
           expose:
             label: Alvorlighetsgrad
-      title: 'Nyaste loggmeldingar'
-      empty:
-        area:
-          admin_label: 'Ingen loggmeldingar er tilgjengelege.'
-          content: 'Ingen loggmeldingar er tilgjengelege.'
   page:
     display_title: Nettside

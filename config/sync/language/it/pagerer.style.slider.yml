@@ -20,6 +20,6 @@ default_config:
       next: ›
       first_reader: 'Prima voce'
     item_ranges:
-      prefix_label: Elementi
+      prefix_label: Items
       previous: ‹
       next: ›

@@ -20,6 +20,6 @@ default_config:
       next: ›
       first_reader: 'Ensimmäinen kohta'
     item_ranges:
-      prefix_label: Aiheet
+      prefix_label: Items
       previous: ‹
       next: ›

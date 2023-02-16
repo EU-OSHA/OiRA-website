@@ -24,24 +24,24 @@ display:
         state:
           label: Läge
         label:
-          label: Etikett
+          label: Label
         type:
           label: Type
         source_language:
-          label: Från
+          label: From
           separator: ', '
         target_language:
-          label: Till
+          label: To
           separator: ', '
         progress:
-          label: Framsteg
+          label: Progress
         word_count:
           separator: ', '
         tags_count:
           label: Etiketter
           separator: ', '
         changed:
-          label: Ändrad
+          label: Changed
           separator: ', '
         operations:
           label: Funktioner
@@ -53,7 +53,7 @@ display:
             label: Läge
         source_language:
           expose:
-            label: Källspråk
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

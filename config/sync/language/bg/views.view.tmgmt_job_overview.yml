@@ -16,11 +16,11 @@ display:
         state:
           label: Статус
         label:
-          label: Заглавие
+          label: Label
         source_language_1:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         tags_count:
           label: Таг
         operations:

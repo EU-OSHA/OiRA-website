@@ -16,7 +16,7 @@ tips:
     label: 'Keresési feltételek alkalmazása'
     body: 'A keresési feltételek alkalmazása a <em>Szűrő</em> gombra kattintással lehetséges.'
   locale-translate:
-    label: Fordítás
+    label: Translate
     body: 'A jobb oszlopban található szövegmezőkbe írhatók a saját fordítások. A megfelelő fordítás eléréséhez érdemes átgondolni, milyen környezetben lesznek használva.'
   locale-validate:
     label: 'Fordítás érvényesítése'

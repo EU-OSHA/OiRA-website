@@ -10,4 +10,4 @@ default_config:
       prefix_label: Ieraksts
       first_reader: 'Pirmais elements'
     item_ranges:
-      prefix_label: Vienumi
+      prefix_label: Items

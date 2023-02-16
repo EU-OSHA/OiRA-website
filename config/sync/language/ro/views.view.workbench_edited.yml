@@ -21,14 +21,24 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
+        nid:
+          separator: ', '
         title:
           label: Title
+          separator: ', '
         type:
           label: Tip
+          separator: ', '
         status:
           label: Published
+          separator: ', '
+        changed:
+          separator: ', '
         uid:
           label: Author
+          separator: ', '
+        revision_uid:
+          separator: ', '
       filters:
         title:
           expose:
@@ -48,6 +58,8 @@ display:
       pager:
         options:
           tags:
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:

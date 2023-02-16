@@ -16,7 +16,7 @@ tips:
     label: 'Tillämpa dina sökkriterier'
     body: 'Klicka på knappen <em>Filter</em> för att tillämpa dina sökkriterier.'
   locale-translate:
-    label: Översätt
+    label: Translate
     body: 'Du kan skriva din egen översättning i textfälten i den högra kolumnen. Försök att räkna ut i vilket sammanhang texten kommer att användas för att översätta det på lämpligt sätt.'
   locale-validate:
     label: 'Bekräfta översättningen'

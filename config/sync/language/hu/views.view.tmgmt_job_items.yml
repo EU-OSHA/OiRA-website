@@ -24,19 +24,19 @@ display:
         state:
           label: Állapot
         label:
-          label: Címke
+          label: Label
         type:
           label: Type
         progress:
-          label: Feldolgozottság
+          label: Progress
         word_count:
-          label: Szavak
+          label: Words
           separator: ', '
         tags_count:
           label: Címkék
           separator: ', '
         changed:
-          label: Módosítva
+          label: Changed
         operations:
           label: Műveletek
       arguments:
@@ -48,14 +48,14 @@ display:
     display_options:
       fields:
         label:
-          label: Címke
+          label: Label
         type:
           label: Type
         word_count:
-          label: Szavak
+          label: Words
           separator: ', '
         changed:
-          label: Módosítva
+          label: Changed
           separator: ', '
   submitted:
     display_title: Beküldött

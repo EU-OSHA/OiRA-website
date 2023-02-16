@@ -23,7 +23,7 @@ display:
         state:
           label: Κατάσταση
         label:
-          label: Ετικέτα
+          label: Label
         type:
           label: Type
         word_count:
@@ -32,7 +32,7 @@ display:
           label: Ετικέτες
           separator: ', '
         changed:
-          label: Τροποποιημένο
+          label: Changed
         operations:
           label: Λειτουργίες
       arguments:
@@ -44,13 +44,13 @@ display:
     display_options:
       fields:
         label:
-          label: Ετικέτα
+          label: Label
         type:
           label: Type
         word_count:
           separator: ', '
         changed:
-          label: Τροποποιημένο
+          label: Changed
           separator: ', '
   submitted:
     display_title: Υποβλήθηκε

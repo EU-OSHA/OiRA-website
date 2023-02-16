@@ -2,14 +2,15 @@ display:
   default:
     display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+      title: Media
       pager:
         options:
           expose:
             items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         status:
           group_info:
@@ -25,7 +26,6 @@ display:
         langcode:
           expose:
             label: Språk
-      title: Media
   page:
     display_title: Nettside
     display_options:
@@ -38,14 +38,14 @@ display:
           text: Slett
   widget:
     display_options:
-      filters:
-        name:
-          expose:
-            label: Namn
       arguments:
         bundle:
           exception:
             title: All
+      filters:
+        name:
+          expose:
+            label: Namn
       header:
         display_link_table:
           label: Tabell
@@ -58,14 +58,14 @@ display:
           label: Author
         changed:
           label: Oppdatert
-      filters:
-        name:
-          expose:
-            label: Namn
       arguments:
         bundle:
           exception:
             title: All
+      filters:
+        name:
+          expose:
+            label: Namn
       header:
         display_link_table:
           label: Tabell

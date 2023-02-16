@@ -22,7 +22,7 @@ default_config:
       page_reader: Položka
       first_reader: 'První položka'
     item_ranges:
-      prefix_label: Položky
+      prefix_label: Items
       previous: ‹
       next: ›
-      page_reader: Položky
+      page_reader: Items

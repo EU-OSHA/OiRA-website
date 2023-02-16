@@ -24,17 +24,17 @@ display:
         state:
           label: Estado
         label:
-          label: Etiqueta
+          label: Label
         type:
           label: Type
         source_language:
-          label: Desde
+          label: From
           separator: ', '
         target_language:
-          label: Para
+          label: To
           separator: ', '
         progress:
-          label: Progreso
+          label: Progress
         word_count:
           label: Palabra
           separator: ', '
@@ -42,7 +42,7 @@ display:
           label: Etiquetas
           separator: ', '
         changed:
-          label: Modificado
+          label: Changed
           separator: ', '
         operations:
           label: Operaciones
@@ -54,7 +54,7 @@ display:
             label: Estado
         source_language:
           expose:
-            label: 'Idioma de origen'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

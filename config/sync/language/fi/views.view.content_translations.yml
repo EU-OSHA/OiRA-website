@@ -32,11 +32,11 @@ display:
         translation_status:
           label: 'Käännöksen tila'
         translation_changed:
-          label: Muuttunut
+          label: Changed
       filters:
         langcode:
           expose:
-            label: Lähdekieli
+            label: 'Source language'
         translation_outdated:
           expose:
             label: Vanhentunut

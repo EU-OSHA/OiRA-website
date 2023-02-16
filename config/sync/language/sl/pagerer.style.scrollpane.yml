@@ -11,5 +11,5 @@ default_config:
     items:
       first_reader: 'Prvi element'
     item_ranges:
-      prefix_label: Notice
-      page_reader: Notice
+      prefix_label: Items
+      page_reader: Items

@@ -14,6 +14,6 @@ tips:
     label: 'Εφαρμογή των κριτηρίων αναζήτησής σας'
     body: 'Για να εφαρμόσετε τα κριτήρια αναζήτησής σας, πατήστε το κουμπί <em>Φίλτρο</em>.'
   locale-translate:
-    label: Μετάφραση
+    label: Translate
   locale-validate:
     label: 'Επαληθεύστε τη μετάφραση'

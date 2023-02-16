@@ -14,6 +14,6 @@ tips:
     label: 'Applicare i criteri di ricerca'
     body: 'Per applicare il criterio di ricerca, fai click sul pulsante <em>Filtra</em>.'
   locale-translate:
-    label: Traduci
+    label: Translate
   locale-validate:
     label: 'Convalida la traduzione'
