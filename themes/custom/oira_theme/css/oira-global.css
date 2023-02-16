@@ -1055,7 +1055,11 @@ table tr td {
     flex-direction: column;
     justify-content: center;
     padding: 18px 0px;
-    border-bottom: 3px dashed #EAE5ED;
+    background-color: transparent;
+    background-image: url("../images/dashed-border-for-news-view.png");
+    background-repeat: repeat-x;
+    background-position: 0% 100%;
+    background-size: 40px;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row img {
     object-fit: cover;
@@ -1105,7 +1109,7 @@ table tr td {
     cursor: pointer;
     text-decoration: none;
     padding-left: 0rem;
-    padding-right: 20px;
+    padding-right: 30px;
     color: #10b2e4;
     font-weight: bold;
     font-style: normal;
@@ -1113,10 +1117,13 @@ table tr td {
     background-image: url("../images/icon-arrow-blue.png");
     background-repeat: no-repeat;
     background-position: 100% 47%;
-    background-size: 11px;
+    background-size: 17px;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more a:before {
     content: "";
+  }
+  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more a:hover {
+    text-decoration: underline;
   }
   .page-view-news .view-footer {
     text-align: end;
@@ -1138,6 +1145,7 @@ table tr td {
     justify-content: start;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content {
+    padding-top: 1rem;
     padding-left: 45px;
   }
   .page-view-news .view-footer {
@@ -1237,7 +1245,7 @@ body {
 }
 
 #main-wrapper {
-  padding-bottom: 7rem;
+  padding-bottom: 5rem;
 }
 
 a {
