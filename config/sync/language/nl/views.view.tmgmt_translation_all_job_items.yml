@@ -28,13 +28,13 @@ display:
         type:
           label: Type
         source_language:
-          label: Van
+          label: From
           separator: ', '
         target_language:
-          label: Naar
+          label: To
           separator: ', '
         progress:
-          label: Voortgang
+          label: Progress
         word_count:
           label: Woord
           separator: ', '
@@ -42,7 +42,7 @@ display:
           label: Labels
           separator: ', '
         changed:
-          label: Gewijzigd
+          label: Changed
           separator: ', '
         operations:
           label: Bewerkingen
@@ -54,10 +54,10 @@ display:
             label: Status
         source_language:
           expose:
-            label: Brontaal
+            label: 'Source language'
         target_language:
           expose:
-            label: Doeltaal
+            label: 'Target language'
         job_type:
           group_info:
             label: Vacaturetype

@@ -62,7 +62,7 @@ display:
           label: Oprettet
           separator: ', '
         completed:
-          label: Gennemført
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-adresse
@@ -96,7 +96,7 @@ display:
           label: Oprettet
           separator: ', '
         completed:
-          label: Gennemført
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-adresse
@@ -132,7 +132,7 @@ display:
           label: Oprettet
           separator: ', '
         completed:
-          label: Gennemført
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-adresse

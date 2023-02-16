@@ -1,0 +1,35 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- All -'
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          separator: ', '
+  page_1:
+    display_options:
+      menu:
+        title: Liste
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          separator: ', '
+        filename_1:
+          separator: ', '
+  page_2:
+    display_options:
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          separator: ', '

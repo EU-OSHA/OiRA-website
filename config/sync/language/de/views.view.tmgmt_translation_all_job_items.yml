@@ -24,17 +24,17 @@ display:
         state:
           label: Status
         label:
-          label: Beschriftung
+          label: Label
         type:
           label: Type
         source_language:
-          label: Von
+          label: From
           separator: ', '
         target_language:
-          label: An
+          label: To
           separator: ', '
         progress:
-          label: Fortschritt
+          label: Progress
         word_count:
           label: Wort
           separator: ', '
@@ -42,7 +42,7 @@ display:
           label: Tags
           separator: ', '
         changed:
-          label: Geändert
+          label: Changed
           separator: ', '
         operations:
           label: Aktionen
@@ -54,10 +54,10 @@ display:
             label: Status
         source_language:
           expose:
-            label: Ausgangssprache
+            label: 'Source language'
         target_language:
           expose:
-            label: Zielsprache
+            label: 'Target language'
         job_type:
           group_info:
             label: Job-Typ

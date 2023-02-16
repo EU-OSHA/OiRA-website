@@ -1,0 +1,181 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- All -'
+      fields:
+        title:
+          label: Label
+        item_count:
+          label: Items
+      filters:
+        status:
+          expose:
+            label: Statuss
+  closed:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Label
+        source_language:
+          label: From
+        target_language:
+          label: To
+        item_count:
+          label: Items
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Label
+      menu:
+        title: Closed
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Label
+        source_language:
+          label: From
+        target_language:
+          label: To
+        item_count:
+          label: Items
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Label
+      menu:
+        title: Completed
+  eligible:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Label
+        source_language:
+          label: From
+        target_language:
+          label: To
+        item_count:
+          label: Items
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Label
+  my_tasks:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Label
+        source_language:
+          label: From
+        target_language:
+          label: To
+        item_count:
+          label: Items
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Label
+  pending:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Label
+        source_language:
+          label: From
+        target_language:
+          label: To
+        item_count:
+          label: Items
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Label
+      menu:
+        title: Pending
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Label
+        source_language:
+          label: From
+        target_language:
+          label: To
+        item_count:
+          label: Items
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Label
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Label
+        source_language:
+          label: From
+        target_language:
+          label: To
+        item_count:
+          label: Items
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+      tab_options:
+        title: Translate

@@ -59,7 +59,7 @@ display:
           label: Luotu
           separator: ', '
         completed:
-          label: Valmis
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP osoite'
@@ -93,7 +93,7 @@ display:
           label: Luotu
           separator: ', '
         completed:
-          label: Valmis
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP osoite'
@@ -129,7 +129,7 @@ display:
           label: Luotu
           separator: ', '
         completed:
-          label: Valmis
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP osoite'

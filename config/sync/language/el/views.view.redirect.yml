@@ -21,18 +21,18 @@ display:
             offset_label: Offset
       fields:
         redirect_bulk_form:
-          action_title: 'Επιλογές ενημέρωσης'
+          action_title: 'With selection'
         redirect_source__path:
-          label: Από
+          label: From
           separator: ', '
         created:
-          label: Δημιουργήθηκε
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Από
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Προς
+            label: To
   page_1:
     display_title: Σελίδα

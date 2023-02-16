@@ -23,17 +23,17 @@ display:
             offset_label: Offset
       fields:
         redirect_source__path:
-          label: Od
+          label: From
           separator: ', '
         created:
-          label: Utworzono
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Od
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Do
+            label: To
         status_code:
           expose:
             label: 'Kod statusu'

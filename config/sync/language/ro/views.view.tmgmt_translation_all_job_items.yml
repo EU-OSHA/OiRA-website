@@ -29,12 +29,18 @@ display:
           label: Tip
         source_language:
           label: 'De la'
+          separator: ', '
         target_language:
           label: Către
+          separator: ', '
+        word_count:
+          separator: ', '
         tags_count:
           label: Etichete
+          separator: ', '
         changed:
           label: Schimbat
+          separator: ', '
         operations:
           label: Operations
       filters:

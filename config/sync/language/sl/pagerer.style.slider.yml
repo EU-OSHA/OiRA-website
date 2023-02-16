@@ -9,4 +9,4 @@ default_config:
     items:
       first_reader: 'Prvi element'
     item_ranges:
-      prefix_label: Notice
+      prefix_label: Items

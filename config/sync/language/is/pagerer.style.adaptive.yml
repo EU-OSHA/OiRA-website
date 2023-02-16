@@ -16,5 +16,5 @@ default_config:
       prefix_label: Hlutur
       page_reader: Hlutur
     item_ranges:
-      prefix_label: Hlutir
-      page_reader: Hlutir
+      prefix_label: Items
+      page_reader: Items

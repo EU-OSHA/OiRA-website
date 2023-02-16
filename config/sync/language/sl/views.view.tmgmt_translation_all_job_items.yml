@@ -6,13 +6,13 @@ display:
           reset_button_label: Reset
       fields:
         label:
-          label: Oznaka
+          label: Label
         type:
           label: Type
         source_language:
-          label: Od
+          label: From
         target_language:
-          label: Za
+          label: To
         tags_count:
           label: Oznake
         operations:

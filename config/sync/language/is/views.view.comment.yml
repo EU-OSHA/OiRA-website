@@ -3,21 +3,7 @@ display:
   default:
     display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Sía
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          tags:
-            previous: '‹ fyrri'
-            next: 'næsta ›'
-            first: '« fremsta'
-            last: 'aftasta »'
-          expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
+      title: Ummæli
       fields:
         comment_bulk_form:
           action_title: Aðgerð
@@ -38,6 +24,24 @@ display:
           label: Aðgerðir
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'næsta ›'
+            previous: '‹ fyrri'
+            first: '« fremsta'
+            last: 'aftasta »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Engin ummæli tiltæk.'
       filters:
         subject:
           expose:
@@ -45,10 +49,6 @@ display:
         langcode:
           expose:
             label: Tungumál
-      title: Ummæli
-      empty:
-        area_text_custom:
-          content: 'Engin ummæli tiltæk.'
       use_more_text: meira
   page_published:
     display_title: 'Birt ummæli'
@@ -57,13 +57,6 @@ display:
         title: Ummæli
   page_unapproved:
     display_options:
-      filters:
-        subject:
-          expose:
-            label: Viðfangsefni
-        langcode:
-          expose:
-            label: Tungumál
       fields:
         comment_bulk_form:
           action_title: Aðgerð
@@ -84,3 +77,10 @@ display:
           label: Aðgerðir
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Viðfangsefni
+        langcode:
+          expose:
+            label: Tungumál

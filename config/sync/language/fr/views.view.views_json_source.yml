@@ -37,6 +37,6 @@ display:
       title: 'Exemple 3'
       fields:
         value:
-          label: 'Identifiant (ID)'
+          label: ID
         value_1:
           label: Author

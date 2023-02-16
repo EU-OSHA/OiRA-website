@@ -28,21 +28,21 @@ display:
         label:
           label: Label
         source_language_1:
-          label: Van
+          label: From
           separator: ', '
         target_language:
-          label: Naar
+          label: To
           separator: ', '
         translator:
           label: Provider
         progress:
-          label: Voortgang
+          label: Progress
         word_count:
-          label: Woorden
+          label: Words
         tags_count:
           label: Labels
         changed:
-          label: Gewijzigd
+          label: Changed
         operations:
           label: Bewerkingen
       filters:
@@ -51,16 +51,16 @@ display:
             label: Status
         source_language:
           expose:
-            label: Brontaal
+            label: 'Source language'
         target_language:
           expose:
-            label: Doeltaal
+            label: 'Target language'
         translator:
           expose:
             label: Provider
       empty:
         area_text_custom:
-          content: 'Geen opdrachten beschikbaar.'
+          content: 'No jobs available.'
   page_1:
     display_title: Pagina
     display_options:

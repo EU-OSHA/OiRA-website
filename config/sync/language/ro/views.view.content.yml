@@ -1,7 +1,33 @@
 label: Conţinut
 display:
   default:
+    display_title: Implicit
     display_options:
+      title: Conţinut
+      fields:
+        title:
+          label: Title
+        type:
+          label: 'Content type'
+          separator: ', '
+        name:
+          label: Author
+        status:
+          label: Stare
+          settings:
+            format_custom_false: Unpublished
+            format_custom_true: Published
+        changed:
+          label: Actualizat
+        operations:
+          label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
       exposed_form:
         options:
           submit_button: Filtru
@@ -9,29 +35,6 @@ display:
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
           sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-      fields:
-        title:
-          label: Title
-        type:
-          label: 'Content type'
-        name:
-          label: Author
-        status:
-          label: Stare
-          settings:
-            format_custom_true: Published
-            format_custom_false: Unpublished
-        changed:
-          label: Actualizat
-        operations:
-          label: Operations
       filters:
         title:
           expose:
@@ -52,12 +55,10 @@ display:
         langcode:
           expose:
             label: Limba
-      title: Conţinut
-    display_title: Implicit
   page_1:
+    display_title: Pagina
     display_options:
       menu:
         title: Conţinut
       tab_options:
         title: Conţinut
-    display_title: Pagina

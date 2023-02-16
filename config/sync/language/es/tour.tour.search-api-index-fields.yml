@@ -3,7 +3,7 @@ tips:
     label: 'Añadir campos'
     body: 'Con el botón "Añadir campos" se pueden añadir campos adicionales a este índice.'
   search-api-index-fields-label:
-    label: Etiqueta
+    label: Label
     body: 'Una etiqueta para el campo que se utilizará para referirse al campo en la mayoría de los lugares de la interfaz de usuario.'
   search-api-index-fields-machine-name:
     label: 'Nombre de sistema'

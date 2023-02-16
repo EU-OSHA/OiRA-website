@@ -23,12 +23,15 @@ display:
       fields:
         state:
           label: Status
+          separator: ', '
         label:
           label: Label
         source_language_1:
           label: 'De la'
+          separator: ', '
         target_language:
           label: Către
+          separator: ', '
         translator:
           label: Furnizor
         tags_count:

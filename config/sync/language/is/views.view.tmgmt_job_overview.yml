@@ -21,12 +21,12 @@ display:
           label: Fylki
           separator: ', '
         label:
-          label: Merking
+          label: Label
         source_language_1:
-          label: Frá
+          label: From
           separator: ', '
         target_language:
-          label: Til
+          label: To
           separator: ', '
         tags_count:
           label: Efnisorð

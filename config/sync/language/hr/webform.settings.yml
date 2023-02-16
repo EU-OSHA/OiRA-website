@@ -3,6 +3,7 @@ settings:
   default_reset_button_label: Reset
   default_delete_button_label: Ukloni
   default_wizard_start_label: Početak
+  default_wizard_toggle_show_label: 'Show all'
   default_preview_next_button_label: Pregled
   default_preview_label: Pregled
   dialog_options:

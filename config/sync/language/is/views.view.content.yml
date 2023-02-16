@@ -1,16 +1,9 @@
 label: Innihald
 display:
   default:
+    display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Sía
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
+      title: Innihald
       fields:
         title:
           label: Title
@@ -22,12 +15,21 @@ display:
         status:
           label: Staða
           settings:
-            format_custom_true: Published
             format_custom_false: 'Ekki birt'
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Aðgerðir
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         title:
           expose:
@@ -48,12 +50,10 @@ display:
         langcode:
           expose:
             label: Tungumál
-      title: Innihald
-    display_title: Sjálfgefið
   page_1:
+    display_title: Síða
     display_options:
       menu:
         title: Innihald
       tab_options:
         title: Innihald
-    display_title: Síða

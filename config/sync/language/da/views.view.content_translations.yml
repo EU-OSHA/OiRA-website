@@ -32,11 +32,11 @@ display:
         translation_status:
           label: Oversættelsesstatus
         translation_changed:
-          label: Ændret
+          label: Changed
       filters:
         langcode:
           expose:
-            label: Kildesprog
+            label: 'Source language'
         content_translation_outdated:
           expose:
             label: 'Forældet oversættelse'

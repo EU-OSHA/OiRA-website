@@ -20,7 +20,7 @@ display:
         state:
           label: Država
         label:
-          label: Oznaka
+          label: Label
         type:
           label: Type
         word_count:
@@ -39,7 +39,7 @@ display:
     display_options:
       fields:
         label:
-          label: Oznaka
+          label: Label
         type:
           label: Type
         word_count:

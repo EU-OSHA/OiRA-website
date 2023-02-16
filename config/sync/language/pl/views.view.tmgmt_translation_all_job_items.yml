@@ -24,17 +24,17 @@ display:
         state:
           label: Stan
         label:
-          label: Etykieta
+          label: Label
         type:
           label: Type
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Do
+          label: To
           separator: ', '
         progress:
-          label: Postęp
+          label: Progress
         word_count:
           label: Słowo
           separator: ', '
@@ -42,7 +42,7 @@ display:
           label: Tagi
           separator: ', '
         changed:
-          label: Zmieniono
+          label: Changed
           separator: ', '
         operations:
           label: Operacje
@@ -54,7 +54,7 @@ display:
             label: Stan
         source_language:
           expose:
-            label: 'Język źródłowy'
+            label: 'Source language'
         job_type:
           group_info:
             label: 'Typ pracy'

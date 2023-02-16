@@ -14,15 +14,15 @@ display:
             last: 'zadnja »'
       fields:
         redirect_source__path:
-          label: Od
+          label: From
         created:
-          label: Ustvarjeno
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Od
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Za
+            label: To
   page_1:
     display_title: Stran

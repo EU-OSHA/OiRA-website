@@ -17,14 +17,14 @@ display:
         state:
           label: Fylki
         label:
-          label: Merking
+          label: Label
         type:
           label: Type
         source_language:
-          label: Frá
+          label: From
           separator: ', '
         target_language:
-          label: Til
+          label: To
           separator: ', '
         word_count:
           separator: ', '

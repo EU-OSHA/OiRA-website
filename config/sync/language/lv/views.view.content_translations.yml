@@ -18,13 +18,13 @@ display:
         title:
           label: Title
         langcode:
-          label: 'No'
+          label: From
         translation_target_language:
-          label: Kam
+          label: To
         translation_status:
           label: 'Tulkojuma statuss'
         translation_changed:
-          label: Labots
+          label: Changed
       filters:
         translation_outdated:
           expose:

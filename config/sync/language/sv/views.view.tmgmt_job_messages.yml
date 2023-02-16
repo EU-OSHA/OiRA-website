@@ -22,7 +22,7 @@ display:
             offset_label: Offset
       fields:
         created:
-          label: Skapad
+          label: Created
         label:
           label: Artikel
         name:

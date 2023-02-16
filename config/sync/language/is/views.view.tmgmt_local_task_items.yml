@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+          tags:
+            previous: '‹ Previous'
+      fields:
+        status:
+          label: Staða
+        label:
+          label: Label
+        item_type:
+          label: Type
+          separator: ', '
+        word_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      arguments:
+        tltid:
+          exception:
+            title: All
+  block_1:
+    display_title: Blokk

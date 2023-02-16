@@ -25,7 +25,7 @@ display:
           label: Tila
           separator: ', '
         label:
-          label: Tunnus
+          label: Label
         source_language_1:
           label: Lähettäjä
           separator: ', '
@@ -33,11 +33,11 @@ display:
           label: Osoitteeseen
           separator: ', '
         translator:
-          label: Sisältölähde
+          label: Provider
         tags_count:
           label: Tagit
         changed:
-          label: Muuttunut
+          label: Changed
         operations:
           label: Toimenpiteet
       filters:
@@ -46,9 +46,9 @@ display:
             label: Tila
         source_language:
           expose:
-            label: Lähdekieli
+            label: 'Source language'
         translator:
           expose:
-            label: Sisältölähde
+            label: Provider
   page_1:
     display_title: Sivu

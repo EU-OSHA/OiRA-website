@@ -16,7 +16,7 @@ display:
         state:
           label: Статус
         label:
-          label: Заглавие
+          label: Label
         type:
           label: Type
         tags_count:
@@ -32,6 +32,6 @@ display:
     display_options:
       fields:
         label:
-          label: Заглавие
+          label: Label
         type:
           label: Type

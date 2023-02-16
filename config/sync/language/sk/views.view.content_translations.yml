@@ -24,18 +24,18 @@ display:
           label: Title
           separator: ', '
         langcode:
-          label: Od
+          label: From
           separator: ', '
         translation_target_language:
-          label: Komu
+          label: To
         translation_status:
           label: 'Stav prekladu'
         translation_changed:
-          label: Zmenené
+          label: Changed
       filters:
         langcode:
           expose:
-            label: 'Zdrojový jazyk'
+            label: 'Source language'
         translation_status:
           expose:
             label: 'Stav prekladu'

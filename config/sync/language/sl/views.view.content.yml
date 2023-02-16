@@ -1,11 +1,9 @@
 label: Vsebine
 display:
   default:
+    display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
+      title: Vsebine
       fields:
         title:
           label: Title
@@ -16,12 +14,19 @@ display:
         status:
           label: Stanje
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Operacije
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+      empty:
+        area_text_custom:
+          content: 'Na voljo ni nobene vsebine.'
       filters:
         title:
           expose:
@@ -42,15 +47,10 @@ display:
         langcode:
           expose:
             label: Jezik
-      title: Vsebine
-      empty:
-        area_text_custom:
-          content: 'Na voljo ni nobene vsebine.'
-    display_title: Privzeto
   page_1:
+    display_title: Stran
     display_options:
       menu:
         title: Vsebine
       tab_options:
         title: Vsebine
-    display_title: Stran

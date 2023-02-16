@@ -7,7 +7,7 @@ display:
           reset_button_label: Reset
       fields:
         created:
-          label: Създадено
+          label: Created
         view_webform_submission:
           label: Действия
           text: преглед
@@ -23,7 +23,7 @@ display:
         sticky:
           label: Фиксиран
         created:
-          label: Създадено
+          label: Created
         operations:
           label: Действия
       filters:
@@ -38,7 +38,7 @@ display:
         sticky:
           label: Фиксиран
         created:
-          label: Създадено
+          label: Created
         view_webform_submission:
           label: Действия
           text: преглед
@@ -55,7 +55,7 @@ display:
         sticky:
           label: Фиксиран
         created:
-          label: Създадено
+          label: Created
         view_webform_submission:
           label: Действия
           text: преглед

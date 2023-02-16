@@ -13,6 +13,6 @@ tips:
   locale-submit:
     label: 'Apliqueu el vostre criteri de cerca'
   locale-translate:
-    label: Tradueix
+    label: Translate
   locale-validate:
     label: 'Valida la traducció'

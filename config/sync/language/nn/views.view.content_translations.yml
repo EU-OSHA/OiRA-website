@@ -15,9 +15,9 @@ display:
           label: Title
           separator: ', '
         langcode:
-          label: Frå
+          label: From
           separator: ', '
         translation_target_language:
-          label: Til
+          label: To
   page_1:
     display_title: Nettside

@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+      fields:
+        status:
+          label: Статус
+        label:
+          label: Label
+        item_type:
+          label: Type
+        operations:
+          label: Действия
+      arguments:
+        tltid:
+          exception:
+            title: All
+  block_1:
+    display_title: Блокирай

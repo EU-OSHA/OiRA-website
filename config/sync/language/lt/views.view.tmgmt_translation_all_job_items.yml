@@ -15,17 +15,17 @@ display:
         state:
           label: Etapas
         label:
-          label: Žymė
+          label: Label
         type:
           label: Type
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         tags_count:
           label: Raktažodžiai
         changed:
-          label: Pakeista
+          label: Changed
         operations:
           label: Veiksmai
       filters:

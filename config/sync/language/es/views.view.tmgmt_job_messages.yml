@@ -22,7 +22,7 @@ display:
             offset_label: Offset
       fields:
         created:
-          label: Creado
+          label: Created
         label:
           label: Elemento
         name:

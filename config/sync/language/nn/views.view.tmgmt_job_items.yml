@@ -17,7 +17,7 @@ display:
             last: 'siste »'
       fields:
         label:
-          label: Etikett
+          label: Label
         type:
           label: Type
         word_count:
@@ -34,7 +34,7 @@ display:
     display_options:
       fields:
         label:
-          label: Etikett
+          label: Label
         type:
           label: Type
         word_count:

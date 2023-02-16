@@ -1,0 +1,192 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        item_count:
+          label: Items
+  assigned:
+    display_options:
+      fields:
+        status:
+          label: Staða
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: From
+          separator: ', '
+        target_language:
+          label: To
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Title
+  closed:
+    display_title: Closed
+    display_options:
+      menu:
+        title: Closed
+      fields:
+        status:
+          label: Staða
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: From
+          separator: ', '
+        target_language:
+          label: To
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Title
+  completed:
+    display_title: Completed
+    display_options:
+      menu:
+        title: Completed
+      fields:
+        status:
+          label: Staða
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: From
+          separator: ', '
+        target_language:
+          label: To
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Title
+  pending:
+    display_title: Pending
+    display_options:
+      menu:
+        title: Pending
+      fields:
+        status:
+          label: Staða
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: From
+          separator: ', '
+        target_language:
+          label: To
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Title
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        created:
+          label: Created
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: From
+          separator: ', '
+        target_language:
+          label: To
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Title
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Title
+          separator: ', '
+        source_language:
+          label: From
+          separator: ', '
+        target_language:
+          label: To
+          separator: ', '
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir

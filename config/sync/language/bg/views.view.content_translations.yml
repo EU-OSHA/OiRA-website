@@ -9,8 +9,8 @@ display:
         title:
           label: Title
         langcode:
-          label: От
+          label: From
         translation_target_language:
-          label: До
+          label: To
   page_1:
     display_title: Страница

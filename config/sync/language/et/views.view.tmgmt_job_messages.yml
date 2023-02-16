@@ -22,7 +22,7 @@ display:
             offset_label: Offset
       fields:
         created:
-          label: Loodud
+          label: Created
         label:
           label: Kirje
         name:

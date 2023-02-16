@@ -16,7 +16,7 @@ tips:
     label: 'De zoekcriteria toepassen'
     body: 'Klik op de <em>Filter</em>-knop om de zoekcriteria toe te passen.'
   locale-translate:
-    label: Vertalen
+    label: Translate
     body: 'U kunt uw eigen vertaling in de tekstvelden van de rechter kolom schrijven. U kunt het beste proberen te achterhalen in welke context de tekst wordt gebruikt om de meest passende vertaling te geven.'
   locale-validate:
     label: 'De vertaling valideren'

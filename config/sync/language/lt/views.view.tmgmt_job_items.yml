@@ -20,13 +20,13 @@ display:
         state:
           label: Etapas
         label:
-          label: Žymė
+          label: Label
         type:
           label: Type
         tags_count:
           label: Raktažodžiai
         changed:
-          label: Pakeista
+          label: Changed
         operations:
           label: Veiksmai
       arguments:
@@ -38,10 +38,10 @@ display:
     display_options:
       fields:
         label:
-          label: Žymė
+          label: Label
         type:
           label: Type
         changed:
-          label: Pakeista
+          label: Changed
   submitted:
     display_title: Pateikta

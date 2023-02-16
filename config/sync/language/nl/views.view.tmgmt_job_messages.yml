@@ -22,7 +22,7 @@ display:
             offset_label: Offset
       fields:
         created:
-          label: Aangemaakt
+          label: Created
         label:
           label: Item
         name:

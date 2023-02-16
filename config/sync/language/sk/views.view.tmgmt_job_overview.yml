@@ -24,21 +24,21 @@ display:
           label: Stav
           separator: ', '
         label:
-          label: Označenie
+          label: Label
         source_language_1:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Komu
+          label: To
           separator: ', '
         translator:
-          label: Poskytovateľ
+          label: Provider
         word_count:
-          label: Slov
+          label: Words
         tags_count:
           label: Značky
         changed:
-          label: Zmenené
+          label: Changed
         operations:
           label: Operácie
       filters:
@@ -47,9 +47,9 @@ display:
             label: Stav
         source_language:
           expose:
-            label: 'Zdrojový jazyk'
+            label: 'Source language'
         translator:
           expose:
-            label: Poskytovateľ
+            label: Provider
   page_1:
     display_title: Stránka

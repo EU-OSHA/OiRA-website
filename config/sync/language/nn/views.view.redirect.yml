@@ -17,16 +17,16 @@ display:
             items_per_page_options_all_label: '- All -'
       fields:
         redirect_source__path:
-          label: Frå
+          label: From
           separator: ', '
         created:
-          label: Laga
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Frå
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Til
+            label: To
   page_1:
     display_title: Nettside

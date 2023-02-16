@@ -14,15 +14,15 @@ display:
             last: 'последна »'
       fields:
         redirect_source__path:
-          label: От
+          label: From
         created:
-          label: Създадено
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: От
+            label: From
         redirect_redirect__uri:
           expose:
-            label: До
+            label: To
   page_1:
     display_title: Страница

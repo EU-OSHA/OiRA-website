@@ -25,19 +25,19 @@ display:
           label: Estat
           separator: ', '
         label:
-          label: Etiqueta
+          label: Label
         source_language_1:
-          label: De
+          label: From
           separator: ', '
         target_language:
-          label: Per
+          label: To
           separator: ', '
         translator:
-          label: Proveïdor
+          label: Provider
         tags_count:
           label: Etiquetes
         changed:
-          label: Canviat
+          label: Changed
         operations:
           label: Operacions
       filters:
@@ -46,9 +46,9 @@ display:
             label: Estat
         source_language:
           expose:
-            label: 'Llengua de la font'
+            label: 'Source language'
         translator:
           expose:
-            label: Proveïdor
+            label: Provider
   page_1:
     display_title: Pàgina

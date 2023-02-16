@@ -2,10 +2,6 @@ display:
   default:
     display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Akcija
@@ -16,12 +12,16 @@ display:
         status:
           label: Stanje
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Operacije
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         bundle:
           expose:

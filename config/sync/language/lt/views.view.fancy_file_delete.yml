@@ -1,0 +1,30 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      fields:
+        fid:
+          label: 'File ID'
+  page_1:
+    display_options:
+      menu:
+        title: Sąrašas
+      fields:
+        fid:
+          label: 'File ID'
+        filename_1:
+          label: 'Failo pavadinimas'
+  page_2:
+    display_options:
+      fields:
+        fid:
+          label: 'File ID'

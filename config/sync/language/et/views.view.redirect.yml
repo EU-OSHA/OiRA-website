@@ -23,17 +23,17 @@ display:
             offset_label: Offset
       fields:
         redirect_source__path:
-          label: Kellelt
+          label: From
           separator: ', '
         created:
-          label: Loodud
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Kellelt
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Kellele
+            label: To
         language:
           expose:
             label: 'Algne keel'

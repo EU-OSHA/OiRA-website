@@ -19,10 +19,10 @@ display:
           label: Title
           separator: ', '
         langcode:
-          label: Od
+          label: From
           separator: ', '
         translation_target_language:
-          label: Za
+          label: To
         translation_status:
           label: 'Status prijevoda'
       filters:

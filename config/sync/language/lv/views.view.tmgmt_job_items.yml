@@ -20,13 +20,13 @@ display:
         state:
           label: Stāvoklis
         label:
-          label: Etiķete
+          label: Label
         type:
           label: Type
         tags_count:
           label: Iezīmes
         changed:
-          label: Labots
+          label: Changed
         operations:
           label: Darbības
       arguments:
@@ -38,10 +38,10 @@ display:
     display_options:
       fields:
         label:
-          label: Etiķete
+          label: Label
         type:
           label: Type
         changed:
-          label: Labots
+          label: Changed
   submitted:
     display_title: Nosūtīts

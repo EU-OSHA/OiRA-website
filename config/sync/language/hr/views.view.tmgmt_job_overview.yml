@@ -21,15 +21,15 @@ display:
           label: Država
           separator: ', '
         label:
-          label: Oznaka
+          label: Label
         source_language_1:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         translator:
-          label: Pružatelj
+          label: Provider
         tags_count:
           label: Oznake
         operations:
@@ -40,6 +40,6 @@ display:
             label: Država
         translator:
           expose:
-            label: Pružatelj
+            label: Provider
   page_1:
     display_title: Stranica

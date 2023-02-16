@@ -24,14 +24,14 @@ display:
         state:
           label: Estat
         label:
-          label: Etiqueta
+          label: Label
         type:
           label: Type
         source_language:
-          label: De
+          label: From
           separator: ', '
         target_language:
-          label: Per
+          label: To
           separator: ', '
         word_count:
           separator: ', '
@@ -39,7 +39,7 @@ display:
           label: Etiquetes
           separator: ', '
         changed:
-          label: Canviat
+          label: Changed
           separator: ', '
         operations:
           label: Operacions
@@ -51,7 +51,7 @@ display:
             label: Estat
         source_language:
           expose:
-            label: 'Llengua de la font'
+            label: 'Source language'
         job_type:
           group_info:
             group_items:

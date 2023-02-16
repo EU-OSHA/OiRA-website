@@ -20,6 +20,6 @@ default_config:
       next: ›
       first_reader: 'Primeiro item'
     item_ranges:
-      prefix_label: Itens
+      prefix_label: Items
       previous: ‹
       next: ›

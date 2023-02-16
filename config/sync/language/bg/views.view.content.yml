@@ -1,11 +1,9 @@
 label: Съдържание
 display:
   default:
+    display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Филтър
-          reset_button_label: Reset
+      title: Съдържание
       fields:
         title:
           label: Title
@@ -16,12 +14,16 @@ display:
         status:
           label: Статус
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
           label: Действия
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Reset
       filters:
         title:
           expose:
@@ -42,12 +44,10 @@ display:
         langcode:
           expose:
             label: Език
-      title: Съдържание
-    display_title: 'По подразбиране'
   page_1:
+    display_title: Страница
     display_options:
       menu:
         title: Съдържание
       tab_options:
         title: Съдържание
-    display_title: Страница

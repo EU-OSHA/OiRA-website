@@ -25,7 +25,7 @@ display:
         in_draft:
           separator: ', '
         created:
-          label: Vytvorené
+          label: Created
           separator: ', '
         remote_addr:
           label: 'IP adresa'
@@ -53,10 +53,10 @@ display:
           label: Zamknuté
           separator: ', '
         created:
-          label: Vytvorené
+          label: Created
           separator: ', '
         completed:
-          label: Ukončená
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP adresa'
@@ -86,10 +86,10 @@ display:
           label: Zamknuté
           separator: ', '
         created:
-          label: Vytvorené
+          label: Created
           separator: ', '
         completed:
-          label: Ukončená
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP adresa'
@@ -121,10 +121,10 @@ display:
           label: Zamknuté
           separator: ', '
         created:
-          label: Vytvorené
+          label: Created
           separator: ', '
         completed:
-          label: Ukončená
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP adresa'

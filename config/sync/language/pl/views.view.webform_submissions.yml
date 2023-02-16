@@ -27,7 +27,7 @@ display:
           label: Szkic
           separator: ', '
         created:
-          label: Utworzono
+          label: Created
           separator: ', '
         remote_addr:
           label: 'Adres IP'
@@ -59,10 +59,10 @@ display:
           label: Zablokowany
           separator: ', '
         created:
-          label: Utworzono
+          label: Created
           separator: ', '
         completed:
-          label: Zakończone
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Adres IP'
@@ -93,10 +93,10 @@ display:
           label: Zablokowany
           separator: ', '
         created:
-          label: Utworzono
+          label: Created
           separator: ', '
         completed:
-          label: Zakończone
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Adres IP'
@@ -129,10 +129,10 @@ display:
           label: Zablokowany
           separator: ', '
         created:
-          label: Utworzono
+          label: Created
           separator: ', '
         completed:
-          label: Zakończone
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Adres IP'

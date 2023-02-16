@@ -2,16 +2,17 @@
 
 {% block content %}
   <div class="container">{{ page.breadcrumb }}</div>
+  <div class="container row">
   {% if page.sidebar_first %}
-    <div class="content-two-columns">
-      <div{{ sidebar_first_attributes }}>
-        <aside class="section col-md-4" role="complementary">
-          {{ page.sidebar_first }}
-        </aside>
-      </div>
+  <div class="left-menu">
+    <aside class="section col-md-3" role="complementary">
+      {{ page.sidebar_first }}
+    </aside>
+  </div>
+
   {% endif %}
   {% if page.sidebar_first %}
-    <div id="main" class="col-md-8 two-column">
+    <div id="main" class="col-md-9 two-column">
   {% else %}
     <div id="main">
   {% endif %}
@@ -27,9 +28,6 @@
         </main>
     </div>
   </div>
-      {% if page.sidebar_first %}
-    </div>
-      {% endif %}
   {% if page.sidebar_second %}
     <div{{ sidebar_second_attributes }}>
       <aside class="section" role="complementary">
@@ -37,4 +35,5 @@
       </aside>
     </div>
   {% endif %}
+</div>
 {% endblock %}

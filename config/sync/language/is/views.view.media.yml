@@ -2,18 +2,6 @@ display:
   default:
     display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Sía
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-          tags:
-            previous: '‹ Previous'
       fields:
         media_bulk_form:
           action_title: Aðgerð
@@ -31,14 +19,26 @@ display:
         status:
           label: Staða
           settings:
-            format_custom_true: Published
             format_custom_false: 'Ekki birt'
+            format_custom_true: Published
           separator: ', '
         changed:
           label: 'Updated date'
           separator: ', '
         operations:
           label: Aðgerðir
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         bundle:
           expose:

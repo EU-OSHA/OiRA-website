@@ -16,7 +16,7 @@ display:
         in_draft:
           separator: ', '
         created:
-          label: Laga
+          label: Created
           separator: ', '
         remote_addr:
           separator: ', '
@@ -39,7 +39,7 @@ display:
         locked:
           separator: ', '
         created:
-          label: Laga
+          label: Created
           separator: ', '
         completed:
           separator: ', '
@@ -59,7 +59,7 @@ display:
         locked:
           separator: ', '
         created:
-          label: Laga
+          label: Created
           separator: ', '
         completed:
           separator: ', '
@@ -83,7 +83,7 @@ display:
         locked:
           separator: ', '
         created:
-          label: Laga
+          label: Created
           separator: ', '
         completed:
           separator: ', '

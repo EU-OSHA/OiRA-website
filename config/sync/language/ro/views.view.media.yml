@@ -3,6 +3,43 @@ display:
   default:
     display_title: Implicit
     display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Action
+        thumbnail__target_id:
+          label: Thumbnail
+          separator: ', '
+        name:
+          separator: ', '
+        bundle:
+          label: Tip
+          separator: ', '
+        uid:
+          label: Author
+          separator: ', '
+        status:
+          label: Stare
+          settings:
+            format_custom_false: Unpublished
+            format_custom_true: Published
+          separator: ', '
+        changed:
+          label: Actualizat
+          separator: ', '
+        operations:
+          label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
       exposed_form:
         options:
           submit_button: Filtru
@@ -10,35 +47,6 @@ display:
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elemente pe pagină'
-            items_per_page_options_all_label: '- Toate -'
-            offset_label: Decalaj
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-      fields:
-        media_bulk_form:
-          action_title: Action
-        thumbnail__target_id:
-          label: Thumbnail
-        bundle:
-          label: Tip
-        uid:
-          label: Author
-        status:
-          label: Stare
-          settings:
-            format_custom_true: Published
-            format_custom_false: Unpublished
-        changed:
-          label: Actualizat
-        operations:
-          label: Operations
       filters:
         bundle:
           expose:
@@ -54,7 +62,6 @@ display:
         langcode:
           expose:
             label: Limba
-      title: Media
   media_page_list:
     display_title: Media
     display_options:

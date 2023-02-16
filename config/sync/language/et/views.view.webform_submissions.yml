@@ -27,7 +27,7 @@ display:
           label: Mustand
           separator: ', '
         created:
-          label: Loodud
+          label: Created
           separator: ', '
         remote_addr:
           label: IP-aadress
@@ -59,10 +59,10 @@ display:
           label: Lukus
           separator: ', '
         created:
-          label: Loodud
+          label: Created
           separator: ', '
         completed:
-          label: Lõpetatud
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-aadress
@@ -93,10 +93,10 @@ display:
           label: Lukus
           separator: ', '
         created:
-          label: Loodud
+          label: Created
           separator: ', '
         completed:
-          label: Lõpetatud
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-aadress
@@ -129,10 +129,10 @@ display:
           label: Lukus
           separator: ', '
         created:
-          label: Loodud
+          label: Created
           separator: ', '
         completed:
-          label: Lõpetatud
+          label: Completed
           separator: ', '
         remote_addr:
           label: IP-aadress

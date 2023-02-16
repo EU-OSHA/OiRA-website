@@ -20,6 +20,6 @@ default_config:
       next: ›
       first_reader: 'Primul articol'
     item_ranges:
-      prefix_label: Articole
+      prefix_label: Items
       previous: ‹
       next: ›

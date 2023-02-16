@@ -13,5 +13,5 @@ default_config:
       page_reader: Ieraksts
       first_reader: 'Pirmais elements'
     item_ranges:
-      prefix_label: Vienumi
-      page_reader: Vienumi
+      prefix_label: Items
+      page_reader: Items

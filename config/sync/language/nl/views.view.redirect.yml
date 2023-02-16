@@ -23,19 +23,19 @@ display:
             offset_label: Offset
       fields:
         redirect_bulk_form:
-          action_title: 'Met selectie'
+          action_title: 'With selection'
         redirect_source__path:
-          label: Van
+          label: From
           separator: ', '
         created:
-          label: Aangemaakt
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Van
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Naar
+            label: To
         status_code:
           expose:
             label: Statuscode

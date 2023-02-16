@@ -59,7 +59,7 @@ display:
           label: Vytvořeno
           separator: ', '
         completed:
-          label: Dokončené
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP adresa'
@@ -93,7 +93,7 @@ display:
           label: Vytvořeno
           separator: ', '
         completed:
-          label: Dokončené
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP adresa'
@@ -129,7 +129,7 @@ display:
           label: Vytvořeno
           separator: ', '
         completed:
-          label: Dokončené
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP adresa'

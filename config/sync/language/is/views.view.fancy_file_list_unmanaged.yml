@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      fields:
+        unfid:
+          label: ID
+          separator: ', '
+        path:
+          label: Path
+          separator: ', '
+  page_1:
+    display_title: Síða

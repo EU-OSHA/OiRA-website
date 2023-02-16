@@ -2,7 +2,7 @@ tips:
   search-api-index-fields-add:
     label: 'Dodaj pola'
   search-api-index-fields-label:
-    label: Etykieta
+    label: Label
   search-api-index-fields-machine-name:
     label: 'Identyfikator systemowy'
   search-api-index-fields-type:

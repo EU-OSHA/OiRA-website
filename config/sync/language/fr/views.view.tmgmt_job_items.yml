@@ -24,19 +24,19 @@ display:
         state:
           label: État
         label:
-          label: Libellé
+          label: Label
         type:
           label: Type
         progress:
-          label: Progression
+          label: Progress
         word_count:
-          label: Mots
+          label: Words
           separator: ', '
         tags_count:
           label: Étiquettes
           separator: ', '
         changed:
-          label: Modifié
+          label: Changed
         operations:
           label: Actions
       title: 'Éléments de travail'
@@ -49,14 +49,14 @@ display:
     display_options:
       fields:
         label:
-          label: Libellé
+          label: Label
         type:
           label: Type
         word_count:
-          label: Mots
+          label: Words
           separator: ', '
         changed:
-          label: Modifié
+          label: Changed
           separator: ', '
   submitted:
     display_title: Soumis

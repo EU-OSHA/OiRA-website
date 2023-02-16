@@ -27,7 +27,7 @@ display:
           label: Brouillon
           separator: ', '
         created:
-          label: Créé
+          label: Created
           separator: ', '
         remote_addr:
           label: 'Adresse IP'
@@ -59,10 +59,10 @@ display:
           label: Verrouillé
           separator: ', '
         created:
-          label: Créé
+          label: Created
           separator: ', '
         completed:
-          label: Terminé
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Adresse IP'
@@ -93,10 +93,10 @@ display:
           label: Verrouillé
           separator: ', '
         created:
-          label: Créé
+          label: Created
           separator: ', '
         completed:
-          label: Terminé
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Adresse IP'
@@ -129,10 +129,10 @@ display:
           label: Verrouillé
           separator: ', '
         created:
-          label: Créé
+          label: Created
           separator: ', '
         completed:
-          label: Terminé
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Adresse IP'

@@ -24,19 +24,19 @@ display:
             offset_label: Offset
       fields:
         redirect_bulk_form:
-          action_title: 'A kiválasztottakkal'
+          action_title: 'With selection'
         redirect_source__path:
-          label: Honnan
+          label: From
           separator: ', '
         created:
-          label: Létrehozva
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Honnan
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Hova
+            label: To
         status_code:
           expose:
             label: Állapotkód

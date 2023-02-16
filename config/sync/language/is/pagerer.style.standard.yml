@@ -18,6 +18,6 @@ default_config:
       previous: '‹ Previous'
       page_reader: Hlutur
     item_ranges:
-      prefix_label: Hlutir
+      prefix_label: Items
       previous: '‹ Previous'
-      page_reader: Hlutir
+      page_reader: Items

@@ -10,4 +10,4 @@ default_config:
       prefix_label: stavka
       first_reader: 'Prva stavka'
     item_ranges:
-      prefix_label: Stavke
+      prefix_label: Items

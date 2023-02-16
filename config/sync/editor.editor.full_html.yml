@@ -44,6 +44,7 @@ settings:
             - Format
             - Font
             - FontSize
+            - Styles
         -
           name: Tools
           items:
@@ -65,7 +66,7 @@ settings:
             - Resize
   plugins:
     stylescombo:
-      styles: ''
+      styles: "p.background-purple|bg-Purple\r\np.background-grey|bg-Grey"
     language:
       language_list: un
     font:

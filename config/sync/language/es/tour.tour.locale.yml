@@ -16,7 +16,7 @@ tips:
     label: 'Aplique sus criterios de búsqueda'
     body: 'Para aplicar sus criterios de búsqueda, haga clic en el botón <em>Filtrar</em>.'
   locale-translate:
-    label: Traducir
+    label: Translate
     body: 'Puede escribir su propia traducción en los campos de texto de la columna derecha. Trate de averiguar en qué contexto se utilizará el texto para traducirlo de la manera adecuada.'
   locale-validate:
     label: 'Validar la traducción'

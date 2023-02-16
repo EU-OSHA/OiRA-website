@@ -4,23 +4,15 @@ display:
   default:
     display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- All -'
+      title: Folk
       fields:
         name:
           label: Brukarnamn
         status:
           label: Status
           settings:
-            format_custom_true: Aktiv
             format_custom_false: Blokkert
+            format_custom_true: Aktiv
         roles_target_id:
           label: Roller
         created:
@@ -29,6 +21,15 @@ display:
           label: Operasjonar
         mail:
           separator: ', '
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         status:
           group_info:
@@ -41,7 +42,6 @@ display:
         roles_target_id:
           expose:
             label: Rolle
-      title: Folk
       use_more_text: meir
   page_1:
     display_title: Nettside

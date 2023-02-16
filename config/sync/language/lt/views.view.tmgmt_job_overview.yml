@@ -20,17 +20,17 @@ display:
         state:
           label: Etapas
         label:
-          label: Žymė
+          label: Label
         source_language_1:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         translator:
-          label: Tiekėjas
+          label: Provider
         tags_count:
           label: Raktažodžiai
         changed:
-          label: Pakeista
+          label: Changed
         operations:
           label: Veiksmai
       filters:
@@ -39,6 +39,6 @@ display:
             label: Etapas
         translator:
           expose:
-            label: Tiekėjas
+            label: Provider
   page_1:
     display_title: Puslapis

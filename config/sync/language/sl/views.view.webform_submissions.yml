@@ -6,7 +6,7 @@ display:
           reset_button_label: Reset
       fields:
         created:
-          label: Ustvarjeno
+          label: Created
         remote_addr:
           label: 'IP naslovi'
         view_webform_submission:
@@ -22,7 +22,7 @@ display:
         webform_submission_bulk_form:
           action_title: Akcija
         created:
-          label: Ustvarjeno
+          label: Created
         remote_addr:
           label: 'IP naslovi'
         operations:
@@ -33,7 +33,7 @@ display:
         webform_submission_bulk_form:
           action_title: Akcija
         created:
-          label: Ustvarjeno
+          label: Created
         remote_addr:
           label: 'IP naslovi'
         view_webform_submission:
@@ -46,7 +46,7 @@ display:
     display_options:
       fields:
         created:
-          label: Ustvarjeno
+          label: Created
         remote_addr:
           label: 'IP naslovi'
         view_webform_submission:

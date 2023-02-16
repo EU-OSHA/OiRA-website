@@ -28,9 +28,9 @@ default_config:
       page_reader: Nimike
       first_reader: 'Ensimmäinen kohta'
     item_ranges:
-      prefix_label: Aiheet
+      prefix_label: Items
       first: '« First'
       previous: '‹ Previous'
       next: 'Next ›'
       last: 'Last »'
-      page_reader: Aiheet
+      page_reader: Items

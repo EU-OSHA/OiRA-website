@@ -24,7 +24,7 @@ default_config:
       last: »
       first_reader: 'Premier élément'
     item_ranges:
-      prefix_label: Éléments
+      prefix_label: Items
       first: «
       previous: ‹
       next: ›

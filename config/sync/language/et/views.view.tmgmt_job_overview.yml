@@ -25,19 +25,19 @@ display:
           label: Olek
           separator: ', '
         label:
-          label: Nimetus
+          label: Label
         source_language_1:
-          label: Kellelt
+          label: From
           separator: ', '
         target_language:
-          label: Kellele
+          label: To
           separator: ', '
         translator:
-          label: Teenusepakkuja
+          label: Provider
         tags_count:
           label: Sildid
         changed:
-          label: Muudetud
+          label: Changed
         operations:
           label: Toimingud
       filters:
@@ -46,10 +46,10 @@ display:
             label: Olek
         source_language:
           expose:
-            label: 'Algne keel'
+            label: 'Source language'
         translator:
           expose:
-            label: Teenusepakkuja
+            label: Provider
   page_1:
     display_title: Lehekülg
     display_options:

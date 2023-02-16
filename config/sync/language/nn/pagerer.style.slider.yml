@@ -9,4 +9,4 @@ default_config:
     items:
       first_reader: 'Fyrste punkt'
     item_ranges:
-      prefix_label: Element
+      prefix_label: Items

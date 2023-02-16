@@ -21,7 +21,7 @@ display:
             offset_label: Offset
       fields:
         created:
-          label: Vytvorené
+          label: Created
         label:
           label: Položka
         name:

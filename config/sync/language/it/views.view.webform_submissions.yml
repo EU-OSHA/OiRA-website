@@ -27,7 +27,7 @@ display:
           label: Bozza
           separator: ', '
         created:
-          label: Creato
+          label: Created
           separator: ', '
         remote_addr:
           label: 'Indirizzo IP'
@@ -59,10 +59,10 @@ display:
           label: Bloccato
           separator: ', '
         created:
-          label: Creato
+          label: Created
           separator: ', '
         completed:
-          label: Completato
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Indirizzo IP'
@@ -93,10 +93,10 @@ display:
           label: Bloccato
           separator: ', '
         created:
-          label: Creato
+          label: Created
           separator: ', '
         completed:
-          label: Completato
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Indirizzo IP'
@@ -129,10 +129,10 @@ display:
           label: Bloccato
           separator: ', '
         created:
-          label: Creato
+          label: Created
           separator: ', '
         completed:
-          label: Completato
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'Indirizzo IP'

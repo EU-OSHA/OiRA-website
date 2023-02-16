@@ -20,7 +20,7 @@ default_config:
       page_reader: Αντικείμενο
       first_reader: 'Πρώτο στοιχείο'
     item_ranges:
-      prefix_label: Αντικείμενα
+      prefix_label: Items
       previous: '‹ Previous'
       next: 'Next ›'
-      page_reader: Αντικείμενα
+      page_reader: Items

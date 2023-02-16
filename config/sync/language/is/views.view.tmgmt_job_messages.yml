@@ -18,7 +18,7 @@ display:
             items_per_page_options_all_label: '- All -'
       fields:
         created:
-          label: Stofnað
+          label: Created
         label:
           label: Hlutur
         name:

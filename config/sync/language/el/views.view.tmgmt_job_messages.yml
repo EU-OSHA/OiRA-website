@@ -21,7 +21,7 @@ display:
             offset_label: Offset
       fields:
         created:
-          label: Δημιουργήθηκε
+          label: Created
         label:
           label: Αντικείμενο
         name:

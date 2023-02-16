@@ -24,19 +24,19 @@ display:
             offset_label: Offset
       fields:
         redirect_bulk_form:
-          action_title: 'Med urval'
+          action_title: 'With selection'
         redirect_source__path:
-          label: Från
+          label: From
           separator: ', '
         created:
-          label: Skapad
+          label: Created
       filters:
         redirect_source__path:
           expose:
-            label: Från
+            label: From
         redirect_redirect__uri:
           expose:
-            label: Till
+            label: To
         status_code:
           expose:
             label: Statuskod

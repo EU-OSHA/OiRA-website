@@ -23,7 +23,7 @@ display:
         in_draft:
           separator: ', '
         created:
-          label: Δημιουργήθηκε
+          label: Created
           separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'
@@ -51,10 +51,10 @@ display:
           label: Κλειδωμένο
           separator: ', '
         created:
-          label: Δημιουργήθηκε
+          label: Created
           separator: ', '
         completed:
-          label: Ολοκληρώθηκε
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'
@@ -84,10 +84,10 @@ display:
           label: Κλειδωμένο
           separator: ', '
         created:
-          label: Δημιουργήθηκε
+          label: Created
           separator: ', '
         completed:
-          label: Ολοκληρώθηκε
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'
@@ -119,10 +119,10 @@ display:
           label: Κλειδωμένο
           separator: ', '
         created:
-          label: Δημιουργήθηκε
+          label: Created
           separator: ', '
         completed:
-          label: Ολοκληρώθηκε
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'

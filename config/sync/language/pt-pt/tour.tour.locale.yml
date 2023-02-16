@@ -13,7 +13,7 @@ tips:
     label: 'Aplicar o seu critério de pesquisa'
     body: 'Para aplicar o seu critério de pesquisa, clique no botão <em>Filtrar</em>.'
   locale-translate:
-    label: Traduzir
+    label: Translate
   locale-validate:
     label: 'Validar a tradução'
   locale-continue:

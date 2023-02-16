@@ -18,7 +18,7 @@ display:
             last: 'posljednja »'
       fields:
         created:
-          label: Stvoreno
+          label: Created
         label:
           label: stavka
         name:

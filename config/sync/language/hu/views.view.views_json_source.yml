@@ -37,6 +37,6 @@ display:
       title: 'Példa #3'
       fields:
         value:
-          label: Azonosító
+          label: ID
         value_1:
           label: Author

@@ -1,7 +1,21 @@
 uuid: 8ad53edc-4c09-4e32-867f-c83cd7fa3982
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - node.type.article
+    - node.type.certificates
+    - node.type.collaboration_document
+    - node.type.news
+    - node.type.practical_tool
+    - node.type.promotional_material
+    - workflows.workflow.oira
+  module:
+    - content_moderation
+    - filter
+    - masquerade
+    - node
 id: project_manager
 label: 'Project Manager'
 weight: 9

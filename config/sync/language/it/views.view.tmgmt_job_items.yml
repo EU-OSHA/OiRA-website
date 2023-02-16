@@ -24,17 +24,17 @@ display:
         state:
           label: Stato
         label:
-          label: Etichetta
+          label: Label
         type:
           label: Type
         word_count:
-          label: Parole
+          label: Words
           separator: ', '
         tags_count:
           label: Etichette
           separator: ', '
         changed:
-          label: Modificato
+          label: Changed
         operations:
           label: Operazioni
       arguments:
@@ -46,14 +46,14 @@ display:
     display_options:
       fields:
         label:
-          label: Etichetta
+          label: Label
         type:
           label: Type
         word_count:
-          label: Parole
+          label: Words
           separator: ', '
         changed:
-          label: Modificato
+          label: Changed
           separator: ', '
   submitted:
     display_title: Inserito

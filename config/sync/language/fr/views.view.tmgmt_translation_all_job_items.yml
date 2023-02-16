@@ -24,17 +24,17 @@ display:
         state:
           label: État
         label:
-          label: Libellé
+          label: Label
         type:
           label: Type
         source_language:
-          label: 'A partir de'
+          label: From
           separator: ', '
         target_language:
-          label: À
+          label: To
           separator: ', '
         progress:
-          label: Progression
+          label: Progress
         word_count:
           label: Mot
           separator: ', '
@@ -42,7 +42,7 @@ display:
           label: Étiquettes
           separator: ', '
         changed:
-          label: Modifié
+          label: Changed
           separator: ', '
         operations:
           label: Actions
@@ -54,7 +54,7 @@ display:
             label: État
         source_language:
           expose:
-            label: 'Langue d''origine'
+            label: 'Source language'
         job_type:
           group_info:
             label: 'Catégorie de travail'

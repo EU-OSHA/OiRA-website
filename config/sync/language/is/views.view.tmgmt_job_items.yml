@@ -20,7 +20,7 @@ display:
         state:
           label: Fylki
         label:
-          label: Merking
+          label: Label
         type:
           label: Type
         word_count:
@@ -39,7 +39,7 @@ display:
     display_options:
       fields:
         label:
-          label: Merking
+          label: Label
         type:
           label: Type
         word_count:

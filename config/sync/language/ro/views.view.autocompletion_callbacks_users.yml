@@ -20,3 +20,10 @@ display:
             next: 'următor ›'
             first: '« primul'
             last: 'ultima »'
+      fields:
+        user_picture:
+          separator: ', '
+        name:
+          separator: ', '
+        uid:
+          separator: ', '

@@ -28,15 +28,15 @@ display:
         type:
           label: Type
         progress:
-          label: Voortgang
+          label: Progress
         word_count:
-          label: Woorden
+          label: Words
           separator: ', '
         tags_count:
           label: Labels
           separator: ', '
         changed:
-          label: Gewijzigd
+          label: Changed
         operations:
           label: Bewerkingen
       arguments:
@@ -52,10 +52,10 @@ display:
         type:
           label: Type
         word_count:
-          label: Woorden
+          label: Words
           separator: ', '
         changed:
-          label: Gewijzigd
+          label: Changed
           separator: ', '
   submitted:
     display_title: Ingediend

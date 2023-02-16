@@ -20,7 +20,7 @@ display:
         in_draft:
           separator: ', '
         created:
-          label: Stofnað
+          label: Created
           separator: ', '
         remote_addr:
           label: 'IP vistfang'
@@ -46,10 +46,10 @@ display:
         locked:
           separator: ', '
         created:
-          label: Stofnað
+          label: Created
           separator: ', '
         completed:
-          label: Lokið
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP vistfang'
@@ -70,10 +70,10 @@ display:
         locked:
           separator: ', '
         created:
-          label: Stofnað
+          label: Created
           separator: ', '
         completed:
-          label: Lokið
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP vistfang'
@@ -96,10 +96,10 @@ display:
         locked:
           separator: ', '
         created:
-          label: Stofnað
+          label: Created
           separator: ', '
         completed:
-          label: Lokið
+          label: Completed
           separator: ', '
         remote_addr:
           label: 'IP vistfang'

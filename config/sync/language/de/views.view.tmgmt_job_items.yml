@@ -24,19 +24,19 @@ display:
         state:
           label: Status
         label:
-          label: Beschriftung
+          label: Label
         type:
           label: Type
         progress:
-          label: Fortschritt
+          label: Progress
         word_count:
-          label: Wörter
+          label: Words
           separator: ', '
         tags_count:
           label: Tags
           separator: ', '
         changed:
-          label: Geändert
+          label: Changed
         operations:
           label: Aktionen
       title: Auftragselemente
@@ -49,14 +49,14 @@ display:
     display_options:
       fields:
         label:
-          label: Beschriftung
+          label: Label
         type:
           label: Type
         word_count:
-          label: Wörter
+          label: Words
           separator: ', '
         changed:
-          label: Geändert
+          label: Changed
           separator: ', '
   submitted:
     display_title: Gespeichert

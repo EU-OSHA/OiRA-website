@@ -2,19 +2,6 @@ display:
   default:
     display_title: Implicit
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtru
-          reset_button_label: Resetează
-          exposed_sorts_label: 'Sortare după'
-          sort_asc_label: Ascendent
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elemente pe pagină'
-            items_per_page_options_all_label: '- Toate -'
-            offset_label: Decalaj
       fields:
         nothing:
           admin_label: Icon
@@ -26,8 +13,25 @@ display:
           label: Mesaj
         name:
           label: User
+          separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      exposed_form:
+        options:
+          submit_button: Filtru
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
       filters:
         type:
           expose:

@@ -24,19 +24,19 @@ display:
           label: Κατάσταση
           separator: ', '
         label:
-          label: Ετικέτα
+          label: Label
         source_language_1:
-          label: Από
+          label: From
           separator: ', '
         target_language:
-          label: Προς
+          label: To
           separator: ', '
         translator:
-          label: Πάροχος
+          label: Provider
         tags_count:
           label: Ετικέτες
         changed:
-          label: Τροποποιημένο
+          label: Changed
         operations:
           label: Λειτουργίες
       filters:
@@ -45,9 +45,9 @@ display:
             label: Κατάσταση
         source_language:
           expose:
-            label: 'Γλώσσα προέλευσης'
+            label: 'Source language'
         translator:
           expose:
-            label: Πάροχος
+            label: Provider
   page_1:
     display_title: Σελίδα
