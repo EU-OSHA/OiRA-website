@@ -10,8 +10,8 @@ dependencies:
     - oira_theme
 id: addtoanybuttons
 theme: oira_theme
-region: content
-weight: -12
+region: breadcrumb
+weight: -34
 provider: null
 plugin: addtoany_block
 settings:

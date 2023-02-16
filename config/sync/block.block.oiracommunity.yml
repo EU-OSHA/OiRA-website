@@ -12,7 +12,7 @@ dependencies:
 id: oiracommunity
 theme: oira_theme
 region: content
-weight: -19
+weight: -20
 provider: null
 plugin: 'system_menu_block:oira-community'
 settings:

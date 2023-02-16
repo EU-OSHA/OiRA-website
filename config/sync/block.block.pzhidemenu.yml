@@ -13,7 +13,7 @@ dependencies:
 id: pzhidemenu
 theme: oira_theme
 region: content
-weight: -28
+weight: -29
 provider: null
 plugin: 'block_content:c1393ca9-9dde-48bc-91ba-36326a12047c'
 settings:
