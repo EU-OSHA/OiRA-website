@@ -13,7 +13,7 @@ dependencies:
 id: loginpartners
 theme: oira_theme
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:bb2d26b5-eccb-4764-a726-5fc54c02eddb'
 settings:

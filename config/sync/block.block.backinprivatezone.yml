@@ -13,7 +13,7 @@ dependencies:
 id: backinprivatezone
 theme: oira_theme
 region: content
-weight: -23
+weight: -24
 provider: null
 plugin: 'block_content:73bce426-af39-4c4e-b9c3-3e29dc4cc125'
 settings:

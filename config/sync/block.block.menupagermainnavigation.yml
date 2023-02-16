@@ -12,7 +12,7 @@ dependencies:
 id: menupagermainnavigation
 theme: oira_theme
 region: content
-weight: 0
+weight: -9
 provider: null
 plugin: 'menu_pager_block:main'
 settings:

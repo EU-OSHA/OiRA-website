@@ -13,7 +13,7 @@ dependencies:
 id: views_block__news_block_2
 theme: oira_theme
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: 'views_block:news-block_2'
 settings:

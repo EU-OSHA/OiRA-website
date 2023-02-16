@@ -1,7 +1,9 @@
 {% extends "page.html.twig" %}
 
 {% block content %}
-  <div class="container">{{ page.breadcrumb }}</div>
+  <div class="container-fluid">
+    <div class="container">{{ page.breadcrumb }}</div>
+  </div>
   <div class="container row">
   {% if page.sidebar_first %}
   <div class="left-menu">

@@ -40,7 +40,9 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container">{{ page.breadcrumb }}</div>
+  <div class="container-fluid">
+    <div class="container">{{ page.breadcrumb }}</div>
+  </div>
 {% if page.header_view %}
   <div class="container">{{ page.header_view }}</div>
 {% endif %}

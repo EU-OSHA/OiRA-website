@@ -13,7 +13,7 @@ dependencies:
 id: views_block__additional_resources_block
 theme: oira_theme
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'views_block:additional_resources-block'
 settings:

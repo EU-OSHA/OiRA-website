@@ -12,7 +12,7 @@ dependencies:
 id: views_block__tools_block_2
 theme: oira_theme
 region: content
-weight: -7
+weight: -11
 provider: null
 plugin: 'views_block:tools-block_2'
 settings:
