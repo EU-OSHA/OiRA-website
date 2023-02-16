@@ -18,6 +18,12 @@
 
   jQuery(window).on("load",function(){
     checkResponsiveMenu(jQuery(window).width(), menuSM);
+    if($("body").hasClass("page-view-frontpage")){
+      //To be changed
+/*      $(".home-boxes > a").mouseenter(function(){
+       $(this).find(".description").slideToggle(10);
+      });*/
+    }
   });
 
   jQuery(window).resize(function(){
