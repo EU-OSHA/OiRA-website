@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.article.field_recommended_articles
     - field.field.node.article.field_recommended_resources
     - field.field.node.article.field_related_oshwiki_articles
+    - field.field.node.article.field_related_resources
     - field.field.node.article.field_sector
     - field.field.node.article.field_summary
     - field.field.node.article.field_summary_article
@@ -46,14 +47,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_recommended_articles:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_summary_article:
     type: basic_string
     label: hidden
@@ -77,8 +70,10 @@ hidden:
   field_image2_media: true
   field_page_count: true
   field_publication_date: true
+  field_recommended_articles: true
   field_recommended_resources: true
   field_related_oshwiki_articles: true
+  field_related_resources: true
   field_sector: true
   field_summary: true
   field_tags: true

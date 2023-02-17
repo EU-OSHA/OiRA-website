@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.article.field_recommended_articles
     - field.field.node.article.field_recommended_resources
     - field.field.node.article.field_related_oshwiki_articles
+    - field.field.node.article.field_related_resources
     - field.field.node.article.field_sector
     - field.field.node.article.field_summary
     - field.field.node.article.field_summary_article
@@ -105,6 +106,7 @@ hidden:
   field_page_count: true
   field_publication_date: true
   field_related_oshwiki_articles: true
+  field_related_resources: true
   field_sector: true
   field_summary_article: true
   field_tags: true

@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+      pager:
+        options:
+          tags:
+            previous: '‹ предишна'
+            next: 'следваща ›'
+            first: '« първа'
+            last: 'последна »'
+      fields:
+        title:
+          label: Title
+        type:
+          label: Type
+        name:
+          label: Author
+        changed:
+          label: 'Updated date'
+        operations:
+          label: Действия
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Type
+  page_1:
+    display_title: Страница

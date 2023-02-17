@@ -1,0 +1,40 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '‹ ankstesnis'
+            next: 'kitas  ›'
+            first: '« pirmas'
+            last: 'paskutinis  »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      fields:
+        feeds_feed_bulk_form:
+          action_title: 'With selection'
+        title:
+          label: Title
+        type:
+          label: Type
+        name:
+          label: Author
+        changed:
+          label: 'Updated date'
+        operations:
+          label: Veiksmai
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Type
+  page_1:
+    display_title: Puslapis

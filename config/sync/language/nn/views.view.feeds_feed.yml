@@ -1,0 +1,43 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '< forrige'
+            next: 'neste >'
+            first: '« første'
+            last: 'siste »'
+          expose:
+            items_per_page_options_all_label: '- All -'
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: Oppdatert
+          separator: ', '
+        imported:
+          separator: ', '
+        operations:
+          label: Operasjonar
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Type
+  page_1:
+    display_title: Nettside
