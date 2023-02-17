@@ -5,19 +5,30 @@
     <div class="container">{{ page.breadcrumb }}</div>
   </div>
   <div class="container row">
-  {% if page.sidebar_first %}
-  <div class="left-menu">
-    <aside class="section col-md-3" role="complementary">
+
+  {% set has_sidebar_first = page.sidebar_first|render|striptags|trim is not empty %}
+  {% set has_sidebar_second = page.sidebar_second|render|striptags|trim is not empty %}
+
+  {% if has_sidebar_first %}
+  <div class="left-menu col-md-3">
+    <aside role="complementary">
       {{ page.sidebar_first }}
     </aside>
   </div>
+  {% endif %}
 
-  {% endif %}
-  {% if page.sidebar_first %}
-    <div id="main" class="col-md-9 two-column">
-  {% else %}
-    <div id="main">
-  {% endif %}
+    {% if not has_sidebar_first and not has_sidebar_second %}
+    <div id="main" class="col-12 col-md-12 one-column">
+    {% endif %}
+    {% if has_sidebar_first and not has_sidebar_second %}
+    <div id="main" class="col-12 col-lg-9 two-column mx-auto">
+    {% endif %}
+    {% if not has_sidebar_first and has_sidebar_second %}
+    <div id="main" class="col-12 col-lg-9 two-column mx-auto">
+    {% endif %}
+    {% if has_sidebar_first and has_sidebar_second %}
+    <div id="main" class="col-12 col-lg-6 three-column mx-auto">
+    {% endif %}
     <div class="oira-content">
         <div class="image-fluid">
           <img alt="{{ node.field_image.alt }}" src="{{ node.field_image|file_url }}"/>
@@ -30,9 +41,10 @@
         </main>
     </div>
   </div>
-  {% if page.sidebar_second %}
-    <div{{ sidebar_second_attributes }}>
-      <aside class="section" role="complementary">
+  {% if has_sidebar_second %}
+    <div class="right-menu col-md-3">
+      <aside role="complementary">
+        <span class="rr-text">{{ "Related resources" | trans }}</span>
         {{ page.sidebar_second }}
       </aside>
     </div>
