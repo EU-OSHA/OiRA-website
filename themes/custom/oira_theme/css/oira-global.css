@@ -98,28 +98,6 @@ input[type=search] {
   border: none;
 }
 
-.container, .node--type-collaboration-document .block-system-main-block, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .container, .node--type-collaboration-document .block-system-main-block, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container, .node--type-collaboration-document .block-system-main-block, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container, .node--type-collaboration-document .block-system-main-block, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
-    width: 1170px;
-  }
-}
-
 /* Font Family */
 /* Font-weights */
 div#sliding-popup {
