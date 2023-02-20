@@ -12,6 +12,7 @@ dependencies:
   module:
     - entityqueue
     - link
+    - media
     - node
     - user
 id: home_page_banners
@@ -137,15 +138,16 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: media_thumbnail
           settings:
-            view_mode: default
+            image_link: ''
+            image_style: ''
           group_column: target_id
           group_columns: {  }
           group_rows: true
