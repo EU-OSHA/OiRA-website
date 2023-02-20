@@ -586,7 +586,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 2
       style:
         type: grid
         options:
@@ -618,9 +618,12 @@ display:
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'View all'
+      use_more_text: 'View all the news'
       footer: {  }
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       block_description: 'Latest news what''s new'
     cache_metadata:
       max-age: -1

@@ -7,6 +7,14 @@ body{
   font-size: 16px;
   min-height: 100vh;
 }
+.breadcrumbs-share{
+  border-bottom: 1px solid $bg-border-grey;
+  margin-bottom: 1rem;
+  #block-addtoanybuttons{
+    margin-left: auto;
+  }
+}
+
 
 #page{
   /* This paddding requires the Height of the Footer */
@@ -56,11 +64,17 @@ a{
 }
 
 .image-fluid{
+  height: 250px;
+  overflow: hidden;
   margin-bottom: 22px;
   img{
     width: 100%;
     height: auto;
   }
+}
+
+.menu-pager{
+  padding-bottom: 3rem;
 }
 
 .contextual-links, .toolbar{
