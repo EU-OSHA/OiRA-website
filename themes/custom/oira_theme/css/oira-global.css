@@ -1036,54 +1036,167 @@ table tr td {
 }
 
 @media screen {
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content {
+  /*.page-view-frontpage{
+    .home-intro.container{
+      .views-element-container{
+        .view-id-home_page_banners{
+          .view-content{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            & > .home-boxes{
+              .views-field{
+                .field-content{
+                  .home-boxes{
+                    width: 374px;
+                    max-width: 374px;
+                    a[target=_blank]{
+                      position: relative;
+                      display: flex;
+                      flex-direction: column-reverse;
+                      !**Title**!
+                      h2{
+                        position: absolute;
+                        bottom: 50px;
+                        z-index: 2;
+                        padding: 0px 10px;
+                        font: {
+                          weight: bold;
+                          size: 1.3rem;
+                        }
+                        color: $text-color-white;
+                      }
+                      !**Description**!
+                      span.description{
+                        display: none;
+                        position: relative;
+                        z-index: 2;
+                        //bottom
+                      }
+                      !**Image**!
+                      span.content-box{
+                        position: relative;
+                        z-index: 1;
+                        .content-background{
+                          position: absolute;
+                          z-index: 5;
+                          width: 100%;
+                          height: 245px;
+                          background: linear-gradient(to top, rgba(0, 0, 0, 0.898) 2%, transparent 45%);
+                        }
+                        img{
+                          min-height: 245px;
+                          max-width: 374px;
+                          max-height: 245px;
+                          max-width: 374px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }*/
+  .home-intro {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
   }
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes {
+  .home-intro .view-id-home_page_banners {
+    float: left;
+    width: 100%;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes {
     width: 374px;
-    max-width: 374px;
-  }
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] {
+    height: 245px;
+    float: left;
+    margin-right: 15px;
     position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    /**Title**/
-    /**Description**/
-    /**Image**/
+    cursor: pointer;
   }
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] h2, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] h2, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] h2, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] h2, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] h2, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] h2, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] h2 {
-    position: absolute;
-    bottom: 50px;
-    z-index: 2;
-    padding: 0px 10px;
-    font-weight: bold;
-    font-size: 1.3rem;
+  .home-intro .view-id-home_page_banners .home-boxes h2 {
+    background: transparent;
     color: #FFF;
-  }
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.description, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.description, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.description, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.description, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.description, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.description, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.description {
-    display: none;
-    position: relative;
-    z-index: 2;
-  }
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box {
-    position: relative;
-    z-index: 1;
-  }
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box .content-background, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box .content-background, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box .content-background, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box .content-background, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box .content-background, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box .content-background, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box .content-background {
     position: absolute;
-    z-index: 5;
+    font-size: 1.7rem;
+    letter-spacing: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 0 0 0.4em 0;
+    font-weight: 100;
+    z-index: 1;
+    transition: 0.8s;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes span.description {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background: transparent;
+    color: #FFF;
+    margin-left: 16px;
+    padding-bottom: 0.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    z-index: 999;
+    visibility: hidden;
+    transition: 0.8s;
+    font-size: 1rem;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes .copyright {
+    font-size: 0.7rem;
+    margin-top: 0;
+    display: block;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes .content-background {
+    position: absolute;
     width: 100%;
     height: 245px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.898) 2%, transparent 45%);
+    background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
+    background: -o-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
+    background: -ms-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
+    background: linear-gradient(to bottom, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
+    -webkit-transition: width 2s;
+    transition: width 2s;
   }
-  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box img, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box img, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box img, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box img, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box img, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box img, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] span.content-box img {
-    min-height: 245px;
-    max-width: 374px;
-    max-height: 245px;
-    max-width: 374px;
+  .home-intro .view-id-home_page_banners .home-boxes .content-box img {
+    width: 100%;
+    height: 245px;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes:hover h2 {
+    bottom: 60px;
+    transition: 0.8s;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes:hover span.description {
+    bottom: 40px;
+    visibility: visible;
+    transition: 0.8s;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes:hover a.box-link {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s linear;
+  }
+  .home-intro .view-id-home_page_banners .home-boxes:hover .content-background {
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
+    background: -o-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
+    background: -ms-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
+    background: linear-gradient(to bottom, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
   }
 }
 @media only screen and (min-width: 768px) {
