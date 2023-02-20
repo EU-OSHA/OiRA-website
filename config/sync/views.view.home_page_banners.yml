@@ -7,12 +7,13 @@ dependencies:
     - field.storage.node.field_banner_link
     - field.storage.node.field_copyright
     - field.storage.node.field_description
-    - field.storage.node.field_image_banner
+    - field.storage.node.field_image_box_home
+    - image.style.banner_homepage_boxes
     - node.type.banner
   module:
     - entityqueue
+    - image
     - link
-    - media
     - node
     - user
 id: home_page_banners
@@ -94,10 +95,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_image_banner:
-          id: field_image_banner
-          table: node__field_image_banner
-          field: field_image_banner
+        field_image_box_home:
+          id: field_image_box_home
+          table: node__field_image_box_home
+          field: field_image_box_home
           relationship: none
           group_type: group
           admin_label: ''
@@ -138,17 +139,17 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: media_thumbnail
+          type: image
           settings:
             image_link: ''
-            image_style: ''
-          group_column: target_id
+            image_style: banner_homepage_boxes
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -362,7 +363,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"home-boxes\">\r\n<a target=\"_blank\" href=\"{{ field_banner_link }}\">\r\n<h2>{{ title }}</h2>\r\n<span class=\"description\"> {{ field_description }} </span>  \r\n<span class=\"content-box\">\r\n<span class=\"content-background\"></span>\r\n{{ field_image_banner }} \r\n</span>\r\n</a>\r\n<span class=\"copyright\"> {{ field_copyright }} </span>  </div>"
+            text: "<div class=\"home-boxes\">\r\n<a target=\"_blank\" href=\"{{ field_banner_link }}\">\r\n<h2>{{ title }}</h2>\r\n<span class=\"description\"> {{ field_description }} </span>  \r\n<span class=\"content-box\">\r\n<span class=\"content-background\"></span>\r\n{{ field_image_box_home }} \r\n</span>\r\n</a>\r\n<span class=\"copyright\"> {{ field_copyright }} </span>  </div>"
             make_link: false
             path: ''
             absolute: false
@@ -597,7 +598,7 @@ display:
         - 'config:field.storage.node.field_banner_link'
         - 'config:field.storage.node.field_copyright'
         - 'config:field.storage.node.field_description'
-        - 'config:field.storage.node.field_image_banner'
+        - 'config:field.storage.node.field_image_box_home'
         - entity_field_info
         - views_data
   block_1:
@@ -623,6 +624,6 @@ display:
         - 'config:field.storage.node.field_banner_link'
         - 'config:field.storage.node.field_copyright'
         - 'config:field.storage.node.field_description'
-        - 'config:field.storage.node.field_image_banner'
+        - 'config:field.storage.node.field_image_box_home'
         - entity_field_info
         - views_data
