@@ -6,9 +6,12 @@ dependencies:
     - field.field.node.banner.field_banner_link
     - field.field.node.banner.field_copyright
     - field.field.node.banner.field_description
-    - field.field.node.banner.field_image_banner
+    - field.field.node.banner.field_image_box_home
+    - image.style.banner_homepage_boxes
     - node.type.banner
   module:
+    - ds
+    - image
     - link
     - user
 id: node.banner.default
@@ -18,7 +21,7 @@ mode: default
 content:
   field_banner_link:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -26,36 +29,43 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_copyright:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   field_description:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 105
+    weight: 5
     region: content
-  field_image_banner:
-    type: entity_reference_entity_view
-    label: above
+  field_image_box_home:
+    type: image
+    label: hidden
     settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 103
+      image_link: ''
+      image_style: banner_homepage_boxes
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   addtoany: true
