@@ -1387,6 +1387,14 @@ body {
   min-height: 100vh;
 }
 
+.breadcrumbs-share {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1rem;
+}
+.breadcrumbs-share #block-addtoanybuttons {
+  margin-left: auto;
+}
+
 #page {
   /* This paddding requires the Height of the Footer */
   padding-bottom: 100px;
@@ -1427,11 +1435,17 @@ a:hover {
 }
 
 .image-fluid {
+  height: 250px;
+  overflow: hidden;
   margin-bottom: 22px;
 }
 .image-fluid img {
   width: 100%;
   height: auto;
+}
+
+.menu-pager {
+  padding-bottom: 3rem;
 }
 
 .contextual-links a, .toolbar a {
@@ -5374,7 +5388,7 @@ body {
   padding-top: 186px;
 }
 body.role-anonymous {
-  padding-top: 210px;
+  padding-top: 189px;
 }
 
 body.user-logged-in {
@@ -5389,7 +5403,7 @@ body.toolbar-fixed #header {
   padding-top: 40px;
 }
 body.toolbar-fixed.toolbar-tray-open {
-  padding-top: 290px !important;
+  padding-top: 264px !important;
 }
 body.toolbar-fixed.toolbar-tray-open #header {
   padding-top: 75px !important;

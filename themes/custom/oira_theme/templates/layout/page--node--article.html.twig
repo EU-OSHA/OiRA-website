@@ -1,8 +1,15 @@
 {% extends "page.html.twig" %}
 
 {% block content %}
-  <div class="container-fluid">
-    <div class="container">{{ page.breadcrumb }}</div>
+<div class="image-fluid">
+  <img alt="{{ node.field_image.alt }}" src="{{ node.field_image|file_url }}"/>
+</div>
+  <div class="container-fluid breadcrumbs-share">
+    <div class="container">
+      <div class="row">
+        {{ page.breadcrumb }}
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row">
@@ -31,9 +38,6 @@
         <div id="main" class="col-12 col-lg-6 three-column">
         {% endif %}
         <div class="oira-content">
-            <div class="image-fluid">
-              <img alt="{{ node.field_image.alt }}" src="{{ node.field_image|file_url }}"/>
-            </div>
             <main>
               <section class="section container">
                 <a id="main-content" tabindex="-1"></a>

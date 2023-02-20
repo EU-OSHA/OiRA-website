@@ -18,7 +18,7 @@ plugin: 'menu_pager_block:main'
 settings:
   id: 'menu_pager_block:main'
   label: 'Menu Pager - Main navigation'
-  label_display: visible
+  label_display: '0'
   provider: menu_pager
   menu_pager_previous_label: ''
   menu_pager_next_label: ''

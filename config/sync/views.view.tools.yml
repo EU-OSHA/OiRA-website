@@ -2148,11 +2148,11 @@ display:
         - views_data
   block_2:
     id: block_2
-    display_title: 'New Tools'
+    display_title: 'Latest OiRA tools'
     display_plugin: block
     position: 2
     display_options:
-      title: 'New tools'
+      title: 'Latest OiRA tools'
       fields:
         field_related_partners:
           id: field_related_partners
@@ -3655,7 +3655,10 @@ display:
       use_more_text: 'View all the tools'
       link_display: custom_url
       link_url: /oira-tools
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
