@@ -33,8 +33,3 @@ visibility:
       article: article
       news: news
       promotional_material: promotional_material
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion:
-      view-promotional_materials_type-page_1: view-promotional_materials_type-page_1
