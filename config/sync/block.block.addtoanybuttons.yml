@@ -22,17 +22,19 @@ settings:
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    negate: null
+    negate: true
     pages: "/oira-community\r\n/node/58\r\n/page-not-found"
-  view_inclusion:
-    id: view_inclusion
-    negate: null
-    view_inclusion: {  }
-  node_type:
-    id: node_type
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
       article: article
       news: news
+      promotional_material: promotional_material
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-promotional_materials_type-page_1: view-promotional_materials_type-page_1
