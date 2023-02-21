@@ -139,10 +139,20 @@ jQuery(document).ready(function($){
 
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){
-      $(this).toggleClass('expanded');
+      //$(this).toggleClass('expanded');
       $(this).siblings('.partners-wrapper').slideToggle('slow');
       $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+      $(this).toggle();
+      $(this).siblings('.see-less').toggle();
     });
+
+    $('.view-display-id-block_1 .views-col .see-less').click(function(){
+      $(this).siblings('.partners-wrapper').slideToggle('slow');
+      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+      $(this).toggle();
+      $(this).siblings('.see-more').toggle();
+    });
+
     $('.view-promotional-materials.view-display-id-block .more-link').click(function(){
       $(this).toggleClass('expanded');
       $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');

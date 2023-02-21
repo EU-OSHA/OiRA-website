@@ -446,14 +446,27 @@ body.toolbar-fixed {
           }
         }
       }
+      #block-logooira{
+        div.content{
+          & > div{
+            & > div{
+              .field__item:first-of-type{
+                padding: {
+                  right: 0px;
+                  top: 1.5rem;
+                  bottom: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
       #block-logoosha{
         & > div.content{
           & > div{
             & > div{
-              & > .field__item{
-                &:first-of-type{
-                  padding: 0px 1rem;
-                }
+              & > .field__item:first-of-type{
+                padding: 1.5rem 1rem;
               }
             }
           }

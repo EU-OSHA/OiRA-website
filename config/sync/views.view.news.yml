@@ -871,7 +871,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -988,7 +988,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1054,7 +1054,7 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: '<a href="{{view_node_1}}">{{title__value}}</a>'
@@ -1117,7 +1117,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1135,7 +1135,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 120
+            max_length: 80
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -1235,7 +1235,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a>\r\n</div>"
+            text: "<div class=\"news-image\">{{ field_image }}</div>\r\n<div class=\"news-content\">\r\n<div class=\"date\">{{ field_publication_date }}</div>\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"description\">{{ body }}</div>\r\n<span class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a>\r\n</span>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
