@@ -7,7 +7,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-bottom: 1.5rem;
+      margin: 2rem auto;
       width: 100%;
       .view-id-home_page_banners{
         float: left;
@@ -45,15 +45,14 @@
               position: absolute;
               top: 160px;
               margin-bottom: 0;
-              padding: 0;
               background: transparent;
               color: $text-color-white;
               margin-left: 16px;
               padding-bottom: 0.4em;
               letter-spacing: 1px;
               z-index: 999;
-              visibility: hidden;
               transition: 0.8s;
+              display: none;
               font: {
                 weight: normal;
                 size: 1rem;
@@ -83,15 +82,6 @@
               }
             }
             &:hover{
-              h2{
-                bottom: 60px;
-                transition: 0.8s;
-              }
-              span.description{
-                bottom: 40px;
-                visibility: visible;
-                transition: 0.8s;
-              }
               a.box-link{
                 visibility: visible;
                 opacity:1;
@@ -112,6 +102,42 @@
       }
     }
     /**End comment - home-banner**/
+  .content-oira-tools, .content-oira-partners{
+    .more-link{
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0px 15px;
+      a{
+        place-self: end;
+        cursor: pointer;
+        text-decoration: none;
+        padding: {
+          left: 0rem;
+          right: 25px;
+        }
+        color: $text-color-blue-light;
+        font : {
+          size: 0.85rem;
+          weight: bold;
+          style: normal;
+        }
+        background: {
+          color: transparent;
+          image: url("../images/arrow-right-sm-blue.png");
+          repeat: no-repeat;
+          position: 100% 50%;
+          size: 8px;
+        }
+        &:before{
+          content: "";
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
     .content-oira-tools{
       h2 {
           font-weight: bold;
@@ -133,7 +159,9 @@
               }
             }
             .field--name-field-country, .language{
+              display: flex;
               .field__label, .field__item{
+                display: block;
                 color: $text-color-black;
                 font: {
                   style: normal;
@@ -152,20 +180,7 @@
                 font-size: 0.9rem;
               }
             }
-            .partners-wrapper{
-              display: none;
-              order: 4;
-              .partner-wrapper.partner-wrapper-related{
-                a{
-                  color: $text-color-black;
-                  font: {
-                    style: normal;
-                    weight: normal;
-                    size: 0.9rem;
-                  }
-                }
-              }
-            }
+
             .see-more, .see-less{
               width: fit-content;
               text-align: start;
@@ -175,6 +190,7 @@
                 left: 0rem;
                 right: 26px;
               }
+              margin: 0.5rem 0rem;
               color: $text-color-blue-light;
               font : {
                 weight: normal;
@@ -188,37 +204,62 @@
                 size: 14px;
               }
             }
+
             .see-more{
-              order: 5;
+              order: 4;
               background-image: url("../images/arrow-sm-down-blue.png");
             }
             .see-less{
               display: none;
-              order: 6;
+              order: 5;
               background-image: url("../images/arrow-sm-up-blue.png");
             }
+
+            .partners-wrapper{
+              display: none;
+              order: 6;
+              margin-bottom: 0.5rem;
+              .partner-wrapper.partner-wrapper-related{
+                a{
+                  color: $text-color-black;
+                  font: {
+                    style: normal;
+                    weight: normal;
+                    size: 0.9rem;
+                  }
+                }
+              }
+            }
             .views-field-field-tool-link{
+              display: flex;
+              justify-content: center;
               order: 7;
               width: 100%;
-              margin: 15px 0px;
+              margin-bottom: 15px;
+              padding: 1rem;
+              border-radius: 8px;
+              background-color: $bg-color-blue-light;
               a{
-                display: grid;
+                position: relative;
                 text-align: center;
                 color: $text-color-white;
-                border-radius: 8px;
-                padding: 0.5rem;
                 font : {
                   weight: bold;
                   style: normal;
                   size: 0.85rem;
                 }
-                //to be changed
-                background: {
-                  color: $bg-color-blue-light;
-                  repeat: no-repeat;
-                  // image: url("../images/arrow-right-lg-white.png");
-                  position: 100% 47%;
-                  size: 17px;
+                &:after{
+                  display: inline-block;
+                  position: absolute;
+                  top: 11%;
+                  margin-left: 10px;
+                  content: "";
+                  height: 17px;
+                  width: 17px;
+                  background: {
+                    image: url("../images/arrow-right-lg-white.png");
+                    repeat: no-repeat;
+                  }
                 }
                 &:hover{
                   text-decoration: none;
@@ -231,38 +272,15 @@
           }
         }
       }
-      .more-link{
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 0px 15px;
-        a{
-          place-self: end;
-          cursor: pointer;
-          text-decoration: none;
-          padding: {
-            left: 0rem;
-            right: 25px;
-          }
-          color: $text-color-blue-light;
-          font : {
-            size: 0.85rem;
-            weight: bold;
-            style: normal;
-          }
-          background: {
-            color: transparent;
-            image: url("../images/arrow-right-sm-blue.png");
-            repeat: no-repeat;
-            position: 100% 50%;
-            size: 8px;
-          }
-          &:before{
-            content: "";
-          }
-          &:hover{
-            text-decoration: underline;
-          }
-        }
+    }
+
+    .content-oira-partners{
+      h2 {
+        font-weight: bold;
+        color: $text-color-blue-light;
+      }
+      .view-display-id-oira_partners_homepage{
+
       }
     }
 

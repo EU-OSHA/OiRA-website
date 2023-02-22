@@ -25,7 +25,6 @@
     p{
       font-size: 1rem;
       color: $text-color-white;
-      padding-left: 10px;
       margin-bottom: 0;
     }
   }
@@ -34,24 +33,19 @@
     ul{
       li{
         display: inline-block;
-        &:nth-child(4) {
-          display: none;
-        }
-        &:nth-child(5) {
-          display: inline-block;
+        &:first-of-type{
+          a{
+            padding-left: 0px;
+          }
         }
         a{
           color: $text-color-white;
           font-weight: normal;
           font-style: normal;
-          padding: 0 10px 0 10px;
-          padding: 0 10px 0 10px;
+          padding: 0 20px 0 20px;
           &:hover{
             text-decoration: underline;
           }
-        }
-        &:nth-child(5) {
-          display: none;
         }
         &:last-child {
           border-right: none;

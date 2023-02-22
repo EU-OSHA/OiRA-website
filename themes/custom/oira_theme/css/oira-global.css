@@ -1022,7 +1022,7 @@ table tr td {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin: 2rem auto;
     width: 100%;
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners {
@@ -1060,15 +1060,14 @@ table tr td {
     position: absolute;
     top: 160px;
     margin-bottom: 0;
-    padding: 0;
     background: transparent;
     color: #FFF;
     margin-left: 16px;
     padding-bottom: 0.4em;
     letter-spacing: 1px;
     z-index: 999;
-    visibility: hidden;
     transition: 0.8s;
+    display: none;
     font-weight: normal;
     font-size: 1rem;
     font-style: normal;
@@ -1093,15 +1092,6 @@ table tr td {
     width: 100%;
     height: 245px;
   }
-  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes:hover h2 {
-    bottom: 60px;
-    transition: 0.8s;
-  }
-  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes:hover span.description {
-    bottom: 40px;
-    visibility: visible;
-    transition: 0.8s;
-  }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes:hover a.box-link {
     visibility: visible;
     opacity: 1;
@@ -1115,6 +1105,33 @@ table tr td {
     background: -o-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgba(69, 71, 76, 0.65) 65%, #0c0c0c 100%);
     background: -ms-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgba(69, 71, 76, 0.65) 65%, #0c0c0c 100%);
     background: linear-gradient(to bottom, rgba(0, 51, 153, 0) 12%, rgba(69, 71, 76, 0.65) 65%, #0c0c0c 100%);
+  }
+  .page-view-frontpage .content-oira-tools .more-link, .page-view-frontpage .content-oira-partners .more-link {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0px 15px;
+  }
+  .page-view-frontpage .content-oira-tools .more-link a, .page-view-frontpage .content-oira-partners .more-link a {
+    place-self: end;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: 0rem;
+    padding-right: 25px;
+    color: #10b2e4;
+    font-size: 0.85rem;
+    font-weight: bold;
+    font-style: normal;
+    background-color: transparent;
+    background-image: url("../images/arrow-right-sm-blue.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 8px;
+  }
+  .page-view-frontpage .content-oira-tools .more-link a:before, .page-view-frontpage .content-oira-partners .more-link a:before {
+    content: "";
+  }
+  .page-view-frontpage .content-oira-tools .more-link a:hover, .page-view-frontpage .content-oira-partners .more-link a:hover {
+    text-decoration: underline;
   }
   .page-view-frontpage .content-oira-tools h2 {
     font-weight: bold;
@@ -1134,7 +1151,11 @@ table tr td {
     order: 1;
     color: #967ea7;
   }
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--name-field-country, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language {
+    display: flex;
+  }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--name-field-country .field__label, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--name-field-country .field__item, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language .field__label, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language .field__item {
+    display: block;
     color: #58585a;
     font-style: normal;
     font-weight: normal;
@@ -1150,16 +1171,6 @@ table tr td {
     margin-bottom: 0px;
     font-size: 0.9rem;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .partners-wrapper {
-    display: none;
-    order: 4;
-  }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .partners-wrapper .partner-wrapper.partner-wrapper-related a {
-    color: #58585a;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.9rem;
-  }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-more, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-less {
     width: fit-content;
     text-align: start;
@@ -1167,6 +1178,7 @@ table tr td {
     color: #10b2e4;
     padding-left: 0rem;
     padding-right: 26px;
+    margin: 0.5rem 0rem;
     color: #10b2e4;
     font-weight: normal;
     font-style: normal;
@@ -1177,32 +1189,53 @@ table tr td {
     background-size: 14px;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-more {
-    order: 5;
+    order: 4;
     background-image: url("../images/arrow-sm-down-blue.png");
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-less {
     display: none;
-    order: 6;
+    order: 5;
     background-image: url("../images/arrow-sm-up-blue.png");
   }
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .partners-wrapper {
+    display: none;
+    order: 6;
+    margin-bottom: 0.5rem;
+  }
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .partners-wrapper .partner-wrapper.partner-wrapper-related a {
+    color: #58585a;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9rem;
+  }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link {
+    display: flex;
+    justify-content: center;
     order: 7;
     width: 100%;
-    margin: 15px 0px;
+    margin-bottom: 15px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #10b3e4;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link a {
-    display: grid;
+    position: relative;
     text-align: center;
     color: #FFF;
-    border-radius: 8px;
-    padding: 0.5rem;
     font-weight: bold;
     font-style: normal;
     font-size: 0.85rem;
-    background-color: #10b3e4;
+  }
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link a:after {
+    display: inline-block;
+    position: absolute;
+    top: 11%;
+    margin-left: 10px;
+    content: "";
+    height: 17px;
+    width: 17px;
+    background-image: url("../images/arrow-right-lg-white.png");
     background-repeat: no-repeat;
-    background-position: 100% 47%;
-    background-size: 17px;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link a:hover {
     text-decoration: none;
@@ -1210,32 +1243,9 @@ table tr td {
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--type-entity-reference {
     margin: 0px;
   }
-  .page-view-frontpage .content-oira-tools .more-link {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0px 15px;
-  }
-  .page-view-frontpage .content-oira-tools .more-link a {
-    place-self: end;
-    cursor: pointer;
-    text-decoration: none;
-    padding-left: 0rem;
-    padding-right: 25px;
-    color: #10b2e4;
-    font-size: 0.85rem;
+  .page-view-frontpage .content-oira-partners h2 {
     font-weight: bold;
-    font-style: normal;
-    background-color: transparent;
-    background-image: url("../images/arrow-right-sm-blue.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: 8px;
-  }
-  .page-view-frontpage .content-oira-tools .more-link a:before {
-    content: "";
-  }
-  .page-view-frontpage .content-oira-tools .more-link a:hover {
-    text-decoration: underline;
+    color: #10b2e4;
   }
   .page-view-frontpage .content-latest-news h2 {
     font-weight: bold;
@@ -1646,10 +1656,6 @@ body {
 #page {
   /* This paddding requires the Height of the Footer */
   padding-bottom: 100px;
-}
-
-#main-wrapper {
-  padding-bottom: 5rem;
 }
 
 a {
@@ -5302,7 +5308,6 @@ body[class*=private-zone-] .page-header.h1 {
 .site-footer #block-copyright p {
   font-size: 1rem;
   color: #FFF;
-  padding-left: 10px;
   margin-bottom: 0;
 }
 .site-footer #block-footermenu {
@@ -5311,24 +5316,17 @@ body[class*=private-zone-] .page-header.h1 {
 .site-footer #block-footermenu ul li {
   display: inline-block;
 }
-.site-footer #block-footermenu ul li:nth-child(4) {
-  display: none;
-}
-.site-footer #block-footermenu ul li:nth-child(5) {
-  display: inline-block;
+.site-footer #block-footermenu ul li:first-of-type a {
+  padding-left: 0px;
 }
 .site-footer #block-footermenu ul li a {
   color: #FFF;
   font-weight: normal;
   font-style: normal;
-  padding: 0 10px 0 10px;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
 }
 .site-footer #block-footermenu ul li a:hover {
   text-decoration: underline;
-}
-.site-footer #block-footermenu ul li:nth-child(5) {
-  display: none;
 }
 .site-footer #block-footermenu ul li:last-child {
   border-right: none;
@@ -5879,8 +5877,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
 
 .content-white {
   background: #FFF;
-  padding-top: 2rem;
-  padding-bottom: 0.7rem;
+  padding: 2rem 0rem;
 }
 
 .content-home .field__label {
@@ -6109,14 +6106,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   text-align: right;
 }
 
-.content-oira-partners h2:after {
-  content: "";
-  background: url(../images/oira-partners.png) no-repeat;
-  background-size: 100%;
-  width: 40px;
-  height: 40px;
-  float: right;
-}
 .content-oira-partners .view-content.row {
   margin: 0 auto;
   display: grid;
@@ -6144,12 +6133,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 .content-oira-partners .view-oira-partners .views-view-grid.horizontal {
   margin-bottom: 20px;
-}
-.content-oira-partners .view-oira-partners .more-link {
-  width: 100%;
-  border-top: 2px solid #786586;
-  padding-top: 20px;
-  text-align: right;
 }
 .content-oira-partners .partner__item .views-field {
   padding: 10px;
