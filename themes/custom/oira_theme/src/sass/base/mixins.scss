@@ -55,6 +55,35 @@
   }
 }
 
-
-
+/**Style with blue right (>) icon - bg color, bg position, main color icon url and padding left and right required**/
+@mixin blueRightIcon ($bgColor, $bgPosition, $icon, $mainColor, $paddingLeft, $paddingRight){
+  a{
+    place-self: end;
+    cursor: pointer;
+    text-decoration: none;
+    padding: {
+      left: $paddingLeft;
+      right: $paddingRight;
+    }
+    color: $mainColor;
+    font : {
+      size: 0.85rem;
+      weight: bold;
+      style: normal;
+    }
+    background: {
+      color: $bgColor;
+      image: $icon;
+      repeat: no-repeat;
+      position: $bgPosition;
+      size: 8px;
+    }
+    &:before{
+      content: "";
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
 

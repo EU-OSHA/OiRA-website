@@ -7,13 +7,6 @@ body{
   font-size: 16px;
   min-height: 100vh;
 }
-.breadcrumbs-share{
-  border-bottom: 1px solid $bg-border-grey;
-  margin-bottom: 1rem;
-  #block-addtoanybuttons{
-    margin-left: auto;
-  }
-}
 
 
 #page{
@@ -62,7 +55,7 @@ a{
 .image-fluid{
   height: 250px;
   overflow: hidden;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
   img{
     width: 100%;
     height: auto;
@@ -93,11 +86,15 @@ a{
   padding-top: 5px;
 }
 
-/* Share this on articles icons */
+
 #share-this-on{
-  padding-top: 0;
-  padding-bottom: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  & > span.text-share{
+    font-size: 0.9rem;
+  }
   .a2a_svg{
     svg {
       display: none;
@@ -106,26 +103,37 @@ a{
   .a2a_s__default{
     background-color: transparent !important;
   }
-  .a2a_button_facebook{
-    background: url(../images/share-facebook.png) no-repeat;
-    background-size: 23px;
+  .a2a_button_facebook, .a2a_button_twitter{
+    background-repeat: no-repeat;
     width: 23px;
     height: 23px;
     display: inline-block;
     margin-right: 7px;
   }
+
+  .a2a_button_facebook{
+    background: {
+      image: url("../images/facebook-light-blue.png");
+      size: 11px;
+      position: 50% 50%;
+    }
+  }
+
   .a2a_button_twitter{
-    background: url(../images/share-twitter.png) no-repeat;
-    background-size: 23px;
-    width: 23px;
-    height: 23px;
-    display: inline-block;
-    margin-right: 7px;
+    background: {
+      image: url("../images/twitter-light-blue.png");
+      size: 21px;
+      position: 50% 80%;
+    }
   }
   .a2a_button_linkedin_share{
     button{
-      background: url(../images/share-linkedin.png) no-repeat;
-      background-size: 23px;
+      background: {
+        image: url("../images/linkedin-light-blue.png");
+        repeat: no-repeat;
+        position: 50% 50%;
+        size: 20px;
+      }
       width: 23px;
       height: 23px!important;
       display: inline-block;
@@ -137,13 +145,14 @@ a{
     }
   }
 }
+
 .addtoany_list.a2a_kit_size_32 a > span{
   width: 23px !important;
 }
 .addtoany_list a:hover span {
   opacity: 1;
 }
-/* END Share this on articles icons */
+
 
 .node__content{
   margin-top: 0;
@@ -1094,21 +1103,6 @@ select.custom-select{
   }
 }
 
-
-/* Node Articles */
-.node--type-article {
-  h1{
-    color: $text-color-black;
-  }
-  h3{
-    font-size: 1.4rem;
-  }
-  h5 {
-    font-size: 1rem;
-    color: $text-color-black;
-    font-weight: bold;
-  }
-}
 
 /** Wat's News **/
 .page-node-450,

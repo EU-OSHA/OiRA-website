@@ -107,34 +107,7 @@
       display: flex;
       flex-direction: row-reverse;
       padding: 0px 15px;
-      a{
-        place-self: end;
-        cursor: pointer;
-        text-decoration: none;
-        padding: {
-          left: 0rem;
-          right: 25px;
-        }
-        color: $text-color-blue-light;
-        font : {
-          size: 0.85rem;
-          weight: bold;
-          style: normal;
-        }
-        background: {
-          color: transparent;
-          image: url("../images/arrow-right-sm-blue.png");
-          repeat: no-repeat;
-          position: 100% 50%;
-          size: 8px;
-        }
-        &:before{
-          content: "";
-        }
-        &:hover{
-          text-decoration: underline;
-        }
-      }
+      @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
     }
   }
 
@@ -384,34 +357,7 @@
             display: flex;
             flex-direction: row-reverse;
             padding: 0px 15px;
-            a{
-              place-self: end;
-              cursor: pointer;
-              text-decoration: none;
-              padding: {
-                left: 0rem;
-                right: 25px;
-              }
-              color: $text-color-white;
-              font : {
-                size: 0.85rem;
-                weight: bold;
-                style: normal;
-              }
-              background: {
-                color: transparent;
-                image: url("../images/arrow-right-sm-white.png");
-                repeat: no-repeat;
-                position: 100% 47%;
-                size: 10px;
-              }
-              &:before{
-                content: "";
-              }
-              &:hover{
-                text-decoration: underline;
-              }
-            }
+            @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-white.png"), $text-color-white, 0px, 25px);
           }
         }
       }
