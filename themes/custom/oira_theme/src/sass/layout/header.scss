@@ -309,10 +309,7 @@
 
 /*** Stiky header ***/
 body {
-  padding-top: 186px;
-  &.role-anonymous {
-    padding-top: 189px;
-  }
+  padding-top: 189px;
 }
 
 body.user-logged-in {
@@ -321,7 +318,7 @@ body.user-logged-in {
 }
 
 body.toolbar-fixed {
-  padding-top: 229px !important;
+  padding-top: 150px !important;
   #header {
     padding-top: 40px;
   }

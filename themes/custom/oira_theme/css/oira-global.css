@@ -149,6 +149,7 @@ div#sliding-popup button.decline-button:hover {
 
 /* Breadcrumbs */
 .breadcrumbs-share {
+  display: none;
   border-bottom: 1px solid #707070;
   margin-bottom: 1rem;
 }
@@ -163,6 +164,7 @@ div#sliding-popup button.decline-button:hover {
 .block-system-breadcrumb-block {
   margin-right: -15px;
   margin-left: -15px;
+  padding: 5px 0px;
 }
 .breadcrumb {
   background-color: transparent;
@@ -206,6 +208,11 @@ div#sliding-popup button.decline-button:hover {
   top: -4px;
 }
 
+@media only screen and (min-width: 576px) {
+  .breadcrumbs-share {
+    display: block;
+  }
+}
 /*Headings*/
 h1, h2, h3 {
   color: #58585a;
@@ -1259,14 +1266,15 @@ table tr td {
     font-weight: bold;
     color: #FFF;
   }
-  .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-view-grid.horizontal.cols-12.clearfix.col, .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .node--type-collaboration-document .block-system-main-block .content .views-view-grid.horizontal.cols-12.clearfix.node--view-mode-full, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-view-grid.horizontal.cols-12.clearfix.node--view-mode-full {
-    padding-right: 0px;
-  }
   .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 0px;
+  }
+  .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row .views-view-grid {
+    display: flex;
+    justify-content: center;
   }
   .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row .col-md-6.col-sm-12, .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row .block-system-breadcrumb-block .col-md-6.content, .block-system-breadcrumb-block .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row .col-md-6.content {
     flex: 0 0 100%;
@@ -1334,8 +1342,9 @@ table tr td {
   }
   .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .more-link {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
     padding: 0px 15px;
+    padding-right: 30px !important;
   }
   .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .more-link a {
     place-self: end;
@@ -1449,6 +1458,11 @@ table tr td {
     text-decoration: underline;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .page-view-frontpage .content-latest-news .container, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title {
+    max-width: 1160px;
+  }
+}
 @media screen {
   .page-view-news .view-display-id-oshnews_list .view-header h1.page-header {
     color: #10b2e4;
@@ -1502,6 +1516,7 @@ table tr td {
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content .datetime {
     color: #58585A;
+    font-weight: bold;
     font-size: 1rem;
   }
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content h2 a {
@@ -1544,6 +1559,7 @@ table tr td {
     font-size: 0.9rem;
     color: #10b2e4;
     margin-left: 1rem;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1561,9 +1577,6 @@ table tr td {
   .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content {
     padding-top: 1rem;
     padding-left: 45px;
-  }
-  .page-view-news .view-footer {
-    margin-top: -47px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1631,6 +1644,9 @@ table tr td {
   .node--type-news .no-container .node__content .field--type-text-with-summary a:hover, .node--type-news .no-container .node__content .field--type-text-with-summary a > span:hover, .node--type-news .no-container .node__content .field--name-field-summary a:hover, .node--type-news .no-container .node__content .field--name-field-summary a > span:hover {
     color: #10b2e4 !important;
     text-decoration: none;
+  }
+  .node--type-news .views-element-container.block.block-views.block-views-blockrelated-resources-block-1 {
+    border-style: none;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1784,6 +1800,13 @@ table tr td {
     margin-top: 0rem;
   }
 }
+@media screen {
+  body.page-node-450.what-is-new #block-oira-theme-page-title {
+    position: relative;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
+}
 /* Common elements */
 body {
   position: relative;
@@ -1793,9 +1816,8 @@ body {
   min-height: 100vh;
 }
 
-#page {
-  /* This paddding requires the Height of the Footer */
-  padding-bottom: 100px;
+body.role-anonymous {
+  padding-top: 115px;
 }
 
 a {
@@ -1829,7 +1851,6 @@ a:hover {
 }
 
 .image-fluid {
-  height: 250px;
   overflow: hidden;
   margin-bottom: 5px;
 }
@@ -1866,6 +1887,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   column-gap: 0.3rem;
+  padding: 5px 0rem;
 }
 #share-this-on > span.text-share {
   font-size: 0.9rem;
@@ -2788,15 +2810,6 @@ select.custom-select {
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
   overflow-x: hidden;
-  /*** ***/
-}
-.page-node-450 h1,
-.whats-is-new h1 {
-  position: relative;
-  z-index: 2;
-  margin-top: -5.5rem;
-  margin-bottom: 3rem;
-  color: #FFF;
 }
 .page-node-450 .image-fluid,
 .whats-is-new .image-fluid {
@@ -5411,13 +5424,22 @@ body[class*=private-zone-] .page-header.h1 {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .image-fluid {
+    height: 250px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body.role-anonymous {
+    padding-top: 189px;
+  }
+}
 .site-footer {
+  display: flex;
   width: 100%;
   height: auto;
   background-color: #58585A;
   padding: 15px 0 15px 0;
-  position: absolute;
-  bottom: 0;
 }
 .site-footer .site-footer__bottom {
   margin-top: 0;
@@ -5447,9 +5469,6 @@ body[class*=private-zone-] .page-header.h1 {
 }
 .site-footer #block-footermenu ul li {
   display: inline-block;
-}
-.site-footer #block-footermenu ul li:first-of-type a {
-  padding-left: 0px;
 }
 .site-footer #block-footermenu ul li a {
   color: #FFF;
@@ -5758,9 +5777,6 @@ body[class*=private-zone-] .page-header.h1 {
 
 /*** Stiky header ***/
 body {
-  padding-top: 186px;
-}
-body.role-anonymous {
   padding-top: 189px;
 }
 
@@ -5770,7 +5786,7 @@ body.user-logged-in {
 }
 
 body.toolbar-fixed {
-  padding-top: 229px !important;
+  padding-top: 150px !important;
 }
 body.toolbar-fixed #header {
   padding-top: 40px;
@@ -6791,6 +6807,22 @@ body.toolbar-fixed.toolbar-tray-open #header {
   padding: 1rem;
 }
 
+/**Rewrite container and col width**/
+@media only screen and (min-width: 1440px) {
+  .container, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .node--type-collaboration-document .block-system-main-block {
+    max-width: 1284px;
+  }
+
+  .col-md-3 {
+    flex: 0 0 21%;
+    max-width: 21%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 58%;
+    max-width: 58%;
+  }
+}
 @media (max-width: 1023px) {
   .block-menu.menu--main .nav > li.nav-item:first-child a {
     margin: 0 auto;
@@ -7156,17 +7188,8 @@ body.toolbar-fixed.toolbar-tray-open #header {
     display: none;
   }
 
-  #page {
-    padding-bottom: 180px;
-  }
-
   .block-addtoany-block {
     padding: 0 15px;
-  }
-
-  /*** Stiky header ***/
-  body.role-anonymous {
-    padding-top: 115px;
   }
 
   body.user-logged-in {
@@ -7176,9 +7199,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
     padding-top: 40px;
   }
 
-  body.user-logged-in.toolbar-fixed {
-    padding-top: 256px !important;
-  }
   body.user-logged-in.toolbar-fixed #header {
     padding-top: 40px;
   }
@@ -7191,11 +7211,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
 
   .page-view-oira-ws .pagerer-center-pane {
     width: 100%;
-  }
-
-  .row {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .top-header-content .header-menu-news {
@@ -7241,56 +7256,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
     padding-right: 1rem;
   }
 
-  .content-latest-news .view-news .attachment-before .col-md-12 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .content-latest-news .view-news .attachment-before .views-field-nothing {
-    float: none;
-    margin-right: 0;
-    width: 100%;
-  }
-  .content-latest-news .view-news .attachment-before .views-field-nothing img {
-    display: none;
-  }
-  .content-latest-news .view-news .attachment-before h3 a {
-    font-size: 1rem;
-  }
-  .content-latest-news .view-news h3 a:hover {
-    font-size: 1rem;
-    color: #23527c;
-  }
-  .content-latest-news .view-news span.see-more, .content-latest-news .view-news .more-link {
-    float: none;
-    display: flex;
-  }
-  .content-latest-news .view-news > .more-link {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .content-latest-news .view-news .views-view-grid.horizontal {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .content-latest-news .view-news .views-view-grid.horizontal .row {
-    display: block;
-    justify-content: initial;
-  }
-  .content-latest-news .view-news .views-view-grid.horizontal .row .col-md-4 {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    flex-basis: 100%;
-    border-bottom: 2px solid #786586;
-  }
-
   /**** What's News ***/
-  .page-node-450 h1, .whats-is-new h1 {
-    margin: 0 0 1.5rem;
-    padding: 0;
-  }
-
   .block-views-blocknews-block-1 .views-col:nth-child(2), .block-views-blocknews-block-1 .views-col:nth-child(3) {
     display: none;
   }

@@ -8,10 +8,8 @@ body{
   min-height: 100vh;
 }
 
-
-#page{
-  /* This paddding requires the Height of the Footer */
-  padding-bottom: 100px;
+body.role-anonymous {
+  padding-top: 115px;
 }
 
 a{
@@ -53,7 +51,6 @@ a{
 }
 
 .image-fluid{
-  height: 250px;
   overflow: hidden;
   margin-bottom: 5px;
   img{
@@ -92,6 +89,7 @@ a{
   display: flex;
   flex-direction: row;
   column-gap: 0.3rem;
+  padding: 5px 0rem;
   & > span.text-share{
     font-size: 0.9rem;
   }
@@ -1110,14 +1108,6 @@ select.custom-select{
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
   overflow-x: hidden;
-  /*** ***/
-  h1 {
-    position: relative;
-    z-index: 2;
-    margin-top: -5.5rem;
-    margin-bottom: 3rem;
-    color: $text-color-white;
-  }
   .image-fluid {
     position: relative;
     margin-bottom: 0;
@@ -3751,4 +3741,14 @@ body[class*="private-zone-"] {
   }
 }
 
+@media only screen and (min-width: 768px){
+  .image-fluid{
+    height: 250px !important;
+  }
+}
 
+@media only screen and (min-width: 992px){
+  body.role-anonymous {
+    padding-top: 189px;
+  }
+}

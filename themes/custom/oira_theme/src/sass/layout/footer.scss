@@ -1,10 +1,9 @@
 .site-footer{
+  display: flex;
   width: 100%;
   height: auto;
   background-color: $bg-grey;
   padding: 15px 0 15px 0;
-  position: absolute;
-  bottom: 0;
   .site-footer__bottom {
     margin-top: 0;
     border: 0;
@@ -33,11 +32,6 @@
     ul{
       li{
         display: inline-block;
-        &:first-of-type{
-          a{
-            padding-left: 0px;
-          }
-        }
         a{
           color: $text-color-white;
           font-weight: normal;

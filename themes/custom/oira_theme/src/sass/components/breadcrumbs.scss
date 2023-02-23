@@ -1,6 +1,7 @@
 /* Breadcrumbs */
 
 .breadcrumbs-share{
+  display: none;
   border-bottom: 1px solid $bg-border-grey;
   margin-bottom: 1rem;
   & > .container{
@@ -17,6 +18,7 @@
 .block-system-breadcrumb-block {
   margin-right: -15px;
   margin-left: -15px;
+  padding: 5px 0px;
   .content {
     @extend .col-sm-12;
   }
@@ -68,3 +70,8 @@
   top: -4px;
 }
 
+@media only screen and (min-width: 576px){
+  .breadcrumbs-share{
+    display: block;
+  }
+}
