@@ -58,9 +58,6 @@
     }
   }
 
-  #block-headerprintandfontsize {
-    display: none;
-  }
   .top-header-content {
     .header-blocks {
       margin-left: 0;
@@ -217,32 +214,6 @@
 
 @media only screen and (max-width : 991px) {
   /* Header Search */
-  .top-header-content{
-    align-items: stretch;
-    .header-blocks{
-      .block-search-form-block{
-        position: absolute;
-        right: 20px;
-        top: 0;
-        z-index: 10;
-        input {
-          display: none;
-          height: 30px;
-        }
-        .btn-primary{
-          pointer-events: none;
-        }
-      }
-    }
-    .region-top-header-logos .field--name-field-image {
-      align-items: flex-end;
-      .field__item {
-        img {
-          margin: 0;
-        }
-      }
-    }
-  }
   #block-socialmenu{
     display: none;
   }
@@ -265,7 +236,6 @@
 
   /* Menu responsive */
   #navbar-main {
-    padding: 0;
     .navbar-toggler {
       padding: 0.6rem;
       .icon-bar {

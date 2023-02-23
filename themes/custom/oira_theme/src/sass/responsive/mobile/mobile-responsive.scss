@@ -238,7 +238,6 @@
   }
 
   .site-footer {
-    padding: 1rem 0;
     .site-footer__bottom .region {
       flex-direction: column;
       .block,
@@ -595,7 +594,6 @@
 @media only screen and (max-width : 480px) {
   .top-header-content{
     .col {
-      padding: 0;
     }
     .region-medium-header-logos {
       max-width: 80px;
