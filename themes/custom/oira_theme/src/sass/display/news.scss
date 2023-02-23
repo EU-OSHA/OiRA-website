@@ -54,7 +54,10 @@
               }
               .datetime {
                 color: $text-grey;
-                font-size: 1rem;
+                font: {
+                  weight: bold;
+                  size: 1rem;
+                }
               }
               h2{
                 a{
@@ -109,6 +112,7 @@
       font-size: 0.9rem;
       color: $text-color-blue-light;
       margin-left: 1rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -134,9 +138,6 @@
             }
           }
         }
-      }
-      .view-footer{
-        margin-top: -47px;
       }
     }
   }

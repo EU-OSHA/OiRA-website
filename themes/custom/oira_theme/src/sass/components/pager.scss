@@ -1,12 +1,4 @@
 /*** OiRA Pager ***/
-.div.pagerer-panes {
-  display: flex;
-}
-div.pagerer-left-pane,
-div.pagerer-center-pane,
-div.pagerer-right-pane {
-  display: flex;
-}
 
 .pagerer-pager-basic {
   margin: 0.5rem auto;
@@ -86,7 +78,27 @@ div.pagerer-right-pane {
 }
 
 /***New pagination**/
-@include paginationStyle($bg-color-blue-light-opacity, $text-color-blue-light);
+div.pagerer-center-pane, div.pagerer-left-pane{
+  display: none;
+}
+div.pagerer-right-pane{
+  display: block;
+  nav{
+    @include paginationStyle($bg-color-blue-light-opacity, $text-color-blue-light);
+  }
+}
+
+@media only screen and (min-width: 576px){
+  div.pagerer-left-pane{
+    display: block;
+    nav{
+      @include paginationStyle($bg-color-blue-light-opacity, $text-color-blue-light);
+    }
+  }
+  div.pagerer-right-pane{
+    display: none;
+  }
+}
 /***End comment - new pagination**/
 
 

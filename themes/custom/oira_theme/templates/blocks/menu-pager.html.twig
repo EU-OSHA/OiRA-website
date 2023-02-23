@@ -1,0 +1,14 @@
+<ul class="item-list">
+    {% if previous %}
+      {% set prevTitle = previous['#title']|replace({'<<':''}) %}
+      <li class="menu-pager-previous">
+        <a href="{{ previous['#url'] }}">{{ prevTitle }}</a>
+      </li>
+    {% endif %}
+    {% if next %}
+      {% set nextTitle = next['#title']|replace({'>>':''}) %}
+  <li class="menu-pager-next">
+    <a href="{{ next['#url'] }}">{{ nextTitle }}</a>
+  </li>
+    {% endif %}
+</ul>

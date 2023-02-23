@@ -7,22 +7,9 @@ body{
   font-size: 16px;
   min-height: 100vh;
 }
-.breadcrumbs-share{
-  border-bottom: 1px solid $bg-border-grey;
-  margin-bottom: 1rem;
-  #block-addtoanybuttons{
-    margin-left: auto;
-  }
-}
 
-
-#page{
-  /* This paddding requires the Height of the Footer */
-  padding-bottom: 100px;
-}
-
-#main-wrapper{
-  padding-bottom: 5rem;
+body.role-anonymous {
+  padding-top: 115px;
 }
 
 a{
@@ -35,9 +22,33 @@ a{
   }
 }
 
-.container,fix-paddings{
+fix-paddings{
   padding-left: 0;
   padding-right: 0;
+}
+
+.background-purple, .background-grey{
+  margin: 1rem 0px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.background-purple{
+  font-size: 1.1rem;
+  background: $bg-color-purple-dark;
+  color: $text-color-white;
+  a, a > span{
+    color: $text-color-white !important;
+    text-decoration: underline;
+    text-decoration-color: $text-color-blue-light;
+    font-style: normal;
+    &:hover{
+      color: $text-color-white !important;
+      text-decoration: none;
+    }
+  }
+}
+.background-grey{
+  background: $bg-light-grey;
 }
 
 .field--name-field-summary{
@@ -64,9 +75,8 @@ a{
 }
 
 .image-fluid{
-  height: 250px;
   overflow: hidden;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
   img{
     width: 100%;
     height: auto;
@@ -97,11 +107,16 @@ a{
   padding-top: 5px;
 }
 
-/* Share this on articles icons */
+
 #share-this-on{
-  padding-top: 0;
-  padding-bottom: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  padding: 5px 0rem;
+  & > span.text-share{
+    font-size: 0.9rem;
+  }
   .a2a_svg{
     svg {
       display: none;
@@ -110,26 +125,37 @@ a{
   .a2a_s__default{
     background-color: transparent !important;
   }
-  .a2a_button_facebook{
-    background: url(../images/share-facebook.png) no-repeat;
-    background-size: 23px;
+  .a2a_button_facebook, .a2a_button_twitter{
+    background-repeat: no-repeat;
     width: 23px;
     height: 23px;
     display: inline-block;
     margin-right: 7px;
   }
+
+  .a2a_button_facebook{
+    background: {
+      image: url("../images/facebook-light-blue.png");
+      size: 11px;
+      position: 50% 50%;
+    }
+  }
+
   .a2a_button_twitter{
-    background: url(../images/share-twitter.png) no-repeat;
-    background-size: 23px;
-    width: 23px;
-    height: 23px;
-    display: inline-block;
-    margin-right: 7px;
+    background: {
+      image: url("../images/twitter-light-blue.png");
+      size: 21px;
+      position: 50% 80%;
+    }
   }
   .a2a_button_linkedin_share{
     button{
-      background: url(../images/share-linkedin.png) no-repeat;
-      background-size: 23px;
+      background: {
+        image: url("../images/linkedin-light-blue.png");
+        repeat: no-repeat;
+        position: 50% 50%;
+        size: 20px;
+      }
       width: 23px;
       height: 23px!important;
       display: inline-block;
@@ -141,13 +167,14 @@ a{
     }
   }
 }
+
 .addtoany_list.a2a_kit_size_32 a > span{
   width: 23px !important;
 }
 .addtoany_list a:hover span {
   opacity: 1;
 }
-/* END Share this on articles icons */
+
 
 .node__content{
   margin-top: 0;
@@ -1099,35 +1126,12 @@ select.custom-select{
 }
 
 
-/* Node Articles */
-.node--type-article {
-  h1{
-    color: $text-color-black;
-  }
-  h3{
-    font-size: 1.4rem;
-  }
-  h5 {
-    font-size: 1rem;
-    color: $text-color-black;
-    font-weight: bold;
-  }
-}
-
 /** Wat's News **/
 .page-node-450,
 .whats-is-new {
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
   overflow-x: hidden;
-  /*** ***/
-  h1 {
-    position: relative;
-    z-index: 2;
-    margin-top: -5.5rem;
-    margin-bottom: 3rem;
-    color: $text-color-white;
-  }
   .image-fluid {
     position: relative;
     margin-bottom: 0;
@@ -3761,4 +3765,14 @@ body[class*="private-zone-"] {
   }
 }
 
+@media only screen and (min-width: 768px){
+  .image-fluid{
+    height: 250px !important;
+  }
+}
 
+@media only screen and (min-width: 992px){
+  body.role-anonymous {
+    padding-top: 189px;
+  }
+}

@@ -19,11 +19,20 @@
   jQuery(window).on("load",function(){
     checkResponsiveMenu(jQuery(window).width(), menuSM);
     if($("body").hasClass("page-view-frontpage")){
-      //To be changed
-/*      $(".home-boxes > a").mouseenter(function(){
-       $(this).find(".description").slideToggle(10);
-      });*/
+
+      $(".home-boxes").hover(function(){
+        $(this).find("a h2").css("bottom","60px");
+        $(this).find("a .description").css("bottom","40px");
+        $(this).find("a .description").show(375);
+      }, function(){
+        $(this).find("a .description").hide(150);
+        $(this).find("a h2").css("bottom","0px");
+        $(this).find("a .description").css("bottom","auto");
+      });
     }
+    $("#navbar-main button.navbar-toggler").click(function (){
+      $(".responsive-menu-oira").toggleClass('collapsed');
+    })
   });
 
   jQuery(window).resize(function(){
@@ -43,7 +52,6 @@
 
         /*Hide the header elements not requied for the responsive version*/
         jQuery("section.region-wrapper").hide();
-        //jQuery(".font-size-print").hide();
 
         menuSM = true;
       }

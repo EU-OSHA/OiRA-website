@@ -2,9 +2,10 @@
   .node--type-news{
     /**Back to OiRA news button**/
     #block-backtonews {
-      position: absolute;
-      top: -35px;
-      left: 0;
+      display: flex;
+      margin-bottom: -20px;
+      padding-left: 15px;
+      padding-top: 15px;
       a {
         color: $text-color-blue-light;
         font-style: normal;
@@ -54,16 +55,20 @@
           color: $text-grey;
           line-height: 24px;
           a, a > span{
-            color: $text-color-blue-light !important;
+            color: $text-black;
             text-decoration: underline;
+            text-decoration-color: $text-color-blue-light;
             font-style: normal;
             &:hover{
-              color: $text-color-blue-light !important;
+              color: $text-black;
               text-decoration: none;
             }
           }
         }
       }
+    }
+    .views-element-container.block.block-views.block-views-blockrelated-resources-block-1{
+      border-style: none;
     }
   }
   @media only screen and (min-width: 768px){

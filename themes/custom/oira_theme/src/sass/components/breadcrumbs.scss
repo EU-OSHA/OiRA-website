@@ -1,7 +1,24 @@
 /* Breadcrumbs */
+
+.breadcrumbs-share{
+  display: none;
+  border-bottom: 1px solid $bg-border-grey;
+  margin-bottom: 1rem;
+  & > .container{
+    & > .row{
+      display: flex;
+      align-items: baseline;
+      #block-addtoanybuttons{
+        margin-left: auto;
+      }
+    }
+  }
+}
+
 .block-system-breadcrumb-block {
   margin-right: -15px;
   margin-left: -15px;
+  padding: 5px 0px;
   .content {
     @extend .col-sm-12;
   }
@@ -10,46 +27,51 @@
 .breadcrumb{
   background-color: transparent;
   font-size: 1rem;
-  padding: 10px 15px;
+  padding: {
+    top: 0px;
+    bottom: 0px;
+    left: 30px;
+    right: 0px;
+  }
   margin-bottom: 0;
   .breadcrumb-item {
-    font-size: 1rem;
-    &:nth-child(2) {
-      color: $text-color-blue-light;
-      font-style: italic;
-      font-weight: bold;
-    }
-    &:last-child {
-      color: $text-color-black;
-      font-style: normal;
-    }
+    font-size: 0.9rem;
+    color: $text-grey;
   }
   a{
-    color: $text-color-blue-light;
-    text-decoration: none;
-    font-size: 1rem;
+    color: $text-grey;
+    font: {
+      style: normal;
+      weight: bold;
+      size: 0.9rem;
+    }
+    text-decoration: underline;
     &:hover{
-      color: $text-color-blue-light-hover;
-      text-decoration: underline;
+      color: $text-grey;
     }
   }
   span{
-    color: $text-color-black;
-    font-style: italic;
+    color: $text-grey;
     font-weight: bold;
-  }
-  span.last{
-    color: $text-color-black;
-    font-style: normal;
-    font-weight: normal;
+    &.last{
+      color: $text-color-black;
+      font-style: normal;
+      font-weight: normal;
+    }
   }
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
   display: inline-block;
+  position: relative;
   padding-right: .5rem;
-  color: $text-color-blue-light;
-  content: ">>";
-  font-weight: bold;
-  font-size: 1rem;
+  content: ">";
+  font-size: 1.2rem;
+  top: -4px;
+}
+
+@media only screen and (min-width: 576px){
+  .breadcrumbs-share{
+    display: block;
+  }
 }

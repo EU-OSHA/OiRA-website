@@ -15,16 +15,8 @@
     display: none;
   }
 
-  #page {
-    padding-bottom: 180px;
-  }
   .block-addtoany-block {
     padding: 0 15px;
-  }
-
-  /*** Stiky header ***/
-  body.role-anonymous {
-    padding-top: 115px;
   }
 
   body.user-logged-in {
@@ -35,15 +27,8 @@
   }
 
   body.user-logged-in.toolbar-fixed {
-    padding-top: 256px !important;
     #header {
       padding-top: 40px;
-    }
-    &.toolbar-tray-open {
-      padding-top: 290px !important;
-      #header {
-        padding-top: 75px;
-      }
     }
   }
 
@@ -53,12 +38,9 @@
     }
   }
   .row{
-    margin-left: 0;
-    margin-right: 0;
+   // margin-left: 0;
+   // margin-right: 0;
   }
-
-
-
 
   .top-header-content{
     .header-menu-news {
@@ -112,66 +94,8 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .content-latest-news {
-    .view-news {
-      .attachment-before {
-        .col-md-12{
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .views-field-nothing {
-          float: none;
-          margin-right: 0;
-          width: 100%;
-          img {
-            display: none;
-          }
-        }
-        h3 {
-          a {
-            font-size: 1rem;
-          }
-        }
-      }
-      h3 {
-        a:hover {
-          font-size: 1rem;
-          color: $text-color-blue-hover;
-        }
-      }
-      span.see-more, .more-link {
-        float: none;
-        display: flex;
-      }
-      > .more-link {
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .views-view-grid.horizontal {
-        padding-left: 0;
-        padding-right: 0;
-        .row {
-          display: block;
-          justify-content: initial;
-          .col-md-4 {
-            padding-left: 0;
-            padding-right: 0;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-            flex-basis: 100%;
-            border-bottom: 2px solid $bg-color-purple;
-          }
-        }
-      }
-    }
-  }
 
   /**** What's News ***/
-  .page-node-450 h1, .whats-is-new h1 {
-    margin: 0 0 1.5rem;
-    padding: 0;
-  }
   .block-views-blocknews-block-1 {
     .views-col {
       &:nth-child(2),
@@ -314,7 +238,6 @@
   }
 
   .site-footer {
-    padding: 1rem 0;
     .site-footer__bottom .region {
       flex-direction: column;
       .block,
@@ -671,7 +594,6 @@
 @media only screen and (max-width : 480px) {
   .top-header-content{
     .col {
-      padding: 0;
     }
     .region-medium-header-logos {
       max-width: 80px;

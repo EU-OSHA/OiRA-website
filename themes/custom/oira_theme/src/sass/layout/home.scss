@@ -19,8 +19,7 @@
 
 .content-white {
   background: $bg-color-white;
-  padding-top: 2rem;
-  padding-bottom: 0.7rem;
+  padding: 2rem 0rem;
 }
 
 .content-home{
@@ -274,14 +273,6 @@
 }
 
 .content-oira-partners {
-  h2:after {
-    content: "";
-    background: url(../images/oira-partners.png) no-repeat;
-    background-size: 100%;
-    width: 40px;
-    height: 40px;
-    float: right;
-  }
   .view-content.row {
     margin: 0 auto;
     display: grid;
@@ -304,12 +295,6 @@
     }
     .views-view-grid.horizontal{
       margin-bottom: 20px;
-    }
-    .more-link{
-      width: 100%;
-      border-top: 2px solid $bg-color-purple;
-      padding-top: 20px;
-      text-align: right;
     }
   }
   .partner__item .views-field {

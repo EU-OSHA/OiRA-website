@@ -1,10 +1,9 @@
 .site-footer{
+  display: flex;
   width: 100%;
   height: auto;
   background-color: $bg-grey;
   padding: 15px 0 15px 0;
-  position: absolute;
-  bottom: 0;
   .site-footer__bottom {
     margin-top: 0;
     border: 0;
@@ -23,9 +22,9 @@
   #block-copyright{
     width: 100%;
     p{
+      padding: 0 15px;
       font-size: 1rem;
       color: $text-color-white;
-      padding-left: 10px;
       margin-bottom: 0;
     }
   }
@@ -34,24 +33,14 @@
     ul{
       li{
         display: inline-block;
-        &:nth-child(4) {
-          display: none;
-        }
-        &:nth-child(5) {
-          display: inline-block;
-        }
         a{
           color: $text-color-white;
           font-weight: normal;
           font-style: normal;
-          padding: 0 10px 0 10px;
-          padding: 0 10px 0 10px;
+          padding: 0 15px;
           &:hover{
             text-decoration: underline;
           }
-        }
-        &:nth-child(5) {
-          display: none;
         }
         &:last-child {
           border-right: none;
