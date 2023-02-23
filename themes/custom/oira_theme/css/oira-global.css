@@ -1769,12 +1769,13 @@ table tr td {
     line-height: 24px;
   }
   .node--type-news .no-container .node__content .field--type-text-with-summary a, .node--type-news .no-container .node__content .field--type-text-with-summary a > span, .node--type-news .no-container .node__content .field--name-field-summary a, .node--type-news .no-container .node__content .field--name-field-summary a > span {
-    color: #10b2e4 !important;
+    color: #000000;
     text-decoration: underline;
+    text-decoration-color: #10b2e4;
     font-style: normal;
   }
   .node--type-news .no-container .node__content .field--type-text-with-summary a:hover, .node--type-news .no-container .node__content .field--type-text-with-summary a > span:hover, .node--type-news .no-container .node__content .field--name-field-summary a:hover, .node--type-news .no-container .node__content .field--name-field-summary a > span:hover {
-    color: #10b2e4 !important;
+    color: #000000;
     text-decoration: none;
   }
   .node--type-news .views-element-container.block.block-views.block-views-blockrelated-resources-block-1 {
@@ -1813,24 +1814,16 @@ table tr td {
   body.node--type-article div#main {
     margin-top: 1.5rem;
   }
-  body.node--type-article div#main h1 span {
+  body.node--type-article div#main #block-oira-theme-page-title .container.fix-paddings, body.node--type-article div#main #block-oira-theme-page-title .node--type-collaboration-document .fix-paddings.block-system-main-block, .node--type-collaboration-document body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.block-system-main-block, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .field-name-body p.fix-paddings, .page-view-faqs-oira .field--name-field-article-header .field-name-body body.node--type-article div#main #block-oira-theme-page-title p.fix-paddings, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .fix-paddings.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.field-name-node-title {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  body.node--type-article div#main #block-oira-theme-page-title .container.fix-paddings h1 span, body.node--type-article div#main #block-oira-theme-page-title .node--type-collaboration-document .fix-paddings.block-system-main-block h1 span, .node--type-collaboration-document body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.block-system-main-block h1 span, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .field-name-body p.fix-paddings h1 span, .page-view-faqs-oira .field--name-field-article-header .field-name-body body.node--type-article div#main #block-oira-theme-page-title p.fix-paddings h1 span, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .fix-paddings.field-name-node-title h1 span, .page-view-faqs-oira .field--name-field-article-header body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.field-name-node-title h1 span {
     color: #10b2e4;
     font-weight: 500;
   }
   body.node--type-article div#main article {
-    font-size: 1rem;
-  }
-  body.node--type-article div#main article .background-purple, body.node--type-article div#main article .background-grey {
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  body.node--type-article div#main article .background-purple {
-    font-size: 1.1rem;
-    background: #967EA7;
-    color: #FFF;
-  }
-  body.node--type-article div#main article .background-grey {
-    background: #F8F8F8;
+    font-size: 0.9rem;
   }
   body.node--type-article div#main article h3 {
     color: #10b2e4;
@@ -1841,6 +1834,16 @@ table tr td {
     color: #967EA7;
     font-weight: bold;
     font-size: 1.2rem;
+  }
+  body.node--type-article div#main article a {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: #10b2e4;
+    font-style: normal;
+  }
+  body.node--type-article div#main article a:hover {
+    color: #000000;
+    text-decoration: none;
   }
   body.node--type-article div#main .menu-pager ul .menu-pager-previous a {
     place-self: end;
@@ -1965,6 +1968,32 @@ a:hover {
 fix-paddings {
   padding-left: 0;
   padding-right: 0;
+}
+
+.background-purple, .background-grey {
+  margin: 1rem 0px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.background-purple {
+  font-size: 1.1rem;
+  background: #967EA7;
+  color: #FFF;
+}
+.background-purple a, .background-purple a > span {
+  color: #FFF !important;
+  text-decoration: underline;
+  text-decoration-color: #10b2e4;
+  font-style: normal;
+}
+.background-purple a:hover, .background-purple a > span:hover {
+  color: #FFF !important;
+  text-decoration: none;
+}
+
+.background-grey {
+  background: #F8F8F8;
 }
 
 .field--name-field-summary p {

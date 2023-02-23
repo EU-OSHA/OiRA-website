@@ -33,26 +33,22 @@
     }
     div#main{
       margin-top: 1.5rem;
-      h1{
-        span{
-          color: $text-color-blue-light;
-          font-weight: 500;
+      #block-oira-theme-page-title{
+        .container.fix-paddings{
+          padding: {
+            left: 0px;
+            right: 0px;
+          }
+          h1{
+            span{
+              color: $text-color-blue-light;
+              font-weight: 500;
+            }
+          }
         }
       }
       article{
-        font-size: 1rem;
-        .background-purple, .background-grey{
-          padding: 1rem;
-          border-radius: 8px;
-        }
-        .background-purple{
-          font-size: 1.1rem;
-          background: $bg-color-purple-dark;
-          color: $text-color-white;
-        }
-        .background-grey{
-          background: $bg-light-grey;
-        }
+        font-size: 0.9rem;
         h3{
           color: $text-color-blue-light;
           font: {
@@ -65,6 +61,16 @@
           font: {
             weight: bold;
             size: 1.2rem;
+          }
+        }
+        a{
+          color: $text-black;
+          text-decoration: underline;
+          text-decoration-color: $text-color-blue-light;
+          font-style: normal;
+          &:hover{
+            color: $text-black;
+            text-decoration: none;
           }
         }
       }

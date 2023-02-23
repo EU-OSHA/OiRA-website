@@ -27,6 +27,30 @@ fix-paddings{
   padding-right: 0;
 }
 
+.background-purple, .background-grey{
+  margin: 1rem 0px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.background-purple{
+  font-size: 1.1rem;
+  background: $bg-color-purple-dark;
+  color: $text-color-white;
+  a, a > span{
+    color: $text-color-white !important;
+    text-decoration: underline;
+    text-decoration-color: $text-color-blue-light;
+    font-style: normal;
+    &:hover{
+      color: $text-color-white !important;
+      text-decoration: none;
+    }
+  }
+}
+.background-grey{
+  background: $bg-light-grey;
+}
+
 .field--name-field-summary{
   p{
     font-size: 1.2rem;

@@ -55,11 +55,12 @@
           color: $text-grey;
           line-height: 24px;
           a, a > span{
-            color: $text-color-blue-light !important;
+            color: $text-black;
             text-decoration: underline;
+            text-decoration-color: $text-color-blue-light;
             font-style: normal;
             &:hover{
-              color: $text-color-blue-light !important;
+              color: $text-black;
               text-decoration: none;
             }
           }
