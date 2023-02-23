@@ -1,20 +1,78 @@
 /**OiRA revamp pagination style - 2 colours required**/
 @mixin paginationStyle($lightColor, $darkColor){
-  ul.pagination{
+  ul.pager__items{
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     margin-top: 1rem;
-    &   > li{
+    &>li{
+      display: grid;
       min-width: 35px;
       min-height: 35px;
       text-align: center;
+      &.pager__item--first, &.pager__item--previous, &.pager__item--next, &.pager__item--last{
+        a{
+          height: 35px;
+          width: 35px;
+          background: {
+            repeat: no-repeat;
+            position: 50% 38%;
+          }
+          span{
+            display: none;
+          }
+        }
+      }
+      &.pager__item--first{
+        a{
+          background-image: url("../images/pager-first.png");
+        }
+      }
+      &.pager__item--previous{
+        a{
+          background-image: url("../images/pager-prev.png");
+        }
+      }
+      &.pager__item--next{
+        a{
+          background-image: url("../images/pager-next.png");
+        }
+      }
+      &.pager__item--last{
+        a{
+          background-image: url("../images/pager-last.png");
+        }
+      }
+      &[role=presentation]{
+        color: $darkColor;
+        &:focus, &:hover{
+          background: transparent;
+          box-shadow: none;
+          color: $darkColor;
+          text-decoration: none;
+        }
+      }
       &:focus{
         background: transparent;
         outline: none;
         box-shadow: $darkColor;
+        a{
+          background: $lightColor;
+        }
+      }
+      &:hover{
+        background: $lightColor;
+        border-radius: 25px;
+        color: $darkColor;
+        a{
+          background: transparent;
+        }
+        span{
+          background: transparent;
+        }
       }
       span, a{
+        place-self: center;
         background: $bg-color-white;
         border-radius: 15px;
         color: $darkColor;
@@ -24,14 +82,6 @@
           weight: bold;
           style: normal;
           size: 0.9rem;
-        }
-        &:hover{
-          background: $lightColor;
-          border-radius: 25px;
-          color: $darkColor;
-          span{
-            background: transparent;
-          }
         }
       }
       &.active{

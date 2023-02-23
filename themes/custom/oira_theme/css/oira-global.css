@@ -337,16 +337,6 @@ h1.page-header {
 }
 
 /*** OiRA Pager ***/
-.div.pagerer-panes {
-  display: flex;
-}
-
-div.pagerer-left-pane,
-div.pagerer-center-pane,
-div.pagerer-right-pane {
-  display: flex;
-}
-
 .pagerer-pager-basic {
   margin: 0.5rem auto;
 }
@@ -415,23 +405,76 @@ div.pagerer-right-pane {
 }
 
 /***New pagination**/
-ul.pagination {
+div.pagerer-center-pane, div.pagerer-left-pane {
+  display: none;
+}
+
+div.pagerer-right-pane {
+  display: block;
+}
+div.pagerer-right-pane nav ul.pager__items {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-top: 1rem;
 }
-ul.pagination > li {
+div.pagerer-right-pane nav ul.pager__items > li {
+  display: grid;
   min-width: 35px;
   min-height: 35px;
   text-align: center;
 }
-ul.pagination > li:focus {
+div.pagerer-right-pane nav ul.pager__items > li.pager__item--first a, div.pagerer-right-pane nav ul.pager__items > li.pager__item--previous a, div.pagerer-right-pane nav ul.pager__items > li.pager__item--next a, div.pagerer-right-pane nav ul.pager__items > li.pager__item--last a {
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-position: 50% 38%;
+}
+div.pagerer-right-pane nav ul.pager__items > li.pager__item--first a span, div.pagerer-right-pane nav ul.pager__items > li.pager__item--previous a span, div.pagerer-right-pane nav ul.pager__items > li.pager__item--next a span, div.pagerer-right-pane nav ul.pager__items > li.pager__item--last a span {
+  display: none;
+}
+div.pagerer-right-pane nav ul.pager__items > li.pager__item--first a {
+  background-image: url("../images/pager-first.png");
+}
+div.pagerer-right-pane nav ul.pager__items > li.pager__item--previous a {
+  background-image: url("../images/pager-prev.png");
+}
+div.pagerer-right-pane nav ul.pager__items > li.pager__item--next a {
+  background-image: url("../images/pager-next.png");
+}
+div.pagerer-right-pane nav ul.pager__items > li.pager__item--last a {
+  background-image: url("../images/pager-last.png");
+}
+div.pagerer-right-pane nav ul.pager__items > li[role=presentation] {
+  color: #10b2e4;
+}
+div.pagerer-right-pane nav ul.pager__items > li[role=presentation]:focus, div.pagerer-right-pane nav ul.pager__items > li[role=presentation]:hover {
+  background: transparent;
+  box-shadow: none;
+  color: #10b2e4;
+  text-decoration: none;
+}
+div.pagerer-right-pane nav ul.pager__items > li:focus {
   background: transparent;
   outline: none;
   box-shadow: #10b2e4;
 }
-ul.pagination > li span, ul.pagination > li a {
+div.pagerer-right-pane nav ul.pager__items > li:focus a {
+  background: rgba(16, 178, 228, 0.1);
+}
+div.pagerer-right-pane nav ul.pager__items > li:hover {
+  background: rgba(16, 178, 228, 0.1);
+  border-radius: 25px;
+  color: #10b2e4;
+}
+div.pagerer-right-pane nav ul.pager__items > li:hover a {
+  background: transparent;
+}
+div.pagerer-right-pane nav ul.pager__items > li:hover span {
+  background: transparent;
+}
+div.pagerer-right-pane nav ul.pager__items > li span, div.pagerer-right-pane nav ul.pager__items > li a {
+  place-self: center;
   background: #FFF;
   border-radius: 15px;
   color: #10b2e4;
@@ -441,26 +484,110 @@ ul.pagination > li span, ul.pagination > li a {
   font-style: normal;
   font-size: 0.9rem;
 }
-ul.pagination > li span:hover, ul.pagination > li a:hover {
+div.pagerer-right-pane nav ul.pager__items > li.active span.page-link, div.pagerer-right-pane nav ul.pager__items > li.active a {
   background: rgba(16, 178, 228, 0.1);
   border-radius: 25px;
   color: #10b2e4;
 }
-ul.pagination > li span:hover span, ul.pagination > li a:hover span {
-  background: transparent;
-}
-ul.pagination > li.active span.page-link, ul.pagination > li.active a {
-  background: rgba(16, 178, 228, 0.1);
-  border-radius: 25px;
-  color: #10b2e4;
-}
-ul.pagination > li.active span.page-link.page-link, ul.pagination > li.active a.page-link {
+div.pagerer-right-pane nav ul.pager__items > li.active span.page-link.page-link, div.pagerer-right-pane nav ul.pager__items > li.active a.page-link {
   border: none;
 }
-ul.pagination > li[role=presentation] span.page-link--ellipses:hover {
+div.pagerer-right-pane nav ul.pager__items > li[role=presentation] span.page-link--ellipses:hover {
   background: transparent;
 }
 
+@media only screen and (min-width: 576px) {
+  div.pagerer-left-pane {
+    display: block;
+  }
+  div.pagerer-left-pane nav ul.pager__items {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li {
+    display: grid;
+    min-width: 35px;
+    min-height: 35px;
+    text-align: center;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.pager__item--first a, div.pagerer-left-pane nav ul.pager__items > li.pager__item--previous a, div.pagerer-left-pane nav ul.pager__items > li.pager__item--next a, div.pagerer-left-pane nav ul.pager__items > li.pager__item--last a {
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-position: 50% 38%;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.pager__item--first a span, div.pagerer-left-pane nav ul.pager__items > li.pager__item--previous a span, div.pagerer-left-pane nav ul.pager__items > li.pager__item--next a span, div.pagerer-left-pane nav ul.pager__items > li.pager__item--last a span {
+    display: none;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.pager__item--first a {
+    background-image: url("../images/pager-first.png");
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.pager__item--previous a {
+    background-image: url("../images/pager-prev.png");
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.pager__item--next a {
+    background-image: url("../images/pager-next.png");
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.pager__item--last a {
+    background-image: url("../images/pager-last.png");
+  }
+  div.pagerer-left-pane nav ul.pager__items > li[role=presentation] {
+    color: #10b2e4;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li[role=presentation]:focus, div.pagerer-left-pane nav ul.pager__items > li[role=presentation]:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #10b2e4;
+    text-decoration: none;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li:focus {
+    background: transparent;
+    outline: none;
+    box-shadow: #10b2e4;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li:focus a {
+    background: rgba(16, 178, 228, 0.1);
+  }
+  div.pagerer-left-pane nav ul.pager__items > li:hover {
+    background: rgba(16, 178, 228, 0.1);
+    border-radius: 25px;
+    color: #10b2e4;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li:hover a {
+    background: transparent;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li:hover span {
+    background: transparent;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li span, div.pagerer-left-pane nav ul.pager__items > li a {
+    place-self: center;
+    background: #FFF;
+    border-radius: 15px;
+    color: #10b2e4;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.9rem;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.active span.page-link, div.pagerer-left-pane nav ul.pager__items > li.active a {
+    background: rgba(16, 178, 228, 0.1);
+    border-radius: 25px;
+    color: #10b2e4;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li.active span.page-link.page-link, div.pagerer-left-pane nav ul.pager__items > li.active a.page-link {
+    border: none;
+  }
+  div.pagerer-left-pane nav ul.pager__items > li[role=presentation] span.page-link--ellipses:hover {
+    background: transparent;
+  }
+
+  div.pagerer-right-pane {
+    display: none;
+  }
+}
 /***End comment - new pagination**/
 /*** Tabs in partner ***/
 .partners-related-content .nav-wrapper {
@@ -1594,9 +1721,10 @@ table tr td {
     /**End comment - back to OiRA news button**/
   }
   .node--type-news #block-backtonews {
-    position: absolute;
-    top: -35px;
-    left: 0;
+    display: flex;
+    margin-bottom: -20px;
+    padding-left: 15px;
+    padding-top: 15px;
   }
   .node--type-news #block-backtonews a {
     color: #10b2e4;
@@ -5670,9 +5798,52 @@ body[class*=private-zone-] .page-header.h1 {
 #navbar-main .responsive-menu-oira #block-generalsearch-api {
   display: grid;
   grid-area: search;
+  margin-bottom: 0.5rem;
 }
 #navbar-main .responsive-menu-oira #block-generalsearch-api > .content {
   place-self: center;
+}
+#navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row {
+  width: 170px;
+  height: 30px;
+  max-height: 30px;
+  border: 1px solid #003399;
+  border-radius: 4px;
+}
+#navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row fieldset {
+  display: block;
+  min-width: 100%;
+  height: 28px;
+  max-height: 28px;
+  padding: 0px;
+}
+#navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row fieldset input.form-control {
+  padding: 9px 9px;
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  width: inherit;
+  min-width: 100%;
+  margin: 0px;
+  height: 30px !important;
+  max-height: 28px !important;
+  font-size: 0.8rem;
+}
+#navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row #edit-actions {
+  width: 28px;
+  height: 28px;
+  padding: 0px;
+}
+#navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row #edit-actions .btn-primary {
+  position: relative;
+  left: -28px;
+  cursor: pointer;
+  border-radius: 0px;
+  border: none;
+  width: 28px;
+  height: 28px;
+  background: #967EA7 url(../images/magnifying-glass-white.png) no-repeat !important;
+  background-position: 50% 50% !important;
+  font-size: 0;
 }
 #navbar-main .responsive-menu-oira #block-languagedropdownswitcher {
   grid-area: lang;
@@ -5680,15 +5851,37 @@ body[class*=private-zone-] .page-header.h1 {
 }
 #navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select {
   margin: 0;
+  /**Language select**/
 }
 #navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select.mb-3, #navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select.my-3 {
   margin-bottom: 0px !important;
 }
-#navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .language-icon {
-  display: none !important;
+#navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select #edit-lang-dropdown-select {
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  padding: 2px 3px;
+  background: transparent url(../images/select-arrow.svg) no-repeat !important;
+  background-position: 97% 50% !important;
+  color: #FFF;
+  width: 120px !important;
+  font-size: 0.8rem;
+  font-weight: 400;
+  -webkit-appearance: none;
+  appearance: none;
+}
+#navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select #edit-lang-dropdown-select option {
+  background: #10b3e4;
+}
+#navbar-main .responsive-menu-oira #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select #edit-lang-dropdown-select option[selected=selected] {
+  color: #58585a;
 }
 #navbar-main .responsive-menu-oira.collapsed {
   display: none;
+}
+
+img.language-icon {
+  display: none !important;
 }
 
 .region-wrapper {
@@ -5779,6 +5972,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .top-header-content .node.field--type-image {
     margin: 0 0 0 0;
+  }
+
+  #navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row {
+    width: 310px;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -5934,11 +6131,9 @@ body.toolbar-fixed.toolbar-tray-open #header {
     font-size: 0;
   }
   .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher {
-    grid-area: lang;
     margin-bottom: 6px;
   }
   .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select {
-    margin: 0;
     /**Language select**/
   }
   .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select #edit-lang-dropdown-select {
@@ -5954,9 +6149,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
     font-weight: 400;
     -webkit-appearance: none;
     appearance: none;
-  }
-  .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .language-icon {
-    display: none !important;
   }
 }
 /* SCSS to Home Page */

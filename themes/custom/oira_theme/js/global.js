@@ -30,7 +30,7 @@
         $(this).find("a .description").css("bottom","auto");
       });
     }
-    $("#navbar-main").click(function (){
+    $("#navbar-main button.navbar-toggler").click(function (){
       $(".responsive-menu-oira").toggleClass('collapsed');
     })
   });
