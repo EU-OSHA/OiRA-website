@@ -1059,8 +1059,8 @@ table tr td {
     background: transparent;
     color: #FFF;
     position: absolute;
-    font-weight: normal;
-    font-size: 1.7rem;
+    font-weight: bold;
+    font-size: 1.25rem;
     font-style: normal;
     letter-spacing: 0;
     margin-left: 15px;
@@ -1079,12 +1079,11 @@ table tr td {
     color: #FFF;
     margin-left: 16px;
     padding-bottom: 0.4em;
-    letter-spacing: 1px;
     z-index: 999;
     transition: 0.8s;
     display: none;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: normal;
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes .copyright {
@@ -1151,42 +1150,47 @@ table tr td {
   .page-view-frontpage .content-oira-tools h2 {
     font-weight: bold;
     color: #10b2e4;
+    padding-left: 15px;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row {
     margin: 1rem 0rem;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal {
+    display: flex;
+    row-gap: 1rem;
+  }
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container {
     display: flex;
     flex-direction: column;
     border: 1px solid #967EA7;
     border-radius: 8px;
     background: #EAE5ED;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container h3 a {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container h3 a {
     order: 1;
     color: #967ea7;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--name-field-country, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .field--name-field-country, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .language {
     display: flex;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--name-field-country .field__label, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--name-field-country .field__item, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language .field__label, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language .field__item {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .field--name-field-country .field__label, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .field--name-field-country .field__item, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .language .field__label, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .language .field__item {
     display: block;
     color: #58585a;
     font-style: normal;
     font-weight: normal;
     font-size: 0.9rem;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--name-field-country {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .field--name-field-country {
     order: 2;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .language {
     order: 3;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .language p {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .language p {
     margin-bottom: 0px;
     font-size: 0.9rem;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-more, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-less {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .see-more, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .see-less {
     width: fit-content;
     text-align: start;
     cursor: pointer;
@@ -1203,27 +1207,27 @@ table tr td {
     background-position: 100% 50%;
     background-size: 14px;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-more {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .see-more {
     order: 4;
     background-image: url("../images/arrow-sm-down-blue.png");
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .see-less {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .see-less {
     display: none;
     order: 5;
     background-image: url("../images/arrow-sm-up-blue.png");
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .partners-wrapper {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .partners-wrapper {
     display: none;
     order: 6;
     margin-bottom: 0.5rem;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .partners-wrapper .partner-wrapper.partner-wrapper-related a {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .partners-wrapper .partner-wrapper.partner-wrapper-related a {
     color: #58585a;
     font-style: normal;
     font-weight: normal;
     font-size: 0.9rem;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .views-field-field-tool-link {
     display: flex;
     justify-content: center;
     order: 7;
@@ -1233,7 +1237,7 @@ table tr td {
     border-radius: 8px;
     background-color: #10b3e4;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link a {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .views-field-field-tool-link a {
     position: relative;
     text-align: center;
     color: #FFF;
@@ -1241,7 +1245,7 @@ table tr td {
     font-style: normal;
     font-size: 0.85rem;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link a:after {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .views-field-field-tool-link a:after {
     display: inline-block;
     position: absolute;
     top: 11%;
@@ -1252,10 +1256,10 @@ table tr td {
     background-image: url("../images/arrow-right-lg-white.png");
     background-repeat: no-repeat;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .views-field-field-tool-link a:hover {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .views-field-field-tool-link a:hover {
     text-decoration: none;
   }
-  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-item-columns-container .field--type-entity-reference {
+  .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .field--type-entity-reference {
     margin: 0px;
   }
   .page-view-frontpage .content-oira-partners h2 {
@@ -1459,7 +1463,7 @@ table tr td {
   }
 }
 @media only screen and (min-width: 1440px) {
-  .page-view-frontpage .content-latest-news .container, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title {
+  .page-view-frontpage .content-latest-news .container, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title, .page-view-frontpage .content-oira-partners .container, .page-view-frontpage .content-oira-partners .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-partners .block-system-main-block, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-partners p, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-partners .field-name-node-title {
     max-width: 1160px;
   }
 }
@@ -5653,6 +5657,7 @@ body[class*=private-zone-] .page-header.h1 {
   margin-left: 8px;
 }
 .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__print a.print-friendly {
+  pointer-events: none;
   background-image: url(../images/print-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -5786,7 +5791,7 @@ body.user-logged-in {
 }
 
 body.toolbar-fixed {
-  padding-top: 150px !important;
+  padding-top: 228px !important;
 }
 body.toolbar-fixed #header {
   padding-top: 40px;
@@ -7201,12 +7206,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
 
   body.user-logged-in.toolbar-fixed #header {
     padding-top: 40px;
-  }
-  body.user-logged-in.toolbar-fixed.toolbar-tray-open {
-    padding-top: 290px !important;
-  }
-  body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
-    padding-top: 75px;
   }
 
   .page-view-oira-ws .pagerer-center-pane {

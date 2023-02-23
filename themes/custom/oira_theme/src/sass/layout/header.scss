@@ -170,6 +170,7 @@
           .block__print {
             margin-left: 8px;
             a.print-friendly {
+              pointer-events: none;
               background: {
                 image: url(../images/print-icon.png);
                 repeat: no-repeat;
@@ -318,7 +319,7 @@ body.user-logged-in {
 }
 
 body.toolbar-fixed {
-  padding-top: 150px !important;
+  padding-top: 228px !important;
   #header {
     padding-top: 40px;
   }
