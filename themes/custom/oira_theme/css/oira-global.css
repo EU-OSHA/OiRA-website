@@ -2000,14 +2000,16 @@ table tr td {
   body.node--type-article .right-menu .view-related-resources > .view-content > div {
     width: 100%;
   }
-  body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources {
-    padding: 1rem;
-    border: 1px solid #967EA7;
-    border-radius: 8px;
-  }
   body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a {
     display: grid;
     grid-template-columns: 80px 1fr;
+    padding: 1rem;
+    border: 1px solid #967EA7;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #10b2e4;
   }
   body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a img {
     width: 60px;
@@ -2017,13 +2019,16 @@ table tr td {
     place-self: end;
     text-align: end;
     align-self: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.9rem;
-    color: #10b2e4;
   }
   body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a:hover {
-    color: #10b2e4;
+    background: #967EA7;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration-color: #10b2e4;
+  }
+  body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a:hover img {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
   }
 
   /**Hide the first element of the bottom menu**/
