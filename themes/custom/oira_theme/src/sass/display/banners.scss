@@ -1,3 +1,5 @@
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
+
 @media screen{
 
   .page-view-frontpage{
@@ -54,7 +56,7 @@
               display: none;
               font: {
                 weight: normal;
-                size: 0.9rem;
+                size: 1rem;
                 style: normal;
               }
             }
@@ -106,6 +108,10 @@
       display: flex;
       flex-direction: row-reverse;
       padding: 0px 15px;
+      cursor: not-allowed;
+      a{
+        pointer-events: none;
+      }
       @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
     }
   }
@@ -130,9 +136,12 @@
                 border-radius: 8px;
                 background: $bg-light-purple;
                 h3{
+                  cursor: not-allowed;
                   a{
+                    pointer-events: none;
                     order: 1;
                     color: $text-color-purple-light;
+                    font-weight: bold;
                   }
                 }
                 .field--name-field-country, .language{
@@ -196,7 +205,7 @@
                   display: none;
                   order: 6;
                   margin-bottom: 0.5rem;
-                  .partner-wrapper.partner-wrapper-related{
+                  .partner-wrapper-related{
                     a{
                       color: $text-grey;
                       font: {
@@ -205,6 +214,10 @@
                         size: 0.9rem;
                       }
                       text-decoration-color: $text-grey;
+                      pointer-events: none;
+                    }
+                    h4{
+                      cursor: not-allowed;
                     }
                   }
                 }
@@ -217,6 +230,7 @@
                   padding: 1rem;
                   border-radius: 8px;
                   background-color: $bg-color-blue-light;
+                  cursor: not-allowed;
                   a{
                     position: relative;
                     text-align: center;
@@ -224,8 +238,9 @@
                     font : {
                       weight: bold;
                       style: normal;
-                      size: 0.85rem;
+                      size: 0.9rem;
                     }
+                    pointer-events: none;
                     &:after{
                       display: inline-block;
                       position: absolute;
@@ -302,16 +317,18 @@
                       .date{
                         color: $text-color-black;
                         font: {
-                          size: 0.85rem;
+                          size: 0.9rem;
                           weight: bold;
                         }
                       }
                       .title{
+                        margin-top: 5px;
                         a{
                           color: $bg-color-purple-dark;
                           font: {
                             style: normal;
                             weight: bold;
+                            size: 1.17rem;
                           }
                           text-decoration: none;
                         }
@@ -319,7 +336,7 @@
                       .description{
                         padding-top: 12px;
                         color: $text-color-black;
-                        font-size: 0.9rem;
+                        font-size: 1rem;
                       }
                       span.see-more{
                         place-self: end;
@@ -330,19 +347,19 @@
                           text-decoration: none;
                           padding: {
                             left: 0rem;
-                            right: 26px;
+                            right: 28px;
                           }
                           color: $text-color-blue-light;
                           font : {
                             weight: bold;
                             style: normal;
-                            size: 0.85rem;
+                            size: 0.9rem;
                           }
                           background: {
                             color: transparent;
                             image: url("../images/icon-arrow-blue.png");
                             repeat: no-repeat;
-                            position: 100% 47%;
+                            position: 98% 47%;
                             size: 17px;
                           }
                           &:before{
@@ -452,55 +469,42 @@
                         }
                       }
                       .news-content{
-                        display: grid;
-                        grid-template-rows: 19px auto 1fr 20px;
-                        width: 100%;
-                        padding: 1rem;
-                        background: $bg-color-white;
-                        border-radius: 0px 8px 8px 0px;
-                        .date{
-                          color: $text-color-black;
-                          font: {
-                            size: 0.85rem;
-                            weight: bold;
-                          }
+                        padding: 0.5rem;
+                        .title{
+                          margin-top: 0px;
                         }
                         .description{
-                          padding-top: 12px;
-                          color: $text-color-black;
-                          font-size: 0.9rem;
+                          padding-top: 8px;
                         }
-                        span.see-more{
-                          place-self: end;
-                          display: grid;
-                          a{
-                            place-self: end;
-                            cursor: pointer;
-                            text-decoration: none;
-                            padding: {
-                              left: 0rem;
-                              right: 26px;
-                            }
-                            color: $text-color-blue-light;
-                            font : {
-                              weight: bold;
-                              style: normal;
-                              size: 0.85rem;
-                            }
-                            background: {
-                              color: transparent;
-                              image: url("../images/icon-arrow-blue.png");
-                              repeat: no-repeat;
-                              position: 100% 47%;
-                              size: 17px;
-                            }
-                            &:before{
-                              content: "";
-                            }
-                            &:hover{
-                              text-decoration: underline;
-                            }
-                          }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .page-view-frontpage{
+      .content-latest-news{
+        .views-element-container{
+          .view-display-id-oshnews_latest{
+            .view-content{
+              .views-row{
+                .col-md-6.col-sm-12{
+                  & > .views-field{
+                    & > span{
+                      .news-content{
+                        padding: 1rem;
+                        .title{
+                          margin-top: 5px;
+                        }
+                        .description{
+                          padding: 8px 0px 4px;
                         }
                       }
                     }

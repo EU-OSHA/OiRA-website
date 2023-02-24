@@ -20,7 +20,6 @@
             flex-direction: column;
             justify-content: center;
             padding: 18px 0px;
-            //border-bottom: 3px dashed $bg-light-purple;
             background: {
               color: transparent;
               image: url("../images/dashed-border-for-news-view.png");
@@ -65,6 +64,10 @@
                   font: {
                     size: 1.4rem;
                     weight: bold;
+                  }
+                  text-decoration: none;
+                  &:hover{
+                    text-decoration: underline;
                   }
                 }
               }

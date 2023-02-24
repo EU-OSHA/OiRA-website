@@ -1,17 +1,5 @@
 /* Common elements */
 
-body{
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  color: $text-color-black;
-  font-size: 16px;
-  min-height: 100vh;
-}
-
-body.role-anonymous {
-  padding-top: 115px;
-}
-
 /*a{
   color: $text-color-purple;
   font-weight: bold;
@@ -40,7 +28,10 @@ fix-paddings{
     color: $text-color-white !important;
     text-decoration: underline;
     text-decoration-color: $text-color-blue-light;
-    font-style: normal;
+    font: {
+      style: normal;
+      weight: bold;
+    }
     &:hover{
       color: $text-color-white !important;
       text-decoration: none;
@@ -3562,7 +3553,5 @@ body[class*="private-zone-"] {
 }
 
 @media only screen and (min-width: 992px){
-  body.role-anonymous {
-    padding-top: 189px;
-  }
+
 }
