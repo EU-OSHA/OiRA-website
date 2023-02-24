@@ -21,6 +21,7 @@ dependencies:
     - image.style.media_library
     - node.type.news
   module:
+    - datetime
     - ds
     - media
     - text
@@ -35,7 +36,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   content_moderation_control:
     settings: {  }
@@ -57,6 +58,22 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 2
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: day_only
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     weight: 1
     region: content
 hidden:
@@ -72,7 +89,6 @@ hidden:
   field_image_home_latest_news: true
   field_migration_source: true
   field_page_count: true
-  field_publication_date: true
   field_related_partners: true
   field_summary: true
   field_tags: true

@@ -62,7 +62,10 @@
               h2{
                 a{
                   color: $text-color-blue-light;
-                  font-size: 1.4rem;
+                  font: {
+                    size: 1.4rem;
+                    weight: bold;
+                  }
                 }
               }
               p{
