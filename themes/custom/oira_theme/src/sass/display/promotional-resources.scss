@@ -26,7 +26,7 @@
                   margin-bottom: 0.5rem;
                   time{
                     font: {
-                      size: 0.9rem;
+                      size: 0.95rem;
                       weight: bold;
                     }
                     color: $bg-color-purple-dark;
@@ -51,7 +51,7 @@
                   cursor: pointer;
                   font: {
                     weight: bold;
-                    size: 1.1rem;
+                    size: 1.25rem;
                   }
                   text-decoration: none;
                   color: $text-color-blue-light;
@@ -72,7 +72,6 @@
                 }
                 .promotional-resources-wrapper{
                   .pm-body{
-                    font-size: 1rem;
                     color: $text-grey;
                   }
                   &.collapsed{
