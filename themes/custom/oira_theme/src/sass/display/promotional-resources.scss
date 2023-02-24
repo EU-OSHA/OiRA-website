@@ -1,8 +1,40 @@
 @media screen{
   body.page-view-promotional-resources-search{
+    .field--name-field-article-header{
+      padding: 0px 15px;
+    }
     .oira-section{
       .block-views-exposed-filter-blockpromotional-resources-search-page-1{
-
+        .form-row {
+          .js-form-item-sort-by {
+            label {
+              &:after {
+                content:":";
+                display: inline-block;
+                margin-right: 1px;
+              }
+            }
+            select.form-select {
+              display: inline-block;
+              margin-left: 10px;
+              width: 180px;
+              height: 52px;
+              background: transparent;
+              border: 1px solid $bg-dark-purple;
+              border-radius: 8px;
+              font-size: 1rem;
+              color: $text-light-grey;
+            }
+          }
+          .form-type-textfield, .form-item-search-api-fulltext {
+            display: none;
+          }
+          .form-actions{
+            button {
+              display: none;
+            }
+          }
+        }
       }
       #block-oira-theme-content{
         .view-promotional-resources-search{
@@ -10,7 +42,7 @@
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
-            padding: 0px;
+            padding: 0px 15px;
             .views-row{
               padding: 1rem;
               border: 1px solid $bg-color-purple-dark;
@@ -93,7 +125,7 @@
                   .partner-inner-group--data a{
                     font-size: 1rem;
                     color: $text-grey;
-                    text-decoration: underline;
+                    text-decoration: none;
                   }
                 }
               }

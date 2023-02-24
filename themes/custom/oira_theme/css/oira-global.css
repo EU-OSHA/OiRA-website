@@ -1812,11 +1812,36 @@ table tr td {
   }
 }
 @media screen {
+  body.page-view-promotional-resources-search .field--name-field-article-header {
+    padding: 0px 15px;
+  }
+  body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .js-form-item-sort-by label:after {
+    content: ":";
+    display: inline-block;
+    margin-right: 1px;
+  }
+  body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .js-form-item-sort-by select.form-select {
+    display: inline-block;
+    margin-left: 10px;
+    width: 180px;
+    height: 52px;
+    background: transparent;
+    border: 1px solid #967EA7;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #B1B3B4;
+  }
+  body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .form-type-textfield, body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .form-item-search-api-fulltext {
+    display: none;
+  }
+  body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .form-actions button {
+    display: none;
+  }
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    padding: 0px;
+    padding: 0px 15px;
   }
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row {
     padding: 1rem;
@@ -1891,7 +1916,7 @@ table tr td {
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper .partner-inner-group--data a {
     font-size: 1rem;
     color: #58585A;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 @media screen {
@@ -2385,65 +2410,6 @@ select.custom-select {
 }
 .page-view-promotional-resources-search .sidebar_first .block.block-facet--links .facet-item a:hover {
   text-decoration: none;
-}
-.page-view-promotional-resources-search main {
-  position: relative;
-  padding: 15px;
-}
-.page-view-promotional-resources-search main .form-row {
-  width: 100%;
-  text-align: right;
-  margin: 15px 0 30px;
-  padding: 15px 0 15px 0;
-  border-top: 2px solid #786586;
-  border-bottom: 2px solid #786586;
-}
-.page-view-promotional-resources-search main .form-row .js-form-item-sort-by {
-  margin: 0 !important;
-  padding: 0;
-  display: block;
-  width: auto;
-}
-.page-view-promotional-resources-search main .form-row .js-form-item-sort-by label {
-  margin: 0;
-  display: inline-block;
-  text-align: left;
-  width: auto;
-  color: #555555;
-  font-size: 0.9rem;
-}
-.page-view-promotional-resources-search main .form-row .js-form-item-sort-by label:after {
-  content: ":";
-  display: inline-block;
-  margin-right: 1px;
-}
-.page-view-promotional-resources-search main .form-row .js-form-item-sort-by select.form-select {
-  width: 150px;
-  display: inline-block;
-  background: transparent;
-  border: none;
-  font-size: 0.9rem;
-  color: #555555;
-  font-weight: 700;
-}
-.page-view-promotional-resources-search main .form-row .form-actions button {
-  display: none;
-}
-.page-view-promotional-resources-search main .form-type-textfield {
-  display: none;
-}
-.page-view-promotional-resources-search main .form-item-search-api-fulltext {
-  display: none;
-}
-.page-view-promotional-resources-search main .view-header {
-  position: absolute;
-  right: 15px;
-  top: 43px;
-  font-size: 0.9rem;
-}
-.page-view-promotional-resources-search main .view-content.row {
-  margin: 0;
-  padding: 30px;
 }
 
 .user-logged-in.page-view-promotional-resources-search main .view-header {
@@ -4724,17 +4690,6 @@ select.custom-select {
 }
 
 /*** Header Nodes in View Pages ***/
-.field--name-field-article-header {
-  padding: 0 15px;
-  margin: 0 0 15px;
-}
-.field--name-field-article-header .field-name-body p {
-  font-size: 1.375rem;
-}
-.field--name-field-article-header .field-name-body p:last-child {
-  margin: 0;
-}
-
 .page-view-partners-list .field--name-field-article-header .field-name-body p {
   font-size: 1rem;
   font-family: "Roboto", "Helvetica", Arial, sans-serif;

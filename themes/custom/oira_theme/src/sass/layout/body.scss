@@ -386,67 +386,6 @@ select.custom-select{
       }
     }
   }
-  main {
-    position: relative;
-    padding: 15px;
-    .form-row {
-      width: 100%;
-      text-align: right;
-      margin: 15px 0 30px;
-      padding: 15px 0 15px 0;
-      border-top: 2px solid $bg-color-purple;
-      border-bottom: 2px solid $bg-color-purple;
-      .js-form-item-sort-by {
-        margin: 0 !important;
-        padding: 0;
-        display: block;
-        width: auto;
-        label {
-          margin: 0;
-          display: inline-block;
-          text-align: left;
-          width: auto;
-          color: #555555;
-          font-size: 0.9rem;
-          &:after {
-            content:":";
-            display: inline-block;
-            margin-right: 1px;
-          }
-        }
-        select.form-select {
-          width: 150px;
-          display: inline-block;
-          background: transparent;
-          border: none;
-          font-size: 0.9rem;
-          color: #555555;
-          font-weight: $font-weight-bold;
-        }
-      }
-      .form-actions{
-        button {
-          display: none;
-        }
-      }
-    }
-    .form-type-textfield {
-      display: none;
-    }
-    .form-item-search-api-fulltext {
-      display: none;
-    }
-    .view-header {
-      position: absolute;
-      right: 15px;
-      top: 43px;
-      font-size: 0.9rem;
-    }
-    .view-content.row {
-      margin: 0;
-      padding: 30px;
-    }
-  }
 }
 
 .user-logged-in.page-view-promotional-resources-search main .view-header {
@@ -2715,19 +2654,6 @@ select.custom-select{
 }
 
 /*** Header Nodes in View Pages ***/
-.field--name-field-article-header {
-  padding: 0 15px;
-  margin: 0 0 15px;
-  .field-name-body {
-    p {
-      font-size: 1.375rem;
-      &:last-child {
-        margin: 0;
-      }
-    }
-  }
-}
-
 .page-view-partners-list {
   .field--name-field-article-header {
     .field-name-body {
