@@ -198,12 +198,13 @@
                   margin-bottom: 0.5rem;
                   .partner-wrapper.partner-wrapper-related{
                     a{
-                      color: $text-color-black;
+                      color: $text-grey;
                       font: {
                         style: normal;
                         weight: normal;
                         size: 0.9rem;
                       }
+                      text-decoration-color: $text-grey;
                     }
                   }
                 }
@@ -257,9 +258,6 @@
       h2 {
         font-weight: bold;
         color: $text-color-blue-light;
-      }
-      .view-display-id-oira_partners_homepage{
-
       }
     }
 
@@ -315,6 +313,7 @@
                             style: normal;
                             weight: bold;
                           }
+                          text-decoration: none;
                         }
                       }
                       .description{
@@ -464,15 +463,6 @@
                           font: {
                             size: 0.85rem;
                             weight: bold;
-                          }
-                        }
-                        .title{
-                          a{
-                            color: $bg-color-purple-dark;
-                            font: {
-                              style: normal;
-                              weight: bold;
-                            }
                           }
                         }
                         .description{

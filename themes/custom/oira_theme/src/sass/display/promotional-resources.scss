@@ -1,0 +1,107 @@
+@media screen{
+  body.page-view-promotional-resources-search{
+    .oira-section{
+      .block-views-exposed-filter-blockpromotional-resources-search-page-1{
+
+      }
+      #block-oira-theme-content{
+        .view-promotional-resources-search{
+          .view-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            padding: 0px;
+            .views-row{
+              padding: 1rem;
+              border: 1px solid $bg-color-purple-dark;
+              border-radius: 8px;
+              .content-view-pm-view{
+                display: grid;
+                grid-template-columns: 220px 1fr;
+                column-gap: 1rem;
+                .field--name-field-media-image > img {
+                  margin-bottom: 0;
+                }
+                .field-revised-date{
+                  margin-bottom: 0.5rem;
+                  time{
+                    font: {
+                      size: 0.9rem;
+                      weight: bold;
+                    }
+                    color: $bg-color-purple-dark;
+                  }
+                }
+                .tags{
+                  display: flex;
+                  flex-wrap: wrap;
+                  column-gap: 1rem;
+                  p {
+                    background: $bg-light-purple;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 15px;
+                  }
+                }
+                h3{
+                  width: fit-content;
+                  padding: {
+                    left: 0px;
+                    right: 25px;
+                  }
+                  cursor: pointer;
+                  font: {
+                    weight: bold;
+                    size: 1.1rem;
+                  }
+                  text-decoration: none;
+                  color: $text-color-blue-light;
+                  background: {
+                    image: url("../images/arrow-sm-up-blue.png");
+                    repeat: no-repeat;
+                    position: 100% 50%;
+                    size: 12px;
+                  }
+                  &:hover{
+                    text-decoration: underline;
+                  }
+                }
+                .pm-title.collapsed-wrapper{
+                  h3{
+                    background-image: url("../images/arrow-sm-down-blue.png");
+                  }
+                }
+                .promotional-resources-wrapper{
+                  .pm-body{
+                    font-size: 1rem;
+                    color: $text-grey;
+                  }
+                  &.collapsed{
+                    display: none;
+                  }
+                }
+                .partner-wrapper{
+                  display: grid;
+                  grid-template-columns: auto 1fr;
+                  grid-template-rows: 1fr;
+                  align-items: center;
+                  column-gap: 1.5rem;
+                  margin: 1rem 0px;
+                  .partner-inner-group--img img{
+                    min-height: 64px;
+                    max-height: 64px;
+                    width: auto;
+                  }
+                  .partner-inner-group--data a{
+                    font-size: 1rem;
+                    color: $text-grey;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

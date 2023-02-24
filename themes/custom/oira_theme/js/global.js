@@ -100,9 +100,6 @@ if ($('body').find('#edit-search-api-fulltext--2').length>0) {
 
 })(jQuery, Drupal);
 
-
-
-
 jQuery(document).ready(function($){
   $('#_biggify').on('click', function() {
     var fontSize = $('html').css('font-size');
@@ -133,21 +130,10 @@ jQuery(document).ready(function($){
     });
   });
 
-
     windowWidth= jQuery(window).width();
-
-  if(windowWidth <= 992){
-    //search header al hacer click
-/*    $("#edit-actions").click(function(){
-      $('#edit-search-api-fulltext').stop().show({direction: 'left'}, 500);
-      $('.form-item-search-api-fulltext').show();
-      $('#edit-actions .btn-primary').css("pointer-events" , "auto");
-    });*/
-  }
 
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){
-      //$(this).toggleClass('expanded');
       $(this).siblings('.partners-wrapper').slideToggle('slow');
       $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
       $(this).toggle();
@@ -170,13 +156,13 @@ jQuery(document).ready(function($){
     $('.view-tools.view-display-id-block_2 .views-col .more-link').click(function(){
       $(this).toggleClass('expanded');
       $(this).siblings('.partners-wrapper').slideToggle('slow');
-      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+      $(this).siblings('.partners-wrapper').toggle('expanded-wrapper');
     });
 
-    $('.view-promotional-resources-search .views-row .more-link').click(function(){
-      $(this).toggleClass('expanded');
-      $(this).siblings('.partners-wrapper').slideToggle('slow');
-      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+    $('.view-promotional-resources-search .views-row .pm-title').click(function(){
+      $(this).siblings('.promotional-resources-wrapper').slideToggle('slow');
+      $(this).toggleClass('collapsed-wrapper');
+      $(this).siblings('.promotional-resources-wrapper').toggleClass('collapsed');
     });
 
     //See more less, Oira Tools
