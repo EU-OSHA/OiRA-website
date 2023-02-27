@@ -25,56 +25,22 @@
 }
 
 .top-header-content{
-  padding-top: 15px;
-  padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: start;
   .region-top-header-logos {
     display: flex;
     justify-content: start;
-    #block-logoosha, #block-logooira{
-      & > div.content{
-        & > div{
-          & > div{
-            & > .field__item{
-              img{
-                min-height: 40px;
-                max-height: 40px;
-                min-width: 100%;
-              }
-              &:nth-child(2){
-                img{
-                  min-height: 17px;
-                  max-height: 17px;
-                  max-width: 50px;
-                }
-              }
-            }
-          }
-        }
+    margin: 15px 0px;
+    #block-logooira{
+      .field--name-field-image{
+        padding: 15px 15px 15px 0px;
       }
     }
     #block-logoosha{
-      & > div.content{
-        & > div{
-          & > div{
-            & > .field__item:first-of-type{
-              border-left: 1px solid $bg-color-blue-dark;
-            }
-          }
-        }
-      }
-    }
-    #block-logooira{
-      & > div.content{
-        & > div{
-          & > div{
-            & > .field__item:first-of-type{
-             // padding-right: 1rem;
-            }
-          }
-        }
+      .field--name-field-image{
+        border-left: 1px solid $bg-color-blue-dark;
+        padding: 15px 0px 15px 15px;
       }
     }
     .field--name-field-image {
@@ -90,7 +56,6 @@
         }
         &:last-child {
           img{
-            max-height: 37px;
             margin: 0;
             object-fit: contain;
           }
@@ -317,16 +282,26 @@ body {
   padding-top: 189px;
 }
 
-body.user-logged-in {
-  /*padding-top: 185px;*/
-  padding-top: 215px;
+body{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: $text-color-black;
+  font-size: 16px;
+  min-height: 100vh;
 }
 
-body.toolbar-fixed {
-  padding-top: 228px !important;
+body.role-anonymous {
+  padding-top: 179px;
+}
+
+body.user-logged-in, body.toolbar-fixed {
+  padding-top: 219px !important;
   #header {
     padding-top: 40px;
   }
+}
+
+body.toolbar-fixed {
   &.toolbar-tray-open {
     padding-top: 264px !important;
     #header {
@@ -460,6 +435,12 @@ body.toolbar-fixed {
 }
 
 @media only screen and (min-width: 992px) {
+  body.user-logged-in {
+    padding-top: 218px !important;
+  }
+  body.role-anonymous {
+    padding-top: 178px;
+  }
   #navbar-main{
     display: flex;
     justify-content: flex-start;
@@ -472,6 +453,9 @@ body.toolbar-fixed {
         & > div.content{
           height: 100%;
           display: grid;
+          .field--name-field-image{
+            padding: 0px;
+          }
           & > div{
             & > div{
               & > .field__item{
@@ -497,7 +481,7 @@ body.toolbar-fixed {
           & > div{
             & > div{
               .field__item:first-of-type{
-                padding: 1.5rem 1rem;
+                padding: 1.2rem 1.5rem 1.2rem 0rem;
               }
             }
           }
@@ -509,10 +493,10 @@ body.toolbar-fixed {
             & > div{
               & > .field__item{
                 &:first-of-type{
-                  padding: 1.5rem 1.5rem;
+                  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
                 }
                 &:nth-of-type(2){
-                  padding-bottom: 1.5rem;
+                  padding-bottom: 1.2rem;
                 }
               }
             }

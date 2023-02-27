@@ -96,12 +96,18 @@
           & > div{
             width: 100%;
             .related-resources{
-              padding: 1rem;
-              border: 1px solid $bg-color-purple-dark;
-              border-radius: 8px;
               a{
                 display: grid;
                 grid-template-columns: 80px 1fr;
+                padding: 1rem;
+                border: 1px solid $bg-color-purple-dark;
+                border-radius: 8px;
+                font: {
+                  style: normal;
+                  weight: normal;
+                  size: 0.9rem;
+                }
+                color: $text-color-blue-light;
                 img{
                   width: 60px;
                   object-fit: cover;
@@ -110,15 +116,16 @@
                   place-self: end;
                   text-align: end;
                   align-self: center;
-                  font: {
-                    style: normal;
-                    weight: normal;
-                    size: 0.9rem;
-                  }
-                  color: $text-color-blue-light;
                 }
                 &:hover{
-                  color: $text-color-blue-light;
+                  background: $bg-color-purple-dark;
+                  color: $text-color-white;
+                  font-weight: bold;
+                  text-decoration-color: $text-color-blue-light;
+                  img{
+                    filter: brightness(0) invert(1);
+                    -webkit-filter: brightness(0) invert(1);
+                  }
                 }
               }
             }

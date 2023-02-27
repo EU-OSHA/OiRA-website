@@ -1,0 +1,11 @@
+main{
+  a{
+    color: $text-black;
+    text-decoration: underline;
+    text-decoration-color: $text-color-blue-light;
+    &:hover{
+      color: $text-black;
+      text-decoration: none;
+    }
+  }
+}
