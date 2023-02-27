@@ -437,6 +437,9 @@ body.toolbar-fixed {
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
     padding-top: 218px !important;
+    &.toolbar-fixed.toolbar-tray-open{
+      padding-top: 252px !important;
+    }
   }
   body.role-anonymous {
     padding-top: 178px;

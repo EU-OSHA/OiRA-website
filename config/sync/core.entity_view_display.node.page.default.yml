@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_basic_page_img
     - node.type.page
   module:
+    - image
     - layout_builder
     - text
     - user
@@ -26,6 +28,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_basic_page_img:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
