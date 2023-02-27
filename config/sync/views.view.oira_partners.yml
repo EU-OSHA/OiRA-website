@@ -13,6 +13,7 @@ dependencies:
   module:
     - media
     - node
+    - slick_views
     - taxonomy
     - user
 id: oira_partners
@@ -520,11 +521,45 @@ display:
     position: 1
     display_options:
       style:
-        type: default
+        type: slick
         options:
-          grouping: {  }
-          row_class: partner__item
-          default_row_class: true
+          caption:
+            nid: '0'
+            title: '0'
+            field_logo: '0'
+          optionset: partners
+          class: ''
+          id: ''
+          image: ''
+          link: title
+          overlay: ''
+          title: ''
+          vanilla: true
+          layout: ''
+          cache: 0
+          current_view_mode: oira_partners_homepage
+          skin: ''
+          grid: null
+          grid_medium: null
+          grid_small: null
+          overridables:
+            arrows: '0'
+            autoplay: '0'
+            dots: '0'
+            draggable: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          thumbnail: field_logo
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
+          thumbnail_effect: ''
+          thumbnail_position: ''
+          override: false
+          preserve_keys: false
+          visible_items: null
       row:
         type: fields
         options:
