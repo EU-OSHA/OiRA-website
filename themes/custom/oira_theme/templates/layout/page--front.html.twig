@@ -4,6 +4,12 @@
   <div class="home-intro container">
     {{ drupal_view('home_page_banners', 'block_1') }}
   </div>
+  <div class="content-home content-oira-tools content-light-purple">
+    <div class="container">
+      <h2>{{ 'Profiles' | trans }}</h2>
+      {{ drupal_view('profiles_home_page', 'block_1') }}
+    </div>
+  </div>
   <div class="content-home content-oira-tools content-light-grey">
     <div class="container">
       <h2>{{ 'Latest OiRA tools' | trans }}</h2>

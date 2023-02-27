@@ -280,14 +280,29 @@ h1.page-header {
   color: #786586;
 }
 
-main a {
+body.page-view-frontpage main a, body.page-view-news main a, body.node--type-news main a, body.page-view-promotional-resources-search main a {
   color: #000000;
   text-decoration: underline;
   text-decoration-color: #10b2e4;
 }
-main a:hover {
+body.page-view-frontpage main a:hover, body.page-view-news main a:hover, body.node--type-news main a:hover, body.page-view-promotional-resources-search main a:hover {
   color: #000000;
   text-decoration: none;
+}
+body.page-view-frontpage main a > span, body.page-view-news main a > span, body.node--type-news main a > span, body.page-view-promotional-resources-search main a > span {
+  color: #000000 !important;
+}
+body.node--type-article article a {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #10b2e4;
+}
+body.node--type-article article a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+body.node--type-article article a > span {
+  color: #000000 !important;
 }
 
 .ui-dialog {
@@ -490,6 +505,7 @@ div.pagerer-right-pane nav ul.pager__items > li span, div.pagerer-right-pane nav
   color: #10b2e4;
   border: none;
   text-align: center;
+  text-decoration: none;
   font-weight: bold;
   font-style: normal;
   font-size: 0.9rem;
@@ -578,6 +594,7 @@ div.pagerer-right-pane nav ul.pager__items > li[role=presentation] span.page-lin
     color: #10b2e4;
     border: none;
     text-align: center;
+    text-decoration: none;
     font-weight: bold;
     font-style: normal;
     font-size: 0.9rem;
@@ -5871,6 +5888,9 @@ body.toolbar-fixed.toolbar-tray-open #header {
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
     padding-top: 218px !important;
+  }
+  body.user-logged-in.toolbar-fixed.toolbar-tray-open {
+    padding-top: 252px !important;
   }
 
   body.role-anonymous {
