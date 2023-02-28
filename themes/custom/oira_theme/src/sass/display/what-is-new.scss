@@ -1,9 +1,18 @@
 @media screen{
-  body.page-node-450.what-is-new{
+  body.what-is-new{
     #block-oira-theme-page-title{
       position: relative;
       margin-top: -2rem;
       margin-bottom: 1rem;
+    }
+    .datatime{
+      color: $text-color-purple;
+      font-weight: bold;
+    }
+    .views-field-view-node{
+      font-weight: bold;
+      font-style: italic;
+      color: $text-color-blue-light;
     }
   }
 }

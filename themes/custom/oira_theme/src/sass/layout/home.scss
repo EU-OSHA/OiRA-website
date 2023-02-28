@@ -1,7 +1,7 @@
 /* SCSS to Home Page */
 
 
-.content-purple {
+.content-light-purple {
   background: $bg-color-purple-light;
   padding-top: 2rem;
   padding-bottom: 0.7rem;
@@ -96,16 +96,7 @@
   .slick-dots{
     bottom: 20px;
   }
-  .slick-dots li.slick-active button:before{
-    color: $bg-color-white;
-    font-size: 1rem;
-    opacity: 1;
-  }
-  .slick-dots li button:before{
-    color: $bg-color-purple-light;
-    font-size: 1rem;
-    opacity: 1;
-  }
+
 }
 
 @media(max-width: 767px) {

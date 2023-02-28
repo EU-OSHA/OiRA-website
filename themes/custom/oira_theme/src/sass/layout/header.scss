@@ -34,13 +34,38 @@
     margin: 15px 0px;
     #block-logooira{
       .field--name-field-image{
-        padding: 15px 15px 15px 0px;
+        padding: 15px 0px 15px 15px;
       }
     }
     #block-logoosha{
       .field--name-field-image{
         border-left: 1px solid $bg-color-blue-dark;
-        padding: 15px 0px 15px 15px;
+        padding: 15px 0px 15px 0px;
+      }
+    }
+    #block-logooira, #block-logoosha{
+      img{
+        max-height: 60px;
+      }
+      .field--name-field-image{
+        .field__item:nth-of-type(2){
+          .field--name-field-image{
+            img{
+              padding-left: 15px;
+              max-height: 36px;
+            }
+          }
+        }
+      }
+    }
+    #block-logooira{
+      img{
+        max-width: 128px;
+      }
+    }
+    #block-logoosha{
+      img{
+        max-width: 185px;
       }
     }
     .field--name-field-image {
@@ -226,7 +251,7 @@
             background: transparent url(../images/select-arrow.svg) no-repeat !important;
             background-position: 97% 50% !important;
             color: $text-color-white;
-            width: 120px !important;
+            width: 100px !important;
             font-size: 0.8rem;
             font-weight: $font-weight-normal;
             -webkit-appearance: none;
@@ -295,7 +320,7 @@ body.role-anonymous {
 }
 
 body.user-logged-in, body.toolbar-fixed {
-  padding-top: 219px !important;
+  padding-top: 237px !important;
   #header {
     padding-top: 40px;
   }
@@ -417,6 +442,9 @@ body.toolbar-fixed {
     .region-top-header-logos {
       display: flex;
       #block-logooira{
+        img{
+          margin-right: 15px;
+        }
         div.content{
           & > div{
             & > div{
@@ -430,19 +458,22 @@ body.toolbar-fixed {
           }
         }
       }
+      #block-logoosha img{
+        margin-left: 10px;
+      }
     }
   }
 }
 
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
-    padding-top: 218px !important;
+    padding-top: 214px !important;
     &.toolbar-fixed.toolbar-tray-open{
-      padding-top: 252px !important;
+      padding-top: 249px !important;
     }
   }
   body.role-anonymous {
-    padding-top: 178px;
+    padding-top: 174px;
   }
   #navbar-main{
     display: flex;
@@ -451,59 +482,16 @@ body.toolbar-fixed {
   .top-header-content{
     padding-bottom: 0px;
     .region-top-header-logos{
-      gap: 1rem;
-      #block-logoosha, #block-logooira{
-        & > div.content{
-          height: 100%;
-          display: grid;
-          .field--name-field-image{
-            padding: 0px;
-          }
-          & > div{
-            & > div{
-              & > .field__item{
-                img{
-                  min-height: 60px;
-                  max-height: 60px;
-                  min-width: 100%;
-                }
-                &:nth-child(2){
-                  img{
-                    min-height: 36px;
-                    max-height: 36px;
-                    max-width: 50px;
-                  }
-                }
-              }
-            }
-          }
+      &.col{
+        padding: {
+          left: 0px;
+          right: 0px;
         }
       }
-      #block-logooira{
-        div.content{
-          & > div{
-            & > div{
-              .field__item:first-of-type{
-                padding: 1.2rem 1.5rem 1.2rem 0rem;
-              }
-            }
-          }
-        }
-      }
-      #block-logoosha{
-        & > div.content{
-          & > div{
-            & > div{
-              & > .field__item{
-                &:first-of-type{
-                  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
-                }
-                &:nth-of-type(2){
-                  padding-bottom: 1.2rem;
-                }
-              }
-            }
-          }
+
+      #block-logooira, #block-logoosha{
+        .field--name-field-image{
+          padding: 15px 0px 15px 0px;
         }
       }
     }

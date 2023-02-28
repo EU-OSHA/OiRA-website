@@ -103,7 +103,7 @@
       }
     }
     /**End comment - home-banner**/
-  .content-oira-tools, .content-oira-partners{
+    .content-oira-tools, .content-oira-partners{
     .more-link{
       display: flex;
       flex-direction: row-reverse;
@@ -116,9 +116,86 @@
     }
   }
 
+    .content-oira-profiles{
+      h2{
+        font: {
+          size: 2.1rem;
+          weight: bold;
+        }
+        color: $text-color-blue-light;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      /**Profiles intro text**/
+      article{
+        text-align: center;
+        margin-bottom: 1rem;
+        h2.node__title{
+          display: none;
+        }
+        .field--name-body{
+          font: {
+            style: normal;
+            weight: normal;
+            size: 1rem;
+          }
+        }
+      }
+      /**End comment - profiles intro text**/
+      .col-12.col-md-4{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+        img{
+          max-height: 200px;
+          max-width: 200px;
+          min-height: 200px;
+          min-width: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .views-field-title a{
+          font: {
+            size: 1.25rem;
+            weight: bold;
+          }
+          color: $text-color-blue-light;
+        }
+      }
+      .view-profiles-home-page .view-content{
+        .views-row{
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          text-align: center;
+          .views-field-field-basic-page-img img{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+          .views-field-title a{
+            font: {
+              weight: bold;
+              size: 1.25rem;
+            }
+            color: $text-color-blue-light;
+          }
+          .views-field-body{
+            color: $text-grey;
+          }
+        }
+      }
+
+    }
+
     .content-oira-tools{
       h2 {
-          font-weight: bold;
+          font: {
+            size: 2.1rem;
+            weight: bold;
+          }
           color: $text-color-blue-light;
           padding-left: 15px;
       }
@@ -271,14 +348,20 @@
 
     .content-oira-partners{
       h2 {
-        font-weight: bold;
+        font: {
+          size: 2.1rem;
+          weight: bold;
+        }
         color: $text-color-blue-light;
       }
     }
 
     .content-latest-news{
       h2{
-        font-weight: bold;
+        font: {
+          size: 2.1rem;
+          weight: bold;
+        }
         color: $text-color-white;
       }
       .views-element-container{
@@ -379,7 +462,6 @@
           .more-link{
             display: flex;
             justify-content: flex-end;
-            padding: 0px 15px;
             @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-white.png"), $text-color-white, 0px, 25px);
             padding-right: 30px !important;
           }
