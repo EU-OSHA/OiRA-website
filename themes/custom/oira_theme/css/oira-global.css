@@ -406,25 +406,25 @@ body.node--type-article article a > span {
   padding: 0 3px;
 }
 .pagerer-pager-basic .pager__item.pager__item--first a {
-  background-image: url(../images/pager-first.png);
+  background-image: url(../images/pager-first.svg);
 }
 .pagerer-pager-basic .pager__item.pager__item--first span {
   display: none;
 }
 .pagerer-pager-basic .pager__item.pager__item--previous a {
-  background-image: url(../images/pager-previous.png);
+  background-image: url(../images/pager-previous.svg);
 }
 .pagerer-pager-basic .pager__item.pager__item--previous span {
   display: none;
 }
 .pagerer-pager-basic .pager__item.pager__item--next a {
-  background-image: url(../images/pager-next.png);
+  background-image: url(../images/pager-next.svg);
 }
 .pagerer-pager-basic .pager__item.pager__item--next span {
   display: none;
 }
 .pagerer-pager-basic .pager__item.pager__item--last a {
-  background-image: url(../images/pager-last.png);
+  background-image: url(../images/pager-last.svg);
 }
 .pagerer-pager-basic .pager__item.pager__item--last span {
   display: none;
@@ -464,17 +464,17 @@ div.pagerer-right-pane nav ul.pager__items > li.pager__item--first a span, div.p
   display: none;
 }
 div.pagerer-right-pane nav ul.pager__items > li.pager__item--first a {
-  background-image: url("../images/pager-first.png");
+  background-image: url("../images/pager-first.svg");
   background-position: 45% 38%;
 }
 div.pagerer-right-pane nav ul.pager__items > li.pager__item--previous a {
-  background-image: url("../images/pager-prev.png");
+  background-image: url("../images/pager-prev.svg");
 }
 div.pagerer-right-pane nav ul.pager__items > li.pager__item--next a {
-  background-image: url("../images/pager-next.png");
+  background-image: url("../images/pager-next.svg");
 }
 div.pagerer-right-pane nav ul.pager__items > li.pager__item--last a {
-  background-image: url("../images/pager-last.png");
+  background-image: url("../images/pager-last.svg");
   background-position: 55% 38%;
 }
 div.pagerer-right-pane nav ul.pager__items > li[role=presentation] {
@@ -555,17 +555,17 @@ div.pagerer-right-pane nav ul.pager__items > li[role=presentation] span.page-lin
     display: none;
   }
   div.pagerer-left-pane nav ul.pager__items > li.pager__item--first a {
-    background-image: url("../images/pager-first.png");
+    background-image: url("../images/pager-first.svg");
     background-position: 45% 38%;
   }
   div.pagerer-left-pane nav ul.pager__items > li.pager__item--previous a {
-    background-image: url("../images/pager-prev.png");
+    background-image: url("../images/pager-prev.svg");
   }
   div.pagerer-left-pane nav ul.pager__items > li.pager__item--next a {
-    background-image: url("../images/pager-next.png");
+    background-image: url("../images/pager-next.svg");
   }
   div.pagerer-left-pane nav ul.pager__items > li.pager__item--last a {
-    background-image: url("../images/pager-last.png");
+    background-image: url("../images/pager-last.svg");
     background-position: 55% 38%;
   }
   div.pagerer-left-pane nav ul.pager__items > li[role=presentation] {
@@ -987,6 +987,130 @@ table tr td {
   content: "";
 }
 
+@media screen {
+  .slick-dots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0px;
+  }
+  .slick-dots button {
+    text-indent: -99999px;
+    background: rgba(16, 178, 228, 0.1);
+    border: none;
+    border-radius: 15px;
+    width: 16px;
+    height: 16px;
+  }
+  .slick-dots li.slick-active button {
+    background: #10b3e4;
+  }
+
+  .slick-list, .slick-track {
+    display: flex;
+    flex-direction: row;
+    max-height: 280px;
+  }
+
+  .view-oira-partners {
+    width: 100%;
+  }
+  .view-oira-partners img {
+    width: auto !important;
+    height: auto !important;
+  }
+  .view-oira-partners .view-content.row {
+    /*Fix for Slide view*/
+    display: block;
+    position: relative;
+  }
+
+  .slick-slide .views-field {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick {
+    padding: 0 8px;
+  }
+  .slick__slide {
+    padding: 0px 7px;
+  }
+  .slick--less {
+    width: 100% !important;
+  }
+  .slick--less .slick {
+    padding: 0 24px;
+    width: 100% !important;
+  }
+  .slick--less .slick-track {
+    margin: 0px;
+  }
+  .slick--less .lc-inline_column_first-content-edit {
+    overflow: hidden;
+  }
+  .slick-arrow:before {
+    color: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .slick-arrow:hover:before {
+    color: #58585a;
+  }
+  .slick.unslick .slick__slide {
+    width: 25%;
+  }
+
+  .slide__caption {
+    padding: 0px;
+  }
+  .slide__caption p {
+    font-size: 1.3rem;
+    color: #FFF;
+  }
+
+  /**OiRA profiles home page - carousel arrows max-width 576px **/
+  /**End comment - OiRA profiles home page**/
+}
+@media only screen and (max-width: 576px) {
+  .slick__arrow {
+    position: static !important;
+    transform: none !important;
+    display: flex !important;
+    justify-content: center;
+    padding-bottom: 15px;
+    column-gap: 2rem;
+  }
+  .slick__arrow button {
+    display: grid;
+    pointer-events: auto;
+    min-width: 50px;
+    min-height: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    font-size: 0;
+  }
+  .slick__arrow button:hover, .slick__arrow button:active {
+    background-color: rgba(16, 178, 228, 0.1);
+  }
+  .slick__arrow button.slick-prev {
+    background-image: url("../images/pager-prev.svg");
+    background-position: 45% 50%;
+  }
+  .slick__arrow button.slick-next {
+    background-image: url("../images/pager-next.svg");
+    background-position: 55% 50%;
+  }
+}
 .page-view-partner-profile #main-wrapper {
   padding-bottom: 1rem;
 }
@@ -1510,85 +1634,6 @@ table tr td {
     font-weight: bold;
     color: #10b2e4;
   }
-  .page-view-frontpage .content-oira-partners .slick-dots {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    list-style: none;
-    padding: 15px 0px;
-  }
-  .page-view-frontpage .content-oira-partners .slick-dots button {
-    text-indent: -99999px;
-    background: rgba(16, 178, 228, 0.1);
-    border: none;
-    border-radius: 15px;
-    width: 16px;
-    height: 16px;
-  }
-  .page-view-frontpage .content-oira-partners .slick-dots li.slick-active button {
-    background: #10b3e4;
-  }
-  .page-view-frontpage .content-oira-partners .slick-list, .page-view-frontpage .content-oira-partners .slick-track {
-    display: flex;
-    flex-direction: row;
-    max-height: 280px;
-  }
-  .page-view-frontpage .content-oira-partners .view-oira-partners {
-    width: 100%;
-  }
-  .page-view-frontpage .content-oira-partners .view-oira-partners img {
-    width: auto !important;
-    height: auto !important;
-  }
-  .page-view-frontpage .content-oira-partners .view-oira-partners .view-content.row {
-    /*Fix for Slide view*/
-    display: block;
-    position: relative;
-  }
-  .page-view-frontpage .content-oira-partners .slick-slide .views-field {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .page-view-frontpage .content-oira-partners .slick {
-    padding: 0 8px;
-  }
-  .page-view-frontpage .content-oira-partners .slick__slide {
-    padding: 0px 7px;
-  }
-  .page-view-frontpage .content-oira-partners .slick--less {
-    width: 100% !important;
-  }
-  .page-view-frontpage .content-oira-partners .slick--less .slick {
-    padding: 0 24px;
-    width: 100% !important;
-  }
-  .page-view-frontpage .content-oira-partners .slick--less .slick-track {
-    margin: 0px;
-  }
-  .page-view-frontpage .content-oira-partners .slick--less .lc-inline_column_first-content-edit {
-    overflow: hidden;
-  }
-  .page-view-frontpage .content-oira-partners .slick-arrow:before {
-    color: inherit;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  .page-view-frontpage .content-oira-partners .slick-arrow:hover:before {
-    color: #58585a;
-  }
-  .page-view-frontpage .content-oira-partners .slick.unslick .slick__slide {
-    width: 25%;
-  }
-  .page-view-frontpage .content-oira-partners .slide__caption {
-    padding: 0px;
-  }
-  .page-view-frontpage .content-oira-partners .slide__caption p {
-    font-size: 1.3rem;
-    color: #FFF;
-  }
   .page-view-frontpage .content-latest-news h2 {
     font-size: 2.1rem;
     font-weight: bold;
@@ -1699,43 +1744,6 @@ table tr td {
   }
   .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .more-link a:hover {
     text-decoration: underline;
-  }
-
-  /**OiRA profiles home page - carousel arrows max-width 576px **/
-  /**End comment - OiRA profiles home page**/
-}
-@media only screen and (max-width: 576px) {
-  .slick__arrow {
-    position: static !important;
-    transform: none !important;
-    display: flex !important;
-    justify-content: center;
-    padding: 15px 0px;
-    column-gap: 1rem;
-  }
-  .slick__arrow button {
-    display: grid;
-    pointer-events: auto;
-    min-width: 35px;
-    min-height: 35px;
-    height: 35px;
-    text-align: center;
-    border-radius: 50%;
-    border: none;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    font-size: 0;
-  }
-  .slick__arrow button:hover, .slick__arrow button:active {
-    background-color: rgba(16, 178, 228, 0.1);
-  }
-  .slick__arrow button.slick-prev {
-    background-image: url("../images/pager-prev.png");
-    background-position: 45% 50%;
-  }
-  .slick__arrow button.slick-next {
-    background-image: url("../images/pager-next.png");
-    background-position: 55% 50%;
   }
 }
 @media only screen and (min-width: 576px) {

@@ -26,25 +26,25 @@
       &.pager__item--first{
         a{
           background: {
-            image: url("../images/pager-first.png");
+            image: url("../images/pager-first.svg");
             position: 45% 38%;
           }
         }
       }
       &.pager__item--previous{
         a{
-          background-image: url("../images/pager-prev.png");
+          background-image: url("../images/pager-prev.svg");
         }
       }
       &.pager__item--next{
         a{
-          background-image: url("../images/pager-next.png");
+          background-image: url("../images/pager-next.svg");
         }
       }
       &.pager__item--last{
         a{
           background: {
-            image: url("../images/pager-last.png");
+            image: url("../images/pager-last.svg");
             position: 55% 38%;
           }
         }
