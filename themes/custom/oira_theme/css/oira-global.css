@@ -7004,6 +7004,11 @@ body.toolbar-fixed.toolbar-tray-open #header {
     flex: 0 0 58%;
     max-width: 58%;
   }
+
+  .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
 }
 @media (max-width: 1023px) {
   .block-menu.menu--main .nav > li.nav-item:first-child a {
@@ -7754,10 +7759,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
 
   .view-promotional-materials-type .views-view-grid {
     margin: 0 auto;
-  }
-  .view-promotional-materials-type .views-view-grid .views-col {
-    margin: 0 auto;
-    padding: 0;
   }
 
   .page-view-promotional-resources-search main {
