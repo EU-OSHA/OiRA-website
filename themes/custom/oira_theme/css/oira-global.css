@@ -1073,15 +1073,20 @@ table tr td {
     color: #FFF;
   }
 
-  /**OiRA profiles home page - carousel arrows max-width 576px **/
+  /**OiRA profiles home page - carousel arrows max-width 576px and 1024px **/
   /**End comment - OiRA profiles home page**/
 }
 @media only screen and (max-width: 576px) {
   .slick__arrow {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .slick__arrow {
     position: static !important;
     transform: none !important;
     display: flex !important;
-    justify-content: center;
+    justify-content: start;
     padding-bottom: 15px;
     column-gap: 2rem;
   }
@@ -1328,20 +1333,19 @@ table tr td {
     margin: 2rem auto;
     width: 100%;
   }
-  .page-view-frontpage .home-intro .view-id-home_page_banners {
-    float: left;
-    width: 100%;
-  }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content {
-    row-gap: 1rem;
+    justify-content: center;
+    gap: 1rem;
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes {
-    width: 374px;
-    height: 245px;
-    float: left;
-    margin-right: 15px;
+    width: 100%;
+    height: 100%;
+    max-width: 412px;
+    max-height: 412px;
     position: relative;
     cursor: pointer;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes h2 {
     background: transparent;
@@ -1355,17 +1359,18 @@ table tr td {
     margin-right: 15px;
     margin-bottom: 0px;
     padding-bottom: 30px;
-    bottom: 0;
+    bottom: 0px;
     z-index: 1;
     transition: 0.8s;
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes span.description {
     position: absolute;
-    top: 160px;
     margin-bottom: 0;
+    bottom: 10px;
     background: transparent;
     color: #FFF;
-    margin-left: 16px;
+    margin-right: 15px;
+    margin-left: 15px;
     padding-bottom: 0.4em;
     z-index: 999;
     transition: 0.8s;
@@ -1382,7 +1387,9 @@ table tr td {
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes .content-background {
     position: absolute;
     width: 100%;
-    height: 245px;
+    height: 100%;
+    max-width: 412px;
+    max-height: 412px;
     background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
     background: -o-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
     background: -ms-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgba(69, 71, 76, 0.65) 76%, #0c0c0c 100%);
@@ -1392,7 +1399,10 @@ table tr td {
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes .content-box img {
     width: 100%;
-    height: 245px;
+    height: 100%;
+    max-width: 412px;
+    max-height: 412px;
+    object-fit: cover;
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes:hover a.box-link {
     visibility: visible;
@@ -1402,7 +1412,9 @@ table tr td {
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes:hover .content-background {
     position: absolute;
     width: 100%;
-    height: 245px;
+    height: 100%;
+    max-width: 412px;
+    max-height: 412px;
     background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgba(69, 71, 76, 0.65) 65%, #0c0c0c 100%);
     background: -o-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgba(69, 71, 76, 0.65) 65%, #0c0c0c 100%);
     background: -ms-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgba(69, 71, 76, 0.65) 65%, #0c0c0c 100%);
@@ -1760,9 +1772,18 @@ table tr td {
   }
 }
 @media only screen and (min-width: 768px) {
+  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content {
+    justify-content: start;
+  }
   .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank], .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content > .home-boxes .views-field .field-content .home-boxes a[target=_blank] {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .page-view-frontpage .home-intro.container .views-element-container .view-id-home_page_banners .view-content .home-boxes, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content .home-boxes, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container .view-id-home_page_banners .view-content .home-boxes, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container .view-id-home_page_banners .view-content .home-boxes, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container .view-id-home_page_banners .view-content .home-boxes, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content .home-boxes, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container .view-id-home_page_banners .view-content .home-boxes {
+    max-height: 350px;
+    max-width: 350px;
+    border-left: none;
+    border-right: none;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1807,8 +1828,75 @@ table tr td {
   }
 }
 @media only screen and (min-width: 1440px) {
-  .page-view-frontpage .content-latest-news .container, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title, .page-view-frontpage .content-oira-partners .container, .page-view-frontpage .content-oira-partners .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-partners .block-system-main-block, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-partners p, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-partners .field-name-node-title {
+  .page-view-frontpage {
+    /**Small containers**/
+    /**End comment - small containers**/
+    /***Large containers*/
+    /**End comment - large containers**/
+  }
+  .page-view-frontpage .home-intro.container, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title {
+    padding: 0px;
+    width: 100%;
+  }
+  .page-view-frontpage .home-intro.container .views-element-container, .page-view-frontpage .node--type-collaboration-document .home-intro.block-system-main-block .views-element-container, .node--type-collaboration-document .page-view-frontpage .home-intro.block-system-main-block .views-element-container, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .field-name-body p.home-intro .views-element-container, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage p.home-intro .views-element-container, .page-view-frontpage .page-view-faqs-oira .field--name-field-article-header .home-intro.field-name-node-title .views-element-container, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .home-intro.field-name-node-title .views-element-container {
+    min-width: 100%;
+  }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content {
+    justify-content: space-between !important;
+  }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content.row {
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes {
+    width: 412px;
+    height: 412px;
+    max-width: 412px !important;
+    max-height: 412px !important;
+  }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes .content-box img, .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes .content-background {
+    width: 412px;
+    height: 412px;
+    max-width: 412px;
+    max-height: 412px;
+  }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes:hover .content-background {
+    width: 412px;
+    height: 412px;
+    max-width: 412px;
+    max-height: 412px;
+  }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes span.description {
+    top: 320px;
+  }
+  .page-view-frontpage .content-latest-news .container, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title, .page-view-frontpage .content-oira-partners .container, .page-view-frontpage .content-oira-partners .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-partners .block-system-main-block, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-partners p, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-partners .field-name-node-title, .page-view-frontpage .content-oira-profiles .container, .page-view-frontpage .content-oira-profiles .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-profiles .block-system-main-block, .page-view-frontpage .content-oira-profiles .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-profiles p, .page-view-frontpage .content-oira-profiles .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-profiles .field-name-node-title {
     max-width: 1160px;
+  }
+  .page-view-frontpage .content-oira-partners h2, .page-view-frontpage .content-latest-news h2 {
+    padding-left: 0px;
+  }
+  .page-view-frontpage .content-oira-partners .container, .page-view-frontpage .content-oira-partners .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-partners .block-system-main-block, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-partners p, .page-view-frontpage .content-oira-partners .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-partners .field-name-node-title, .page-view-frontpage .content-latest-news .container, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .page-view-frontpage .content-latest-news .container .col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .container .node--view-mode-full, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .col, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .content .node--view-mode-full, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .col, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .content .node--view-mode-full, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .node--view-mode-full, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .col, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .node--view-mode-full, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .node--view-mode-full, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .col, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .node--view-mode-full {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .page-view-frontpage .content-latest-news .container .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .container .node--view-mode-full .views-row, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .col .views-row, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .content .node--view-mode-full .views-row, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .col .views-row, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .content .node--view-mode-full .views-row, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .node--view-mode-full .views-row, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .node--view-mode-full .views-row, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .node--view-mode-full .views-row, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .node--view-mode-full .views-row {
+    margin-left: 0px;
+  }
+  .page-view-frontpage .content-oira-tools h2 {
+    padding-left: 0px;
+  }
+  .page-view-frontpage .content-oira-tools .container, .page-view-frontpage .content-oira-tools .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-tools .block-system-main-block, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-tools p, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-tools .field-name-node-title {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .page-view-frontpage .content-oira-tools .container .views-view-grid.col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-oira-tools .container .views-view-grid.node--view-mode-full, .page-view-frontpage .content-oira-tools .node--type-collaboration-document .block-system-main-block .views-view-grid.col, .page-view-frontpage .content-oira-tools .node--type-collaboration-document .block-system-main-block .content .views-view-grid.node--view-mode-full, .node--type-collaboration-document .page-view-frontpage .content-oira-tools .block-system-main-block .views-view-grid.col, .node--type-collaboration-document .page-view-frontpage .content-oira-tools .block-system-main-block .content .views-view-grid.node--view-mode-full, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-body p .views-view-grid.col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-body p .views-view-grid.node--view-mode-full, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-tools p .views-view-grid.col, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-tools p .views-view-grid.node--view-mode-full, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .views-view-grid.col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .views-view-grid.node--view-mode-full, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-tools .field-name-node-title .views-view-grid.col, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-tools .field-name-node-title .views-view-grid.node--view-mode-full {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media screen {
@@ -2320,7 +2408,7 @@ fix-paddings {
 }
 
 .background-purple {
-  font-size: 1.1rem;
+  font-size: 1.25rem !important;
   background: #967EA7;
   color: #FFF;
 }

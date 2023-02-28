@@ -19,16 +19,7 @@
   jQuery(window).on("load",function(){
     checkResponsiveMenu(jQuery(window).width(), menuSM);
     if($("body").hasClass("page-view-frontpage")){
-
-      $(".home-boxes").hover(function(){
-        $(this).find("a h2").css("bottom","60px");
-        $(this).find("a .description").css("bottom","40px");
-        $(this).find("a .description").show(375);
-      }, function(){
-        $(this).find("a .description").hide(150);
-        $(this).find("a h2").css("bottom","0px");
-        $(this).find("a .description").css("bottom","auto");
-      });
+      homePageBanner();
     }
     $("#navbar-main button.navbar-toggler").click(function (){
       $(".responsive-menu-oira").toggleClass('collapsed');
@@ -37,7 +28,32 @@
 
   jQuery(window).resize(function(){
     checkResponsiveMenu(jQuery(window).width(), menuSM);
+    if($("body").hasClass("page-view-frontpage")){
+      homePageBanner();
+    }
   });
+
+  /**Add different "bottom" value to the home-box description**/
+  function homePageBanner(){
+    let h2Bottom = "20px";
+    if(jQuery(window).width()>1440){
+      h2Bottom = "75px";
+    } else if(jQuery(window).width()>767){
+      h2Bottom = "65px";
+    } else if (jQuery(window).width()<768){
+      h2Bottom = "75px";
+    } else if (jQuery(window).width()<450){
+      h2Bottom = "85px";
+    }
+
+    $(".home-boxes").hover(function(){
+      $(this).find("a h2").css("bottom",h2Bottom) ;
+      $(this).find("a .description").show(375);
+    }, function(){
+      $(this).find("a .description").hide(150);
+      $(this).find("a h2").css("bottom","0px");
+    });
+  }
 
   /*Menu responsive*/
 /*Check window width and if the menu is collapsed or not

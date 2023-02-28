@@ -8,7 +8,7 @@ weight: 0
 label: Partners
 group: ''
 skin: ''
-breakpoints: 1
+breakpoints: 2
 optimized: true
 options:
   options__active_tab: edit-options-responsives
@@ -25,10 +25,21 @@ options:
         breakpoint: 576
         unslick: false
         settings:
-          draggable: false
           infinite: false
           slidesPerRow: 3
           slidesToShow: 2
+          slidesToScroll: 2
+          swipe: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 1024
+        unslick: false
+        settings:
+          infinite: false
+          slidesPerRow: 4
+          slidesToShow: 4
+          slidesToScroll: 4
           swipe: false
           touchMove: false
           waitForAnimate: false
