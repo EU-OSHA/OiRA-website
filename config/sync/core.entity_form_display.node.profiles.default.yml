@@ -1,28 +1,25 @@
-uuid: 309219d9-4a57-4129-a748-f4c237a9cb2c
+uuid: 8d663993-279a-4ebc-8261-2ebf9305abee
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_basic_page_img
-    - image.style.profile_home_image
-    - node.type.page
+    - field.field.node.profiles.body
+    - field.field.node.profiles.field_profile_home_page_image
+    - image.style.thumbnail
+    - node.type.profiles
   module:
     - content_moderation
     - image
-    - imce
     - path
     - text
-_core:
-  default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
-id: node.page.default
+id: node.profiles.default
 targetEntityType: node
-bundle: page
+bundle: profiles
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 121
     region: content
     settings:
       rows: 9
@@ -36,16 +33,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_basic_page_img:
+  field_profile_home_page_image:
     type: image_image
-    weight: 121
+    weight: 122
     region: content
     settings:
-      progress_indicator: bar
-      preview_image_style: profile_home_image
-    third_party_settings:
-      imce:
-        enabled: false
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2

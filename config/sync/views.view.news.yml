@@ -1073,7 +1073,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 70
+            max_length: 50
             word_boundary: true
             ellipsis: true
             more_link: false

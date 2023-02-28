@@ -11,20 +11,24 @@ skin: ''
 breakpoints: 1
 optimized: true
 options:
-  options__active_tab: edit-options-settings
+  options__active_tab: edit-options-responsives
   settings:
+    arrows: false
+    dots: true
     lazyLoad: ondemand
+    randomize: true
     slidesToShow: 6
     slidesToScroll: 6
   responsives:
     responsive:
       -
-        breakpoint: null
+        breakpoint: 576
         unslick: false
         settings:
-          arrows: false
           draggable: false
           infinite: false
+          slidesPerRow: 3
+          slidesToShow: 2
           swipe: false
           touchMove: false
           waitForAnimate: false

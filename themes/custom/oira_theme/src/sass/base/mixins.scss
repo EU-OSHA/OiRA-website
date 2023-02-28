@@ -25,7 +25,10 @@
       }
       &.pager__item--first{
         a{
-          background-image: url("../images/pager-first.png");
+          background: {
+            image: url("../images/pager-first.png");
+            position: 45% 38%;
+          }
         }
       }
       &.pager__item--previous{
@@ -40,7 +43,10 @@
       }
       &.pager__item--last{
         a{
-          background-image: url("../images/pager-last.png");
+          background: {
+            image: url("../images/pager-last.png");
+            position: 55% 38%;
+          }
         }
       }
       &[role=presentation]{
@@ -60,15 +66,15 @@
           background: $lightColor;
         }
       }
-      &:hover{
-        background: $lightColor;
+      &:hover, &.is-active{
+        background-color: $lightColor;
         border-radius: 25px;
         color: $darkColor;
         a{
-          background: transparent;
+          background-color: transparent;
         }
         span{
-          background: transparent;
+          background-color: transparent;
         }
       }
       span, a{

@@ -1,26 +1,20 @@
-uuid: 2f8fcb75-45d8-4be2-b24b-3cfeffce9722
+uuid: 7aef8606-fa76-4cd1-bfae-cf984941d43d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_basic_page_img
-    - node.type.page
+    - field.field.node.profiles.body
+    - field.field.node.profiles.field_profile_home_page_image
+    - image.style.profile_home_image
+    - node.type.profiles
   module:
     - ds
     - image
-    - layout_builder
     - text
     - user
-third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
-_core:
-  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.default
+id: node.profiles.default
 targetEntityType: node
-bundle: page
+bundle: profiles
 mode: default
 content:
   body:
@@ -28,14 +22,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 101
     region: content
-  field_basic_page_img:
+  field_profile_home_page_image:
     type: image
     label: hidden
     settings:
       image_link: content
-      image_style: ''
+      image_style: profile_home_image
     third_party_settings:
       ds:
         ft:
@@ -44,12 +38,12 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    weight: 2
+    weight: 102
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 100
     region: content
 hidden:
   addtoany: true
@@ -58,5 +52,4 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   langcode: true
-  layout_builder__layout: true
   search_api_excerpt: true

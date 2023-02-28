@@ -1,12 +1,14 @@
-uuid: 9f763c92-b050-4b3f-96cc-c0f06d8c0f49
+uuid: 812b44a1-29d8-49d8-8765-7c71dca4b92e
 langcode: en
 status: true
 dependencies:
   config:
     - entityqueue.entity_queue.profiles_home_page
     - field.storage.node.body
-    - field.storage.node.field_basic_page_img
-    - node.type.page
+    - field.storage.node.field_profile_home_page_image
+    - image.style.profile_home_image
+  content:
+    - 'node:page:40c8fcca-bf72-48aa-8ea3-04cd8a95e9d3'
   module:
     - entityqueue
     - image
@@ -29,10 +31,10 @@ display:
     display_options:
       title: 'Profiles home page'
       fields:
-        field_basic_page_img:
-          id: field_basic_page_img
-          table: node__field_basic_page_img
-          field: field_basic_page_img
+        field_profile_home_page_image:
+          id: field_profile_home_page_image
+          table: node__field_profile_home_page_image
+          field: field_profile_home_page_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -82,7 +84,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: ''
+            image_style: profile_home_image
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -100,6 +102,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
@@ -134,7 +138,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -242,22 +246,20 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        entityqueue_relationship:
+          id: entityqueue_relationship
           table: node_field_data
-          field: created
+          field: entityqueue_relationship
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          plugin_id: entity_queue_position
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
@@ -273,19 +275,17 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        type:
-          id: type
+        entityqueue_relationship:
+          id: entityqueue_relationship
           table: node_field_data
-          field: type
+          field: entityqueue_relationship
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          operator: in
-          value:
-            page: page
+          plugin_id: entity_queue_in_queue
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -302,7 +302,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -316,7 +315,16 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 12
+          automatic_width: false
+          alignment: horizontal
+          row_class_custom: row
+          row_class_default: false
+          col_class_custom: 'col-12 col-md-4'
+          col_class_default: false
       row:
         type: fields
       query:
@@ -341,7 +349,20 @@ display:
           plugin_id: entity_queue
           required: false
           limit_queue: profiles_home_page
-      header: {  }
+      header:
+        entity_node:
+          id: entity_node
+          table: views
+          field: entity_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: false
+          target: 40c8fcca-bf72-48aa-8ea3-04cd8a95e9d3
+          view_mode: default
+          tokenize: true
+          bypass_access: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -354,7 +375,7 @@ display:
       tags:
         - 'config:entityqueue.entity_queue.profiles_home_page'
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_basic_page_img'
+        - 'config:field.storage.node.field_profile_home_page_image'
         - entity_field_info
         - views_data
   block_1:
@@ -363,7 +384,10 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -374,6 +398,6 @@ display:
       tags:
         - 'config:entityqueue.entity_queue.profiles_home_page'
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_basic_page_img'
+        - 'config:field.storage.node.field_profile_home_page_image'
         - entity_field_info
         - views_data
