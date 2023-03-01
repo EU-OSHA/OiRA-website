@@ -93,13 +93,19 @@
     }
   }
 
-  /**OiRA profiles home page - carousel arrows max-width 576px **/
+  /**OiRA profiles home page - carousel arrows max-width 576px and 1024px **/
   @media only screen and (max-width: 576px){
+    .slick__arrow{
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
     .slick__arrow{
       position: static !important;
       transform: none !important;
       display: flex !important;
-      justify-content: center;
+      justify-content: start;
       padding-bottom: 15px;
       column-gap: 2rem;
       button{

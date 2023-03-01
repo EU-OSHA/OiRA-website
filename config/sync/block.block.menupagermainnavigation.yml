@@ -29,4 +29,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /what-risk-assessment
+    pages: "/what-risk-assessment\r\n/roles-responsibilities"
