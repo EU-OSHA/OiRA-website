@@ -480,6 +480,22 @@
     }
   }
 
+  @media only screen and (max-width: 576px){
+    .top-header-content .region-top-header-logos{
+      #block-logooira img{
+        max-width: 100px !important;
+        padding-right: 10px !important;
+      }
+      #block-logoosha img{
+        max-width: 140px !important;
+        padding-left: 10px !important;
+        .field--name-field-image > .field__item:last-child img{
+          max-height: 35px !important;
+        }
+      }
+    }
+  }
+
   @media only screen and (min-width: 576px){
     .page-view-frontpage{
       .content-latest-news{
@@ -670,6 +686,9 @@
           }
         }
       }
+      .content-oira-tools .more-link, .content-oira-partners .more-link{
+        padding-right: 0px !important;
+      }
       .content-latest-news{
         .container .col{
             padding: {
@@ -680,7 +699,10 @@
               margin-left: 0px;
             }
           }
+        .views-element-container .view-display-id-oshnews_latest .more-link{
+          padding-right: 0px !important;
         }
+      }
 
       /**End comment - small containers**/
 

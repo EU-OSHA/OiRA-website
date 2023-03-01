@@ -1758,6 +1758,19 @@ table tr td {
     text-decoration: underline;
   }
 }
+@media only screen and (max-width: 576px) {
+  .top-header-content .region-top-header-logos #block-logooira img {
+    max-width: 100px !important;
+    padding-right: 10px !important;
+  }
+  .top-header-content .region-top-header-logos #block-logoosha img {
+    max-width: 140px !important;
+    padding-left: 10px !important;
+  }
+  .top-header-content .region-top-header-logos #block-logoosha img .field--name-field-image > .field__item:last-child img {
+    max-height: 35px !important;
+  }
+}
 @media only screen and (min-width: 576px) {
   .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row .col-md-6.col-sm-12 > .views-field > span .news-image, .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row .block-system-breadcrumb-block .col-md-6.content > .views-field > span .news-image, .block-system-breadcrumb-block .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .view-content .views-row .col-md-6.content > .views-field > span .news-image {
     display: block;
@@ -1880,12 +1893,18 @@ table tr td {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .page-view-frontpage .content-oira-tools .more-link, .page-view-frontpage .content-oira-partners .more-link {
+    padding-right: 0px !important;
+  }
   .page-view-frontpage .content-latest-news .container .col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .container .node--view-mode-full, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .col, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .content .node--view-mode-full, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .col, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .content .node--view-mode-full, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .node--view-mode-full, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .col, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .node--view-mode-full, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .col, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .node--view-mode-full, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .col, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .node--view-mode-full {
     padding-left: 0px;
     padding-right: 0px;
   }
   .page-view-frontpage .content-latest-news .container .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .container .node--view-mode-full .views-row, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .col .views-row, .page-view-frontpage .content-latest-news .node--type-collaboration-document .block-system-main-block .content .node--view-mode-full .views-row, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .col .views-row, .node--type-collaboration-document .page-view-frontpage .content-latest-news .block-system-main-block .content .node--view-mode-full .views-row, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-body p .node--view-mode-full .views-row, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-latest-news p .node--view-mode-full .views-row, .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-frontpage .content-latest-news .page-view-faqs-oira .field--name-field-article-header .field-name-node-title .node--view-mode-full .views-row, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .col .views-row, .node--type-collaboration-document .block-system-main-block .content .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-latest-news .field-name-node-title .node--view-mode-full .views-row {
     margin-left: 0px;
+  }
+  .page-view-frontpage .content-latest-news .views-element-container .view-display-id-oshnews_latest .more-link {
+    padding-right: 0px !important;
   }
   .page-view-frontpage .content-oira-tools h2 {
     padding-left: 0px;

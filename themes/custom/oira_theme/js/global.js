@@ -33,7 +33,7 @@
     }
   });
 
-  /**Add different "bottom" value to the home-box description**/
+  /**Add different "bottom" value to the home-box h2**/
   function homePageBanner(){
     let h2Bottom = "20px";
     if(jQuery(window).width()>1440){
@@ -47,8 +47,8 @@
     }
 
     $(".home-boxes").hover(function(){
-      $(this).find("a h2").css("bottom",h2Bottom) ;
-      $(this).find("a .description").show(375);
+      $(this).find("a h2").css("bottom",h2Bottom);
+      $(this).find("a .description").show(475);
     }, function(){
       $(this).find("a .description").hide(150);
       $(this).find("a h2").css("bottom","0px");
