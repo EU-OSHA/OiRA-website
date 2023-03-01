@@ -1491,6 +1491,12 @@ table tr td {
     row-gap: 1rem;
     text-align: center;
   }
+  .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-field-profile-home-page-image, .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-title {
+    cursor: not-allowed;
+  }
+  .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-field-profile-home-page-image > .field-content, .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-title > .field-content {
+    pointer-events: none;
+  }
   .page-view-frontpage .content-oira-profiles .col-12.col-md-4 img {
     max-height: 200px;
     max-width: 200px;

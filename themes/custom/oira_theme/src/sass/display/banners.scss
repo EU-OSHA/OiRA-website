@@ -158,6 +158,12 @@
         flex-direction: column;
         row-gap: 1rem;
         text-align: center;
+        .views-field-field-profile-home-page-image, .views-field-title{
+          cursor: not-allowed;
+          & > .field-content{
+            pointer-events: none;
+          }
+        }
         img{
           max-height: 200px;
           max-width: 200px;
