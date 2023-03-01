@@ -987,6 +987,7 @@ table tr td {
   content: "";
 }
 
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 @media screen {
   .slick-dots {
     display: flex;
@@ -1006,6 +1007,13 @@ table tr td {
   }
   .slick-dots li.slick-active button {
     background: #10b3e4;
+  }
+
+  .slick-list {
+    cursor: not-allowed;
+  }
+  .slick-list .slick-track {
+    pointer-events: none;
   }
 
   .slick-list, .slick-track {
@@ -1320,7 +1328,6 @@ table tr td {
   display: block;
 }
 
-/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 @media screen {
   .page-view-frontpage {
     /**Home-banner**/
@@ -1346,6 +1353,9 @@ table tr td {
     cursor: pointer;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
+  }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes a {
+    pointer-events: none;
   }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes h2 {
     background: transparent;
@@ -1513,11 +1523,28 @@ table tr td {
   .page-view-frontpage .content-oira-profiles .view-profiles-home-page .view-content .views-row .views-field-body {
     color: #58585A;
   }
+  .page-view-frontpage .content-oira-tools {
+    /**Intro text**/
+    /**End comment - intro text**/
+  }
   .page-view-frontpage .content-oira-tools h2 {
     font-size: 2.1rem;
     font-weight: bold;
     color: #10b2e4;
     padding-left: 15px;
+  }
+  .page-view-frontpage .content-oira-tools article {
+    padding: 0px 15px;
+    margin: 1rem 0rem 1.5rem;
+  }
+  .page-view-frontpage .content-oira-tools article h2.node__title {
+    display: none;
+  }
+  .page-view-frontpage .content-oira-tools article .field--name-body {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-left: 0px;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row {
     margin: 1rem 0rem;
@@ -1908,6 +1935,9 @@ table tr td {
   }
   .page-view-frontpage .content-oira-tools h2 {
     padding-left: 0px;
+  }
+  .page-view-frontpage .content-oira-tools article {
+    padding: 0px;
   }
   .page-view-frontpage .content-oira-tools .container, .page-view-frontpage .content-oira-tools .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-tools .block-system-main-block, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-tools p, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-tools .field-name-node-title {
     padding-left: 0px;
@@ -6252,17 +6282,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
     padding: 15px 0px 15px 0px;
   }
   .top-header-content .header-blocks {
-    display: block;
-    margin-left: 45px;
     /* Social media */
-  }
-  .top-header-content .header-blocks .region-header-form {
-    display: grid;
-    grid-template-areas: "printsize socialmedia" "search search" "lang lang";
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize {
     display: block;
-    grid-area: printsize;
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary {
     display: flex;
@@ -6367,6 +6390,8 @@ body.toolbar-fixed.toolbar-tray-open #header {
     background-position: 97% 50% !important;
     color: #58585A;
     width: 310px !important;
+    /**Add margi right for the grid layout**/
+    margin-right: -168px;
     font-size: 0.8rem;
     font-weight: 400;
     -webkit-appearance: none;
