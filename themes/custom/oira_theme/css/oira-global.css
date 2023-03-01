@@ -2324,6 +2324,10 @@ table tr td {
     color: #000000;
     text-decoration: none;
   }
+  body.node--type-article div#main .menu-pager ul {
+    list-style: none;
+    padding-left: 0px;
+  }
   body.node--type-article div#main .menu-pager ul .menu-pager-previous a {
     place-self: end;
     cursor: pointer;
@@ -2409,8 +2413,13 @@ table tr td {
     -webkit-filter: brightness(0) invert(1);
   }
 
-  /**Hide the first element of the bottom menu**/
-  body.node--type-article.what-risk-assessment div#main .menu-pager ul .menu-pager-previous {
+  /**Hide the first element of the risk assessment  menu**/
+  body.node--type-article.what-risk-assessment .menu-pager-previous {
+    display: none;
+  }
+
+  /**Hide the last element of the risk assessment menu**/
+  body.node--type-article.legislation .menu-pager-next {
     display: none;
   }
 }
@@ -2499,10 +2508,6 @@ fix-paddings {
 .image-fluid img {
   width: 100%;
   height: auto;
-}
-
-.menu-pager {
-  padding-bottom: 3rem;
 }
 
 .contextual-links a, .toolbar a {

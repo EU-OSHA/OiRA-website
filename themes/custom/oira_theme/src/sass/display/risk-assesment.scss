@@ -76,6 +76,8 @@
       }
       .menu-pager{
         ul{
+          list-style: none;
+          padding-left: 0px;
           .menu-pager-previous{
             @include blueRightIcon(transparent, 0% 50%, url("../images/arrow-left-sm-blue.png"), $text-color-blue-light, 25px, 0px);
           }
@@ -134,17 +136,15 @@
       }
     }
   }
-  /**Hide the first element of the bottom menu**/
-  body.node--type-article.what-risk-assessment{
-    div#main{
-      .menu-pager{
-        ul{
-          .menu-pager-previous{
-            display: none;
-          }
-        }
-      }
-    }
+
+  /**Hide the first element of the risk assessment  menu**/
+  body.node--type-article.what-risk-assessment .menu-pager-previous{
+    display: none;
+  }
+
+  /**Hide the last element of the risk assessment menu**/
+  body.node--type-article.legislation .menu-pager-next{
+    display: none;
   }
 
   @media only screen and (min-width: 768px){
