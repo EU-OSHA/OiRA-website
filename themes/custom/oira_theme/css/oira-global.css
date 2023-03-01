@@ -1328,6 +1328,7 @@ table tr td {
   display: block;
 }
 
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 @media screen {
   .page-view-frontpage {
     /**Home-banner**/
@@ -2164,6 +2165,7 @@ table tr td {
     justify-content: start;
   }
 }
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 @media screen {
   body.page-view-promotional-resources-search .field--name-field-article-header {
     padding: 0px 15px;
@@ -2177,12 +2179,19 @@ table tr td {
     display: inline-block;
     margin-left: 10px;
     width: 180px;
-    height: 52px;
-    background: transparent;
+    height: 40px;
+    background-color: transparent;
+    background-image: url("../images/arrow-down-sm-dark-purple.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 11px;
     border: 1px solid #967EA7;
     border-radius: 8px;
     font-size: 1rem;
-    color: #B1B3B4;
+    color: #58585A;
+    /**Remove icon**/
+    -webkit-appearance: none;
+    appearance: none;
   }
   body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .form-type-textfield, body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .form-item-search-api-fulltext {
     display: none;
@@ -2260,6 +2269,10 @@ table tr td {
     align-items: center;
     column-gap: 1.5rem;
     margin: 1rem 0px;
+    cursor: not-allowed;
+  }
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper .partner-inner-group--img, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper .partner-inner-group--data {
+    pointer-events: none;
   }
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper .partner-inner-group--img img {
     min-height: 64px;
