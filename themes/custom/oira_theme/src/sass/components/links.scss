@@ -1,0 +1,34 @@
+body{
+  &.page-view-frontpage, &.page-view-news, &.node--type-news, &.page-view-promotional-resources-search{
+    main{
+      a{
+        color: $text-black;
+        text-decoration: underline;
+        text-decoration-color: $text-color-blue-light;
+        &:hover{
+          color: $text-black;
+          text-decoration: none;
+        }
+        & > span{
+          color: $text-black !important;
+        }
+      }
+    }
+  }
+  &.node--type-article{
+    article{
+      a{
+        color: $text-black;
+        text-decoration: underline;
+        text-decoration-color: $text-color-blue-light;
+        &:hover{
+          color: $text-black;
+          text-decoration: none;
+        }
+        & > span{
+          color: $text-black !important;
+        }
+      }
+    }
+  }
+}

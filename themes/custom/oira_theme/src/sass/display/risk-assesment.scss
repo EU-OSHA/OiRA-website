@@ -1,0 +1,156 @@
+@media screen{
+  body.node--type-article{
+    .left-menu, .right-menu{
+      h2{
+        font-size: 1.3rem;
+        color: $text-dark-purple;
+      }
+    }
+    .left-menu{
+      aside{
+        & > nav{
+          ul{
+            .nav-item{
+              a{
+                padding:{
+                  top: 0.3rem;
+                  bottom: 0.5rem;
+                };
+                color: $text-color-blue-light;
+                font: {
+                  style: normal;
+                  weight: normal;
+                }
+                &.active{
+                  font-weight: bold;
+                }
+              }
+              border-bottom: 1px solid $bg-color-purple-dark;
+            }
+          }
+        }
+      }
+    }
+    div#main{
+      margin-top: 1.5rem;
+      #block-oira-theme-page-title{
+        .container.fix-paddings{
+          padding: {
+            left: 0px;
+            right: 0px;
+          }
+          h1{
+            span{
+              color: $text-color-blue-light;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      article{
+        font-size: 0.9rem;
+        h3{
+          color: $text-color-blue-light;
+          font: {
+            weight: bold;
+            size: 1.3rem;
+          }
+        }
+        h5{
+          color: $bg-color-purple-dark;
+          font: {
+            weight: bold;
+            size: 1.2rem;
+          }
+        }
+        a{
+          color: $text-black;
+          text-decoration: underline;
+          text-decoration-color: $text-color-blue-light;
+          font-style: normal;
+          &:hover{
+            color: $text-black;
+            text-decoration: none;
+          }
+        }
+      }
+      .menu-pager{
+        ul{
+          .menu-pager-previous{
+            @include blueRightIcon(transparent, 0% 50%, url("../images/arrow-left-sm-blue.png"), $text-color-blue-light, 25px, 0px);
+          }
+          .menu-pager-next{
+            @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
+          }
+        }
+      }
+    }
+    .right-menu{
+      h2{
+        margin-left: -15px;
+      }
+      .view-related-resources{
+        & > .view-content{
+          display: flex;
+          gap: 1rem;
+          & > div{
+            width: 100%;
+            .related-resources{
+              a{
+                display: grid;
+                grid-template-columns: 80px 1fr;
+                padding: 1rem;
+                border: 1px solid $bg-color-purple-dark;
+                border-radius: 8px;
+                font: {
+                  style: normal;
+                  weight: normal;
+                  size: 0.9rem;
+                }
+                color: $text-color-blue-light;
+                img{
+                  width: 60px;
+                  object-fit: cover;
+                }
+                span{
+                  place-self: end;
+                  text-align: end;
+                  align-self: center;
+                }
+                &:hover{
+                  background: $bg-color-purple-dark;
+                  color: $text-color-white;
+                  font-weight: bold;
+                  text-decoration-color: $text-color-blue-light;
+                  img{
+                    filter: brightness(0) invert(1);
+                    -webkit-filter: brightness(0) invert(1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /**Hide the first element of the bottom menu**/
+  body.node--type-article.what-risk-assessment{
+    div#main{
+      .menu-pager{
+        ul{
+          .menu-pager-previous{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+    div#main{
+      margin-top: 0rem;
+    }
+  }
+
+}

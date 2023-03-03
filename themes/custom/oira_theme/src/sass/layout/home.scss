@@ -1,24 +1,25 @@
 /* SCSS to Home Page */
 
-.content-home{
-  h2{
-    color: $text-color-purple-light;
-    border-bottom: 2px solid $text-color-purple-light;
-    font-size: 2.2rem;
-    padding-bottom: 15px;
-    font-family: 'Oswald';
-  }
-}
-.content-purple {
+
+.content-light-purple {
   background: $bg-color-purple-light;
   padding-top: 2rem;
   padding-bottom: 0.7rem;
 }
 
+.content-dark-purple{
+  background: $bg-color-purple-dark;
+  padding: 2rem 0rem;
+}
+
+.content-light-grey{
+  background: $bg-light-grey;
+  padding: 2rem 0rem;
+}
+
 .content-white {
   background: $bg-color-white;
-  padding-top: 2rem;
-  padding-bottom: 0.7rem;
+  padding: 2rem 0rem;
 }
 
 .content-home{
@@ -95,16 +96,7 @@
   .slick-dots{
     bottom: 20px;
   }
-  .slick-dots li.slick-active button:before{
-    color: $bg-color-white;
-    font-size: 1rem;
-    opacity: 1;
-  }
-  .slick-dots li button:before{
-    color: $bg-color-purple-light;
-    font-size: 1rem;
-    opacity: 1;
-  }
+
 }
 
 @media(max-width: 767px) {
@@ -119,139 +111,15 @@
   }
 }
 
-.content-oira-tools {
-  h2:after {
-    content: "";
-    background: url(../images/oira-tools.png) no-repeat;
-    background-size: 100%;
-    width: 40px;
-    height: 40px;
-    float: right;
-  }
-  h3{
-    margin-top: 10px;
-    margin-bottom: 10 px;
-    a:hover{
-      color: $text-color-blue-hover;
-    }
-  }
-  .view-tools{
-    padding-top: 1rem;
-    .views-item-columns-container{
-      background: $bg-color-white;
-      padding: 1rem;
-      .views-field-field-tool-link{
-        margin-top: 5px;
-        a{
-          color: $text-color-black;
-          font-style: normal;
-          &:after {
-            position: absolute;
-            content: "\e164";
-            font-family: 'Glyphicons Halflings';
-            color: $text-color-blue-light;
-            padding-left: 5px;
-          }
-        }
-      }
-      .field--name-field-country{
-        margin-bottom: 0;
-      }
 
-      span.see-more{
-        position: absolute;
-        cursor: pointer;
-        color: $text-color-blue-light;
-        font-style: italic;
-        font-weight: bold;
-        text-decoration: none;
-        right: 30px;
-        bottom: 15px;
-        &:hover{
-          text-decoration: underline;
-        }
-        &:before {
-          content: '>';
-          margin-right: 5px;
-          display: inline-block;
-          position: relative;
-          top: -1px;
-        }
-      }
-    }
-  }
-  .more-link{
-    text-align: right;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-  }
-}
 
 
 .view-tools.view-display-id-block_1 {
   .views-item-columns-container {
     padding: 15px;
-    span.see-more {
-      position: relative;
-      right: 0;
-      bottom: 0;
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      &.expanded {
-        text-align: right !important;
-        height: 12px;
-        overflow: hidden;
-        font-style: normal;
-        font-size: 0;
-        margin-top: 0px;
-        &:before {
-          text-align: right;
-          display: block;
-          content: "\e253";
-          font-family: "Glyphicons Halflings";
-          font-size: 1.2rem;
-          line-height: 1;
-        }
-      }
-    }
   }
   .views-field-field-tool-link {
     margin-bottom: 15px;
-  }
-  .partners-wrapper {
-    display: none;
-    .partner-wrapper {
-      display: flex;
-      justify-content: space-between;
-      margin: 1rem 0;
-    }
-    .partner-inner-group {
-      padding: 0 15px;
-      &.partner-inner-group--img {
-        width: 42%;
-      }
-      &.partner-inner-group--data {
-        width: 58%;
-      }
-      a {
-        display: block;
-        color: $text-color-black;
-        font-size: 1rem;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      h4 {
-        margin-bottom: 1rem;
-        a {
-          color: $text-color-black;
-          font-style: normal;
-          font-size: 1.125rem;
-        }
-      }
-    }
   }
   .related-partners,
   .co-author {
@@ -352,81 +220,7 @@
   }
 }
 
-.content-latest-news{
-  h2:after {
-    content: "";
-    background: url(../images/latest-news.png) no-repeat;
-    background-size: 100%;
-    width: 40px;
-    height: 40px;
-    float: right;
-  }
-  .view-news{
-    .attachment-before{
-      margin-bottom: 20px;
-      border-bottom: 2px solid $bg-color-purple;
-      padding-bottom: 20px;
-      padding-top: 20px;
-      .views-field-nothing{
-        float: left;
-        margin-right: 1.5rem;
-        width: 50%;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      h3 {
-        a{
-          font-size: 2rem;
-        }
-      }
-      span.see-more{
-        float: none;
-      }
-    }
-    .views-row {
-      padding: 0;
-      .col-sm-12 {
-        padding: 15px;
-      }
-    }
-    .views-field-title {
-      h3 {
-        margin: 11px 0;
-      }
-    }
-    .views-row:nth-child(odd) {
-      background-color: transparent;
-    }
-    h3{
-      a:hover{
-        color: $text-color-blue-hover;
-      }
-    }
-    span.see-more{
-      float: right;
-    }
-    .more-link{
-     text-align: right;
-    }
-    .views-view-grid.horizontal{
-      padding-left: 0;
-      padding-right: 0;
-      .col-md-12.col-sm-12{
-        padding-left: 0;
-        padding-right: 0;
-      }
-      .row{
-        display: flex;
-        justify-content: space-between;
-        .col-md-4{
-          flex-basis: 30%;
-        }
-      }
-    }
-  }
-}
+
 
 .content-promotional-materials {
   h2:after {
@@ -469,111 +263,3 @@
   }
 }
 
-.content-oira-partners {
-  h2:after {
-    content: "";
-    background: url(../images/oira-partners.png) no-repeat;
-    background-size: 100%;
-    width: 40px;
-    height: 40px;
-    float: right;
-  }
-  .view-content.row {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    @media(min-width: 768px) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    @media(min-width: 1024px) {
-      gap: 30px;
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-  .view-oira-partners{
-    padding-bottom: 0;
-    padding-top: 20px;
-    img {
-      width: 100%;
-      height: auto;
-    }
-    .views-view-grid.horizontal{
-      margin-bottom: 20px;
-    }
-    .more-link{
-      width: 100%;
-      border-top: 2px solid $bg-color-purple;
-      padding-top: 20px;
-      text-align: right;
-    }
-  }
-  .partner__item .views-field {
-    padding: 10px;
-  }
-}
-
-/*** Responsive Homepage ***/
-@media(max-width: 767px) {
-  .content-oira-tools,
-  .view-promotional-materials.view-display-id-block,
-  .content-oira-partners .view-oira-partners {
-    .views-view-grid {
-      padding: 0;
-    }
-    .views-col {
-      padding: 0;
-      margin: 0 0 1rem;
-    }
-    .more-link {
-      margin: 0;
-    }
-  }
-
-  .content-oira-tools {
-    .view-tools {
-      .views-col {
-        display: none;
-        &:first-child {
-          display: block;
-        }
-      }
-    }
-  }
-
-  .view-promotional-materials.view-display-id-block {
-    .views-col {
-      display: none;
-      &:first-child {
-        display: block;
-        margin: 0;
-      }
-    }
-    .view-content + .more-link {
-      margin: 0 0 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid $bg-color-purple;
-    }
-  }
-
-  .content-oira-partners .view-oira-partners {
-    .views-col {
-      padding: 0 10px;
-    }
-    .more-link {
-      margin: 1rem 0;
-    }
-  }
-
-  .content-latest-news .view-news {
-    > .view-content.row {
-      .col-sm-12:nth-child(2),
-      .col-sm-12:nth-child(3) {
-        display: none;
-      }
-    }
-    .more-link {
-      margin: 15px 0;
-    }
-  }
-}

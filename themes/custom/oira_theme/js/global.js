@@ -13,6 +13,80 @@
     }
   };
 
+  /*This variable tells us if the responsive menu is currently collapsed (true)*/
+  let menuSM = false;
+
+  jQuery(window).on("load",function(){
+    checkResponsiveMenu(jQuery(window).width(), menuSM);
+    if($("body").hasClass("page-view-frontpage")){
+      homePageBanner();
+    }
+    $("#navbar-main button.navbar-toggler").click(function (){
+      $(".responsive-menu-oira").toggleClass('collapsed');
+    })
+  });
+
+  jQuery(window).resize(function(){
+    checkResponsiveMenu(jQuery(window).width(), menuSM);
+    if($("body").hasClass("page-view-frontpage")){
+      homePageBanner();
+    }
+  });
+
+  /**Add different "bottom" value to the home-box h2**/
+  function homePageBanner(){
+    let h2Bottom = "20px";
+    if(jQuery(window).width()>1440){
+      h2Bottom = "75px";
+    } else if(jQuery(window).width()>767){
+      h2Bottom = "65px";
+    } else if (jQuery(window).width()<768){
+      h2Bottom = "75px";
+    } else if (jQuery(window).width()<450){
+      h2Bottom = "85px";
+    }
+
+    $(".home-boxes").hover(function(){
+      $(this).find("a h2").css("bottom",h2Bottom);
+      $(this).find("a .description").show(475);
+    }, function(){
+      $(this).find("a .description").hide(150);
+      $(this).find("a h2").css("bottom","0px");
+    });
+  }
+
+  /*Menu responsive*/
+/*Check window width and if the menu is collapsed or not
+  * 2 parameters: window width and menu status*/
+  function checkResponsiveMenu(windowWidth, menuSmall){
+    if (windowWidth < 992) {
+      if(!menuSmall){
+        /*Add header elements to menu navbar and create new element for icon*/
+        jQuery("#navbar-main").append("<div class='responsive-menu-oira'></div>");
+        jQuery("#block-languagedropdownswitcher").appendTo(".responsive-menu-oira");
+        jQuery("#block-generalsearch-api").appendTo(".responsive-menu-oira");
+
+        /*Hide the header elements not requied for the responsive version*/
+        jQuery("section.region-wrapper").hide();
+
+        menuSM = true;
+      }
+    }else{
+      if(menuSmall){
+        /*Move the elements from the menu back to the header*/
+        jQuery("#block-generalsearch-api").appendTo("section.region.region-header-form");
+        jQuery("#block-languagedropdownswitcher").appendTo("section.region.region-header-form");
+
+        /*Toggle and remove required elements*/
+        jQuery(".responsive-menu-oira").remove();
+        jQuery("section.region-wrapper").show();
+        jQuery(".font-size-print").toggle();
+        menuSM = false;
+      }
+    }
+  }
+  /*End comment - menu responsive*/
+
   //@ MRD 4929 ("Access the tool" link)
   if (typeof _paq != 'undefined') {
     $('.tool-link > a').click(function (e) {
@@ -41,9 +115,6 @@ if ($('body').find('#edit-search-api-fulltext--2').length>0) {
 
 
 })(jQuery, Drupal);
-
-
-
 
 jQuery(document).ready(function($){
   $('#_biggify').on('click', function() {
@@ -75,24 +146,23 @@ jQuery(document).ready(function($){
     });
   });
 
-
     windowWidth= jQuery(window).width();
-
-  if(windowWidth <= 992){
-    //search header al hacer click
-    $("#edit-actions").click(function(){
-      $('#views-exposed-form-search-api-search-api-block #edit-search-api-fulltext').stop().show({direction: 'left'}, 500);
-      $('#edit-actions .btn-primary').css("pointer-events" , "auto");
-    });
-  }
-
 
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){
-      $(this).toggleClass('expanded');
       $(this).siblings('.partners-wrapper').slideToggle('slow');
       $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+      $(this).toggle();
+      $(this).siblings('.see-less').toggle();
     });
+
+    $('.view-display-id-block_1 .views-col .see-less').click(function(){
+      $(this).siblings('.partners-wrapper').slideToggle('slow');
+      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+      $(this).toggle();
+      $(this).siblings('.see-more').toggle();
+    });
+
     $('.view-promotional-materials.view-display-id-block .more-link').click(function(){
       $(this).toggleClass('expanded');
       $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
@@ -102,13 +172,13 @@ jQuery(document).ready(function($){
     $('.view-tools.view-display-id-block_2 .views-col .more-link').click(function(){
       $(this).toggleClass('expanded');
       $(this).siblings('.partners-wrapper').slideToggle('slow');
-      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+      $(this).siblings('.partners-wrapper').toggle('expanded-wrapper');
     });
 
-    $('.view-promotional-resources-search .views-row .more-link').click(function(){
-      $(this).toggleClass('expanded');
-      $(this).siblings('.partners-wrapper').slideToggle('slow');
-      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+    $('.view-promotional-resources-search .views-row .pm-title').click(function(){
+      $(this).siblings('.promotional-resources-wrapper').slideToggle('slow');
+      $(this).toggleClass('collapsed-wrapper');
+      $(this).siblings('.promotional-resources-wrapper').toggleClass('collapsed');
     });
 
     //See more less, Oira Tools

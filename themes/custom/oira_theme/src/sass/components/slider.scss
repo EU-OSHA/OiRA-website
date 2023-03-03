@@ -1,0 +1,145 @@
+@media screen{
+  .slick-dots{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0px;
+    button{
+      text-indent: -99999px;
+      background: $bg-color-blue-light-opacity;
+      border: none;
+      border-radius: 15px;
+      width: 16px;
+      height: 16px;
+    }
+    li.slick-active{
+      button{
+        background: $bg-color-blue-light;
+      }
+    }
+  }
+  .slick-list,.slick-track{
+    display: flex;
+    flex-direction: row;
+    max-height: 280px;
+  }
+  .view-oira-partners{
+    width: 100%;
+    img{
+      width: auto !important;
+      height: auto !important;
+    }
+    .view-content.row{
+      /*Fix for Slide view*/
+      display: block;
+      position: relative;
+    }
+  }
+  .slick-slide {
+    .views-field{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .slick{
+    padding:0 8px;
+    &__slide{
+      padding: 0px 7px;
+    }
+    &--less{
+      width:100%!important;
+      .slick {
+        padding: 0 24px;
+        width: 100% !important;
+        &-track {
+          margin:0px;
+        }
+      }
+      .lc-inline_column_first-content-edit{
+        overflow:hidden;
+      }
+    }
+    &-arrow{
+      &:before{
+        color:inherit;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      &:hover{
+        &:before {
+          color: $text-color-black;
+        }
+      }
+    }
+    &.unslick{
+      .slick{
+        &__slide{
+          width:25%;
+        }
+      }
+    }
+  }
+  .slide{
+    &__caption{
+      padding: 0px;
+      p{
+        font-size:1.3rem;
+        color: $text-color-white;
+      }
+    }
+  }
+
+  /**OiRA profiles home page - carousel arrows max-width 576px and 1024px **/
+  @media only screen and (max-width: 576px){
+    .slick__arrow{
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
+    .slick__arrow{
+      position: static !important;
+      transform: none !important;
+      display: flex !important;
+      justify-content: start;
+      padding-bottom: 15px;
+      column-gap: 2rem;
+      button{
+        display: grid;
+        pointer-events: auto;
+        min-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        border: none;
+        background: {
+          color: transparent;
+          repeat: no-repeat;
+          size: 50%;
+        }
+        font-size: 0;
+        &:hover, &:active{
+          background-color: $bg-color-blue-light-opacity;
+        }
+        &.slick-prev{
+          background: {
+            image: url("../images/pager-prev.svg");
+            position: 45% 50%;
+          }
+        }
+        &.slick-next{
+          background: {
+            image: url("../images/pager-next.svg");
+            position: 55% 50%;
+          }
+        }
+      }
+    }
+  }
+  /**End comment - OiRA profiles home page**/
+}

@@ -1,0 +1,168 @@
+@media screen{
+  .page-view-news{
+    .view-display-id-oshnews_list{
+      .view-header{
+        h1.page-header{
+          color: $text-color-blue-light;
+          font-weight: 500;
+        }
+      }
+      & > .view-content.row{
+        margin-left: 0;
+        margin-right: 0;
+        .col-3{
+          padding-left: 0;
+        }
+        .views-row{
+          width: 100%;
+          .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 18px 0px;
+            background: {
+              color: transparent;
+              image: url("../images/dashed-border-for-news-view.png");
+              repeat: repeat-x;
+              position: 0% 100%;
+              size: 40px;
+            };
+            img{
+              object-fit: cover;
+              width: 220px;
+              height: 220px;
+              min-width: 220px;
+              min-height: 220px;
+              margin-bottom: 0px;
+            }
+            .news__image{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex: 0 0 100%;
+              max-width: 100%;
+              width: 100%;
+            }
+            .news--content{
+              display: grid;
+              grid-template-rows: 25px auto 1fr 25px;
+              gap: 0.5rem;
+              &.col-9{
+                flex: 0 0 100%;
+                max-width: 100%;
+              }
+              .datetime {
+                color: $text-grey;
+                font: {
+                  weight: bold;
+                  size: 1rem;
+                }
+              }
+              h2{
+                a{
+                  color: $text-color-blue-light;
+                  font: {
+                    size: 1.4rem;
+                    weight: bold;
+                  }
+                  text-decoration: none;
+                  &:hover{
+                    text-decoration: underline;
+                  }
+                }
+              }
+              p{
+                color: $text-grey;
+                font-size: 1.1em;
+                line-height: 24px;
+                margin-bottom: 0px;
+              }
+              span.see-more{
+                place-self: end;
+                display: grid;
+                a{
+                  place-self: end;
+                  cursor: pointer;
+                  text-decoration: none;
+                  padding: {
+                    left: 0rem;
+                    right: 30px;
+                  }
+                  color: $text-color-blue-light;
+                  font : {
+                    weight: bold;
+                    style: normal;
+                  }
+                  background: {
+                    color: transparent;
+                    image: url("../images/icon-arrow-blue.png");
+                    repeat: no-repeat;
+                    position: 100% 47%;
+                    size: 17px;
+                  }
+                  &:before{
+                    content: "";
+                  }
+                  &:hover{
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .view-footer{
+      text-align: end;
+      font-size: 0.9rem;
+      color: $text-color-blue-light;
+      margin: -52px 0px 1rem 2rem;
+    }
+    footer{
+      margin-top: 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+    .page-view-news{
+      .view-display-id-oshnews_list{
+        & > .view-content.row{
+          margin-left: 0;
+          margin-right: 0;
+          .views-row{
+            .row{
+              display: grid;
+              grid-template-columns: 250px 1fr;
+              .news__image{
+                justify-content: start;
+              }
+              .news--content{
+                padding: {
+                  top: 1rem;
+                  left: 45px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px){
+  .page-view-news{
+    .view-display-id-oshnews_list{
+      & > .view-content.row{
+        .views-row{
+          .row{
+            .news--content{
+              padding-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}

@@ -22,11 +22,34 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* Font colours NEW */
+//Grey
+$text-light-grey: #B1B3B4;
+$text-grey: #58585A;
+//Purple
+$text-light-purple: #EAE5ED;
+$text-dark-purple: #967EA7;
+//Others
+$text-black: #000000;
+$text-black-80: #000000e5;
+
+/* Background colours new */
+//Grey
+$bg-grey: #58585A;
+$bg-light-grey: #F8F8F8;
+//Purple
+$bg-light-purple: #EAE5ED;
+$bg-dark-purple: #967EA7;
+//Others
+$bg-black: #000000;
+$bg-black-80: #000000e5;
+
 /* Font colours */
 $text-color-purple: #786586;
 $text-color-purple-light: #967ea7;
 $text-color-black: #58585a;
 $text-color-black-extra: #333333;
+$text-light-light-blue: #A2ACB4;
 $text-color-blue: #003399;
 $text-color-blue-light: #10b2e4;
 $text-color-blue-light-hover: #0e98c3;
@@ -46,7 +69,7 @@ $text-color-white: #FFF;
 }
 
 .text-color-blue-light{
-  color: #10b2e4;
+  color: #10b3e4;
 }
 
 .text-color-blue-light-hover{
@@ -58,12 +81,16 @@ $text-color-white: #FFF;
 }
 
 /* background colours */
+$bg-color-purple-dark: #967EA7;
 $bg-color-purple: #786586;
 $bg-color-purple-light: #dfd8e4;
 $bg-color-purple-light-2: #b4a4bf;
+$bg-color-purple-light-opacity: rgba(150, 126, 167, 0.3);
 $bg-color-purple-light-3: #d2c7da;
 $bg-color-purple-light-4: #e5d9e7;
-$bg-color-blue-light: #10b2e4;
+$bg-color-blue-dark: #003399;
+$bg-color-blue-light: #10b3e4;
+$bg-color-blue-light-opacity: rgba(16, 178, 228, 0.1);
 $bg-color-blue-light-2: #66afe9;
 $bg-color-blue-light-hover: #0e98c3;
 $bg-color-blue-light-menu: #37d0ff;
@@ -75,6 +102,7 @@ $bg-color-grey-light-3: #ededed;
 $bg-color-grey-light-4: #dddddd;
 $bg-color-grey-light-5: #f5f5f5;
 $bg-color-grey-light-6: #cccccc;
+$bg-border-grey: #707070;
 
 .bg-color-purple{
   background: $bg-color-purple;

@@ -14,83 +14,14 @@
   .block-oira-masquerade {
     display: none;
   }
-  #block-logoosha {
-    max-width: 200px;
-  }
-  #page {
-    padding-bottom: 180px;
-  }
+
   .block-addtoany-block {
     padding: 0 15px;
   }
 
-  /*** Stiky header ***/
-  body.role-anonymous {
-    padding-top: 115px;
-  }
-
-  body.user-logged-in {
-    padding-top: 155px !important;
-    #header {
-      padding-top: 40px;
-    }
-  }
-
   body.user-logged-in.toolbar-fixed {
-    padding-top: 256px !important;
     #header {
       padding-top: 40px;
-    }
-    &.toolbar-tray-open {
-      padding-top: 290px !important;
-      #header {
-        padding-top: 75px;
-      }
-    }
-  }
-
-  .region-top-header-logos,
-  .region-medium-header-logos {
-    width: 50%;
-  }
-  .region-medium-header-logos {
-    justify-content: flex-end;
-  }
-  .top-header-content .block__font-size,
-  .block__print {
-    display: none;
-  }
-  .top-header-content #block-logooira img {
-    width: 84px;
-  }
-
-  .block-lang-dropdown {
-    position: absolute;
-    right: 50px;
-    top: 64px;
-    margin-top: 0;
-    z-index: 3;
-    .form-item-lang-dropdown-select {
-      position: relative;
-      &:after {
-        content: "";
-        display: block;
-        width: 12px;
-        height: 12px;
-        position: absolute;
-        z-index: 2;
-        right: 5px;
-        top: 44%;
-        /*background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: 12px;
-        background-image: url(../images/select-arrow.svg);*/
-      }
-    }
-    .form-select {
-      width: 100px !important;
-      background-color: transparent !important;
-      border: none;
     }
   }
 
@@ -100,47 +31,8 @@
     }
   }
   .row{
-    margin-left: 0;
-    margin-right: 0;
-  }
-  /* Header Logos mobile */
-  .top-header-content{
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    .region-top-header-logos{
-      .field--name-field-image{
-        > .field__item:nth-child(1){
-          img{
-            width: 190px;
-            height: auto;
-            margin: 0;
-          }
-        }
-        > .field__item:nth-child(2){
-          margin: 0 0 0 10px;
-          img {
-            width: 47px;
-            height: auto;
-            margin: 0;
-          }
-        }
-        > .field__item:nth-child(3){
-          img {
-            width: 145px;
-            height: auto;
-          }
-        }
-        .field__item {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
-  .top-header-content .region-top-header-logos .field--name-field-image .field__item:first-child {
-    width: auto;
+   // margin-left: 0;
+   // margin-right: 0;
   }
 
   .top-header-content{
@@ -195,66 +87,8 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .content-latest-news {
-    .view-news {
-      .attachment-before {
-        .col-md-12{
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .views-field-nothing {
-          float: none;
-          margin-right: 0;
-          width: 100%;
-          img {
-            display: none;
-          }
-        }
-        h3 {
-          a {
-            font-size: 1rem;
-          }
-        }
-      }
-      h3 {
-        a:hover {
-          font-size: 1rem;
-          color: $text-color-blue-hover;
-        }
-      }
-      span.see-more, .more-link {
-        float: none;
-        display: flex;
-      }
-      > .more-link {
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .views-view-grid.horizontal {
-        padding-left: 0;
-        padding-right: 0;
-        .row {
-          display: block;
-          justify-content: initial;
-          .col-md-4 {
-            padding-left: 0;
-            padding-right: 0;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-            flex-basis: 100%;
-            border-bottom: 2px solid $bg-color-purple;
-          }
-        }
-      }
-    }
-  }
 
   /**** What's News ***/
-  .page-node-450 h1, .whats-is-new h1 {
-    margin: 0 0 1.5rem;
-    padding: 0;
-  }
   .block-views-blocknews-block-1 {
     .views-col {
       &:nth-child(2),
@@ -397,7 +231,6 @@
   }
 
   .site-footer {
-    padding: 1rem 0;
     .site-footer__bottom .region {
       flex-direction: column;
       .block,
@@ -645,10 +478,6 @@
 
   .view-promotional-materials-type .views-view-grid {
     margin: 0 auto;
-    .views-col {
-      margin: 0 auto;
-      padding: 0;
-    }
   }
 
   .page-view-promotional-resources-search {
@@ -753,10 +582,7 @@
 
 @media only screen and (max-width : 480px) {
   .top-header-content{
-    justify-content: space-between;
     .col {
-      padding: 0;
-      flex-grow: auto;
     }
     .region-medium-header-logos {
       max-width: 80px;
@@ -769,31 +595,7 @@
         font-size: 0;
       }
     }
-    .region-top-header-logos{
-      .field--name-field-image{
-        > .field__item:nth-child(1){
-          img{
-            width: 124px;
-            height: auto;
-          }
-        }
-        > .field__item:nth-child(2){
-          img {
-            width: 35px;
-            height: auto;
-          }
-        }
-        > .field__item:nth-child(3){
-          img {
-            width: 84px;
-            height: auto;
-          }
-        }
-      }
-    }
-    .region-wrapper {
-      position: absolute;
-    }
+
   }
 
   #block-oira-theme-breadcrumbs {
