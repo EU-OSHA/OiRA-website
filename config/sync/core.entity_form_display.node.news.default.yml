@@ -28,7 +28,6 @@ dependencies:
     - media_library
     - path
     - text
-    - textfield_counter
 id: node.news.default
 targetEntityType: node
 bundle: news
@@ -36,7 +35,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 5
     region: content
     settings:
       rows: 9
@@ -46,13 +45,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 19
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   field_aditional_resources:
     type: entity_browser_entity_reference
-    weight: 10
+    weight: 9
     region: content
     settings:
       entity_browser: browser_additional_resources
@@ -66,53 +65,53 @@ content:
     third_party_settings: {  }
   field_character_count:
     type: number
-    weight: 14
+    weight: 13
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_co_author:
     type: options_select
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_co_author_node:
     type: options_select
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_image:
     type: media_library_widget
-    weight: 4
+    weight: 3
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_image_home_latest_news:
     type: media_library_widget
-    weight: 5
+    weight: 4
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_migration_source:
     type: options_select
-    weight: 23
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   field_page_count:
     type: number
-    weight: 15
+    weight: 14
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_publication_date:
     type: datetime_default
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -122,28 +121,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_summary:
-    type: text_textarea_with_counter
-    weight: 3
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-      maxlength: 420
-      counter_position: after
-      js_prevent_submit: true
-      count_html_characters: false
-      textcount_status_message: 'Max. <span>@maxlength</span> characters<br /><span>@remaining_count</span> characters left'
-    third_party_settings: {  }
   field_tags:
     type: options_select
-    weight: 11
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_wf_notification:
     type: boolean_checkbox
-    weight: 12
+    weight: 11
     region: content
     settings:
       display_label: true
@@ -156,40 +142,40 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 16
+    weight: 15
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 24
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 22
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 20
+    weight: 19
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 17
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 21
+    weight: 20
     region: content
     settings:
       display_label: true
@@ -203,13 +189,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 18
+    weight: 17
     region: content
     settings:
       match_operator: CONTAINS
@@ -218,8 +204,9 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_summary: true
