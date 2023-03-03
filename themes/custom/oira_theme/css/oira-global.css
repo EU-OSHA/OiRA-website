@@ -1,22 +1,25 @@
 @charset "UTF-8";
 /* Icons */
-@font-face {
-  font-family: "Glyphicons Halflings";
-  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot");
-  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff") format("woff"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+/*@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot');
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
-  font: normal normal 16px/1 "Glyphicons Halflings";
+  font: normal normal 16px/1 'Glyphicons Halflings';
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-right: 4px;
-}
-
+}*/
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: myriad-pro, sans-serif;
 }
 /* Font colours NEW */
 /* Background colours new */
@@ -99,7 +102,6 @@ input[type=search] {
   border: none;
 }
 
-/* Font Family */
 /* Font-weights */
 div#sliding-popup {
   background: url(../images/bg-cookies.png) repeat;
@@ -221,15 +223,14 @@ button:focus {
 /*Headings*/
 h1, h2, h3 {
   color: #58585a;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 2.5rem;
-  color: #786586;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.15rem;
+  color: #10b2e4;
 }
 
 @media only screen and (max-width: 480px) {
@@ -258,7 +259,6 @@ h2 a:hover {
 .node--type-article h2 {
   margin-top: 22px;
   margin-bottom: 11px;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-size: 2rem;
 }
 
@@ -936,7 +936,6 @@ table tr td {
   cursor: pointer;
   padding: 10px 0;
   margin-bottom: 5px;
-  font-family: "Oswald";
   color: #FFF;
   font-size: 1.2rem;
   font-weight: normal;
@@ -946,7 +945,6 @@ table tr td {
 }
 .sidebar_first aside h2:after {
   content: "";
-  font-family: "Glyphicons Halflings";
   display: inline-block;
   margin-left: 10px;
   line-height: 1;
@@ -968,12 +966,10 @@ table tr td {
   cursor: pointer;
 }
 .sidebar_first h2.clicked:after {
-  font-family: "Glyphicons Halflings";
   content: "";
 }
 .sidebar_first h2:after {
   content: "";
-  font-family: "Glyphicons Halflings";
   margin-left: 10px;
 }
 .sidebar_first .facets-widget-checkbox {
@@ -987,6 +983,7 @@ table tr td {
   content: "";
 }
 
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 @media screen {
   .slick-dots {
     display: flex;
@@ -1006,6 +1003,13 @@ table tr td {
   }
   .slick-dots li.slick-active button {
     background: #10b3e4;
+  }
+
+  .slick-list {
+    cursor: not-allowed;
+  }
+  .slick-list .slick-track {
+    pointer-events: none;
   }
 
   .slick-list, .slick-track {
@@ -1142,7 +1146,6 @@ table tr td {
   margin-top: -5px;
 }
 .view-partner-profile .partner-section-title {
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #786586;
   margin: 20px 0 11px;
   font-size: 2rem;
@@ -1235,7 +1238,7 @@ table tr td {
 .user-pass .btn.btn-primary:before {
   display: inline-block;
   margin: 0 5px 0 0;
-  font-family: "Glyphicons Halflings";
+  font-family: myriad-pro, sans-serif;
   content: "";
 }
 .user-login-form .btn.btn-primary:hover,
@@ -1347,10 +1350,14 @@ table tr td {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
   }
+  .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes a {
+    pointer-events: none;
+  }
   .page-view-frontpage .home-intro .view-id-home_page_banners .view-content .home-boxes h2 {
     background: transparent;
     color: #FFF;
     position: absolute;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 1.25rem;
     font-style: normal;
@@ -1375,6 +1382,7 @@ table tr td {
     z-index: 999;
     transition: 0.8s;
     display: none;
+    font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 1rem;
     font-style: normal;
@@ -1423,7 +1431,6 @@ table tr td {
   .page-view-frontpage .content-oira-tools .more-link, .page-view-frontpage .content-oira-partners .more-link {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0px 15px;
     cursor: not-allowed;
   }
   .page-view-frontpage .content-oira-tools .more-link a, .page-view-frontpage .content-oira-partners .more-link a {
@@ -1480,6 +1487,12 @@ table tr td {
     row-gap: 1rem;
     text-align: center;
   }
+  .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-field-profile-home-page-image, .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-title {
+    cursor: not-allowed;
+  }
+  .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-field-profile-home-page-image > .field-content, .page-view-frontpage .content-oira-profiles .col-12.col-md-4 .views-field-title > .field-content {
+    pointer-events: none;
+  }
   .page-view-frontpage .content-oira-profiles .col-12.col-md-4 img {
     max-height: 200px;
     max-width: 200px;
@@ -1513,11 +1526,28 @@ table tr td {
   .page-view-frontpage .content-oira-profiles .view-profiles-home-page .view-content .views-row .views-field-body {
     color: #58585A;
   }
+  .page-view-frontpage .content-oira-tools {
+    /**Intro text**/
+    /**End comment - intro text**/
+  }
   .page-view-frontpage .content-oira-tools h2 {
     font-size: 2.1rem;
     font-weight: bold;
     color: #10b2e4;
     padding-left: 15px;
+  }
+  .page-view-frontpage .content-oira-tools article {
+    padding: 0px 15px;
+    margin: 1rem 0rem 1.5rem;
+  }
+  .page-view-frontpage .content-oira-tools article h2.node__title {
+    display: none;
+  }
+  .page-view-frontpage .content-oira-tools article .field--name-body {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-left: 0px;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row {
     margin: 1rem 0rem;
@@ -1535,6 +1565,7 @@ table tr td {
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container h3 {
     cursor: not-allowed;
+    font-size: 1.31rem;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container h3 a {
     pointer-events: none;
@@ -1550,7 +1581,7 @@ table tr td {
     color: #58585a;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .field--name-field-country {
     order: 2;
@@ -1560,7 +1591,6 @@ table tr td {
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .language p {
     margin-bottom: 0px;
-    font-size: 0.9rem;
   }
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .see-more, .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .see-less {
     width: fit-content;
@@ -1573,7 +1603,6 @@ table tr td {
     color: #10b2e4;
     font-weight: normal;
     font-style: normal;
-    font-size: 0.9rem;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -1597,7 +1626,7 @@ table tr td {
     color: #58585A;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration-color: #58585A;
     pointer-events: none;
   }
@@ -1645,6 +1674,9 @@ table tr td {
     font-size: 2.1rem;
     font-weight: bold;
     color: #10b2e4;
+  }
+  .page-view-frontpage .content-oira-partners .more-link {
+    padding: 0px 15px;
   }
   .page-view-frontpage .content-latest-news h2 {
     font-size: 2.1rem;
@@ -1909,6 +1941,9 @@ table tr td {
   .page-view-frontpage .content-oira-tools h2 {
     padding-left: 0px;
   }
+  .page-view-frontpage .content-oira-tools article {
+    padding: 0px;
+  }
   .page-view-frontpage .content-oira-tools .container, .page-view-frontpage .content-oira-tools .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-view-frontpage .content-oira-tools .block-system-main-block, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-view-frontpage .content-oira-tools p, .page-view-frontpage .content-oira-tools .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-view-frontpage .content-oira-tools .field-name-node-title {
     padding-left: 0px;
     padding-right: 0px;
@@ -1919,21 +1954,20 @@ table tr td {
   }
 }
 @media screen {
-  .page-view-news .view-display-id-oshnews_list .view-header h1.page-header {
+  .page-view-news .view-display-id-oshnews_list h1.page-header {
     color: #10b2e4;
-    font-weight: 500;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row {
     margin-left: 0;
     margin-right: 0;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .col-3 {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .col-3 {
     padding-left: 0;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row {
     width: 100%;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1944,7 +1978,7 @@ table tr td {
     background-position: 0% 100%;
     background-size: 40px;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row img {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row img {
     object-fit: cover;
     width: 220px;
     height: 220px;
@@ -1952,7 +1986,7 @@ table tr td {
     min-height: 220px;
     margin-bottom: 0px;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news__image {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news__image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1960,40 +1994,40 @@ table tr td {
     max-width: 100%;
     width: 100%;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content {
     display: grid;
     grid-template-rows: 25px auto 1fr 25px;
     gap: 0.5rem;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content.col-9 {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content.col-9 {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content .datetime {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content .datetime {
     color: #58585A;
     font-weight: bold;
     font-size: 1rem;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content h2 a {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content h2 a {
     color: #10b2e4;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content h2 a:hover {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content h2 a:hover {
     text-decoration: underline;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content p {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content p {
     color: #58585A;
     font-size: 1.1em;
     line-height: 24px;
     margin-bottom: 0px;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content span.see-more {
     place-self: end;
     display: grid;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more a {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content span.see-more a {
     place-self: end;
     cursor: pointer;
     text-decoration: none;
@@ -2008,19 +2042,19 @@ table tr td {
     background-position: 100% 47%;
     background-size: 17px;
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more a:before {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content span.see-more a:before {
     content: "";
   }
-  .page-view-news .view-display-id-oshnews_list > .view-content.row .views-row .row .news--content span.see-more a:hover {
+  .page-view-news .view-display-id-oshnews_list h1.page-header > .view-content.row .views-row .row .news--content span.see-more a:hover {
     text-decoration: underline;
   }
-  .page-view-news .view-footer {
+  .page-view-news .view-display-id-oshnews_list .view-footer {
     text-align: end;
     font-size: 0.9rem;
     color: #10b2e4;
     margin: -52px 0px 1rem 2rem;
   }
-  .page-view-news footer {
+  .page-view-news .view-display-id-oshnews_list footer {
     margin-top: 2rem;
   }
 }
@@ -2134,6 +2168,7 @@ table tr td {
     justify-content: start;
   }
 }
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 @media screen {
   body.page-view-promotional-resources-search .field--name-field-article-header {
     padding: 0px 15px;
@@ -2147,12 +2182,19 @@ table tr td {
     display: inline-block;
     margin-left: 10px;
     width: 180px;
-    height: 52px;
-    background: transparent;
+    height: 40px;
+    background-color: transparent;
+    background-image: url("../images/arrow-down-sm-dark-purple.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 11px;
     border: 1px solid #967EA7;
     border-radius: 8px;
     font-size: 1rem;
-    color: #B1B3B4;
+    color: #58585A;
+    /**Remove icon**/
+    -webkit-appearance: none;
+    appearance: none;
   }
   body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .form-type-textfield, body.page-view-promotional-resources-search .oira-section .block-views-exposed-filter-blockpromotional-resources-search-page-1 .form-row .form-item-search-api-fulltext {
     display: none;
@@ -2230,6 +2272,10 @@ table tr td {
     align-items: center;
     column-gap: 1.5rem;
     margin: 1rem 0px;
+    cursor: not-allowed;
+  }
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper .partner-inner-group--img, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper .partner-inner-group--data {
+    pointer-events: none;
   }
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper .partner-inner-group--img img {
     min-height: 64px;
@@ -2245,6 +2291,7 @@ table tr td {
 @media screen {
   body.node--type-article .left-menu h2, body.node--type-article .right-menu h2 {
     font-size: 1.3rem;
+    font-weight: normal;
     color: #967EA7;
   }
   body.node--type-article .left-menu aside > nav ul .nav-item {
@@ -2266,10 +2313,6 @@ table tr td {
   body.node--type-article div#main #block-oira-theme-page-title .container.fix-paddings, body.node--type-article div#main #block-oira-theme-page-title .node--type-collaboration-document .fix-paddings.block-system-main-block, .node--type-collaboration-document body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.block-system-main-block, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .field-name-body p.fix-paddings, .page-view-faqs-oira .field--name-field-article-header .field-name-body body.node--type-article div#main #block-oira-theme-page-title p.fix-paddings, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .fix-paddings.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.field-name-node-title {
     padding-left: 0px;
     padding-right: 0px;
-  }
-  body.node--type-article div#main #block-oira-theme-page-title .container.fix-paddings h1 span, body.node--type-article div#main #block-oira-theme-page-title .node--type-collaboration-document .fix-paddings.block-system-main-block h1 span, .node--type-collaboration-document body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.block-system-main-block h1 span, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .field-name-body p.fix-paddings h1 span, .page-view-faqs-oira .field--name-field-article-header .field-name-body body.node--type-article div#main #block-oira-theme-page-title p.fix-paddings h1 span, body.node--type-article div#main #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .fix-paddings.field-name-node-title h1 span, .page-view-faqs-oira .field--name-field-article-header body.node--type-article div#main #block-oira-theme-page-title .fix-paddings.field-name-node-title h1 span {
-    color: #10b2e4;
-    font-weight: 500;
   }
   body.node--type-article div#main article {
     font-size: 0.9rem;
@@ -2293,6 +2336,13 @@ table tr td {
   body.node--type-article div#main article a:hover {
     color: #000000;
     text-decoration: none;
+  }
+  body.node--type-article div#main .menu-pager {
+    margin: 1.5rem 0rem;
+  }
+  body.node--type-article div#main .menu-pager ul {
+    list-style: none;
+    padding-left: 0px;
   }
   body.node--type-article div#main .menu-pager ul .menu-pager-previous a {
     place-self: end;
@@ -2379,8 +2429,13 @@ table tr td {
     -webkit-filter: brightness(0) invert(1);
   }
 
-  /**Hide the first element of the bottom menu**/
-  body.node--type-article.what-risk-assessment div#main .menu-pager ul .menu-pager-previous {
+  /**Hide the first element of the risk assessment menu**/
+  body.node--type-article.what-risk-assessment .menu-pager-previous {
+    display: none;
+  }
+
+  /**Hide the last element of the risk assessment menu**/
+  body.node--type-article.legislation .menu-pager-next {
     display: none;
   }
 }
@@ -2395,7 +2450,7 @@ table tr td {
     margin-top: -2rem;
     margin-bottom: 1rem;
   }
-  body.what-is-new .datatime {
+  body.what-is-new time.datatime {
     color: #786586;
     font-weight: bold;
   }
@@ -2405,16 +2460,12 @@ table tr td {
     color: #10b2e4;
   }
 }
-/* Common elements */
-/*a{
-  color: $text-color-purple;
-  font-weight: bold;
-  font-style: italic;
-  &:hover{
-    color: $text-color-purple;
-    text-decoration: underline;
+@media only screen and (min-width: 1440px) {
+  body.what-is-new .container, body.what-is-new .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document body.what-is-new .block-system-main-block, body.what-is-new .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body body.what-is-new p, body.what-is-new .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header body.what-is-new .field-name-node-title {
+    max-width: 1140px;
   }
-}*/
+}
+/* Common elements */
 fix-paddings {
   padding-left: 0;
   padding-right: 0;
@@ -2471,12 +2522,7 @@ fix-paddings {
   height: auto;
 }
 
-.menu-pager {
-  padding-bottom: 3rem;
-}
-
 .contextual-links a, .toolbar a {
-  font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -2699,7 +2745,6 @@ select.custom-select {
   font-size: 1.2rem;
   display: block;
   content: "";
-  font-family: "Glyphicons Halflings";
 }
 .page-view-promotional-resources-search .sidebar_first fieldset:not(.form-item-search-api-fulltext) {
   display: none;
@@ -2836,7 +2881,6 @@ select.custom-select {
 }
 .page-view-oira-ws #sidebar_first aside #edit-submit-oira-ws--2:before {
   content: "";
-  font-family: "Glyphicons Halflings";
   margin-right: 30px;
 }
 .page-view-oira-ws #sidebar_first aside #edit-reset--2 {
@@ -2906,7 +2950,6 @@ select.custom-select {
   font-style: normal;
 }
 .page-view-oira-ws .content-view-tools-view .group-right > div:nth-child(1) a:before {
-  font-family: "Glyphicons Halflings";
   content: "";
   color: #10b2e4;
   display: block;
@@ -2929,7 +2972,6 @@ select.custom-select {
   border-bottom: 0;
   font-weight: 400;
   font-size: 1.75rem;
-  font-family: "Roboto", "Helvetica", Arial, sans-serif;
   padding-right: 35px;
 }
 .page-view-oira-ws .content-view-tools-view .group-right h2:hover {
@@ -2943,7 +2985,6 @@ select.custom-select {
   top: 0;
   margin-top: 3px;
   content: "";
-  font-family: "Glyphicons Halflings";
   font-size: 1.5rem;
 }
 
@@ -3044,7 +3085,6 @@ select.custom-select {
 }
 .page-view-faqs-oira .field--name-field-article-header .field-name-body p {
   margin: 0 auto !important;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-size: 1.375rem;
   font-weight: 400;
 }
@@ -3060,7 +3100,6 @@ select.custom-select {
   background: #dfd8e4;
 }
 .view-id-faqs_oira .views-accordion-header {
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   background: transparent;
   color: #786586;
   font-size: 1.3rem;
@@ -3083,14 +3122,12 @@ select.custom-select {
 }
 .view-id-faqs_oira .views-row .views-row span.field-content:after {
   content: "";
-  font-family: "Glyphicons Halflings";
   padding-left: 10px;
   display: block;
   float: right;
 }
 .view-id-faqs_oira .views-row .views-row .ui-state-active span.field-content:after {
   content: "";
-  font-family: "Glyphicons Halflings";
   padding-left: 10px;
   display: block;
   float: right;
@@ -3140,7 +3177,6 @@ select.custom-select {
   border-bottom: 2px solid #786586;
   margin-bottom: 20px;
   padding-bottom: 5px;
-  font-family: "Oswald";
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
@@ -3210,7 +3246,6 @@ select.custom-select {
   color: #FFF;
   border-bottom: 2px solid #FFF;
   font-size: 2.187rem;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-weight: 400;
 }
 .block-views-blocknews-block-1 h2:after {
@@ -3308,7 +3343,6 @@ select.custom-select {
   color: #967ea7;
   border-bottom: 2px solid #967ea7;
   font-size: 2.187rem;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-weight: 400;
 }
 .block-views-blocktools-block-2 h2:after {
@@ -3408,7 +3442,6 @@ select.custom-select {
   display: inline-block;
   margin-left: 10px;
   content: "";
-  font-family: "Glyphicons Halflings";
   font-style: normal;
   font-weight: 400;
   color: #10b2e4;
@@ -3451,7 +3484,6 @@ select.custom-select {
 }
 .block-views-blocktools-block-2 .views-col .more-link.expanded:before {
   content: "";
-  font-family: "Glyphicons Halflings";
   font-size: 1.2rem;
   line-height: 0;
   margin-right: 0;
@@ -3515,7 +3547,6 @@ select.custom-select {
 }
 .page-node-402 .esener-item .summary,
 .facts-and-figures .esener-item .summary {
-  font-family: "Oswald";
   border-bottom: 2px solid #786586;
   padding-bottom: 17px;
   padding-top: 5px;
@@ -3792,7 +3823,6 @@ select.custom-select {
 .block-views-blockoshwiki-featured-articles-oshwiki-related-articles h2,
 .block-views-blocknews-block-2 h2 {
   margin: 0 auto 15px;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #FFF;
   font-size: 2rem;
 }
@@ -3864,7 +3894,6 @@ select.custom-select {
   max-width: 1140px;
   padding-bottom: 15px;
   margin: 0 auto 15px;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #FFF;
   font-size: 2rem;
   border-bottom: 2px solid #ffffff;
@@ -3920,7 +3949,6 @@ select.custom-select {
   margin-bottom: 22px;
   font-size: 2.1875rem;
   /*** 35px ***/
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
 }
 .block-views-blockadditional-resources-block h2:after {
   content: "";
@@ -3938,7 +3966,6 @@ select.custom-select {
   font-size: 1.375rem;
   font-weight: normal;
   margin-bottom: 15px;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
 }
 .block-views-blockadditional-resources-block .view-header:after {
   content: "";
@@ -3983,7 +4010,6 @@ select.custom-select {
   width: 24px;
   height: 24px;
   font-size: 1rem;
-  font-family: "Glyphicons Halflings";
   font-style: normal;
   color: #10b2e4;
 }
@@ -4073,7 +4099,6 @@ select.custom-select {
 }
 .path-search .sidebar_first #edit-submit-search--2:before {
   content: "";
-  font-family: "Glyphicons Halflings";
   margin-right: 30px;
   font-size: 1.1875rem;
 }
@@ -4187,7 +4212,6 @@ select.custom-select {
   margin-left: 10px;
   display: inline-block;
   content: "";
-  font-family: "Glyphicons Halflings";
   color: #10b2e4;
 }
 .path-search .search-results__result .expand {
@@ -4238,7 +4262,6 @@ select.custom-select {
 .path-search .search-results__result .result-item.type-tools .more-link.clicked:before,
 .path-search .search-results__result .result-item.type-promo .more-link.clicked:before {
   content: "";
-  font-family: "Glyphicons Halflings";
   font-size: 1.2rem;
   font-style: normal;
   color: #10b2e4;
@@ -4506,7 +4529,6 @@ select.custom-select {
   font-style: 1.1875rem;
   line-height: 1.1;
   padding-bottom: 5px;
-  font-family: "Oswald";
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -4664,7 +4686,6 @@ select.custom-select {
 }
 .view-country-partner-content .title h3 {
   margin: 0;
-  font-family: "Roboto", "Helvetica", Arial, sans-serif;
   font-weight: 700;
   color: #58585a;
   border-bottom: none;
@@ -4682,7 +4703,6 @@ select.custom-select {
   margin-left: 10px;
   content: "";
   display: inline-block;
-  font-family: "Glyphicons Halflings";
   color: #10b2e4;
 }
 .view-country-partner-content .tags {
@@ -4760,7 +4780,6 @@ select.custom-select {
 }
 .view-country-partner-content .more-link.clicked:before {
   content: "";
-  font-family: "Glyphicons Halflings";
   font-size: 1.2rem;
   font-style: normal;
   line-height: 0;
@@ -4885,7 +4904,6 @@ select.custom-select {
   margin: 0 0 11px;
   padding: 0;
   color: #58585a;
-  font-family: "Roboto", "Helvetica", Arial, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.2;
@@ -5029,7 +5047,6 @@ select.custom-select {
 /*** Header Nodes in View Pages ***/
 .page-view-partners-list .field--name-field-article-header .field-name-body p {
   font-size: 1rem;
-  font-family: "Roboto", "Helvetica", Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -5050,7 +5067,6 @@ select.custom-select {
 }
 .pop .magnifier:before {
   content: "";
-  font-family: "Glyphicons Halflings";
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -5067,7 +5083,6 @@ select.custom-select {
   color: #786586;
 }
 .page-node-67 .field--name-field-summary p {
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 1.45;
@@ -5215,7 +5230,6 @@ select.custom-select {
   padding: 0 15px;
 }
 .contact-us .node--type-article p {
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-size: 1.375rem;
   line-height: 1.45;
 }
@@ -5346,7 +5360,6 @@ select.custom-select {
   display: inline-block;
   width: 20px;
   height: 20px;
-  font-family: "Glyphicons Halflings";
   line-height: 20px;
   text-align: center;
   background: #10b3e4;
@@ -5367,14 +5380,12 @@ select.custom-select {
   align-items: center;
 }
 .private-zone.page-title-container .page-header.h1 {
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #786586;
   font-size: 3.5rem;
   font-weight: 400;
 }
 
 body[class*=private-zone-] .page-header.h1 {
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #786586;
   font-size: 3.5rem;
   font-weight: 400;
@@ -5432,7 +5443,6 @@ body[class*=private-zone-] .page-header.h1 {
   padding-bottom: 0px;
   margin-top: 22px;
   margin-bottom: 15px;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-size: 2.125rem;
 }
 .view-eu-osha-files .view-content.row {
@@ -5473,7 +5483,6 @@ body[class*=private-zone-] .page-header.h1 {
   display: block;
   margin: 0 0 10px;
   color: #58585a;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-weight: normal;
   font-size: 2rem;
   font-style: normal;
@@ -5543,7 +5552,6 @@ body[class*=private-zone-] .page-header.h1 {
   margin-bottom: 11px;
   font-size: 2.125rem;
   color: #786586;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
 }
 .page-view-private-images.private-zone-collaboration-area-private-images .block-system.block-system-main-block .view-private-images .view-content.row {
   padding: 0 15px;
@@ -5715,7 +5723,6 @@ body[class*=private-zone-] .page-header.h1 {
   display: none;
 }
 .section.oira-section > .results-for .searched-text {
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-size: 2.6rem;
   color: #786586;
 }
@@ -5735,7 +5742,6 @@ body[class*=private-zone-] .page-header.h1 {
   display: none;
   margin-bottom: 30px;
   font-size: 1.4rem;
-  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #58585a;
 }
 .page-node-67 .block-page-title-block + .field--name-field-summary-article {
@@ -5754,7 +5760,6 @@ body[class*=private-zone-] .page-header.h1 {
   content: "";
   margin-right: 8px;
   display: inline-block;
-  font-family: "Glyphicons Halflings";
   font-size: 0.9rem;
   top: 1px;
   position: relative;
@@ -5930,9 +5935,6 @@ body[class*=private-zone-] .page-header.h1 {
 .top-header-content .region-top-header-logos .field--name-field-image > .field__item:last-child img {
   margin: 0;
   object-fit: contain;
-}
-.top-header-content .region-top-header-logos .field--name-field-image > .field__item a {
-  cursor: default;
 }
 .top-header-content .region-medium-header-logos {
   margin: 0 auto;
@@ -6127,11 +6129,8 @@ img.language-icon {
 /*** Stiky header ***/
 body {
   padding-top: 189px;
-}
-
-body {
   position: relative;
-  font-family: "Roboto", sans-serif;
+  font-family: myriad-pro, sans-serif;
   color: #58585a;
   font-size: 16px;
   min-height: 100vh;
@@ -6252,17 +6251,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
     padding: 15px 0px 15px 0px;
   }
   .top-header-content .header-blocks {
-    display: block;
-    margin-left: 45px;
     /* Social media */
-  }
-  .top-header-content .header-blocks .region-header-form {
-    display: grid;
-    grid-template-areas: "printsize socialmedia" "search search" "lang lang";
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize {
     display: block;
-    grid-area: printsize;
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary {
     display: flex;
@@ -6367,6 +6359,8 @@ body.toolbar-fixed.toolbar-tray-open #header {
     background-position: 97% 50% !important;
     color: #58585A;
     width: 310px !important;
+    /**Add margi right for the grid layout**/
+    margin-right: -168px;
     font-size: 0.8rem;
     font-weight: 400;
     -webkit-appearance: none;
@@ -6532,7 +6526,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   text-align: right;
   display: block;
   content: "";
-  font-family: "Glyphicons Halflings";
   font-size: 1.2rem;
   line-height: 1;
 }
@@ -6612,7 +6605,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 
 #navbar-main {
-  font-family: "Oswald", sans-serif;
   background-color: #10b3e4;
   color: #FFF;
 }
@@ -6964,7 +6956,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   cursor: default;
 }
 .node-form #edit-field-image-wrapper small.description .help-icon:before {
-  font-family: "Glyphicons Halflings";
   content: "";
   display: inline-block;
   margin: 0 3px 0 0;
@@ -7225,7 +7216,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .toggle-sidebar:before {
     display: block;
     content: "";
-    font-family: "Glyphicons Halflings";
     font-size: 1.3rem;
     color: #FFF;
   }
@@ -7246,7 +7236,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
     cursor: pointer;
     display: block;
     content: "";
-    font-family: "Glyphicons Halflings";
     font-size: 1.2em;
     color: #FFF;
     float: right;
@@ -7552,7 +7541,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .toggle-sidebar:before {
     display: block;
     content: "";
-    font-family: "Glyphicons Halflings";
     font-size: 1.3rem;
     color: #FFF;
   }
@@ -7838,7 +7826,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .view-partner-intro .partner__address .field__label-widget:after,
 .view-partner-intro .partner__socialprofile .field__label-widget:after {
     content: "";
-    font-family: "Glyphicons Halflings";
     padding-left: 10px;
     color: #10b2e4;
     vertical-align: middle;
