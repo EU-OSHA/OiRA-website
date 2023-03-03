@@ -1,0 +1,26 @@
+uuid: a5a1d4d9-d9a1-4139-8a8c-eefbfd867ed3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: home_page_banners
+label: 'Home page banners'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 1
+  max_size: 8
+  act_as_queue: false
+  reverse: false
