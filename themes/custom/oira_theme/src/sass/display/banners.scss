@@ -1,9 +1,7 @@
 /**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 
 @media screen{
-
   .page-view-frontpage{
-
     /**Home-banner**/
     .home-intro {
       display: flex;
@@ -25,11 +23,15 @@
             left: 15px solid transparent;
             right: 15px solid transparent;
           }
+          a{
+            pointer-events: none;
+          }
           h2{
             background: transparent;
             color: $text-color-white;
             position: absolute;
             font: {
+              family: 'Roboto', sans-serif;
               weight: bold;
               size: 1.25rem;
               style: normal;
@@ -60,6 +62,7 @@
             transition: 0.8s;
             display: none;
             font: {
+              family: 'Roboto', sans-serif;
               weight: normal;
               size: 1rem;
               style: normal;
@@ -115,17 +118,16 @@
     }
     /**End comment - home-banner**/
     .content-oira-tools, .content-oira-partners{
-    .more-link{
-      display: flex;
-      flex-direction: row-reverse;
-      padding: 0px 15px;
-      cursor: not-allowed;
-      a{
-        pointer-events: none;
+      .more-link{
+        display: flex;
+        flex-direction: row-reverse;
+        cursor: not-allowed;
+        a{
+          pointer-events: none;
+        }
+        @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
       }
-      @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
     }
-  }
     .content-oira-profiles{
       h2{
         font: {
@@ -157,6 +159,12 @@
         flex-direction: column;
         row-gap: 1rem;
         text-align: center;
+        .views-field-field-profile-home-page-image, .views-field-title{
+          cursor: not-allowed;
+          & > .field-content{
+            pointer-events: none;
+          }
+        }
         img{
           max-height: 200px;
           max-width: 200px;
@@ -199,7 +207,6 @@
       }
 
     }
-
     .content-oira-tools{
       h2 {
           font: {
@@ -209,6 +216,23 @@
           color: $text-color-blue-light;
           padding-left: 15px;
       }
+      /**Intro text**/
+      article{
+        padding: 0px 15px;
+        margin: 1rem 0rem 1.5rem;
+        h2.node__title{
+          display: none;
+        }
+        .field--name-body{
+          font: {
+            style: normal;
+            weight: normal;
+            size: 1rem;
+          }
+          margin-left: 0px;
+        }
+      }
+      /**End comment - intro text**/
       .view-tools{
         .view-content.row{
           margin: 1rem 0rem;
@@ -224,6 +248,7 @@
                 background: $bg-light-purple;
                 h3{
                   cursor: not-allowed;
+                  font-size: 1.31rem;
                   a{
                     pointer-events: none;
                     order: 1;
@@ -239,7 +264,7 @@
                     font: {
                       style: normal;
                       weight: normal;
-                      size: 0.9rem;
+                      size: 1rem;
                     }
                   }
                 }
@@ -250,7 +275,6 @@
                   order: 3;
                   p{
                     margin-bottom: 0px;
-                    font-size: 0.9rem;
                   }
                 }
 
@@ -268,7 +292,6 @@
                   font : {
                     weight: normal;
                     style: normal;
-                    size: 0.9rem;
                   }
                   background: {
                     color: transparent;
@@ -298,7 +321,7 @@
                       font: {
                         style: normal;
                         weight: normal;
-                        size: 0.9rem;
+                        size: 1rem;
                       }
                       text-decoration-color: $text-grey;
                       pointer-events: none;
@@ -363,6 +386,9 @@
           weight: bold;
         }
         color: $text-color-blue-light;
+      }
+      .more-link{
+        padding: 0px 15px;
       }
     }
 
@@ -710,6 +736,9 @@
       .content-oira-tools{
         h2{
           padding-left: 0px;
+        }
+        article{
+          padding: 0px;
         }
         .container{
           padding: {

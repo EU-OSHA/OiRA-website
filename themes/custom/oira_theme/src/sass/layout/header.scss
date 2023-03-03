@@ -85,9 +85,6 @@
             object-fit: contain;
           }
         }
-        a {
-          cursor: default;
-        }
       }
     }
   }
@@ -305,11 +302,8 @@ img.language-icon {
 /*** Stiky header ***/
 body {
   padding-top: 189px;
-}
-
-body{
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: myriad-pro, sans-serif;
   color: $text-color-black;
   font-size: 16px;
   min-height: 100vh;
@@ -496,18 +490,10 @@ body.toolbar-fixed {
       }
     }
     .header-blocks {
-      display: block;
-      margin-left: 45px;
       /* Social media */
       .region-header-form {
-        display: grid;
-        grid-template-areas:
-            "printsize socialmedia"
-            "search search"
-            "lang lang";
         #block-headerprintandfontsize{
           display: block;
-          grid-area: printsize;
           .field--type-text-with-summary{
             display: flex;
             flex-direction: row;
@@ -623,6 +609,8 @@ body.toolbar-fixed {
                 background-position: 97% 50% !important;
                 color: $text-grey;
                 width: 310px !important;
+                /**Add margi right for the grid layout**/
+                margin-right: -168px;
                 font-size: 0.8rem;
                 font-weight: $font-weight-normal;
                 -webkit-appearance: none;

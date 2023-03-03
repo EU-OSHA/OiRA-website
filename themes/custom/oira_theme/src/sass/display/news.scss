@@ -1,12 +1,8 @@
 @media screen{
   .page-view-news{
     .view-display-id-oshnews_list{
-      .view-header{
-        h1.page-header{
-          color: $text-color-blue-light;
-          font-weight: 500;
-        }
-      }
+      h1.page-header{
+        color: $text-color-blue-light;
       & > .view-content.row{
         margin-left: 0;
         margin-right: 0;

@@ -1,3 +1,5 @@
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
+
 @media screen{
   .slick-dots{
     display: flex;
@@ -18,6 +20,12 @@
       button{
         background: $bg-color-blue-light;
       }
+    }
+  }
+  .slick-list{
+    cursor: not-allowed;
+    .slick-track{
+      pointer-events: none;
     }
   }
   .slick-list,.slick-track{

@@ -19,6 +19,8 @@ dependencies:
     - image.style.views_thumbail
     - node.type.practical_tool
     - node.type.wiki_page
+  content:
+    - 'node:page:40c8fcca-bf72-48aa-8ea3-04cd8a95e9d3'
   module:
     - datetime
     - entityqueue
@@ -2083,6 +2085,7 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        header: false
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
@@ -2128,6 +2131,20 @@ display:
       use_more_text: 'View all the tools'
       link_display: custom_url
       link_url: /oira-tools
+      header:
+        entity_node:
+          id: entity_node
+          table: views
+          field: entity_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: false
+          target: 40c8fcca-bf72-48aa-8ea3-04cd8a95e9d3
+          view_mode: default
+          tokenize: true
+          bypass_access: false
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
     cache_metadata:

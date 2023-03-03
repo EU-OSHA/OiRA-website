@@ -1,3 +1,4 @@
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
 @media screen{
   body.page-view-promotional-resources-search{
     .field--name-field-article-header{
@@ -18,12 +19,21 @@
               display: inline-block;
               margin-left: 10px;
               width: 180px;
-              height: 52px;
-              background: transparent;
+              height: 40px;
+              background: {
+                color: transparent;
+                image: url("../images/arrow-down-sm-dark-purple.png");
+                repeat: no-repeat;
+                position: 90% 50%;
+                size: 11px;
+              }
               border: 1px solid $bg-dark-purple;
               border-radius: 8px;
               font-size: 1rem;
-              color: $text-light-grey;
+              color: $text-grey;
+              /**Remove icon**/
+              -webkit-appearance: none;
+              appearance: none;
             }
           }
           .form-type-textfield, .form-item-search-api-fulltext {
@@ -117,6 +127,10 @@
                   align-items: center;
                   column-gap: 1.5rem;
                   margin: 1rem 0px;
+                  cursor: not-allowed;
+                  .partner-inner-group--img, .partner-inner-group--data{
+                    pointer-events: none;
+                  }
                   .partner-inner-group--img img{
                     min-height: 64px;
                     max-height: 64px;

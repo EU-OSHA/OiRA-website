@@ -2,15 +2,16 @@
 
 h1, h2, h3{
   color: $text-color-black;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h1 {
-  font-family: 'Oswald',sans-serif;
-  font-size: 2.5rem;
-  color: $text-color-purple;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  font: {
+    weight: 700;
+    style: normal;
+    size: 2.15rem;
+  }
+  color: $text-color-blue-light;
 }
 
 @media only screen and (max-width : 480px) {
@@ -40,7 +41,6 @@ h2{
 .node--type-article h2 {
   margin-top: 22px;
   margin-bottom: 11px;
-  font-family: $font-family-oswald;
   font-size: 2rem;
 }
 

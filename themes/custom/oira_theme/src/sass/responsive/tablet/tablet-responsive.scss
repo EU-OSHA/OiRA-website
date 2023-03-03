@@ -118,7 +118,6 @@
     &:before {
       display: block;
       content: "\e003";
-      font-family: "Glyphicons Halflings";
       font-size: 1.3rem;
       color: $text-color-white;
     }
@@ -143,7 +142,6 @@
           cursor: pointer;
           display:block;
           content: "\e253";
-          font-family: "Glyphicons Halflings";
           font-size: 1.2em;
           color: $text-color-white;
           float: right;

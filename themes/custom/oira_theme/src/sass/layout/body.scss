@@ -1,15 +1,5 @@
 /* Common elements */
 
-/*a{
-  color: $text-color-purple;
-  font-weight: bold;
-  font-style: italic;
-  &:hover{
-    color: $text-color-purple;
-    text-decoration: underline;
-  }
-}*/
-
 fix-paddings{
   padding-left: 0;
   padding-right: 0;
@@ -74,13 +64,8 @@ fix-paddings{
   }
 }
 
-.menu-pager{
-  padding-bottom: 3rem;
-}
-
 .contextual-links, .toolbar{
   a{
-    font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
     font-weight: normal;
     font-style: normal;
     &:hover{
@@ -337,7 +322,6 @@ select.custom-select{
           font-size: 1.2rem;
           display: block;
           content: "\e003";
-          font-family: "Glyphicons Halflings";
         }
       }
     }
@@ -491,7 +475,6 @@ select.custom-select{
         background-color: rgba(0,0,0,0);
         &:before{
           content: "\e003";
-          font-family: "Glyphicons Halflings";
           margin-right: 30px;
         }
       }
@@ -567,7 +550,6 @@ select.custom-select{
           font-weight: normal;
           font-style: normal;
           &:before{
-            font-family: "Glyphicons Halflings";
             content: "\e164";
             color: $text-color-blue-light;
             display: block;
@@ -592,7 +574,6 @@ select.custom-select{
         border-bottom: 0;
         font-weight: $font-weight-normal;
         font-size: 1.75rem;
-        font-family: $font-family-roboto;
         padding-right: 35px;
         &:hover{
           color: $text-color-purple;
@@ -605,7 +586,6 @@ select.custom-select{
           top: 0;
           margin-top: 3px;
           content: "\e259";
-          font-family: 'Glyphicons Halflings';
           font-size: 1.5rem;
         }
       }
@@ -712,7 +692,6 @@ select.custom-select{
       p {
         @extend .container;
         margin: 0 auto !important;
-        font-family: $font-family-oswald;
         font-size: 1.375rem;
         font-weight: $font-weight-normal;
         @media(max-width: 1023px) {
@@ -728,7 +707,6 @@ select.custom-select{
   padding-bottom: 1.5rem;
   background: $bg-color-purple-light;
   .views-accordion-header{
-    font-family: $font-family-oswald;
     background: transparent;
     color: $text-color-purple;
     font-size: 1.3rem;
@@ -752,7 +730,6 @@ select.custom-select{
       span.field-content{
         &:after{
           content: "\e252";
-          font-family: "Glyphicons Halflings";
           padding-left: 10px;
           display: block;
           float: right;
@@ -762,7 +739,6 @@ select.custom-select{
         span.field-content{
           &:after{
             content: "\e253";
-            font-family: "Glyphicons Halflings";
             padding-left: 10px;
             display: block;
             float: right;
@@ -823,7 +799,6 @@ select.custom-select{
       border-bottom: 2px solid #786586;
       margin-bottom: 20px;
       padding-bottom: 5px;
-      font-family: "Oswald";
       font-style: normal;
       text-decoration: none;
       font-weight: 400;
@@ -891,7 +866,6 @@ select.custom-select{
     color: $text-color-white;
     border-bottom: 2px solid $text-color-white;
     font-size: 2.187rem;
-    font-family: $font-family-oswald;
     font-weight: $font-weight-normal;
     &:after {
       display: block;
@@ -993,7 +967,6 @@ select.custom-select{
     color: $text-color-purple-light;
     border-bottom: 2px solid $text-color-purple-light;
     font-size: 2.187rem;
-    font-family: $font-family-oswald;
     font-weight: $font-weight-normal;
     &:after {
       display: block;
@@ -1095,7 +1068,6 @@ select.custom-select{
       display: inline-block;
       margin-left: 10px;
       content: "\e164";
-      font-family: 'Glyphicons Halflings';
       font-style: normal;
       font-weight: $font-weight-normal;
       color: $text-color-blue-light;
@@ -1139,7 +1111,6 @@ select.custom-select{
       font-size: 0;
       &:before {
         content: "\e253";
-        font-family: "Glyphicons Halflings";
         font-size: 1.2rem;
         line-height: 0;
         margin-right: 0;
@@ -1197,7 +1168,6 @@ select.custom-select{
       line-height: 1.1;
     }
     .summary {
-      font-family: 'Oswald';
       border-bottom: 2px solid $bg-color-purple;
       padding-bottom: 17px;
       padding-top: 5px;
@@ -1469,7 +1439,6 @@ select.custom-select{
   }
   h2 {
     margin: 0 auto 15px;
-    font-family: $font-family-oswald;
     color: $text-color-white;
     font-size: 2rem;
     &:after {
@@ -1524,7 +1493,6 @@ select.custom-select{
     max-width: 1140px;
     padding-bottom: 15px;
     margin: 0 auto 15px;
-    font-family: $font-family-oswald;
     color: $text-color-white;
     font-size: 2rem;
     border-bottom: 2px solid #ffffff;
@@ -1574,7 +1542,6 @@ select.custom-select{
   h2 {
     margin-bottom: 22px;
     font-size: 2.1875rem; /*** 35px ***/
-    font-family: $font-family-oswald;
     &:after {
       content: "";
       background: url(../images/icon-resources.png) no-repeat;
@@ -1592,7 +1559,6 @@ select.custom-select{
     font-size: 1.375rem;
     font-weight: normal;
     margin-bottom: 15px;
-    font-family: $font-family-oswald;
     &:after {
       content: "";
       background: url(../images/icon-plus.png) no-repeat;
@@ -1640,7 +1606,6 @@ select.custom-select{
       width: 24px;
       height: 24px;
       font-size: 1rem;
-      font-family: 'Glyphicons Halflings';
       font-style: normal;
       color: $text-color-blue-light;
     }
@@ -1734,7 +1699,6 @@ select.custom-select{
       background-color: rgba(0, 0, 0, 0);
       &:before {
         content: "";
-        font-family: "Glyphicons Halflings";
         margin-right: 30px;
         font-size: 1.1875rem;
       }
@@ -1850,7 +1814,6 @@ select.custom-select{
           margin-left: 10px;
           display: inline-block;
           content: "\e164";
-          font-family: 'Glyphicons Halflings';
           color: $text-color-blue-light;
         }
       }
@@ -1901,7 +1864,6 @@ select.custom-select{
           }
           &:before {
             content: "\e253";
-            font-family: "Glyphicons Halflings";
             font-size: 1.2rem;
             font-style: normal;
             color: $text-color-blue-light;
@@ -2198,7 +2160,6 @@ select.custom-select{
     }
     line-height: 1.1;
     padding-bottom: 5px;
-    font-family: 'Oswald';
     width: 100%;
   }
 
@@ -2337,7 +2298,6 @@ select.custom-select{
   .title {
     h3 {
       margin: 0;
-      font-family: $font-family-roboto;
       font-weight: $font-weight-bold;
       color: $text-color-black;
       border-bottom: none;
@@ -2354,7 +2314,6 @@ select.custom-select{
         margin-left: 10px;
         content: "\e164";
         display: inline-block;
-        font-family: 'Glyphicons Halflings';
         color: $text-color-blue-light;
       }
     }
@@ -2432,7 +2391,6 @@ select.custom-select{
       font-size: 0;
       &:before {
         content: "\e253";
-        font-family: "Glyphicons Halflings";
         font-size: 1.2rem;
         font-style: normal;
         line-height: 0;
@@ -2525,7 +2483,6 @@ select.custom-select{
     margin: 0 0 11px;
     padding: 0;
     color: $text-color-black;
-    font-family: $font-family-roboto;
     font-weight: $font-weight-bold;
     font-size: 2rem;
     line-height: 1.2;
@@ -2668,7 +2625,6 @@ select.custom-select{
     .field-name-body {
       p {
         font-size: 1rem;
-        font-family: $font-family-roboto;
         font-weight: $font-weight-bold;
       }
     }
@@ -2690,7 +2646,6 @@ select.custom-select{
     overflow: hidden;
     &:before {
       content: "\e015";
-      font-family: "Glyphicons Halflings";
       font-size: 2rem;
       font-style: normal;
       font-weight: $font-weight-normal;
@@ -2710,7 +2665,6 @@ select.custom-select{
     color: $text-color-purple;
   }
   .field--name-field-summary p {
-    font-family: $font-family-oswald;
     font-size: 1.375rem;
     font-weight: $font-weight-normal;
     line-height: 1.45;
@@ -2876,7 +2830,6 @@ select.custom-select{
     margin: 0 auto;
     padding: 0 15px;
     p {
-      font-family: $font-family-oswald;
       font-size: 1.375rem;
       line-height: 1.45;
     }
@@ -3004,7 +2957,6 @@ select.custom-select{
       display: inline-block;
       width: 20px;
       height: 20px;
-      font-family: "Glyphicons Halflings";
       line-height: 20px;
       text-align: center;
       background: $bg-color-blue-light;
@@ -3041,7 +2993,6 @@ select.custom-select{
   justify-content: space-between;
   align-items: center;
   .page-header.h1 {
-    font-family: $font-family-oswald;
     color: $text-color-purple;
     font-size: 3.5rem;
     font-weight: 400;
@@ -3050,7 +3001,6 @@ select.custom-select{
 
 body[class*="private-zone-"] {
   .page-header.h1 {
-    font-family: $font-family-oswald;
     color: $text-color-purple;
     font-size: 3.5rem;
     font-weight: 400;
@@ -3114,7 +3064,6 @@ body[class*="private-zone-"] {
     padding-bottom: 0px;
     margin-top: 22px;
     margin-bottom: 15px;
-    font-family: $font-family-oswald;
     font-size: 2.125rem;
   }
   .view-content.row {
@@ -3159,7 +3108,6 @@ body[class*="private-zone-"] {
       display: block;
       margin: 0 0 10px;
       color: $text-color-black;
-      font-family: $font-family-oswald;
       font-weight: normal;
       font-size: 2rem;
       font-style: normal;
@@ -3228,7 +3176,6 @@ body[class*="private-zone-"] {
         margin-bottom: 11px;
         font-size: 2.125rem;
         color: $text-color-purple;
-        font-family: $font-family-oswald;
       }
     }
     .view-content.row {
@@ -3417,7 +3364,6 @@ body[class*="private-zone-"] {
     display: none;
   }
   .searched-text {
-    font-family: $font-family-oswald;
     font-size: 2.6rem;
     color: $text-color-purple;
   }
@@ -3441,7 +3387,6 @@ body[class*="private-zone-"] {
     display: none;
     margin-bottom: 30px;
     font-size: 1.4rem;
-    font-family: $font-family-oswald;
     color: $text-color-black;
   }
   .block-page-title-block + .field--name-field-summary-article {
@@ -3459,7 +3404,6 @@ body[class*="private-zone-"] {
       content: "\e033";
       margin-right: 8px;
       display: inline-block;
-      font-family: 'Glyphicons Halflings';
       font-size: 0.9rem;
       top: 1px;
       position: relative;

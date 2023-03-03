@@ -16,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Risk Assessment'
+  label: 'Risk assessment'
   label_display: visible
   provider: system
   level: 2
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/what-risk-assessment\r\n/roles-responsibilities"
+    pages: "/what-risk-assessment\r\n/purpose-risk-assessment\r\n/how-carry-out-risk-assessment\r\n/roles-responsibilities\r\n/legislation"

@@ -5,7 +5,7 @@
       margin-top: -2rem;
       margin-bottom: 1rem;
     }
-    .datatime{
+    time.datatime{
       color: $text-color-purple;
       font-weight: bold;
     }
@@ -13,6 +13,13 @@
       font-weight: bold;
       font-style: italic;
       color: $text-color-blue-light;
+    }
+  }
+  @media only screen and (min-width: 1440px){
+    body.what-is-new{
+      .container{
+        max-width: 1140px;
+      }
     }
   }
 }
