@@ -12,7 +12,7 @@ _core:
 id: oira_theme_page_title
 theme: oira_theme
 region: content
-weight: -32
+weight: -33
 provider: null
 plugin: page_title_block
 settings:

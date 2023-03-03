@@ -13,7 +13,7 @@ dependencies:
 id: yourprofile
 theme: oira_theme
 region: content
-weight: -25
+weight: -26
 provider: null
 plugin: 'block_content:cd9b92e3-ce4f-4cf2-9181-00a54e461d18'
 settings:

@@ -1,6 +1,6 @@
 uuid: a7e7dd3b-9328-4ba5-bb83-44c6a005dda3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.additional_resources
@@ -13,7 +13,7 @@ dependencies:
 id: views_block__additional_resources_block
 theme: oira_theme
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'views_block:additional_resources-block'
 settings:

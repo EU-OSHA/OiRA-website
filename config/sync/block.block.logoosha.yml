@@ -12,7 +12,7 @@ dependencies:
 id: logoosha
 theme: oira_theme
 region: top_header_logos
-weight: -27
+weight: -32
 provider: null
 plugin: 'block_content:43a339a7-e04b-476f-8eba-98050dde34d1'
 settings:

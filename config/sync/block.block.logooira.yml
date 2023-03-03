@@ -1,0 +1,25 @@
+uuid: f8a09c57-5edf-44fd-86e9-fb435db640c3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_image:75d054f3-c0e9-44f3-9528-8a4acaca1b22'
+  module:
+    - block_content
+  theme:
+    - oira_theme
+id: logooira
+theme: oira_theme
+region: top_header_logos
+weight: -34
+provider: null
+plugin: 'block_content:75d054f3-c0e9-44f3-9528-8a4acaca1b22'
+settings:
+  id: 'block_content:75d054f3-c0e9-44f3-9528-8a4acaca1b22'
+  label: 'Logo OiRA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

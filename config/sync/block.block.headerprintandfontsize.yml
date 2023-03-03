@@ -11,8 +11,8 @@ dependencies:
     - oira_theme
 id: headerprintandfontsize
 theme: oira_theme
-region: header
-weight: -26
+region: header_form
+weight: -34
 provider: null
 plugin: 'block_content:bae9f851-0b15-4563-aa19-3729a45b19a6'
 settings:

@@ -1,0 +1,15 @@
+uuid: 9b9744ae-9537-4f0f-9ccc-003d08fa913a
+langcode: en
+status: true
+dependencies: {  }
+name: banner_homepage_boxes
+label: 'Banner homepage boxes'
+effects:
+  4cf7c3c7-a28d-4585-ba07-bba04f0c621e:
+    uuid: 4cf7c3c7-a28d-4585-ba07-bba04f0c621e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 412
+      height: 412
+      anchor: center-center

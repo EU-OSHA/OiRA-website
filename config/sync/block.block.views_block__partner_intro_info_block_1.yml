@@ -13,7 +13,7 @@ dependencies:
 id: views_block__partner_intro_info_block_1
 theme: oira_theme
 region: content
-weight: -20
+weight: -21
 provider: null
 plugin: 'views_block:partner_intro_info-block_1'
 settings:

@@ -1,0 +1,45 @@
+uuid: 88a373fc-1c99-4c36-9475-ede248afae1e
+langcode: en
+status: true
+dependencies: {  }
+id: partners
+name: partners
+weight: 0
+label: Partners
+group: ''
+skin: ''
+breakpoints: 2
+optimized: true
+options:
+  options__active_tab: edit-options-responsives
+  settings:
+    arrows: false
+    dots: true
+    lazyLoad: ondemand
+    randomize: true
+    slidesToShow: 6
+    slidesToScroll: 6
+  responsives:
+    responsive:
+      -
+        breakpoint: 576
+        unslick: false
+        settings:
+          infinite: false
+          slidesPerRow: 3
+          slidesToShow: 2
+          slidesToScroll: 2
+          swipe: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 1024
+        unslick: false
+        settings:
+          infinite: false
+          slidesPerRow: 4
+          slidesToShow: 4
+          slidesToScroll: 4
+          swipe: false
+          touchMove: false
+          waitForAnimate: false

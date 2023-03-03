@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_basic_page_img
+    - image.style.profile_home_image
     - node.type.page
   module:
+    - content_moderation
+    - image
+    - imce
     - path
     - text
 _core:
@@ -31,6 +36,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_basic_page_img:
+    type: image_image
+    weight: 121
+    region: content
+    settings:
+      progress_indicator: bar
+      preview_image_style: profile_home_image
+    third_party_settings:
+      imce:
+        enabled: false
   langcode:
     type: language_select
     weight: 2

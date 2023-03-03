@@ -1,0 +1,29 @@
+uuid: 2d56b45b-843d-4f5a-ab27-1857aae4e301
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - oira_theme
+id: mainnavigation
+theme: oira_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Risk Assessment'
+  label_display: visible
+  provider: system
+  level: 2
+  depth: 3
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/what-risk-assessment\r\n/roles-responsibilities"

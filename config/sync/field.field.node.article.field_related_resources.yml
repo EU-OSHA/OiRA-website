@@ -1,0 +1,34 @@
+uuid: 4edfc760-c27b-43f5-bd19-e1649bff35f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_resources
+    - node.type.article
+    - taxonomy.vocabulary.related_resources
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.article.field_related_resources
+field_name: field_related_resources
+entity_type: node
+bundle: article
+label: 'Related resources'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      related_resources: related_resources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

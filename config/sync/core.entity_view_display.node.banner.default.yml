@@ -1,0 +1,77 @@
+uuid: d3a65305-61d7-4c97-9827-8d9495eef885
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.banner.field_banner_link
+    - field.field.node.banner.field_copyright
+    - field.field.node.banner.field_description
+    - field.field.node.banner.field_image_box_home
+    - image.style.banner_homepage_boxes
+    - node.type.banner
+  module:
+    - ds
+    - image
+    - link
+    - user
+id: node.banner.default
+targetEntityType: node
+bundle: banner
+mode: default
+content:
+  field_banner_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_copyright:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image_box_home:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: banner_homepage_boxes
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true
