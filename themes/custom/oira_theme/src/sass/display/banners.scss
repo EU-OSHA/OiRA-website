@@ -119,14 +119,14 @@
     /**End comment - home-banner**/
     .content-oira-tools, .content-oira-partners{
       .more-link{
-        display: flex;
-        flex-direction: row-reverse;
-        cursor: not-allowed;
-        a{
-          pointer-events: none;
-        }
-        @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
+      display: flex;
+      flex-direction: row-reverse;
+      cursor: not-allowed;
+      a{
+        pointer-events: none;
       }
+      @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
+    }
     }
     .content-oira-profiles{
       h2{
@@ -328,6 +328,7 @@
                     }
                     h4{
                       cursor: not-allowed;
+                      text-decoration: underline;
                     }
                   }
                 }
