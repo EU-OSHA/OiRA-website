@@ -1,0 +1,32 @@
+uuid: 29c0b8d7-e5fc-4b50-9b26-aea4ddb92b40
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_pager
+    - system
+  theme:
+    - oira_theme
+id: menupagermainnavigation
+theme: oira_theme
+region: content
+weight: -9
+provider: null
+plugin: 'menu_pager_block:main'
+settings:
+  id: 'menu_pager_block:main'
+  label: 'Menu Pager - Main navigation'
+  label_display: '0'
+  provider: menu_pager
+  menu_pager_previous_label: ''
+  menu_pager_next_label: ''
+  menu_pager_restrict_to_parent: 0
+  menu_pager_hide_menu_title: 0
+  menu_pager_custom_label: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/what-risk-assessment\r\n/purpose-risk-assessment\r\n/how-carry-out-risk-assessment\r\n/roles-responsibilities\r\n/legislation"

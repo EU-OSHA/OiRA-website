@@ -1,0 +1,26 @@
+uuid: 62bca156-486b-42bf-82bf-e129d14925b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: profiles_home_page
+label: 'Profiles home page'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      profiles: profiles
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: page
+queue_settings:
+  min_size: 0
+  max_size: 4
+  act_as_queue: false
+  reverse: false

@@ -21,8 +21,6 @@
     max-width: 280px;
   }
   .block-lang-dropdown {
-    margin-right: 45px;
-    margin-top: -8px;
     .form-select {
       width: 137px !important;
     }
@@ -38,25 +36,6 @@
       align-items: center;
       flex-wrap: wrap;
       cursor: pointer;
-      .nav-link {
-        &:after {
-          display: inline-block;
-          border: none !important;
-          display: inline-block;
-          margin-left: 15px;
-          content: "\e250" !important;
-          font-family: "Glyphicons Halflings";
-          color: $text-color-white;
-          text-indent: normal;
-        }
-      }
-      &.clicked {
-        .nav-link {
-          &:after {
-            content: "\e252" !important;
-          }
-        }
-      }
       .dropdown-menu {
         width: 100%;
         padding-left: 1rem;
@@ -79,9 +58,6 @@
     }
   }
 
-  #block-headerprintandfontsize {
-    display: none;
-  }
   .top-header-content {
     .header-blocks {
       margin-left: 0;
@@ -142,7 +118,6 @@
     &:before {
       display: block;
       content: "\e003";
-      font-family: "Glyphicons Halflings";
       font-size: 1.3rem;
       color: $text-color-white;
     }
@@ -167,7 +142,6 @@
           cursor: pointer;
           display:block;
           content: "\e253";
-          font-family: "Glyphicons Halflings";
           font-size: 1.2em;
           color: $text-color-white;
           float: right;
@@ -238,36 +212,6 @@
 
 @media only screen and (max-width : 991px) {
   /* Header Search */
-  .top-header-content{
-    align-items: stretch;
-    .header-blocks{
-      .block-search-form-block{
-        position: absolute;
-        right: 20px;
-        top: 0;
-        z-index: 10;
-        input {
-          display: none;
-          height: 30px;
-        }
-        .btn-primary{
-          pointer-events: none;
-        }
-      }
-    }
-    .region-top-header-logos .field--name-field-image {
-      align-items: flex-end;
-      .field__item {
-        img {
-          margin: 0;
-        }
-      }
-      > .field__item:last-child {
-        margin-top: 0;
-        margin-left: 4px;
-      }
-    }
-  }
   #block-socialmenu{
     display: none;
   }
@@ -290,7 +234,6 @@
 
   /* Menu responsive */
   #navbar-main {
-    padding: 0;
     .navbar-toggler {
       padding: 0.6rem;
       .icon-bar {

@@ -1,0 +1,25 @@
+@media screen{
+  body.what-is-new{
+    #block-oira-theme-page-title{
+      position: relative;
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+    }
+    time.datatime{
+      color: $text-color-purple;
+      font-weight: bold;
+    }
+    .views-field-view-node{
+      font-weight: bold;
+      font-style: italic;
+      color: $text-color-blue-light;
+    }
+  }
+  @media only screen and (min-width: 1440px){
+    body.what-is-new{
+      .container{
+        max-width: 1140px;
+      }
+    }
+  }
+}

@@ -17,7 +17,6 @@
       cursor: pointer;
       padding: 10px 0;
       margin-bottom: 5px;
-      font-family: 'Oswald';
       color:$text-color-white;
       font-size: 1.2rem;
       font-weight: normal;
@@ -26,7 +25,6 @@
       border-bottom: none;
       &:after{
         content: "\e252";
-        font-family: "Glyphicons Halflings";
         display: inline-block;
         margin-left: 10px;
         line-height: 1;
@@ -58,13 +56,11 @@
     cursor: pointer;
     &.clicked {
       &:after {
-        font-family: "Glyphicons Halflings";
         content: "\e250";
       }
     }
     &:after {
       content: "\e252";
-      font-family: "Glyphicons Halflings";
       margin-left: 10px;
     }
   }

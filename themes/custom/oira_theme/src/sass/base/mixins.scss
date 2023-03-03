@@ -1,1 +1,146 @@
+/**OiRA revamp pagination style - 2 colours required**/
+@mixin paginationStyle($lightColor, $darkColor){
+  ul.pager__items{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    &>li{
+      display: grid;
+      min-width: 35px;
+      min-height: 35px;
+      text-align: center;
+      &.pager__item--first, &.pager__item--previous, &.pager__item--next, &.pager__item--last{
+        a{
+          height: 35px;
+          width: 35px;
+          background: {
+            repeat: no-repeat;
+            position: 50% 38%;
+          }
+          span{
+            display: none;
+          }
+        }
+      }
+      &.pager__item--first{
+        a{
+          background: {
+            image: url("../images/pager-first.svg");
+            position: 45% 38%;
+          }
+        }
+      }
+      &.pager__item--previous{
+        a{
+          background-image: url("../images/pager-prev.svg");
+        }
+      }
+      &.pager__item--next{
+        a{
+          background-image: url("../images/pager-next.svg");
+        }
+      }
+      &.pager__item--last{
+        a{
+          background: {
+            image: url("../images/pager-last.svg");
+            position: 55% 38%;
+          }
+        }
+      }
+      &[role=presentation]{
+        color: $darkColor;
+        &:focus, &:hover{
+          background: transparent;
+          box-shadow: none;
+          color: $darkColor;
+          text-decoration: none;
+        }
+      }
+      &:focus{
+        background: transparent;
+        outline: none;
+        box-shadow: $darkColor;
+        a{
+          background: $lightColor;
+        }
+      }
+      &:hover, &.is-active{
+        background-color: $lightColor;
+        border-radius: 25px;
+        color: $darkColor;
+        a{
+          background-color: transparent;
+        }
+        span{
+          background-color: transparent;
+        }
+      }
+      span, a{
+        place-self: center;
+        background: $bg-color-white;
+        border-radius: 15px;
+        color: $darkColor;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        font: {
+          weight: bold;
+          style: normal;
+          size: 0.9rem;
+        }
+      }
+      &.active{
+        span.page-link, a{
+          background: $lightColor;
+          border-radius: 25px;
+          color: $darkColor;
+          &.page-link{
+            border: none;
+          }
+        }
+      }
+      &[role="presentation"]{
+        span.page-link--ellipses{
+          &:hover{
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**Style with blue right (>) icon - bg color, bg position, main color icon url and padding left and right required**/
+@mixin blueRightIcon ($bgColor, $bgPosition, $icon, $mainColor, $paddingLeft, $paddingRight){
+  a{
+    place-self: end;
+    cursor: pointer;
+    text-decoration: none;
+    padding: {
+      left: $paddingLeft;
+      right: $paddingRight;
+    }
+    color: $mainColor;
+    font : {
+      size: 0.9rem;
+      weight: bold;
+      style: normal;
+    }
+    background: {
+      color: $bgColor;
+      image: $icon;
+      repeat: no-repeat;
+      position: $bgPosition;
+      size: 8px;
+    }
+    &:before{
+      content: "";
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
 

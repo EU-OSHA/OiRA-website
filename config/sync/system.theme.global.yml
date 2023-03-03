@@ -11,6 +11,6 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: sites/oira/themes/custom/oira_theme/images/oiraLogo.gif
+  path: sites/oira_revamp/themes/custom/oira_theme/images/oiraLogo.gif
   url: ''
   use_default: false

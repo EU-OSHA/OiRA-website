@@ -70,6 +70,7 @@ module:
   fakeobjects: 0
   fancy_file_delete: 0
   features: 0
+  feeds: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -115,6 +116,7 @@ module:
   menu_item_extras: 0
   menu_link_attributes: 0
   menu_link_content: 0
+  menu_pager: 0
   menu_ui: 0
   metatag: 0
   metatag_views: 0

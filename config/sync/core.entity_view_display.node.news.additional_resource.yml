@@ -40,7 +40,7 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: -20
+    weight: 0
     region: content
   field_image:
     type: media_thumbnail
@@ -48,8 +48,10 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_publication_date:
     type: datetime_default
@@ -57,13 +59,6 @@ content:
     settings:
       timezone_override: ''
       format_type: day_only
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_summary:
-    type: text_default
-    label: above
-    settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
@@ -81,6 +76,7 @@ hidden:
   field_migration_source: true
   field_page_count: true
   field_related_partners: true
+  field_summary: true
   field_tags: true
   field_wf_notification: true
   field_workbench_access: true

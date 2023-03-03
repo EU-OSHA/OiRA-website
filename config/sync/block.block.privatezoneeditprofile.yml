@@ -13,7 +13,7 @@ dependencies:
 id: privatezoneeditprofile
 theme: oira_theme
 region: content
-weight: -24
+weight: -25
 provider: null
 plugin: 'block_content:d8ae632b-2569-4a81-81f4-ea0738801202'
 settings:

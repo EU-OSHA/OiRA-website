@@ -1,0 +1,25 @@
+uuid: 4eda4144-b3db-4745-9bcf-e103d0f8c8ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_resources
+  module:
+    - views
+  theme:
+    - oira_theme
+id: views_block__related_resources_block_1
+theme: oira_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:related_resources-block_1'
+settings:
+  id: 'views_block:related_resources-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

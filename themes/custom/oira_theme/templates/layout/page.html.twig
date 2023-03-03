@@ -3,9 +3,6 @@
 <div id="navbar" role="banner" class="{{ navbar_classes }}">
   <div class="top-header-container container">
     <div class="top-header-content row">
-      <!-- <div class="header-logo">
-
-      </div> -->
       {{ page.top_header_logos }}
       {{ page.medium_header_logos }}
       <section class="col region region-wrapper">
@@ -40,7 +37,13 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container">{{ page.breadcrumb }}</div>
+  <div class="container-fluid breadcrumbs-share">
+    <div class="container">
+      <div class="row">
+        {{ page.breadcrumb }}
+      </div>
+    </div>
+  </div>
 {% if page.header_view %}
   <div class="container">{{ page.header_view }}</div>
 {% endif %}

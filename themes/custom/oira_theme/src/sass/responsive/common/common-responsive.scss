@@ -1,0 +1,20 @@
+/**Rewrite container and col width**/
+@media screen{
+  @media only screen and (min-width: 1440px){
+    .container{
+      max-width: 1284px;
+    }
+    .col-md-3{
+      flex: 0 0 21%;
+      max-width: 21%;
+    }
+    .col-md-6{
+      flex: 0 0 58%;
+      max-width: 58%;
+    }
+    .col-lg-4{
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
+}

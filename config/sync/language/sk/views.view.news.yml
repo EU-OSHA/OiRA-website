@@ -1,12 +1,4 @@
 display:
-  attachment_1:
-    display_options:
-      fields:
-        view_node:
-          text: 'Zobraziť viac'
-        nothing_1:
-          alter:
-            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/sk/\"})|raw }}\">Zobraziť viac</a>\r\n</div>\r\n"
   oshnews_latest:
     display_title: 'Najnovšie správy'
     display_options:

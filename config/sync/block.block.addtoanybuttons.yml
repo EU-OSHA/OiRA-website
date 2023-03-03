@@ -10,8 +10,8 @@ dependencies:
     - oira_theme
 id: addtoanybuttons
 theme: oira_theme
-region: content
-weight: -12
+region: breadcrumb
+weight: -34
 provider: null
 plugin: addtoany_block
 settings:
@@ -22,14 +22,10 @@ settings:
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    negate: null
+    negate: true
     pages: "/oira-community\r\n/node/58\r\n/page-not-found"
-  view_inclusion:
-    id: view_inclusion
-    negate: null
-    view_inclusion: {  }
-  node_type:
-    id: node_type
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

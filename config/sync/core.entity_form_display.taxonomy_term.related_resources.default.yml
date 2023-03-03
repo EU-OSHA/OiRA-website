@@ -1,0 +1,71 @@
+uuid: 8ae811cf-24f1-4b75-b4f4-5bbf10b2ceb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.related_resources.feeds_item
+    - field.field.taxonomy_term.related_resources.field_image_rr
+    - field.field.taxonomy_term.related_resources.field_link
+    - image.style.thumbnail
+    - taxonomy.vocabulary.related_resources
+  module:
+    - image
+    - link
+    - path
+id: taxonomy_term.related_resources.default
+targetEntityType: taxonomy_term
+bundle: related_resources
+mode: default
+content:
+  field_image_rr:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  feeds_item: true

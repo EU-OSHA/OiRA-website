@@ -1,12 +1,4 @@
 /*** OiRA Pager ***/
-.div.pagerer-panes {
-  display: flex;
-}
-div.pagerer-left-pane,
-div.pagerer-center-pane,
-div.pagerer-right-pane {
-  display: flex;
-}
 
 .pagerer-pager-basic {
   margin: 0.5rem auto;
@@ -46,7 +38,7 @@ div.pagerer-right-pane {
     }
     &.pager__item--first{
       a {
-        background-image: url(../images/pager-first.png);
+        background-image: url(../images/pager-first.svg);
       }
       span {
         display: none;
@@ -54,7 +46,7 @@ div.pagerer-right-pane {
     }
     &.pager__item--previous{
       a {
-        background-image: url(../images/pager-previous.png);
+        background-image: url(../images/pager-previous.svg);
       }
       span {
         display: none;
@@ -62,7 +54,7 @@ div.pagerer-right-pane {
     }
     &.pager__item--next {
       a{
-        background-image: url(../images/pager-next.png);
+        background-image: url(../images/pager-next.svg);
       }
       span {
         display: none;
@@ -70,7 +62,7 @@ div.pagerer-right-pane {
     }
     &.pager__item--last {
       a{
-        background-image: url(../images/pager-last.png);
+        background-image: url(../images/pager-last.svg);
       }
       span {
         display: none;
@@ -84,4 +76,29 @@ div.pagerer-right-pane {
     width: 70%;
   }
 }
+
+/***New pagination**/
+div.pagerer-center-pane, div.pagerer-left-pane{
+  display: none;
+}
+div.pagerer-right-pane{
+  display: block;
+  nav{
+    @include paginationStyle($bg-color-blue-light-opacity, $text-color-blue-light);
+  }
+}
+
+@media only screen and (min-width: 576px){
+  div.pagerer-left-pane{
+    display: block;
+    nav{
+      @include paginationStyle($bg-color-blue-light-opacity, $text-color-blue-light);
+    }
+  }
+  div.pagerer-right-pane{
+    display: none;
+  }
+}
+/***End comment - new pagination**/
+
 

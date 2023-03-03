@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.news
   module:
-    - context
     - system
     - views
   theme:
@@ -13,7 +12,7 @@ dependencies:
 id: views_block__news_block_1
 theme: oira_theme
 region: content
-weight: -10
+weight: -12
 provider: null
 plugin: 'views_block:news-block_1'
 settings:

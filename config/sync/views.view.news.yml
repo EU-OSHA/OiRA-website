@@ -6,10 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.storage.node.body
     - field.storage.node.field_image
-    - field.storage.node.field_image_home_latest_news
     - field.storage.node.field_publication_date
     - field.storage.node.field_summary
     - image.style.large
+    - image.style.media_library
     - node.type.news
     - taxonomy.vocabulary.tags
   module:
@@ -222,7 +222,12 @@ display:
       relationships: {  }
       use_ajax: true
       header: {  }
-      footer: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          plugin_id: result
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -233,524 +238,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  attachment_1:
-    id: attachment_1
-    display_title: Attachment
-    display_plugin: attachment
-    position: 5
-    display_options:
-      title: News
-      fields:
-        field_image_home_latest_news:
-          id: field_image_home_latest_news
-          table: node__field_image_home_latest_news
-          field: field_image_home_latest_news
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_view
-          settings:
-            view_mode: full
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_publication_date:
-          id: field_publication_date
-          table: node__field_publication_date
-          field: field_publication_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: day_only
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_summary:
-          id: field_summary
-          table: node__field_summary
-          field: field_summary
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 500
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: true
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 500
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: true
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        view_node:
-          id: view_node
-          table: node
-          field: view_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          plugin_id: entity_link
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: span
-          element_wrapper_class: see-more
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: 'See more'
-          output_url_as_text: true
-          absolute: false
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: custom
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "{{field_image_home_latest_news}}\r\n"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: div
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-        nothing_1:
-          id: nothing_1
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: custom
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "{{field_publication_date}}\r\n<h3>{{title}}</h3>\r\n{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a>\r\n</div>\r\n"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: div
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 1
-      style:
-        type: grid
-        options:
-          grouping: {  }
-          columns: 12
-          automatic_width: false
-          alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: 'col-md-12 col-sm-12'
-          col_class_default: false
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      defaults:
-        title: false
-        style: false
-        row: false
-        fields: false
-      display_extenders: {  }
-      displays:
-        oshnews_latest: oshnews_latest
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_image_home_latest_news'
-        - 'config:field.storage.node.field_publication_date'
-        - 'config:field.storage.node.field_summary'
   block_1:
     id: block_1
     display_title: 'Latest news (what''s new)'
@@ -941,7 +428,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -994,55 +481,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: custom
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
         view_node:
           id: view_node
           table: node_field_revision
@@ -1100,7 +538,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 2
       style:
         type: grid
         options:
@@ -1128,11 +566,16 @@ display:
         style: false
         row: false
         fields: false
+        footer: false
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'View all'
-      display_extenders: {  }
+      use_more_text: 'View all the news'
+      footer: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       block_description: 'Latest news what''s new'
     cache_metadata:
       max-age: -1
@@ -1371,6 +814,70 @@ display:
     display_options:
       title: News
       fields:
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: media_thumbnail
+          settings:
+            image_link: content
+            image_style: media_library
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         view_node_1:
           id: view_node_1
           table: node
@@ -1433,7 +940,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1499,7 +1006,7 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: '<a href="{{view_node_1}}">{{title__value}}</a>'
@@ -1517,7 +1024,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 70
+            max_length: 50
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -1543,68 +1050,6 @@ display:
           type: string
           settings:
             link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_summary:
-          id: field_summary
-          table: node__field_summary
-          field: field_summary
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 120
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: true
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1642,7 +1087,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 120
+            max_length: 65
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -1742,7 +1187,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_summary is empty %} \r\n{{ body }}\r\n{% else %}\r\n{{field_summary}}\r\n{% endif %}\r\n<div class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a>\r\n</div>"
+            text: "<div class=\"news-image\">{{ field_image }}</div>\r\n<div class=\"news-content\">\r\n<div class=\"date\">{{ field_publication_date }}</div>\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"description\">{{ body }}</div>\r\n<span class=\"see-more\">\r\n   <a href=\"{{ view_node|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a>\r\n</span>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1782,8 +1227,8 @@ display:
       pager:
         type: some
         options:
-          offset: 1
-          items_per_page: 3
+          offset: null
+          items_per_page: 2
       style:
         type: grid
         options:
@@ -1793,7 +1238,7 @@ display:
           alignment: horizontal
           row_class_custom: row
           row_class_default: true
-          col_class_custom: 'col-md-4 col-sm-12'
+          col_class_custom: 'col-md-6 col-sm-12'
           col_class_default: false
       row:
         type: fields
@@ -1811,11 +1256,16 @@ display:
         style: false
         row: false
         fields: false
+        footer: false
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'View all'
-      display_extenders: {  }
+      use_more_text: 'View all the news'
+      footer: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       block_description: 'Latest news'
     cache_metadata:
       max-age: -1
@@ -1826,8 +1276,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_publication_date'
-        - 'config:field.storage.node.field_summary'
   oshnews_list:
     id: oshnews_list
     display_title: 'News list'
@@ -1886,9 +1336,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: media_thumbnail
           settings:
-            view_mode: default
+            image_link: content
+            image_style: media_library
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -2217,7 +1668,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">{{ title }}</a></h2>\r\n      {% if field_summary is empty %} \r\n       {{ body }}\r\n      {% else %}\r\n       {{field_summary}}\r\n      {% endif %}<span class=\"see-more\"><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a></span>\r\n    </div>\r\n  </div>\r\n</div>"
+            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">{{ title }}</a></h2>\r\n      <p>{{ body }}</p>\r\n     <span class=\"see-more\"><a href=\"{{ view_node_1|replace({\"/en/\": \"/en/\"})|raw }}\">See more</a></span>\r\n    </div>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -2257,9 +1708,9 @@ display:
       pager:
         type: pagerer
         options:
-          offset: 0
+          offset: null
           items_per_page: 10
-          preset: custom_minimal
+          preset: pagina
           id: '0'
           total_pages: ''
           expose:
@@ -2290,6 +1741,7 @@ display:
         row: false
         fields: false
         header: false
+        footer: false
       display_description: ''
       header:
         area_text_custom:
@@ -2303,7 +1755,21 @@ display:
           empty: false
           content: "<div class=\"container page-title-container\">\r\n<h1 class=\"page-header\">[view:title] </h1>\r\n</div>"
           tokenize: false
-      display_extenders: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '<div class="container">@start-@end/@total</div>'
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: news
     cache_metadata:
       max-age: -1

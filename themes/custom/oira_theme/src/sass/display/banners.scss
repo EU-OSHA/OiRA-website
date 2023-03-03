@@ -1,0 +1,762 @@
+/**TO DO remove pointer-events: none; and cursor: not-allowed - enable links**/
+
+@media screen{
+  .page-view-frontpage{
+    /**Home-banner**/
+    .home-intro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem auto;
+      width: 100%;
+      .view-id-home_page_banners .view-content{
+        justify-content: center;
+        gap: 1rem;
+        .home-boxes {
+          width: 100%;
+          height: 100%;
+          max-width: 412px;
+          max-height: 412px;
+          position: relative;
+          cursor: pointer;
+          border: {
+            left: 15px solid transparent;
+            right: 15px solid transparent;
+          }
+          a{
+            pointer-events: none;
+          }
+          h2{
+            background: transparent;
+            color: $text-color-white;
+            position: absolute;
+            font: {
+              family: 'Roboto', sans-serif;
+              weight: bold;
+              size: 1.25rem;
+              style: normal;
+            }
+            letter-spacing: 0;
+            margin: {
+              left: 15px;
+              right: 15px;
+              bottom: 0px;
+            }
+            padding-bottom: 30px;
+            bottom: 0px;
+            z-index: 1;
+            transition: 0.8s;
+          }
+          span.description{
+            position: absolute;
+            margin-bottom: 0;
+            bottom: 10px;
+            background: transparent;
+            color: $text-color-white;
+            margin: {
+              right: 15px;
+              left: 15px;
+            }
+            padding-bottom: 0.4em;
+            z-index: 999;
+            transition: 0.8s;
+            display: none;
+            font: {
+              family: 'Roboto', sans-serif;
+              weight: normal;
+              size: 1rem;
+              style: normal;
+            }
+          }
+          .copyright{
+            font-size: 0.7rem;
+            margin-top: 0;
+            display: block;
+          }
+          .content-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            max-width: 412px;
+            max-height: 412px;
+            background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgb(69 71 76 / 65%) 76%, rgb(12 12 12) 100%);
+            background: -o-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgb(69 71 76 / 65%) 76%, rgb(12 12 12) 100%);
+            background: -ms-linear-gradient(top, rgba(0, 51, 153, 0) 30%, rgb(69 71 76 / 65%) 76%, rgb(12 12 12) 100%);
+            background: linear-gradient(to bottom, rgba(0, 51, 153, 0) 30%, rgb(69 71 76 / 65%) 76%, rgb(12 12 12) 100%);
+            -webkit-transition: width 2s;
+            transition: width 2s;
+          }
+          .content-box{
+            img{
+              width: 100%;
+              height: 100%;
+              max-width: 412px;
+              max-height: 412px;
+              object-fit: cover;
+            }
+          }
+          &:hover{
+            a.box-link{
+              visibility: visible;
+              opacity:1;
+              transition:opacity 0.8s linear;
+            }
+            .content-background{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              max-width: 412px;
+              max-height: 412px;
+              background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgb(69 71 76 / 65%) 65%, rgb(12 12 12) 100%);
+              background: -o-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgb(69 71 76 / 65%) 65%, rgb(12 12 12) 100%);
+              background: -ms-linear-gradient(top, rgba(0, 51, 153, 0) 12%, rgb(69 71 76 / 65%) 65%, rgb(12 12 12) 100%);
+              background: linear-gradient(to bottom, rgba(0, 51, 153, 0) 12%, rgb(69 71 76 / 65%) 65%, rgb(12 12 12) 100%);
+            }
+          }
+        }
+      }
+    }
+    /**End comment - home-banner**/
+    .content-oira-tools, .content-oira-partners{
+      .more-link{
+      display: flex;
+      flex-direction: row-reverse;
+      cursor: not-allowed;
+      a{
+        pointer-events: none;
+      }
+      @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-blue.png"), $text-color-blue-light, 0px, 25px);
+    }
+    }
+    .content-oira-profiles{
+      h2{
+        font: {
+          size: 2.1rem;
+          weight: bold;
+        }
+        color: $text-color-blue-light;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      /**Profiles intro text**/
+      article{
+        text-align: center;
+        margin-bottom: 1rem;
+        h2.node__title{
+          display: none;
+        }
+        .field--name-body{
+          font: {
+            style: normal;
+            weight: normal;
+            size: 1rem;
+          }
+        }
+      }
+      /**End comment - profiles intro text**/
+      .col-12.col-md-4{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+        .views-field-field-profile-home-page-image, .views-field-title{
+          cursor: not-allowed;
+          & > .field-content{
+            pointer-events: none;
+          }
+        }
+        img{
+          max-height: 200px;
+          max-width: 200px;
+          min-height: 200px;
+          min-width: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .views-field-title a{
+          font: {
+            size: 1.25rem;
+            weight: bold;
+          }
+          color: $text-color-blue-light;
+        }
+      }
+      .view-profiles-home-page .view-content{
+        .views-row{
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          text-align: center;
+          .views-field-field-basic-page-img img{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+          .views-field-title a{
+            font: {
+              weight: bold;
+              size: 1.25rem;
+            }
+            color: $text-color-blue-light;
+          }
+          .views-field-body{
+            color: $text-grey;
+          }
+        }
+      }
+
+    }
+    .content-oira-tools{
+      h2 {
+          font: {
+            size: 2.1rem;
+            weight: bold;
+          }
+          color: $text-color-blue-light;
+          padding-left: 15px;
+      }
+      /**Intro text**/
+      article{
+        padding: 0px 15px;
+        margin: 1rem 0rem 1.5rem;
+        h2.node__title{
+          display: none;
+        }
+        .field--name-body{
+          font: {
+            style: normal;
+            weight: normal;
+            size: 1rem;
+          }
+          margin-left: 0px;
+        }
+      }
+      /**End comment - intro text**/
+      .view-tools{
+        .view-content.row{
+          margin: 1rem 0rem;
+          .views-view-grid{
+            .row.equal{
+              display: flex;
+              row-gap: 1rem;
+              .views-item-columns-container{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $bg-color-purple-dark;
+                border-radius: 8px;
+                background: $bg-light-purple;
+                h3{
+                  cursor: not-allowed;
+                  font-size: 1.31rem;
+                  a{
+                    pointer-events: none;
+                    order: 1;
+                    color: $text-color-purple-light;
+                    font-weight: bold;
+                  }
+                }
+                .field--name-field-country, .language{
+                  display: flex;
+                  .field__label, .field__item{
+                    display: block;
+                    color: $text-color-black;
+                    font: {
+                      style: normal;
+                      weight: normal;
+                      size: 1rem;
+                    }
+                  }
+                }
+                .field--name-field-country{
+                  order: 2;
+                }
+                .language{
+                  order: 3;
+                  p{
+                    margin-bottom: 0px;
+                  }
+                }
+
+                .see-more, .see-less{
+                  width: fit-content;
+                  text-align: start;
+                  cursor: pointer;
+                  color: $text-color-blue-light;
+                  padding: {
+                    left: 0rem;
+                    right: 26px;
+                  }
+                  margin: 0.5rem 0rem;
+                  color: $text-color-blue-light;
+                  font : {
+                    weight: normal;
+                    style: normal;
+                  }
+                  background: {
+                    color: transparent;
+                    repeat: no-repeat;
+                    position: 100% 50%;
+                    size: 14px;
+                  }
+                }
+
+                .see-more{
+                  order: 4;
+                  background-image: url("../images/arrow-sm-down-blue.png");
+                }
+                .see-less{
+                  display: none;
+                  order: 5;
+                  background-image: url("../images/arrow-sm-up-blue.png");
+                }
+
+                .partners-wrapper{
+                  display: none;
+                  order: 6;
+                  margin-bottom: 0.5rem;
+                  .partner-wrapper-related{
+                    a{
+                      color: $text-grey;
+                      font: {
+                        style: normal;
+                        weight: normal;
+                        size: 1rem;
+                      }
+                      text-decoration-color: $text-grey;
+                      pointer-events: none;
+                    }
+                    h4{
+                      cursor: not-allowed;
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                .views-field-field-tool-link{
+                  display: flex;
+                  justify-content: center;
+                  order: 7;
+                  width: 100%;
+                  margin-bottom: 15px;
+                  padding: 1rem;
+                  border-radius: 8px;
+                  background-color: $bg-color-blue-light;
+                  cursor: not-allowed;
+                  a{
+                    position: relative;
+                    text-align: center;
+                    color: $text-color-white;
+                    font : {
+                      weight: bold;
+                      style: normal;
+                      size: 0.9rem;
+                    }
+                    pointer-events: none;
+                    &:after{
+                      display: inline-block;
+                      position: absolute;
+                      top: 11%;
+                      margin-left: 10px;
+                      content: "";
+                      height: 17px;
+                      width: 17px;
+                      background: {
+                        image: url("../images/arrow-right-lg-white.png");
+                        repeat: no-repeat;
+                      }
+                    }
+                    &:hover{
+                      text-decoration: none;
+                    }
+                  }
+                }
+                .field--type-entity-reference{
+                  margin: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-oira-partners{
+      h2 {
+        font: {
+          size: 2.1rem;
+          weight: bold;
+        }
+        color: $text-color-blue-light;
+      }
+      .more-link{
+        padding: 0px 15px;
+      }
+    }
+
+    .content-latest-news{
+      h2{
+        font: {
+          size: 2.1rem;
+          weight: bold;
+        }
+        color: $text-color-white;
+      }
+      .views-element-container{
+        .view-display-id-oshnews_latest{
+          .view-content{
+            .views-row{
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              padding: 1rem 0px;
+              .views-view-grid{
+                display: flex;
+                justify-content: center;
+              }
+              .col-md-6.col-sm-12{
+                flex: 0 0 100%;
+                max-width: 100%;
+                & > .views-field{
+                  & > span{
+                    display: flex;
+                    .news-image{
+                      display: none;
+                      padding: 0px;
+                      min-width: 220px;
+                      img{
+                        border-radius: 8px 0px 0px 8px;
+                      }
+                    }
+                    .news-content{
+                      display: grid;
+                      grid-template-rows: 19px auto 1fr 20px;
+                      width: 100%;
+                      padding: 1rem;
+                      background: $bg-color-white;
+                      border-radius: 8px;
+                      .date{
+                        color: $text-color-black;
+                        font: {
+                          size: 0.9rem;
+                          weight: bold;
+                        }
+                      }
+                      .title{
+                        margin-top: 5px;
+                        a{
+                          color: $bg-color-purple-dark;
+                          font: {
+                            style: normal;
+                            weight: bold;
+                            size: 1.17rem;
+                          }
+                          text-decoration: none;
+                        }
+                      }
+                      .description{
+                        padding-top: 12px;
+                        color: $text-color-black;
+                        font-size: 1rem;
+                      }
+                      span.see-more{
+                        place-self: end;
+                        display: grid;
+                        a{
+                          place-self: end;
+                          cursor: pointer;
+                          text-decoration: none;
+                          padding: {
+                            left: 0rem;
+                            right: 28px;
+                          }
+                          color: $text-color-blue-light;
+                          font : {
+                            weight: bold;
+                            style: normal;
+                            size: 0.9rem;
+                          }
+                          background: {
+                            color: transparent;
+                            image: url("../images/icon-arrow-blue.png");
+                            repeat: no-repeat;
+                            position: 98% 47%;
+                            size: 17px;
+                          }
+                          &:before{
+                            content: "";
+                          }
+                          &:hover{
+                            text-decoration: underline;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .more-link{
+            display: flex;
+            justify-content: flex-end;
+            @include blueRightIcon(transparent, 100% 50%, url("../images/arrow-right-sm-white.png"), $text-color-white, 0px, 25px);
+            padding-right: 30px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px){
+    .top-header-content .region-top-header-logos{
+      #block-logooira img{
+        max-width: 100px !important;
+        padding-right: 10px !important;
+      }
+      #block-logoosha img{
+        max-width: 140px !important;
+        padding-left: 10px !important;
+        .field--name-field-image > .field__item:last-child img{
+          max-height: 35px !important;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 576px){
+    .page-view-frontpage{
+      .content-latest-news{
+        .views-element-container{
+          .view-display-id-oshnews_latest{
+            .view-content{
+              .views-row{
+                .col-md-6.col-sm-12{
+                  & > .views-field{
+                    & > span{
+                      .news-image{
+                        display: block;
+                      }
+                      .news-content{
+                        display: grid;
+                        grid-template-rows: 19px auto 1fr 20px;
+                        width: 100%;
+                        padding: 1rem;
+                        background: $bg-color-white;
+                        border-radius: 0px 8px 8px 0px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+    .page-view-frontpage{
+      .home-intro.container{
+        .views-element-container{
+          .view-id-home_page_banners .view-content{
+            justify-content: start;
+            & > .home-boxes .views-field .field-content .home-boxes a[target=_blank]{
+              display: flex;
+              flex-direction: column-reverse;
+            }
+            .home-boxes{
+              max-height: 350px;
+              max-width: 350px;
+              border: {
+                left: none;
+                right: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px){
+    .page-view-frontpage{
+      .content-latest-news{
+        .views-element-container{
+          .view-display-id-oshnews_latest{
+            .view-content{
+              .views-row{
+                flex-direction: row;
+                padding: 1rem 0px;
+                gap: 0px;
+                .col-md-6.col-sm-12{
+                  flex: 0 0 50%;
+                  max-width: 50%;
+                  & > .views-field{
+                    & > span{
+                      display: flex;
+                      .news-image{
+                        padding: 0px;
+                        width: fit-content;
+                        img{
+                          border-radius: 8px 0px 0px 8px;
+                        }
+                      }
+                      .news-content{
+                        padding: 0.5rem;
+                        .title{
+                          margin-top: 0px;
+                        }
+                        .description{
+                          padding-top: 8px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .page-view-frontpage{
+      .content-latest-news{
+        .views-element-container{
+          .view-display-id-oshnews_latest{
+            .view-content{
+              .views-row{
+                .col-md-6.col-sm-12{
+                  & > .views-field{
+                    & > span{
+                      .news-content{
+                        padding: 1rem;
+                        .title{
+                          margin-top: 5px;
+                        }
+                        .description{
+                          padding: 8px 0px 4px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1440px){
+    .page-view-frontpage{
+      .home-intro {
+        &.container{
+          padding: 0px;
+          width: 100%;
+          .views-element-container{
+            min-width: 100%;
+          }
+        }
+        .view-id-home_page_banners .view-content{
+          justify-content: space-between !important;
+          &.row {
+            justify-content: space-between;
+            margin: {
+              left: 0px;
+              right: 0px;
+            }
+          }
+          .home-boxes{
+            width: 412px;
+            height: 412px;
+            max-width: 412px !important;
+            max-height: 412px !important;
+            .content-box img, .content-background{
+              width: 412px;
+              height: 412px;
+              max-width: 412px;
+              max-height: 412px;
+            }
+            &:hover{
+              .content-background{
+                width: 412px;
+                height: 412px;
+                max-width: 412px;
+                max-height: 412px;
+              }
+            }
+            span.description{
+              top: 320px;
+            }
+          }
+        }
+      }
+      /**Small containers**/
+      .content-latest-news, .content-oira-partners, .content-oira-profiles{
+        .container{
+          max-width: 1160px;
+        }
+      }
+      .content-oira-partners, .content-latest-news {
+        h2{
+          padding-left: 0px;
+        }
+        .container {
+          padding: {
+            left: 0px;
+            right: 0px;
+          }
+        }
+      }
+      .content-oira-tools .more-link, .content-oira-partners .more-link{
+        padding-right: 0px !important;
+      }
+      .content-latest-news{
+        .container .col{
+            padding: {
+              left: 0px;
+              right: 0px;
+            }
+            .views-row{
+              margin-left: 0px;
+            }
+          }
+        .views-element-container .view-display-id-oshnews_latest .more-link{
+          padding-right: 0px !important;
+        }
+      }
+
+      /**End comment - small containers**/
+
+      /***Large containers*/
+      .content-oira-tools{
+        h2{
+          padding-left: 0px;
+        }
+        article{
+          padding: 0px;
+        }
+        .container{
+          padding: {
+            left: 0px;
+            right: 0px;
+          }
+          .views-view-grid.col{
+            padding: {
+              left: 0px;
+              right: 0px;
+            }
+          }
+        }
+      }
+
+      /**End comment - large containers**/
+    }
+  }
+
+}
