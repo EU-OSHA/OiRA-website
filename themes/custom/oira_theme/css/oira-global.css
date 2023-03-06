@@ -1,23 +1,20 @@
 @charset "UTF-8";
 /* Icons */
-/*@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot');
-  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),
-  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot");
+  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff") format("woff"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
-  font: normal normal 16px/1 'Glyphicons Halflings';
+  font: normal normal 16px/1 "Glyphicons Halflings";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-right: 4px;
-}*/
+}
+
 @font-face {
   font-family: myriad-pro, sans-serif;
 }
@@ -944,6 +941,7 @@ table tr td {
   border-bottom: none;
 }
 .sidebar_first aside h2:after {
+  font-family: "Glyphicons Halflings";
   content: "";
   display: inline-block;
   margin-left: 10px;
@@ -966,9 +964,11 @@ table tr td {
   cursor: pointer;
 }
 .sidebar_first h2.clicked:after {
+  font-family: "Glyphicons Halflings";
   content: "";
 }
 .sidebar_first h2:after {
+  font-family: "Glyphicons Halflings";
   content: "";
   margin-left: 10px;
 }
@@ -977,9 +977,11 @@ table tr td {
 }
 
 .page-view-search .sidebar_first aside h2:after {
+  font-family: "Glyphicons Halflings";
   content: "";
 }
 .page-view-search .sidebar_first aside h2.clicked:after {
+  font-family: "Glyphicons Halflings";
   content: "";
 }
 
@@ -1238,7 +1240,7 @@ table tr td {
 .user-pass .btn.btn-primary:before {
   display: inline-block;
   margin: 0 5px 0 0;
-  font-family: myriad-pro, sans-serif;
+  font-family: "Glyphicons Halflings";
   content: "";
 }
 .user-login-form .btn.btn-primary:hover,
@@ -1471,7 +1473,7 @@ table tr td {
   }
   .page-view-frontpage .content-oira-profiles article {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .page-view-frontpage .content-oira-profiles article h2.node__title {
     display: none;
@@ -2743,6 +2745,7 @@ select.custom-select {
   background-color: transparent;
 }
 .page-view-promotional-resources-search .sidebar_first .views-exposed-form #edit-submit-promotional-resources-search--2:before {
+  font-family: "Glyphicons Halflings";
   font-size: 1.2rem;
   display: block;
   content: "";
@@ -2881,6 +2884,7 @@ select.custom-select {
   background-color: rgba(0, 0, 0, 0);
 }
 .page-view-oira-ws #sidebar_first aside #edit-submit-oira-ws--2:before {
+  font-family: "Glyphicons Halflings";
   content: "";
   margin-right: 30px;
 }
@@ -2951,6 +2955,7 @@ select.custom-select {
   font-style: normal;
 }
 .page-view-oira-ws .content-view-tools-view .group-right > div:nth-child(1) a:before {
+  font-family: "Glyphicons Halflings";
   content: "";
   color: #10b2e4;
   display: block;
@@ -2985,6 +2990,7 @@ select.custom-select {
   right: 0px;
   top: 0;
   margin-top: 3px;
+  font-family: "Glyphicons Halflings";
   content: "";
   font-size: 1.5rem;
 }
@@ -3122,12 +3128,14 @@ select.custom-select {
   border-bottom: 2px solid #786586;
 }
 .view-id-faqs_oira .views-row .views-row span.field-content:after {
+  font-family: "Glyphicons Halflings";
   content: "";
   padding-left: 10px;
   display: block;
   float: right;
 }
 .view-id-faqs_oira .views-row .views-row .ui-state-active span.field-content:after {
+  font-family: "Glyphicons Halflings";
   content: "";
   padding-left: 10px;
   display: block;
@@ -3442,6 +3450,7 @@ select.custom-select {
 .block-views-blocktools-block-2 .views-field-field-tool-link a:after {
   display: inline-block;
   margin-left: 10px;
+  font-family: "Glyphicons Halflings";
   content: "";
   font-style: normal;
   font-weight: 400;
@@ -3484,6 +3493,7 @@ select.custom-select {
   font-size: 0;
 }
 .block-views-blocktools-block-2 .views-col .more-link.expanded:before {
+  font-family: "Glyphicons Halflings";
   content: "";
   font-size: 1.2rem;
   line-height: 0;
@@ -4007,6 +4017,7 @@ select.custom-select {
   bottom: 15px;
   right: 15px;
   display: block;
+  font-family: "Glyphicons Halflings";
   content: "";
   width: 24px;
   height: 24px;
@@ -4100,6 +4111,7 @@ select.custom-select {
 }
 .path-search .sidebar_first #edit-submit-search--2:before {
   content: "";
+  font-family: "Glyphicons Halflings";
   margin-right: 30px;
   font-size: 1.1875rem;
 }
@@ -4212,6 +4224,7 @@ select.custom-select {
   top: 1px;
   margin-left: 10px;
   display: inline-block;
+  font-family: "Glyphicons Halflings";
   content: "";
   color: #10b2e4;
 }
@@ -4262,6 +4275,7 @@ select.custom-select {
 }
 .path-search .search-results__result .result-item.type-tools .more-link.clicked:before,
 .path-search .search-results__result .result-item.type-promo .more-link.clicked:before {
+  font-family: "Glyphicons Halflings";
   content: "";
   font-size: 1.2rem;
   font-style: normal;
@@ -4702,6 +4716,7 @@ select.custom-select {
 }
 .view-country-partner-content .tool-link a:after {
   margin-left: 10px;
+  font-family: "Glyphicons Halflings";
   content: "";
   display: inline-block;
   color: #10b2e4;
@@ -4780,6 +4795,7 @@ select.custom-select {
   font-size: 0;
 }
 .view-country-partner-content .more-link.clicked:before {
+  font-family: "Glyphicons Halflings";
   content: "";
   font-size: 1.2rem;
   font-style: normal;
@@ -5067,6 +5083,7 @@ select.custom-select {
   overflow: hidden;
 }
 .pop .magnifier:before {
+  font-family: "Glyphicons Halflings";
   content: "";
   font-size: 2rem;
   font-style: normal;
@@ -5325,21 +5342,6 @@ select.custom-select {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-  /*.toogle-content-switcher {
-    &:not(.collapsed) {
-      .hide-link {
-        display: block;
-      }
-    }
-    &.collapsed {
-      .show-link {
-        display: block !important;
-      }
-      .hide-link {
-        display: none;
-      }
-    }
-  }*/
 }
 #block-pzhidemenu .content {
   position: absolute;
@@ -5361,6 +5363,7 @@ select.custom-select {
   display: inline-block;
   width: 20px;
   height: 20px;
+  font-family: "Glyphicons Halflings";
   line-height: 20px;
   text-align: center;
   background: #10b3e4;
@@ -5369,9 +5372,11 @@ select.custom-select {
   font-size: 13px;
 }
 #block-pzhidemenu .hide-link:after {
+  font-family: "Glyphicons Halflings";
   content: "";
 }
 #block-pzhidemenu .show-link:after {
+  font-family: "Glyphicons Halflings";
   content: "";
 }
 
@@ -5958,7 +5963,7 @@ body[class*=private-zone-] .page-header.h1 {
 }
 .top-header-content .header-blocks .region-header-form {
   display: grid;
-  grid-template-areas: "printsize socialmedia" "search search" "lang lang";
+  grid-template-areas: "printsize socialmedia" "search search" "lang lang" "partner partner";
 }
 .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize {
   grid-area: printsize;
@@ -6142,7 +6147,7 @@ body.role-anonymous {
 }
 
 body.user-logged-in, body.toolbar-fixed {
-  padding-top: 237px !important;
+  padding-top: 202px !important;
 }
 body.user-logged-in #header, body.toolbar-fixed #header {
   padding-top: 40px;
@@ -6186,10 +6191,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   cursor: pointer;
 }
 
-#block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select.mb-3, #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select .my-3 {
-  margin-bottom: 0px;
-}
-
 @media only screen and (min-width: 560px) {
   .top-header-content .region-top-header-logos #block-logooira .content > div .field--name-field-image .field__item > div > a .field--type-image {
     margin: 0 0rem 0 0;
@@ -6226,10 +6227,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
-    padding-top: 214px !important;
+    padding-top: 250px !important;
   }
   body.user-logged-in.toolbar-fixed.toolbar-tray-open {
-    padding-top: 249px !important;
+    padding-top: 279px !important;
   }
 
   body.role-anonymous {
@@ -6366,6 +6367,32 @@ body.toolbar-fixed.toolbar-tray-open #header {
     font-weight: 400;
     -webkit-appearance: none;
     appearance: none;
+  }
+  .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select.mb-3, .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher #lang_dropdown_form_lang-dropdown-form .form-type-select.my-3 {
+    margin-bottom: 0px !important;
+  }
+  .top-header-content .header-blocks .region-header-form #block-oiramasquerade {
+    grid-area: partner;
+    place-self: end;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 2px;
+    border-radius: 8px;
+    cursor: not-allowed;
+  }
+  .top-header-content .header-blocks .region-header-form #block-oiramasquerade a {
+    position: relative;
+    text-align: center;
+    color: #58585A;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-right: 40px;
+    background-color: #EAE5ED;
+    background-image: url("../images/arrow-right-lg-dark-purple.png");
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #003399;
+    pointer-events: none;
   }
 }
 /* SCSS to Home Page */
@@ -6526,6 +6553,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
 .view-promotional-materials.view-display-id-block .field-content .more-link.expanded:before {
   text-align: right;
   display: block;
+  font-family: "Glyphicons Halflings";
   content: "";
   font-size: 1.2rem;
   line-height: 1;
@@ -7216,6 +7244,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .toggle-sidebar:before {
     display: block;
+    font-family: "Glyphicons Halflings";
     content: "";
     font-size: 1.3rem;
     color: #FFF;
@@ -7236,6 +7265,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .sidebar_first aside .sidebar-close:after {
     cursor: pointer;
     display: block;
+    font-family: "Glyphicons Halflings";
     content: "";
     font-size: 1.2em;
     color: #FFF;
@@ -7541,6 +7571,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .toggle-sidebar:before {
     display: block;
+    font-family: "Glyphicons Halflings";
     content: "";
     font-size: 1.3rem;
     color: #FFF;
@@ -7826,6 +7857,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .view-partner-intro .partner__address .field__label-widget:after,
 .view-partner-intro .partner__socialprofile .field__label-widget:after {
+    font-family: "Glyphicons Halflings";
     content: "";
     padding-left: 10px;
     color: #10b2e4;

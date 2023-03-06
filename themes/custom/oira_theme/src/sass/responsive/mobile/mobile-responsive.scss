@@ -139,6 +139,7 @@
     }
     &:before {
       display: block;
+      font-family: 'Glyphicons Halflings';
       content: "\e003";
       font-size: 1.3rem;
       color: $text-color-white;
@@ -443,6 +444,7 @@
         margin: 0;
         cursor: pointer;
         &:after {
+          font-family: 'Glyphicons Halflings';
           content: "\e252";
           padding-left: 10px;
           color: $text-color-blue-light;
