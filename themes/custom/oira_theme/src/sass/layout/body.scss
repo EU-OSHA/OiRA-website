@@ -151,6 +151,35 @@ fix-paddings{
   opacity: 1;
 }
 
+/**Act as partner**/
+select[name=masquerade_as]{
+  border: 1px solid $bg-color-blue-dark;
+  border-radius: 8px;
+  height: 30px;
+  padding: 0px 9px;
+  background: rgba(150, 126, 167, 0.3) url(../images/arrow-down-sm-dark-purple.png) no-repeat !important;
+  background-position: 97% 50% !important;
+  color: $text-grey;
+  width: 310px !important;
+  margin-right: -168px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ui-dialog .form-actions button{
+  border: 1px solid $bg-color-blue-dark;
+  border-radius: 8px;
+  background: rgba(150, 126, 167, 0.3);
+  color: $text-grey;
+  font-size: 0.9rem;
+  &:before{
+    content: none;
+  }
+}
+
+/**End comment - act as partner**/
 
 .node__content{
   margin-top: 0;

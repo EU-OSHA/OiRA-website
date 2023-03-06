@@ -175,14 +175,14 @@ div#sliding-popup button.decline-button:hover {
   margin-bottom: 0;
 }
 .breadcrumb .breadcrumb-item {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #58585A;
 }
 .breadcrumb a {
   color: #58585A;
   font-style: normal;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-decoration: underline;
 }
 .breadcrumb a:hover {
@@ -2096,6 +2096,7 @@ table tr td {
   .node--type-news #block-backtonews a {
     color: #10b2e4;
     font-style: normal;
+    font-size: 1.25rem;
     font-weight: 400;
     text-decoration: none;
   }
@@ -2116,7 +2117,7 @@ table tr td {
   }
   .node--type-news .no-container #block-oira-theme-page-title .container h1.title, .node--type-news .no-container #block-oira-theme-page-title .node--type-collaboration-document .block-system-main-block h1.title, .node--type-collaboration-document .node--type-news .no-container #block-oira-theme-page-title .block-system-main-block h1.title, .node--type-news .no-container #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .field-name-body p h1.title, .page-view-faqs-oira .field--name-field-article-header .field-name-body .node--type-news .no-container #block-oira-theme-page-title p h1.title, .node--type-news .no-container #block-oira-theme-page-title .page-view-faqs-oira .field--name-field-article-header .field-name-node-title h1.title, .page-view-faqs-oira .field--name-field-article-header .node--type-news .no-container #block-oira-theme-page-title .field-name-node-title h1.title {
     color: #10b2e4;
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 40px;
   }
   .node--type-news .no-container .node__content {
@@ -2453,7 +2454,7 @@ table tr td {
     margin-top: -2rem;
     margin-bottom: 1rem;
   }
-  body.what-is-new time.datatime {
+  body.what-is-new .datetime, body.what-is-new .field--type-datetime {
     color: #786586;
     font-weight: bold;
   }
@@ -2599,6 +2600,35 @@ fix-paddings {
   opacity: 1;
 }
 
+/**Act as partner**/
+select[name=masquerade_as] {
+  border: 1px solid #003399;
+  border-radius: 8px;
+  height: 30px;
+  padding: 0px 9px;
+  background: rgba(150, 126, 167, 0.3) url(../images/arrow-down-sm-dark-purple.png) no-repeat !important;
+  background-position: 97% 50% !important;
+  color: #58585A;
+  width: 310px !important;
+  margin-right: -168px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ui-dialog .form-actions button {
+  border: 1px solid #003399;
+  border-radius: 8px;
+  background: rgba(150, 126, 167, 0.3);
+  color: #58585A;
+  font-size: 0.9rem;
+}
+.ui-dialog .form-actions button:before {
+  content: none;
+}
+
+/**End comment - act as partner**/
 .node__content {
   margin-top: 0;
 }
@@ -6390,6 +6420,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
     background-color: #EAE5ED;
     background-image: url("../images/arrow-right-lg-dark-purple.png");
     background-position: 90% 50%;
+    background-size: 13px;
     background-repeat: no-repeat;
     border: 1px solid #003399;
     pointer-events: none;
