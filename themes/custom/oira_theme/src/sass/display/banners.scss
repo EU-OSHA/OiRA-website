@@ -141,7 +141,7 @@
       /**Profiles intro text**/
       article{
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         h2.node__title{
           display: none;
         }
@@ -378,6 +378,9 @@
           }
         }
       }
+      .more-link{
+        padding-right: 15px;
+      }
     }
 
     .content-oira-partners{
@@ -387,9 +390,6 @@
           weight: bold;
         }
         color: $text-color-blue-light;
-      }
-      .more-link{
-        padding: 0px 15px;
       }
     }
 

@@ -113,7 +113,8 @@
       grid-template-areas:
             "printsize socialmedia"
             "search search"
-            "lang lang";
+            "lang lang"
+            "partner partner";
       #block-headerprintandfontsize{
         grid-area: printsize;
         display: none;
@@ -130,6 +131,9 @@
               &:hover {
                 text-decoration: underline;
               }
+            }
+            .a_small a, .a_medium a, .a_big a{
+              font-weight: 600;
             }
             .a_small {
               a {
@@ -249,8 +253,11 @@
             background-position: 97% 50% !important;
             color: $text-color-white;
             width: 100px !important;
-            font-size: 0.8rem;
-            font-weight: $font-weight-normal;
+            font: {
+              family: "Open Sans" !important;
+              size: 0.8rem;
+              weight: normal;
+            }
             -webkit-appearance: none;
             appearance: none;
             option {
@@ -314,7 +321,7 @@ body.role-anonymous {
 }
 
 body.user-logged-in, body.toolbar-fixed {
-  padding-top: 237px !important;
+  padding-top: 202px !important;
   #header {
     padding-top: 40px;
   }
@@ -362,16 +369,6 @@ body.toolbar-fixed {
       .form-actions {
         margin: 0;
         cursor: pointer;
-      }
-    }
-  }
-}
-
-#block-languagedropdownswitcher{
-  #lang_dropdown_form_lang-dropdown-form{
-    .form-type-select{
-      &.mb-3, .my-3{
-        margin-bottom: 0px;
       }
     }
   }
@@ -461,9 +458,9 @@ body.toolbar-fixed {
 
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
-    padding-top: 214px !important;
+    padding-top: 250px !important;
     &.toolbar-fixed.toolbar-tray-open{
-      padding-top: 249px !important;
+      padding-top: 279px !important;
     }
   }
   body.role-anonymous {
@@ -475,14 +472,11 @@ body.toolbar-fixed {
   }
   .top-header-content{
     padding-bottom: 0px;
-    .region-top-header-logos{
-      &.col{
-        padding: {
-          left: 0px;
-          right: 0px;
-        }
+    .region-top-header-logos.col, .region-wrapper{
+      padding: {
+        left: 0px;
+        right: 0px;
       }
-
       #block-logooira, #block-logoosha{
         .field--name-field-image{
           padding: 15px 0px 15px 0px;
@@ -498,35 +492,6 @@ body.toolbar-fixed {
             display: flex;
             flex-direction: row;
             align-items: center;
-            .block__font-size {
-              span a {
-                cursor: pointer;
-                color: $text-light-light-blue;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 1;
-                &:hover {
-                  text-decoration: underline;
-                }
-              }
-              .a_small {
-                a {
-                  font-size: 1rem;
-                  padding-right: 5px;
-                }
-              }
-              .a_medium{
-                a{
-                  font-size: 1.35rem;
-                  padding-right: 5px;
-                }
-              }
-              .a_big {
-                a {
-                  font-size: 2rem;
-                }
-              }
-            }
             .block__print {
               margin-left: 8px;
               padding-bottom: 3px;
@@ -550,6 +515,7 @@ body.toolbar-fixed {
         #block-generalsearch-api{
           grid-area: search;
           margin-bottom: 0.5rem;
+          font-family: "Open Sans";
           .block-search-form-block {
             .form-row{
               width: 310px;
@@ -611,15 +577,35 @@ body.toolbar-fixed {
                 width: 310px !important;
                 /**Add margi right for the grid layout**/
                 margin-right: -168px;
-                font-size: 0.8rem;
-                font-weight: $font-weight-normal;
+                font: {
+                  family: "Open Sans";
+                  size: 0.8rem;
+                  weight: normal;
+                }
                 -webkit-appearance: none;
                 appearance: none;
+              }
+              &.mb-3, &.my-3 {
+                margin-bottom: 0px !important;
               }
             }
           }
         }
-
+        #block-oiramasquerade{
+          grid-area: partner;
+          place-self: end;
+          height: 30px;
+          margin: {
+            bottom: 15px;
+            top: 2px;
+          }
+          border-radius: 8px;
+          cursor: not-allowed;
+          @include blueRightIcon($bg-color-blue-light, calc(100% - 10px) 50%, url("../images/arrow-right-lg-white.png"), $text-color-white, 15px, 30px);
+          a{
+            background-size: 12px !important;
+          }
+        }
       }
     }
   }

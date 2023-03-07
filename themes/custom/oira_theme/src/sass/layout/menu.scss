@@ -1,10 +1,12 @@
-#navbar-main{
-  background-color: $bg-color-blue-light;
-  color: $text-color-white;
+@media screen{
+  #navbar-main{
+    font-family: "Open Sans" !important;
+    background-color: $bg-color-blue-light;
+    color: $text-color-white;
     #CollapsingNavbar > div.container{
-    justify-content: center;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+      justify-content: center;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
       #block-oira-theme-main-menu{
         width: 100%;
         > ul{
@@ -77,13 +79,13 @@
           }
         }
       }
-  }
-  .nav-item.menu-item--expanded {
-    position: relative !important;
-  }
+    }
+    .nav-item.menu-item--expanded {
+      position: relative !important;
+    }
 
+  }
 }
-
 
 
 /*** Private menu ***/
