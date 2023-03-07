@@ -132,6 +132,9 @@
                 text-decoration: underline;
               }
             }
+            .a_small a, .a_medium a, .a_big a{
+              font-weight: bold;
+            }
             .a_small {
               a {
                 font-size: 1rem;
@@ -466,14 +469,11 @@ body.toolbar-fixed {
   }
   .top-header-content{
     padding-bottom: 0px;
-    .region-top-header-logos{
-      &.col{
-        padding: {
-          left: 0px;
-          right: 0px;
-        }
+    .region-top-header-logos.col, .region-wrapper{
+      padding: {
+        left: 0px;
+        right: 0px;
       }
-
       #block-logooira, #block-logoosha{
         .field--name-field-image{
           padding: 15px 0px 15px 0px;
@@ -489,35 +489,6 @@ body.toolbar-fixed {
             display: flex;
             flex-direction: row;
             align-items: center;
-            .block__font-size {
-              span a {
-                cursor: pointer;
-                color: $text-light-light-blue;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 1;
-                &:hover {
-                  text-decoration: underline;
-                }
-              }
-              .a_small {
-                a {
-                  font-size: 1rem;
-                  padding-right: 5px;
-                }
-              }
-              .a_medium{
-                a{
-                  font-size: 1.35rem;
-                  padding-right: 5px;
-                }
-              }
-              .a_big {
-                a {
-                  font-size: 2rem;
-                }
-              }
-            }
             .block__print {
               margin-left: 8px;
               padding-bottom: 3px;
@@ -623,24 +594,9 @@ body.toolbar-fixed {
           }
           border-radius: 8px;
           cursor: not-allowed;
+          @include blueRightIcon($bg-color-blue-light, calc(100% - 10px) 50%, url("../images/arrow-right-lg-white.png"), $text-color-white, 15px, 30px);
           a{
-            position: relative;
-            text-align: center;
-            color: $text-grey;
-            font : {
-              weight: 600;
-              size: 0.9rem;
-            }
-            padding-right: 40px;
-            background: {
-              color: $bg-light-purple;
-              image: url("../images/arrow-right-lg-dark-purple.png");
-              position: 90% 50%;
-              size: 13px;
-              repeat: no-repeat;
-            }
-            border: 1px solid $bg-color-blue-dark;
-            pointer-events: none;
+            background-size: 12px !important;
           }
         }
       }

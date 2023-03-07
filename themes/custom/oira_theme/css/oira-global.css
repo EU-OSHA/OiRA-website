@@ -1673,13 +1673,13 @@ table tr td {
   .page-view-frontpage .content-oira-tools .view-tools .view-content.row .views-view-grid .row.equal .views-item-columns-container .field--type-entity-reference {
     margin: 0px;
   }
+  .page-view-frontpage .content-oira-tools .more-link {
+    padding-right: 15px;
+  }
   .page-view-frontpage .content-oira-partners h2 {
     font-size: 2.1rem;
     font-weight: bold;
     color: #10b2e4;
-  }
-  .page-view-frontpage .content-oira-partners .more-link {
-    padding: 0px 15px;
   }
   .page-view-frontpage .content-latest-news h2 {
     font-size: 2.1rem;
@@ -2263,11 +2263,36 @@ table tr td {
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .pm-title.collapsed-wrapper h3 {
     background-image: url("../images/arrow-sm-down-blue.png");
   }
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper.collapsed {
+    display: none;
+  }
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .pm-body {
     color: #58585A;
   }
-  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper.collapsed {
-    display: none;
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .resource-link, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .file {
+    padding-left: 0px;
+  }
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .resource-link a:before, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .file a:before {
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    margin-right: 7px;
+    border: 1px solid transparent;
+    background-repeat: no-repeat;
+    background-image: url("../images/external-link-dark-purple.png");
+    background-size: 15px;
+  }
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .resource-link a[href$=".pdf"]:before, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .file a[href$=".pdf"]:before {
+    background-image: url("../images/icon-application-pdf.png");
+  }
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .resource-link a[href$=".zip"]:before, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .file a[href$=".zip"]:before {
+    background-image: url("../images/document-dark-purple.png");
+  }
+  body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .resource-link a[href$=".ppt"]:before,
+body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .resource-link a[href$=".pptx"]:before, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .file a[href$=".ppt"]:before,
+body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .file a[href$=".pptx"]:before {
+    background-image: url("../images/document-dark-purple.png");
   }
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .partner-wrapper {
     display: grid;
@@ -5824,6 +5849,7 @@ body[class*=private-zone-] .page-header.h1 {
   height: auto;
   background-color: #58585A;
   padding: 15px 0 15px 0;
+  font-family: "Open Sans", sans-serif;
 }
 .site-footer .site-footer__bottom {
   margin-top: 0;
@@ -6012,6 +6038,9 @@ body[class*=private-zone-] .page-header.h1 {
 }
 .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size span a:hover {
   text-decoration: underline;
+}
+.top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size .a_small a, .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size .a_medium a, .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size .a_big a {
+  font-weight: bold;
 }
 .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size .a_small a {
   font-size: 1rem;
@@ -6275,11 +6304,11 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .top-header-content {
     padding-bottom: 0px;
   }
-  .top-header-content .region-top-header-logos.col, .top-header-content .node--type-collaboration-document .block-system-main-block .content .region-top-header-logos.node--view-mode-full, .node--type-collaboration-document .block-system-main-block .content .top-header-content .region-top-header-logos.node--view-mode-full {
+  .top-header-content .region-top-header-logos.col, .top-header-content .node--type-collaboration-document .block-system-main-block .content .region-top-header-logos.node--view-mode-full, .node--type-collaboration-document .block-system-main-block .content .top-header-content .region-top-header-logos.node--view-mode-full, .top-header-content .region-wrapper {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .top-header-content .region-top-header-logos #block-logooira .field--name-field-image, .top-header-content .region-top-header-logos #block-logoosha .field--name-field-image {
+  .top-header-content .region-top-header-logos.col #block-logooira .field--name-field-image, .top-header-content .node--type-collaboration-document .block-system-main-block .content .region-top-header-logos.node--view-mode-full #block-logooira .field--name-field-image, .node--type-collaboration-document .block-system-main-block .content .top-header-content .region-top-header-logos.node--view-mode-full #block-logooira .field--name-field-image, .top-header-content .region-top-header-logos.col #block-logoosha .field--name-field-image, .top-header-content .node--type-collaboration-document .block-system-main-block .content .region-top-header-logos.node--view-mode-full #block-logoosha .field--name-field-image, .node--type-collaboration-document .block-system-main-block .content .top-header-content .region-top-header-logos.node--view-mode-full #block-logoosha .field--name-field-image, .top-header-content .region-wrapper #block-logooira .field--name-field-image, .top-header-content .region-wrapper #block-logoosha .field--name-field-image {
     padding: 15px 0px 15px 0px;
   }
   .top-header-content .header-blocks {
@@ -6292,27 +6321,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size span a {
-    cursor: pointer;
-    color: #A2ACB4;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1;
-  }
-  .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size span a:hover {
-    text-decoration: underline;
-  }
-  .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size .a_small a {
-    font-size: 1rem;
-    padding-right: 5px;
-  }
-  .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size .a_medium a {
-    font-size: 1.35rem;
-    padding-right: 5px;
-  }
-  .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size .a_big a {
-    font-size: 2rem;
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__print {
     margin-left: 8px;
@@ -6411,19 +6419,29 @@ body.toolbar-fixed.toolbar-tray-open #header {
     cursor: not-allowed;
   }
   .top-header-content .header-blocks .region-header-form #block-oiramasquerade a {
-    position: relative;
-    text-align: center;
-    color: #58585A;
-    font-weight: 600;
+    place-self: end;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 30px;
+    color: #FFF;
     font-size: 0.9rem;
-    padding-right: 40px;
-    background-color: #EAE5ED;
-    background-image: url("../images/arrow-right-lg-dark-purple.png");
-    background-position: 90% 50%;
-    background-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #10b3e4;
+    background-image: url("../images/arrow-right-lg-white.png");
     background-repeat: no-repeat;
-    border: 1px solid #003399;
-    pointer-events: none;
+    background-position: calc(100% - 10px) 50%;
+    background-size: 8px;
+  }
+  .top-header-content .header-blocks .region-header-form #block-oiramasquerade a:before {
+    content: "";
+  }
+  .top-header-content .header-blocks .region-header-form #block-oiramasquerade a:hover {
+    text-decoration: underline;
+  }
+  .top-header-content .header-blocks .region-header-form #block-oiramasquerade a {
+    background-size: 12px !important;
   }
 }
 /* SCSS to Home Page */

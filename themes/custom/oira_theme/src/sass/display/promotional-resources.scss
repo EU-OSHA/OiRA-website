@@ -113,11 +113,45 @@
                   }
                 }
                 .promotional-resources-wrapper{
+                  &.collapsed{
+                    display: none;
+                  }
                   .pm-body{
                     color: $text-grey;
                   }
-                  &.collapsed{
-                    display: none;
+                  .resource-link, .file{
+                    padding-left: 0px;
+                    a{
+                      &:before {
+                        display: inline-block;
+                        content: "";
+                        height: 15px;
+                        width: 15px;
+                        margin-right: 7px;
+                        border: 1px solid transparent;
+                        background: {
+                          repeat: no-repeat;
+                          image: url("../images/external-link-dark-purple.png");
+                          size: 15px;
+                        }
+                      }
+                    }
+                    a[href$=".pdf"] {
+                      &:before {
+                        background-image: url("../images/icon-application-pdf.png");
+                      }
+                    }
+                    a[href$=".zip"] {
+                      &:before {
+                        background-image: url("../images/document-dark-purple.png");
+                      }
+                    }
+                    a[href$=".ppt"],
+                    a[href$=".pptx"] {
+                      &:before {
+                        background-image: url("../images/document-dark-purple.png");
+                      }
+                    }
                   }
                 }
                 .partner-wrapper{
