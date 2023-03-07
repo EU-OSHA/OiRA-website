@@ -2621,33 +2621,6 @@ fix-paddings {
   padding-right: 0;
 }
 
-.background-purple, .background-grey {
-  margin: 1rem 0px;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.background-purple {
-  font-size: 1.25rem !important;
-  background: #967EA7;
-  color: #FFF;
-}
-.background-purple a, .background-purple a > span {
-  color: #FFF !important;
-  text-decoration: underline;
-  text-decoration-color: #10b2e4;
-  font-style: normal;
-  font-weight: bold;
-}
-.background-purple a:hover, .background-purple a > span:hover {
-  color: #FFF !important;
-  text-decoration: none;
-}
-
-.background-grey {
-  background: #F8F8F8;
-}
-
 .field--name-field-summary p {
   font-size: 1.2rem;
 }
@@ -2750,7 +2723,10 @@ fix-paddings {
 .page-not-found {
   margin-bottom: 2rem;
 }
-.page-not-found .container, .page-not-found .node--type-collaboration-document .block-system-main-block, .node--type-collaboration-document .page-not-found .block-system-main-block, .page-not-found .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-not-found p, .page-not-found .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-not-found .field-name-node-title {
+.page-not-found section > .container, .page-not-found .node--type-collaboration-document section > .block-system-main-block, .node--type-collaboration-document .page-not-found section > .block-system-main-block, .page-not-found .page-view-faqs-oira .field--name-field-article-header .field-name-body section > p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-not-found section > p, .page-not-found .page-view-faqs-oira .field--name-field-article-header section > .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-not-found section > .field-name-node-title {
+  padding: 15px;
+}
+.page-not-found .container.fix-paddings, .page-not-found .node--type-collaboration-document .fix-paddings.block-system-main-block, .node--type-collaboration-document .page-not-found .fix-paddings.block-system-main-block, .page-not-found .page-view-faqs-oira .field--name-field-article-header .field-name-body p.fix-paddings, .page-view-faqs-oira .field--name-field-article-header .field-name-body .page-not-found p.fix-paddings, .page-not-found .page-view-faqs-oira .field--name-field-article-header .fix-paddings.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .page-not-found .fix-paddings.field-name-node-title {
   padding: 0px;
 }
 
@@ -5972,6 +5948,34 @@ body[class*=private-zone-] .page-header.h1 {
     height: 250px !important;
   }
 }
+@media screen {
+  .background-purple, .background-grey {
+    margin: 1rem 0px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .background-purple {
+    font-size: 1.25rem !important;
+    background: #967EA7;
+    color: #FFF;
+  }
+  .background-purple a, .background-purple a > span {
+    color: #FFF !important;
+    text-decoration: underline;
+    text-decoration-color: #10b2e4;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .background-purple a:hover, .background-purple a > span:hover {
+    color: #FFF !important;
+    text-decoration: none;
+  }
+
+  .background-grey {
+    background: #F8F8F8;
+  }
+}
 .site-footer {
   display: flex;
   width: 100%;
@@ -6577,98 +6581,101 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 }
 /* SCSS to Home Page */
-.content-light-purple {
-  background: #dfd8e4;
-  padding-top: 2rem;
-  padding-bottom: 0.7rem;
-}
+@media screen {
+  .content-light-purple {
+    background: #dfd8e4;
+    padding-top: 2rem;
+    padding-bottom: 0.7rem;
+  }
 
-.content-dark-purple {
-  background: #967EA7;
-  padding: 2rem 0rem;
-}
+  .content-dark-purple {
+    background: #967EA7;
+    padding: 2rem 0rem;
+  }
 
-.content-light-grey {
-  background: #F8F8F8;
-  padding: 2rem 0rem;
-}
+  .content-light-grey {
+    background: #F8F8F8;
+    padding: 2rem 0rem;
+  }
 
-.content-white {
-  background: #FFF;
-  padding: 2rem 0rem;
-}
+  .content-white {
+    background: #FFF;
+    padding: 2rem 0rem;
+  }
 
-.content-home .field__label {
-  float: left;
-}
-.content-home .field__label:after {
-  display: inline-block;
-  content: ":";
-}
-.content-home .field__item {
-  display: inline-block;
-  margin-left: 5px;
-  font-style: italic;
-  font-weight: 600;
-}
-.content-home .intro-text-view {
-  color: #967ea7;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 14px 0px;
-  font-style: italic;
-}
+  .content-home .field__label {
+    float: left;
+  }
+  .content-home .field__label:after {
+    display: inline-block;
+    content: ":";
+  }
+  .content-home .field__item {
+    display: inline-block;
+    margin-left: 5px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  .content-home .intro-text-view {
+    color: #967ea7;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 14px 0px;
+    font-style: italic;
+  }
 
-.home-slider .view-slideshow {
-  background-color: #786586;
-}
-.home-slider .view-slideshow > .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-.home-slider .media--ratio--fluid {
-  padding-bottom: 0 !important;
-}
-.home-slider .slick-dotted.slick-slider {
-  margin-bottom: 0;
-}
-.home-slider .views-field-field-image img {
-  width: 100%;
-  height: auto;
-}
-.home-slider .views-field-title, .home-slider .views-field-body {
-  position: relative;
-  background-color: #786586;
-  min-height: auto !important;
-  transform: initial !important;
-  color: #FFF;
-}
-.home-slider .views-field-title h1, .home-slider .views-field-body h1 {
-  padding-top: 1.5rem;
-}
-.home-slider .views-field-title h1 a, .home-slider .views-field-body h1 a {
-  color: #FFF;
-  font-style: normal;
-  font-weight: normal;
-}
-.home-slider .views-field-body {
-  padding-top: 0;
-  padding-bottom: 4.3rem;
-  font-size: 1.2rem;
-}
-.home-slider .views-field.views-field-field-image {
-  height: 457px;
-  overflow: hidden;
-}
-.home-slider .views-field.views-field-field-image img {
-  height: 457px;
-  object-fit: cover;
-}
-.home-slider .slick-dots {
-  bottom: 20px;
-}
+  .home-slider .view-slideshow {
+    background-color: #786586;
+  }
+  .home-slider .view-slideshow > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home-slider .media--ratio--fluid {
+    padding-bottom: 0 !important;
+  }
+  .home-slider .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+  .home-slider .views-field-field-image img {
+    width: 100%;
+    height: auto;
+  }
+  .home-slider .views-field-title, .home-slider .views-field-body {
+    position: relative;
+    background-color: #786586;
+    min-height: auto !important;
+    transform: initial !important;
+    color: #FFF;
+  }
+  .home-slider .views-field-title h1, .home-slider .views-field-body h1 {
+    padding-top: 1.5rem;
+  }
+  .home-slider .views-field-title h1 a, .home-slider .views-field-body h1 a {
+    color: #FFF;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .home-slider .views-field-body {
+    padding-top: 0;
+    padding-bottom: 4.3rem;
+    font-size: 1.2rem;
+  }
+  .home-slider .views-field.views-field-field-image {
+    height: 457px;
+    overflow: hidden;
+  }
+  .home-slider .views-field.views-field-field-image img {
+    height: 457px;
+    object-fit: cover;
+  }
+  .home-slider .slick-dots {
+    bottom: 20px;
+  }
 
-@media (max-width: 767px) {
+  /**** View promotional materials homepage ***/
+}
+@media screen and (max-width: 767px) {
   .home-slider .views-field-title,
 .home-slider .views-field-body {
     padding: 0 15px;
@@ -6677,219 +6684,222 @@ body.toolbar-fixed.toolbar-tray-open #header {
     padding-bottom: 3rem;
   }
 }
-.view-tools.view-display-id-block_1 .views-item-columns-container {
-  padding: 15px;
-}
-.view-tools.view-display-id-block_1 .views-field-field-tool-link {
-  margin-bottom: 15px;
-}
-.view-tools.view-display-id-block_1 .related-partners,
+@media screen {
+  .view-tools.view-display-id-block_1 .views-item-columns-container {
+    padding: 15px;
+  }
+  .view-tools.view-display-id-block_1 .views-field-field-tool-link {
+    margin-bottom: 15px;
+  }
+  .view-tools.view-display-id-block_1 .related-partners,
 .view-tools.view-display-id-block_1 .co-author {
-  display: flex;
-  align-items: stretch;
-}
-.view-tools.view-display-id-block_1 .related-partners h4 a,
+    display: flex;
+    align-items: stretch;
+  }
+  .view-tools.view-display-id-block_1 .related-partners h4 a,
 .view-tools.view-display-id-block_1 .co-author h4 a {
-  font-size: 1.125rem;
-}
-.view-tools.view-display-id-block_1 .related-partners a,
+    font-size: 1.125rem;
+  }
+  .view-tools.view-display-id-block_1 .related-partners a,
 .view-tools.view-display-id-block_1 .co-author a {
-  color: #58585a;
-  font-style: normal;
+    color: #58585a;
+    font-style: normal;
+  }
 }
-
-/**** View promotional materials homepage ***/
-.view-promotional-materials.view-display-id-block .view-content + .more-link {
-  margin: 1.5rem 0;
+@media screen {
+  .view-promotional-materials.view-display-id-block .view-content + .more-link {
+    margin: 1.5rem 0;
+  }
+  .view-promotional-materials.view-display-id-block .views-col {
+    position: relative;
+  }
+  .view-promotional-materials.view-display-id-block .field-content .more-link {
+    margin-top: 15px;
+    color: #10b2e4;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .view-promotional-materials.view-display-id-block .field-content .more-link:before {
+    display: inline-block;
+    content: ">";
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+  }
+  .view-promotional-materials.view-display-id-block .field-content .more-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .view-promotional-materials.view-display-id-block .field-content .more-link.expanded {
+    text-align: right !important;
+    height: 12px;
+    overflow: hidden;
+    font-style: normal;
+    font-size: 0;
+    margin-top: 0px;
+  }
+  .view-promotional-materials.view-display-id-block .field-content .more-link.expanded:before {
+    text-align: right;
+    display: block;
+    font-family: "Glyphicons Halflings";
+    content: "";
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .view-promotional-materials.view-display-id-block .views-field-nothing {
+    padding-bottom: 1rem;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper {
+    display: none;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper .partner-wrapper {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    background: #786586;
+    color: white;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group {
+    padding: 0 15px;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group.partner-inner-group--img {
+    width: 42%;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group.partner-inner-group--data {
+    width: 58%;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group a {
+    display: block;
+    color: white;
+    font-size: 1rem;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group img {
+    max-width: 100%;
+    height: auto;
+  }
+  .view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group h4 a {
+    color: white;
+    font-style: normal;
+    font-size: 1.125rem;
+  }
 }
-.view-promotional-materials.view-display-id-block .views-col {
-  position: relative;
+@media screen {
+  .content-promotional-materials h2:after {
+    content: "";
+    background: url(../images/promotional-materials.png) no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    float: right;
+  }
+  .content-promotional-materials .intro-text-view {
+    color: #967ea7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    font-style: italic;
+  }
+  .content-promotional-materials .view-promotional-materials {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+  .content-promotional-materials .view-promotional-materials .view-content.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .content-promotional-materials .view-promotional-materials h4 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .content-promotional-materials .view-promotional-materials .views-field-nothing img {
+    width: 100%;
+    height: auto;
+  }
+  .content-promotional-materials .more-link {
+    width: 100%;
+    text-align: right;
+  }
 }
-.view-promotional-materials.view-display-id-block .field-content .more-link {
-  margin-top: 15px;
-  color: #10b2e4;
-  font-style: italic;
-  font-weight: bold;
+@media screen {
+  #navbar-main {
+    font-family: "Open Sans" !important;
+    background-color: #10b3e4;
+    color: #FFF;
+  }
+  #navbar-main #CollapsingNavbar > div.container, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block {
+    justify-content: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu {
+    width: 100%;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul > li:nth-child(1) > a, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul > li:nth-child(1) > a, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul > li:nth-child(1) > a, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul > li:nth-child(1) > a, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul > li:nth-child(1) > a {
+    width: 37px;
+    background: url("../images/home-icon.png") no-repeat;
+    text-indent: -9999px;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li {
+    position: relative !important;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li .nav-link, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li .nav-link, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li .nav-link, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li .nav-link, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li .nav-link {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li a, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li a, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li a, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li a, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li a, #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li span, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li span, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li span, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li span, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFF;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu {
+    background-color: #10b3e4;
+    color: #FFF;
+    border: 0;
+    margin: 0;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu li, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li {
+    background-color: #10b3e4;
+    border: 0;
+    border-bottom: 2px solid #FFF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover {
+    text-decoration: none;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover {
+    background-color: #0e98c3;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu {
+    display: block;
+    padding-bottom: 0;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li:last-child, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:last-child, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:last-child, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:last-child, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:last-child {
+    border-right: 0;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li.active > a, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li.active > a, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li.active > a, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li.active > a, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li.active > a {
+    font-weight: 600;
+  }
+  #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul .dropdown-toggle::after, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul .dropdown-toggle::after, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul .dropdown-toggle::after, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul .dropdown-toggle::after, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul .dropdown-toggle::after {
+    content: none;
+  }
+  #navbar-main .nav-item.menu-item--expanded {
+    position: relative !important;
+  }
 }
-.view-promotional-materials.view-display-id-block .field-content .more-link:before {
-  display: inline-block;
-  content: ">";
-  margin-right: 5px;
-  display: inline-block;
-  position: relative;
-  top: -1px;
-}
-.view-promotional-materials.view-display-id-block .field-content .more-link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-.view-promotional-materials.view-display-id-block .field-content .more-link.expanded {
-  text-align: right !important;
-  height: 12px;
-  overflow: hidden;
-  font-style: normal;
-  font-size: 0;
-  margin-top: 0px;
-}
-.view-promotional-materials.view-display-id-block .field-content .more-link.expanded:before {
-  text-align: right;
-  display: block;
-  font-family: "Glyphicons Halflings";
-  content: "";
-  font-size: 1.2rem;
-  line-height: 1;
-}
-.view-promotional-materials.view-display-id-block .views-field-nothing {
-  padding-bottom: 1rem;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper {
-  display: none;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper .partner-wrapper {
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem 0;
-  background: #786586;
-  color: white;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group {
-  padding: 0 15px;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group.partner-inner-group--img {
-  width: 42%;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group.partner-inner-group--data {
-  width: 58%;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group a {
-  display: block;
-  color: white;
-  font-size: 1rem;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group img {
-  max-width: 100%;
-  height: auto;
-}
-.view-promotional-materials.view-display-id-block .partners-wrapper .partner-inner-group h4 a {
-  color: white;
-  font-style: normal;
-  font-size: 1.125rem;
-}
-
-.content-promotional-materials h2:after {
-  content: "";
-  background: url(../images/promotional-materials.png) no-repeat;
-  background-size: 100%;
-  width: 40px;
-  height: 40px;
-  float: right;
-}
-.content-promotional-materials .intro-text-view {
-  color: #967ea7;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 15px;
-  font-style: italic;
-}
-.content-promotional-materials .view-promotional-materials {
-  padding-bottom: 0;
-  padding-top: 20px;
-}
-.content-promotional-materials .view-promotional-materials .view-content.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-.content-promotional-materials .view-promotional-materials h4 {
-  font-size: 1.25rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.content-promotional-materials .view-promotional-materials .views-field-nothing img {
-  width: 100%;
-  height: auto;
-}
-.content-promotional-materials .more-link {
-  width: 100%;
-  text-align: right;
-}
-
-#navbar-main {
-  font-family: "Open Sans" !important;
-  background-color: #10b3e4;
-  color: #FFF;
-}
-#navbar-main #CollapsingNavbar > div.container, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block {
-  justify-content: center;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu {
-  width: 100%;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul {
-  display: flex;
-  justify-content: space-between;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul > li:nth-child(1) > a, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul > li:nth-child(1) > a, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul > li:nth-child(1) > a, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul > li:nth-child(1) > a, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul > li:nth-child(1) > a {
-  width: 37px;
-  background: url("../images/home-icon.png") no-repeat;
-  text-indent: -9999px;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li {
-  position: relative !important;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li .nav-link, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li .nav-link, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li .nav-link, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li .nav-link, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li .nav-link {
-  font-size: 1rem;
-  padding: 0 0.5rem;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li a, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li a, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li a, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li a, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li a, #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li span, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li span, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li span, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li span, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li span {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #FFF;
-  padding-top: 0;
-  padding-bottom: 0;
-  display: block;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu {
-  background-color: #10b3e4;
-  color: #FFF;
-  border: 0;
-  margin: 0;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu li, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li {
-  background-color: #10b3e4;
-  border: 0;
-  border-bottom: 2px solid #FFF;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li a:hover {
-  text-decoration: none;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li ul.dropdown-menu li:hover {
-  background-color: #0e98c3;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:hover ul.dropdown-menu {
-  display: block;
-  padding-bottom: 0;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li:last-child, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:last-child, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li:last-child, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:last-child, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li:last-child {
-  border-right: 0;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul li.active > a, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li.active > a, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul li.active > a, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li.active > a, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul li.active > a {
-  font-weight: 600;
-}
-#navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu > ul .dropdown-toggle::after, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul .dropdown-toggle::after, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu > ul .dropdown-toggle::after, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul .dropdown-toggle::after, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu > ul .dropdown-toggle::after {
-  content: none;
-}
-#navbar-main .nav-item.menu-item--expanded {
-  position: relative !important;
-}
-
 /*** Private menu ***/
 .menu--private-zone {
   margin-bottom: 15px;
