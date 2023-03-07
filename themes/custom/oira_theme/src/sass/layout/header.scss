@@ -133,7 +133,7 @@
               }
             }
             .a_small a, .a_medium a, .a_big a{
-              font-weight: bold;
+              font-weight: 600;
             }
             .a_small {
               a {
@@ -253,8 +253,11 @@
             background-position: 97% 50% !important;
             color: $text-color-white;
             width: 100px !important;
-            font-size: 0.8rem;
-            font-weight: $font-weight-normal;
+            font: {
+              family: "Open Sans" !important;
+              size: 0.8rem;
+              weight: normal;
+            }
             -webkit-appearance: none;
             appearance: none;
             option {
@@ -512,6 +515,7 @@ body.toolbar-fixed {
         #block-generalsearch-api{
           grid-area: search;
           margin-bottom: 0.5rem;
+          font-family: "Open Sans";
           .block-search-form-block {
             .form-row{
               width: 310px;
@@ -573,8 +577,11 @@ body.toolbar-fixed {
                 width: 310px !important;
                 /**Add margi right for the grid layout**/
                 margin-right: -168px;
-                font-size: 0.8rem;
-                font-weight: $font-weight-normal;
+                font: {
+                  family: "Open Sans";
+                  size: 0.8rem;
+                  weight: normal;
+                }
                 -webkit-appearance: none;
                 appearance: none;
               }

@@ -150,6 +150,13 @@ fix-paddings{
 .addtoany_list a:hover span {
   opacity: 1;
 }
+/**Page not found -- class found in page--404.html.twig**/
+.page-not-found{
+  margin-bottom: 2rem;
+  .container{
+    padding: 0px;
+  }
+}
 
 /**Act as partner**/
 select[name=masquerade_as]{
