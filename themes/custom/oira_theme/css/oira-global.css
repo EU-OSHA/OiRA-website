@@ -2281,7 +2281,7 @@ table tr td {
     border: 1px solid transparent;
     background-repeat: no-repeat;
     background-image: url("../images/external-link-dark-purple.png");
-    background-size: 15px;
+    background-size: 14px;
   }
   body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .resource-link a[href$=".pdf"]:before, body.page-view-promotional-resources-search .oira-section #block-oira-theme-content .view-promotional-resources-search .view-content .views-row .content-view-pm-view .promotional-resources-wrapper .file a[href$=".pdf"]:before {
     background-image: url("../images/icon-application-pdf.png");
