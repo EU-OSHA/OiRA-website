@@ -114,11 +114,20 @@
     display: none !important;
   }
 
-  body.node--type-article .fix-paddings {
+  body.node--type-article .fix-paddings, body.node--type-news .fix-paddings {
     padding: 0px;
   }
-  body.node--type-article #block-menupagermainnavigation {
+  body.node--type-article #block-menupagermainnavigation, body.node--type-article #block-backtonews, body.node--type-news #block-menupagermainnavigation, body.node--type-news #block-backtonews {
     display: none;
+  }
+  body.node--type-article #block-views-block-related-resources-block-1, body.node--type-news #block-views-block-related-resources-block-1 {
+    border: none;
+  }
+  body.node--type-article div.right-menu, body.node--type-news div.right-menu {
+    padding: 0px 15px;
+  }
+  body.node--type-article div.right-menu .view-id-related_resources, body.node--type-news div.right-menu .view-id-related_resources {
+    padding: 0px 15px;
   }
 
   body.page-view-news .container {
@@ -129,6 +138,35 @@
   }
   body.page-view-news .news__image, body.page-view-news .pagerer-container, body.page-view-news .view-footer {
     display: none;
+  }
+
+  body.promotional-resources #block-headerviewpromotionalresourcestypes, body.page-view-promotional-materials-type #block-headerviewpromotionalresourcestypes {
+    padding: 0px 15px;
+  }
+  body.promotional-resources .oira-section, body.page-view-promotional-materials-type .oira-section {
+    background: transparent;
+    padding: 0px;
+  }
+  body.promotional-resources .view-promotional-materials-type .views-field-name a, body.page-view-promotional-materials-type .view-promotional-materials-type .views-field-name a {
+    margin-bottom: 0px;
+    border: none;
+    height: unset;
+  }
+  body.promotional-resources .view-promotional-materials-type .views-field-description__value, body.page-view-promotional-materials-type .view-promotional-materials-type .views-field-description__value {
+    padding-top: 0px;
+  }
+
+  body.page-view-promotional-resources-search #main-wrapper {
+    padding: 0px 15px;
+  }
+  body.page-view-promotional-resources-search #main-wrapper p.tag-country {
+    margin-bottom: 0px;
+  }
+  body.page-view-promotional-resources-search #main-wrapper #block-exposedformpromotional-resources-searchpage-1, body.page-view-promotional-resources-search #main-wrapper .resource-link, body.page-view-promotional-resources-search #main-wrapper div.file {
+    display: none;
+  }
+  body.page-view-promotional-resources-search #main-wrapper h4 {
+    font-weight: 400;
   }
 }
 

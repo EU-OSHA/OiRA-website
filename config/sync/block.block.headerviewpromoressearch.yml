@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/promotional-resources-search\r\n/promotional-resources-search/*\r\n/promotional-resources-search?*"
+    pages: "/practical-resources\r\n/practical-resources/*\r\n/practical-resources?*"

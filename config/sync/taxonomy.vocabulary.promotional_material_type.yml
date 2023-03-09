@@ -2,7 +2,7 @@ uuid: 19e9a11a-0586-448b-84af-d4074c21ca12
 langcode: und
 status: true
 dependencies: {  }
-name: 'Promotional material type'
+name: 'Practical material type'
 vid: promotional_material_type
 description: ''
 weight: 0

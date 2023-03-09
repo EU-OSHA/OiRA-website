@@ -222,6 +222,7 @@ input[type=search] {
 
 /* Font-weights */
 div#sliding-popup {
+  position: fixed;
   background: url(../images/bg-cookies.png) repeat;
 }
 div#sliding-popup .popup-content {
@@ -2440,7 +2441,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
 }
 @media screen {
   body.node--type-article .left-menu h2, body.node--type-article .right-menu h2 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: normal;
     color: #967EA7;
   }
@@ -2470,7 +2471,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
   body.node--type-article div#main article h3 {
     color: #10b2e4;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   body.node--type-article div#main article h5 {
     color: #967EA7;
@@ -2486,6 +2487,16 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
   body.node--type-article div#main article a:hover {
     color: #000000;
     text-decoration: none;
+  }
+  body.node--type-article div#main article .field--name-field-body-in-grey {
+    background-color: #F8F8F8;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  body.node--type-article div#main article .field--name-field-body-in-grey h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #967EA7;
   }
   body.node--type-article div#main .menu-pager {
     margin: 1.5rem 0rem;
@@ -2556,7 +2567,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
     border-radius: 8px;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #10b2e4;
   }
   body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a img {
@@ -2567,6 +2578,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
     place-self: end;
     text-align: end;
     align-self: center;
+    font-weight: bold;
   }
   body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a:hover {
     background: #967EA7;
@@ -6162,6 +6174,9 @@ body[class*=private-zone-] .page-header.h1 {
   display: flex;
   flex-direction: row;
 }
+.top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size {
+  padding-bottom: 2.5px;
+}
 .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size span a {
   cursor: pointer;
   color: #A2ACB4;
@@ -6220,7 +6235,7 @@ body[class*=private-zone-] .page-header.h1 {
   place-self: center;
 }
 #navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row {
-  width: 170px;
+  width: 135px;
   height: 30px;
   max-height: 30px;
   border: 1px solid #003399;
@@ -6237,8 +6252,7 @@ body[class*=private-zone-] .page-header.h1 {
   padding: 9px 9px;
   border-radius: 4px 0px 0px 4px;
   border: none;
-  width: inherit;
-  min-width: 100%;
+  width: 100%;
   margin: 0px;
   height: 30px !important;
   max-height: 28px !important;
@@ -6420,14 +6434,14 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
-    padding-top: 250px !important;
+    padding-top: 248px !important;
   }
   body.user-logged-in.toolbar-fixed.toolbar-tray-open {
-    padding-top: 279px !important;
+    padding-top: 277px !important;
   }
 
   body.role-anonymous {
-    padding-top: 174px;
+    padding-top: 172px;
   }
 
   #navbar-main {
@@ -6452,9 +6466,8 @@ body.toolbar-fixed.toolbar-tray-open #header {
     display: block;
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary {
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    padding-bottom: 1px;
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__print {
     margin-left: 8px;
@@ -6509,15 +6522,16 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row #edit-actions .btn-primary {
     position: relative;
-    left: -28px;
+    left: -23px;
     cursor: pointer;
-    border-radius: 0px;
+    border-radius: 0px 4px 4px 0px;
     border: none;
     width: 28px;
+    max-width: 28px !important;
     height: 28px;
     background: #967EA7 url(../images/magnifying-glass-white.png) no-repeat !important;
     background-position: 50% 50% !important;
-    font-size: 0;
+    text-indent: -9999px;
   }
   .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher {
     margin-bottom: 6px;
