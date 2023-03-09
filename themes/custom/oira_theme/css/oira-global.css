@@ -222,6 +222,7 @@ input[type=search] {
 
 /* Font-weights */
 div#sliding-popup {
+  position: fixed;
   background: url(../images/bg-cookies.png) repeat;
 }
 div#sliding-popup .popup-content {
@@ -2440,7 +2441,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
 }
 @media screen {
   body.node--type-article .left-menu h2, body.node--type-article .right-menu h2 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: normal;
     color: #967EA7;
   }
@@ -2470,7 +2471,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
   body.node--type-article div#main article h3 {
     color: #10b2e4;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   body.node--type-article div#main article h5 {
     color: #967EA7;
@@ -2486,6 +2487,16 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
   body.node--type-article div#main article a:hover {
     color: #000000;
     text-decoration: none;
+  }
+  body.node--type-article div#main article .field--name-field-body-in-grey {
+    background-color: #F8F8F8;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  body.node--type-article div#main article .field--name-field-body-in-grey h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #967EA7;
   }
   body.node--type-article div#main .menu-pager {
     margin: 1.5rem 0rem;
@@ -2556,7 +2567,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
     border-radius: 8px;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #10b2e4;
   }
   body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a img {
@@ -2567,6 +2578,7 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
     place-self: end;
     text-align: end;
     align-self: center;
+    font-weight: bold;
   }
   body.node--type-article .right-menu .view-related-resources > .view-content > div .related-resources a:hover {
     background: #967EA7;
