@@ -122,6 +122,7 @@
           display: flex;
           flex-direction: row;
           .block__font-size {
+            padding-bottom: 2.5px;
             span a {
               cursor: pointer;
               color: $text-light-light-blue;
@@ -191,7 +192,7 @@
       }
       .block-search-form-block {
         .form-row{
-          width: 170px;
+          width: 135px;
           height: 30px;
           max-height: 30px;
           border: 1px solid $bg-color-blue-dark;
@@ -206,8 +207,7 @@
               padding: 9px 9px;
               border-radius: 4px 0px 0px 4px;
               border: none;
-              width: inherit;
-              min-width: 100%;
+              width: 100%;
               margin: 0px;
               height: 30px !important;
               max-height: 28px !important;
@@ -458,13 +458,13 @@ body.toolbar-fixed {
 
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
-    padding-top: 250px !important;
+    padding-top: 248px !important;
     &.toolbar-fixed.toolbar-tray-open{
-      padding-top: 279px !important;
+      padding-top: 277px !important;
     }
   }
   body.role-anonymous {
-    padding-top: 174px;
+    padding-top: 172px;
   }
   #navbar-main{
     display: flex;
@@ -489,9 +489,8 @@ body.toolbar-fixed {
         #block-headerprintandfontsize{
           display: block;
           .field--type-text-with-summary{
-            display: flex;
-            flex-direction: row;
             align-items: center;
+            padding-bottom: 1px;
             .block__print {
               margin-left: 8px;
               padding-bottom: 3px;
@@ -547,15 +546,16 @@ body.toolbar-fixed {
                 padding: 0px;
                 .btn-primary{
                   position: relative;
-                  left: -28px;
+                  left: -23px;
                   cursor: pointer;
-                  border-radius: 0px;
+                  border-radius: 0px 4px 4px 0px;
                   border: none;
                   width: 28px;
+                  max-width: 28px !important;
                   height: 28px;
                   background: $bg-color-purple-dark url(../images/magnifying-glass-white.png) no-repeat !important;
                   background-position: 50% 50% !important;
-                  font-size: 0; //hide button text
+                  text-indent: -9999px;
                 }
               }
             }

@@ -6174,6 +6174,9 @@ body[class*=private-zone-] .page-header.h1 {
   display: flex;
   flex-direction: row;
 }
+.top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size {
+  padding-bottom: 2.5px;
+}
 .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__font-size span a {
   cursor: pointer;
   color: #A2ACB4;
@@ -6232,7 +6235,7 @@ body[class*=private-zone-] .page-header.h1 {
   place-self: center;
 }
 #navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row {
-  width: 170px;
+  width: 135px;
   height: 30px;
   max-height: 30px;
   border: 1px solid #003399;
@@ -6249,8 +6252,7 @@ body[class*=private-zone-] .page-header.h1 {
   padding: 9px 9px;
   border-radius: 4px 0px 0px 4px;
   border: none;
-  width: inherit;
-  min-width: 100%;
+  width: 100%;
   margin: 0px;
   height: 30px !important;
   max-height: 28px !important;
@@ -6432,14 +6434,14 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 @media only screen and (min-width: 992px) {
   body.user-logged-in {
-    padding-top: 250px !important;
+    padding-top: 248px !important;
   }
   body.user-logged-in.toolbar-fixed.toolbar-tray-open {
-    padding-top: 279px !important;
+    padding-top: 277px !important;
   }
 
   body.role-anonymous {
-    padding-top: 174px;
+    padding-top: 172px;
   }
 
   #navbar-main {
@@ -6464,9 +6466,8 @@ body.toolbar-fixed.toolbar-tray-open #header {
     display: block;
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary {
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    padding-bottom: 1px;
   }
   .top-header-content .header-blocks .region-header-form #block-headerprintandfontsize .field--type-text-with-summary .block__print {
     margin-left: 8px;
@@ -6521,15 +6522,16 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row #edit-actions .btn-primary {
     position: relative;
-    left: -28px;
+    left: -23px;
     cursor: pointer;
-    border-radius: 0px;
+    border-radius: 0px 4px 4px 0px;
     border: none;
     width: 28px;
+    max-width: 28px !important;
     height: 28px;
     background: #967EA7 url(../images/magnifying-glass-white.png) no-repeat !important;
     background-position: 50% 50% !important;
-    font-size: 0;
+    text-indent: -9999px;
   }
   .top-header-content .header-blocks .region-header-form #block-languagedropdownswitcher {
     margin-bottom: 6px;
