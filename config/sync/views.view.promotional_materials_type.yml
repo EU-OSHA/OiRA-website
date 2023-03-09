@@ -440,7 +440,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      title: 'Promotional resources'
+      title: ''
       filters:
         vid:
           id: vid
@@ -504,9 +504,19 @@ display:
         title: false
         filters: false
         filter_groups: false
+        header: false
+      header:
+        entity_node:
+          id: entity_node
+          table: views
+          field: entity_node
+          plugin_id: entity
       rendering_language: '***LANGUAGE_entity_translation***'
-      display_extenders: {  }
-      path: promotional-resources
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: practical-resources
       menu:
         type: none
         title: 'Promotional resources'
