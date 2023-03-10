@@ -285,7 +285,7 @@ div#sliding-popup button.decline-button:hover {
 .block-system-breadcrumb-block {
   margin-right: -15px;
   margin-left: -15px;
-  padding: 10px 0px 5px;
+  padding: 10px 0px 15px;
 }
 .breadcrumb {
   background-color: transparent;
@@ -326,7 +326,12 @@ div#sliding-popup button.decline-button:hover {
   padding-right: 0.5rem;
   content: ">";
   font-size: 1.2rem;
-  top: -4px;
+  top: -2.5px;
+}
+
+/**Breadcrumbs for the content without banner with image**/
+body.node--type-news .block-system-breadcrumb-block, body.page-view-promotional-resources-search .block-system-breadcrumb-block, body.practical-resources .block-system-breadcrumb-block, body.page-view-news .block-system-breadcrumb-block {
+  padding: 15px 0px 15px;
 }
 
 @media only screen and (min-width: 576px) {
@@ -2679,6 +2684,7 @@ fix-paddings {
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   column-gap: 0.3rem;
   padding: 5px 0rem;
 }
@@ -2708,13 +2714,15 @@ fix-paddings {
   background-size: 21px;
   background-position: 50% 80%;
 }
-#share-this-on .a2a_button_linkedin_share button {
+#share-this-on .a2a_button_linkedin_share {
   background-image: url("../images/linkedin-light-blue.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 20px;
-  width: 23px;
+}
+#share-this-on .a2a_button_linkedin_share button {
   height: 23px !important;
+  width: 23px;
   display: inline-block;
   background-color: transparent !important;
   text-indent: -9999px;
@@ -2744,8 +2752,8 @@ fix-paddings {
 
 /**Act as partner**/
 select[name=masquerade_as] {
-  border: 1px solid #003399;
-  border-radius: 8px;
+  border: 1px solid #003399 !important;
+  border-radius: 4px;
   height: 30px;
   padding: 0px 9px;
   background: rgba(150, 126, 167, 0.3) url(../images/arrow-down-sm-dark-purple.png) no-repeat !important;
@@ -2760,14 +2768,29 @@ select[name=masquerade_as] {
 }
 
 .ui-dialog .form-actions button {
-  border: 1px solid #003399;
-  border-radius: 8px;
-  background: rgba(150, 126, 167, 0.3);
-  color: #58585A;
+  place-self: end;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 6px 30px 6px 15px;
+  border-radius: 4px;
+  color: #FFF;
   font-size: 0.9rem;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #10b3e4;
+  background-image: url("../images/arrow-right-lg-white.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 50%;
+  background-size: 12px;
 }
 .ui-dialog .form-actions button:before {
   content: none;
+}
+.ui-dialog .form-actions button:hover {
+  text-decoration: underline;
+}
+.ui-dialog .form-actions button:active {
+  background-color: #10b3e4;
 }
 
 /**End comment - act as partner**/
@@ -5960,8 +5983,20 @@ body[class*=private-zone-] .page-header.h1 {
     height: 250px !important;
   }
 }
+@media only screen and (min-width: 992px) {
+  body.node--type-news.path-node.user-logged-in.toolbar-fixed, body.page-view-news.user-logged-in.toolbar-fixed, body.practical-resources.user-logged-in.toolbar-fixed {
+    padding-top: 248px !important;
+  }
+  body.node--type-news.path-node.user-logged-in.toolbar-fixed.toolbar-tray-open, body.page-view-news.user-logged-in.toolbar-fixed.toolbar-tray-open, body.practical-resources.user-logged-in.toolbar-fixed.toolbar-tray-open {
+    padding-top: 283px !important;
+  }
+
+  body.page-view-promotional-resources-search.user-logged-in.toolbar-fixed.toolbar-tray-open {
+    padding-top: 283px !important;
+  }
+}
 @media screen {
-  .background-purple, .background-grey {
+  .background-purple {
     margin: 1rem 0px;
     padding: 1rem;
     border-radius: 8px;
@@ -6250,7 +6285,7 @@ body[class*=private-zone-] .page-header.h1 {
 }
 #navbar-main .responsive-menu-oira #block-generalsearch-api .block-search-form-block .form-row fieldset input.form-control {
   padding: 9px 9px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px;
   border: none;
   width: 100%;
   margin: 0px;
@@ -6273,7 +6308,7 @@ body[class*=private-zone-] .page-header.h1 {
   height: 28px;
   background: #967EA7 url(../images/magnifying-glass-white.png) no-repeat !important;
   background-position: 50% 50% !important;
-  font-size: 0;
+  text-indent: -9999px;
 }
 #navbar-main .responsive-menu-oira #block-languagedropdownswitcher {
   grid-area: lang;
@@ -6411,6 +6446,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 }
 @media only screen and (min-width: 576px) {
+  body.user-logged-in, body.toolbar-fixed {
+    padding-top: 219px !important;
+  }
+
   #navbar-main .responsive-menu-oira #block-generalsearch-api > .content .block-search-form-block .form-row {
     width: 310px;
   }
@@ -6506,7 +6545,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row fieldset input.form-control {
     padding: 9px 9px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px;
     border: none;
     width: inherit;
     min-width: 100%;
@@ -6522,9 +6561,9 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .top-header-content .header-blocks .region-header-form #block-generalsearch-api .block-search-form-block .form-row #edit-actions .btn-primary {
     position: relative;
-    left: -23px;
+    left: -28px;
     cursor: pointer;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 2px 2px 0px;
     border: none;
     width: 28px;
     max-width: 28px !important;
@@ -6592,6 +6631,11 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .top-header-content .header-blocks .region-header-form #block-oiramasquerade a {
     background-size: 12px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .top-header-content .region-top-header-logos.col, .top-header-content .node--type-collaboration-document .block-system-main-block .content .region-top-header-logos.node--view-mode-full, .node--type-collaboration-document .block-system-main-block .content .top-header-content .region-top-header-logos.node--view-mode-full {
+    padding-left: 15px;
   }
 }
 /* SCSS to Home Page */
@@ -6845,8 +6889,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   #navbar-main #CollapsingNavbar > div.container, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block {
     justify-content: center;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding: 0.3rem 0px 0.3rem 15px;
   }
   #navbar-main #CollapsingNavbar > div.container #block-oira-theme-main-menu, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title #block-oira-theme-main-menu, #navbar-main .node--type-collaboration-document #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu, .node--type-collaboration-document #navbar-main #CollapsingNavbar > div.block-system-main-block #block-oira-theme-main-menu {
     width: 100%;

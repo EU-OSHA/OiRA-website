@@ -61,6 +61,7 @@ fix-paddings{
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   column-gap: 0.3rem;
   padding: 5px 0rem;
   & > span.text-share{
@@ -74,6 +75,7 @@ fix-paddings{
   .a2a_s__default{
     background-color: transparent !important;
   }
+
   .a2a_button_facebook, .a2a_button_twitter{
     background-repeat: no-repeat;
     width: 23px;
@@ -98,15 +100,15 @@ fix-paddings{
     }
   }
   .a2a_button_linkedin_share{
+    background: {
+      image: url("../images/linkedin-light-blue.png");
+      repeat: no-repeat;
+      position: 50% 50%;
+      size: 20px;
+    }
     button{
-      background: {
-        image: url("../images/linkedin-light-blue.png");
-        repeat: no-repeat;
-        position: 50% 50%;
-        size: 20px;
-      }
-      width: 23px;
       height: 23px!important;
+      width: 23px;
       display: inline-block;
       background-color: transparent!important;
       text-indent: -9999px;
@@ -136,8 +138,8 @@ fix-paddings{
 
 /**Act as partner**/
 select[name=masquerade_as]{
-  border: 1px solid $bg-color-blue-dark;
-  border-radius: 8px;
+  border: 1px solid $bg-color-blue-dark !important;
+  border-radius: 4px;
   height: 30px;
   padding: 0px 9px;
   background: rgba(150, 126, 167, 0.3) url(../images/arrow-down-sm-dark-purple.png) no-repeat !important;
@@ -152,13 +154,32 @@ select[name=masquerade_as]{
 }
 
 .ui-dialog .form-actions button{
-  border: 1px solid $bg-color-blue-dark;
-  border-radius: 8px;
-  background: rgba(150, 126, 167, 0.3);
-  color: $text-grey;
-  font-size: 0.9rem;
+  place-self: end;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 6px 30px 6px 15px;
+  border-radius: 4px;
+  color: $text-color-white;
+  font : {
+    size: 0.9rem;
+    weight: bold;
+    style: normal;
+  }
+  background: {
+    color: $bg-color-blue-light;
+    image: url("../images/arrow-right-lg-white.png");
+    repeat: no-repeat;
+    position: calc(100% - 10px) 50%;
+    size: 12px;
+  }
   &:before{
     content: none;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+  &:active{
+    background-color: $bg-color-blue-light;
   }
 }
 
@@ -3446,8 +3467,24 @@ body[class*="private-zone-"] {
   }
 }
 
+@media only screen and (min-width: 992px){
+  body.node--type-news.path-node, body.page-view-news, body.practical-resources{
+    &.user-logged-in.toolbar-fixed{
+      padding-top: 248px !important;
+      &.toolbar-tray-open{
+        padding-top: 283px !important;
+      }
+    }
+  }
+  body.page-view-promotional-resources-search{
+    &.user-logged-in.toolbar-fixed.toolbar-tray-open{
+      padding-top: 283px !important;
+    }
+  }
+}
+
 @media screen{
-  .background-purple, .background-grey{
+  .background-purple{
     margin: 1rem 0px;
     padding: 1rem;
     border-radius: 8px;
