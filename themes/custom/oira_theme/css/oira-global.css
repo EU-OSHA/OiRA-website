@@ -2443,6 +2443,14 @@ body.page-view-promotional-resources-search .oira-section #block-oira-theme-cont
     color: #58585A;
     text-decoration: none;
   }
+
+  body.page-view-promotional-materials-type .oira-section {
+    /**The practical resources page has 2 H1 (the title of the intro article and the title of the view).
+    *Remove the view's H1 with jQuery and hide it with css**/
+  }
+  body.page-view-promotional-materials-type .oira-section h1 {
+    display: none;
+  }
 }
 @media screen {
   body.node--type-article .left-menu h2, body.node--type-article .right-menu h2 {
@@ -6480,7 +6488,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 
   body.role-anonymous {
-    padding-top: 172px;
+    padding-top: 170px;
   }
 
   #navbar-main {

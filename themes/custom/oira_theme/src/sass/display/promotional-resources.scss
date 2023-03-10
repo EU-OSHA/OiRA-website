@@ -183,4 +183,13 @@
       }
     }
   }
+  body.page-view-promotional-materials-type{
+    .oira-section{
+      /**The practical resources page has 2 H1 (the title of the intro article and the title of the view).
+      *Remove the view's H1 with jQuery and hide it with css**/
+      h1{
+        display: none;
+      }
+    }
+  }
 }
