@@ -1,16 +1,121 @@
 @media print {
-
-  body{
-    padding-top: 160px !important;
+  img {
+    display: none;
   }
+  h1, h2, h3, h4, h5, .description, a, span {
+    color: black !important;
+    text-decoration: none !important;
+    text-underline-color: transparent;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  h5 {
+    font-size: 1.05rem;
+  }
+  time {
+    font-size: 0.9rem;
+  }
+  body, body.toolbar-fixed.toolbar-tray-open, body.user-logged-in, body.toolbar-fixed {
+    padding-top: 0px !important;
+  }
+  #header, header, body.toolbar-fixed.toolbar-tray-open #header, body.user-logged-in #header {
+    padding-top: 0px !important;
+    position: static;
+  }
+  header .top-header-container {
+      .top-header-content .region-top-header-logos {
+        img {
+          display: block;
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(100%);
+        }
 
-  /* Home page */
-  body.path-frontpage{
-    #block-logoosha > div > div > div > div:nth-child(1) > div > a > div > div.field__item{
-      padding-top: 40px !important;
+        #block-logooira .field--name-field-image {
+          padding: 0px;
+        }
+
+        #block-logoosha .field--name-field-image {
+          padding: 0px;
+          border-left: none;
+        }
+      }
+      .region-wrapper{
+        display: none;
+      }
     }
-    .content-purple{
-      padding-top: 0 !important;
+  .copyright {
+    display: none;
+  }
+  .see-less, .see-more {
+    display: none;
+  }
+  .col-md-3, .col-md-4, .col-md-6, .col-9, col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .page-view-frontpage {
+    header{
+      .top-header-container{
+        min-width: 0px !important;
+        padding: 0px;
+        margin: 0px 15px;
+
+      }
+    }
+    .home-intro {
+      padding: {
+        top: 0.75rem;
+        bottom: 0.75rem;
+      }
+      margin: {
+        left: 15px;
+        right: 15px;
+      }
+    }
+
+    .content-home {
+      padding: 0.75rem 0rem;
+    }
+
+    .view-id-home_page_banners > .view-content-row, .home-boxes, .views-view-grid > .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-oira-profiles .views-field-title {
+      font-weight: bold;
+    }
+
+    .content-oira-tools {
+      .views-item-columns-container {
+        &.field--type-entity-reference {
+          margin-bottom: 0rem;
+        }
+
+        h3 {
+          margin-bottom: 0rem !important;
+        }
+
+        .partner-inner-group--data h4 {
+          font: {
+            size: 1rem;
+            weight: normal;
+          }
+        }
+      }
+
+    }
+
+    .content-latest-news .col-sm-12 {
+      margin-bottom: 15px;
     }
     .home-slider,
     .header-menu-news,
@@ -22,16 +127,64 @@
     .materials-content-wrapper img{
       display: none !important;
     }
-    .view-news{
-      .views-field-nothing{
-        display: none !important;
+  }
+  body.node--type-article, body.node--type-news{
+    .fix-paddings{
+      padding: 0px;
+    }
+    #block-menupagermainnavigation, #block-backtonews{
+      display: none;
+    }
+    #block-views-block-related-resources-block-1{
+      border: none;
+    }
+    div.right-menu{
+      padding: 0px 15px;
+      .view-id-related_resources{
+        padding: 0px 15px;
       }
     }
-    .content-latest-news .view-news .attachment-before h3 a {
-      font-size: 18pt;
+  }
+  body.page-view-news{
+    .container{
+      min-width: unset !important;
+    }
+    .view-content.row{
+      padding-left: 30px;
+    }
+    .news__image, .pagerer-container, .view-footer{
+      display: none;
     }
   }
-  /* End Home page */
-
-
-}/* End media print */
+  body.promotional-resources, body.page-view-promotional-materials-type{
+    #block-headerviewpromotionalresourcestypes{
+      padding: 0px 15px;
+    }
+    .oira-section{
+      background: transparent;
+      padding: 0px;
+    }
+    .view-promotional-materials-type{
+      .views-field-name a{
+        margin-bottom: 0px;
+        border: none;
+        height: unset;
+      }
+      .views-field-description__value{
+        padding-top: 0px;
+      }
+    }
+  }
+  body.page-view-promotional-resources-search #main-wrapper{
+    padding: 0px 15px;
+    p.tag-country{
+      margin-bottom: 0px;
+    }
+    #block-exposedformpromotional-resources-searchpage-1, .resource-link, div.file{
+      display: none;
+    }
+    h4{
+      font-weight: 400;
+    }
+  }
+}

@@ -18,7 +18,7 @@
 .block-system-breadcrumb-block {
   margin-right: -15px;
   margin-left: -15px;
-  padding: 10px 0px 5px;
+  padding: 10px 0px 15px;
   .content {
     @extend .col-sm-12;
   }
@@ -35,7 +35,7 @@
   }
   margin-bottom: 0;
   .breadcrumb-item {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: $text-grey;
   }
   a{
@@ -43,7 +43,7 @@
     font: {
       style: normal;
       weight: bold;
-      size: 0.9rem;
+      size: 1.1rem;
     }
     text-decoration: underline;
     &:hover{
@@ -67,7 +67,14 @@
   padding-right: .5rem;
   content: ">";
   font-size: 1.2rem;
-  top: -4px;
+  top: -2.5px;
+}
+
+/**Breadcrumbs for the content without banner with image**/
+body.node--type-news, body.page-view-promotional-resources-search, body.practical-resources, body.page-view-news{
+  .block-system-breadcrumb-block {
+    padding: 15px 0px 15px;
+  }
 }
 
 @media only screen and (min-width: 576px){

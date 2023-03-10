@@ -21,6 +21,9 @@
     if($("body").hasClass("page-view-frontpage")){
       homePageBanner();
     }
+    if($("body").hasClass("page-view-promotional-materials-type")){
+      removePracticalResourcesViewTitle();
+    }
     $("#navbar-main button.navbar-toggler").click(function (){
       $(".responsive-menu-oira").toggleClass('collapsed');
     })
@@ -32,6 +35,12 @@
       homePageBanner();
     }
   });
+
+  /**The practical resources page has 2 H1 (the title of the intro article and the title of the view).
+   * Remove the view's H1**/
+  function removePracticalResourcesViewTitle(){
+    jQuery(".oira-section h1").remove();
+  }
 
   /**Add different "bottom" value to the home-box h2**/
   function homePageBanner(){

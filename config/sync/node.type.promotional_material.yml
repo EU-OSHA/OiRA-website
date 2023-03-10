@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Promotional resources'
+name: 'Practical resources'
 type: promotional_material
 description: 'Leaflet, poster, presentations, link to videos, etc...'
 help: ''

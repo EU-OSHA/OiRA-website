@@ -1,0 +1,25 @@
+uuid: b5bdf37f-a6b8-4859-ac17-52a5335e50e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_in_grey
+    - node.type.article
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.article.field_body_in_grey
+field_name: field_body_in_grey
+entity_type: node
+bundle: article
+label: Definitions
+description: 'The content of this field will have a grey background.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

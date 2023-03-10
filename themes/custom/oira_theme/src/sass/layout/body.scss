@@ -5,33 +5,6 @@ fix-paddings{
   padding-right: 0;
 }
 
-.background-purple, .background-grey{
-  margin: 1rem 0px;
-  padding: 1rem;
-  border-radius: 8px;
-}
-.background-purple{
-  font-size: 1.25rem !important;
-  background: $bg-color-purple-dark;
-  color: $text-color-white;
-  a, a > span{
-    color: $text-color-white !important;
-    text-decoration: underline;
-    text-decoration-color: $text-color-blue-light;
-    font: {
-      style: normal;
-      weight: bold;
-    }
-    &:hover{
-      color: $text-color-white !important;
-      text-decoration: none;
-    }
-  }
-}
-.background-grey{
-  background: $bg-light-grey;
-}
-
 .field--name-field-summary{
   p{
     font-size: 1.2rem;
@@ -88,6 +61,7 @@ fix-paddings{
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   column-gap: 0.3rem;
   padding: 5px 0rem;
   & > span.text-share{
@@ -101,6 +75,7 @@ fix-paddings{
   .a2a_s__default{
     background-color: transparent !important;
   }
+
   .a2a_button_facebook, .a2a_button_twitter{
     background-repeat: no-repeat;
     width: 23px;
@@ -125,15 +100,15 @@ fix-paddings{
     }
   }
   .a2a_button_linkedin_share{
+    background: {
+      image: url("../images/linkedin-light-blue.png");
+      repeat: no-repeat;
+      position: 50% 50%;
+      size: 20px;
+    }
     button{
-      background: {
-        image: url("../images/linkedin-light-blue.png");
-        repeat: no-repeat;
-        position: 50% 50%;
-        size: 20px;
-      }
-      width: 23px;
       height: 23px!important;
+      width: 23px;
       display: inline-block;
       background-color: transparent!important;
       text-indent: -9999px;
@@ -150,7 +125,65 @@ fix-paddings{
 .addtoany_list a:hover span {
   opacity: 1;
 }
+/**Page not found -- class found in page--404.html.twig**/
+.page-not-found{
+  margin-bottom: 2rem;
+  section > .container{
+    padding: 15px;
+  }
+  .container.fix-paddings{
+    padding: 0px;
+  }
+}
 
+/**Act as partner**/
+select[name=masquerade_as]{
+  border: 1px solid $bg-color-blue-dark !important;
+  border-radius: 4px;
+  height: 30px;
+  padding: 0px 9px;
+  background: rgba(150, 126, 167, 0.3) url(../images/arrow-down-sm-dark-purple.png) no-repeat !important;
+  background-position: 97% 50% !important;
+  color: $text-grey;
+  width: 310px !important;
+  margin-right: -168px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ui-dialog .form-actions button{
+  place-self: end;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 6px 30px 6px 15px;
+  border-radius: 4px;
+  color: $text-color-white;
+  font : {
+    size: 0.9rem;
+    weight: bold;
+    style: normal;
+  }
+  background: {
+    color: $bg-color-blue-light;
+    image: url("../images/arrow-right-lg-white.png");
+    repeat: no-repeat;
+    position: calc(100% - 10px) 50%;
+    size: 12px;
+  }
+  &:before{
+    content: none;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+  &:active{
+    background-color: $bg-color-blue-light;
+  }
+}
+
+/**End comment - act as partner**/
 
 .node__content{
   margin-top: 0;
@@ -319,6 +352,7 @@ select.custom-select{
         overflow: hidden;
         background-color: transparent;
         &:before {
+          font-family: 'Glyphicons Halflings';
           font-size: 1.2rem;
           display: block;
           content: "\e003";
@@ -474,6 +508,7 @@ select.custom-select{
         overflow: hidden;
         background-color: rgba(0,0,0,0);
         &:before{
+          font-family: 'Glyphicons Halflings';
           content: "\e003";
           margin-right: 30px;
         }
@@ -550,6 +585,7 @@ select.custom-select{
           font-weight: normal;
           font-style: normal;
           &:before{
+            font-family: 'Glyphicons Halflings';
             content: "\e164";
             color: $text-color-blue-light;
             display: block;
@@ -585,6 +621,7 @@ select.custom-select{
           right: 0px;
           top: 0;
           margin-top: 3px;
+          font-family: 'Glyphicons Halflings';
           content: "\e259";
           font-size: 1.5rem;
         }
@@ -729,6 +766,7 @@ select.custom-select{
       border-bottom: 2px solid $bg-color-purple;
       span.field-content{
         &:after{
+          font-family: 'Glyphicons Halflings';
           content: "\e252";
           padding-left: 10px;
           display: block;
@@ -738,6 +776,7 @@ select.custom-select{
       .ui-state-active{
         span.field-content{
           &:after{
+            font-family: 'Glyphicons Halflings';
             content: "\e253";
             padding-left: 10px;
             display: block;
@@ -1067,6 +1106,7 @@ select.custom-select{
     &:after {
       display: inline-block;
       margin-left: 10px;
+      font-family: 'Glyphicons Halflings';
       content: "\e164";
       font-style: normal;
       font-weight: $font-weight-normal;
@@ -1110,6 +1150,7 @@ select.custom-select{
     &.expanded {
       font-size: 0;
       &:before {
+        font-family: 'Glyphicons Halflings';
         content: "\e253";
         font-size: 1.2rem;
         line-height: 0;
@@ -1602,6 +1643,7 @@ select.custom-select{
       bottom: 15px;
       right: 15px;
       display:block;
+      font-family: 'Glyphicons Halflings';
       content: "\e164";
       width: 24px;
       height: 24px;
@@ -1699,6 +1741,7 @@ select.custom-select{
       background-color: rgba(0, 0, 0, 0);
       &:before {
         content: "";
+        font-family: "Glyphicons Halflings";
         margin-right: 30px;
         font-size: 1.1875rem;
       }
@@ -1813,6 +1856,7 @@ select.custom-select{
           top: 1px;
           margin-left: 10px;
           display: inline-block;
+          font-family: 'Glyphicons Halflings';
           content: "\e164";
           color: $text-color-blue-light;
         }
@@ -1863,6 +1907,7 @@ select.custom-select{
             text-decoration: none;
           }
           &:before {
+            font-family: 'Glyphicons Halflings';
             content: "\e253";
             font-size: 1.2rem;
             font-style: normal;
@@ -2312,6 +2357,7 @@ select.custom-select{
       font-style: normal;
       &:after {
         margin-left: 10px;
+        font-family: 'Glyphicons Halflings';
         content: "\e164";
         display: inline-block;
         color: $text-color-blue-light;
@@ -2390,6 +2436,7 @@ select.custom-select{
       justify-content: flex-end;
       font-size: 0;
       &:before {
+        font-family: 'Glyphicons Halflings';
         content: "\e253";
         font-size: 1.2rem;
         font-style: normal;
@@ -2645,6 +2692,7 @@ select.custom-select{
     background-color: $bg-color-blue-light;
     overflow: hidden;
     &:before {
+      font-family: 'Glyphicons Halflings';
       content: "\e015";
       font-size: 2rem;
       font-style: normal;
@@ -2957,6 +3005,7 @@ select.custom-select{
       display: inline-block;
       width: 20px;
       height: 20px;
+      font-family: "Glyphicons Halflings";
       line-height: 20px;
       text-align: center;
       background: $bg-color-blue-light;
@@ -2966,26 +3015,13 @@ select.custom-select{
     }
   }
   .hide-link:after {
+    font-family: 'Glyphicons Halflings';
     content: "\e253";
   }
   .show-link:after {
+    font-family: 'Glyphicons Halflings';
     content: "\e252";
   }
-  /*.toogle-content-switcher {
-    &:not(.collapsed) {
-      .hide-link {
-        display: block;
-      }
-    }
-    &.collapsed {
-      .show-link {
-        display: block !important;
-      }
-      .hide-link {
-        display: none;
-      }
-    }
-  }*/
 }
 
 .private-zone.page-title-container {
@@ -3432,5 +3468,46 @@ body[class*="private-zone-"] {
 }
 
 @media only screen and (min-width: 992px){
+  body.node--type-news.path-node, body.page-view-news, body.practical-resources{
+    &.user-logged-in.toolbar-fixed{
+      padding-top: 248px !important;
+      &.toolbar-tray-open{
+        padding-top: 283px !important;
+      }
+    }
+  }
+  body.page-view-promotional-resources-search{
+    &.user-logged-in.toolbar-fixed.toolbar-tray-open{
+      padding-top: 283px !important;
+    }
+  }
+}
 
+@media screen{
+  .background-purple{
+    margin: 1rem 0px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .background-purple{
+    font-size: 1.25rem !important;
+    background: $bg-color-purple-dark;
+    color: $text-color-white;
+    a, a > span{
+      color: $text-color-white !important;
+      text-decoration: underline;
+      text-decoration-color: $text-color-blue-light;
+      font: {
+        style: normal;
+        weight: bold;
+      }
+      &:hover{
+        color: $text-color-white !important;
+        text-decoration: none;
+      }
+    }
+  }
+  .background-grey{
+    background: $bg-light-grey;
+  }
 }

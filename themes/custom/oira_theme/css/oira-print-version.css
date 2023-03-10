@@ -1,34 +1,173 @@
 @media print {
-  body {
-    padding-top: 160px !important;
+  img {
+    display: none;
   }
 
-  /* Home page */
-  body.path-frontpage #block-logoosha > div > div > div > div:nth-child(1) > div > a > div > div.field__item {
-    padding-top: 40px !important;
-  }
-  body.path-frontpage .content-purple {
-    padding-top: 0 !important;
-  }
-  body.path-frontpage .home-slider,
-body.path-frontpage .header-menu-news,
-body.path-frontpage .header-blocks,
-body.path-frontpage .content-oira-partners,
-body.path-frontpage .views-field-field-tool-link,
-body.path-frontpage .see-more,
-body.path-frontpage .more-link,
-body.path-frontpage .materials-content-wrapper img {
-    display: none !important;
-  }
-  body.path-frontpage .view-news .views-field-nothing {
-    display: none !important;
-  }
-  body.path-frontpage .content-latest-news .view-news .attachment-before h3 a {
-    font-size: 18pt;
+  h1, h2, h3, h4, h5, .description, a, span {
+    color: black !important;
+    text-decoration: none !important;
+    text-underline-color: transparent;
   }
 
-  /* End Home page */
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1.05rem;
+  }
+
+  time {
+    font-size: 0.9rem;
+  }
+
+  body, body.toolbar-fixed.toolbar-tray-open, body.user-logged-in, body.toolbar-fixed {
+    padding-top: 0px !important;
+  }
+
+  #header, header, body.toolbar-fixed.toolbar-tray-open #header, body.user-logged-in #header {
+    padding-top: 0px !important;
+    position: static;
+  }
+
+  header .top-header-container .top-header-content .region-top-header-logos img {
+    display: block;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  header .top-header-container .top-header-content .region-top-header-logos #block-logooira .field--name-field-image {
+    padding: 0px;
+  }
+  header .top-header-container .top-header-content .region-top-header-logos #block-logoosha .field--name-field-image {
+    padding: 0px;
+    border-left: none;
+  }
+  header .top-header-container .region-wrapper {
+    display: none;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .see-less, .see-more {
+    display: none;
+  }
+
+  .col-md-3, .col-md-4, .col-md-6, .col-9, col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .page-view-frontpage header .top-header-container {
+    min-width: 0px !important;
+    padding: 0px;
+    margin: 0px 15px;
+  }
+  .page-view-frontpage .home-intro {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .page-view-frontpage .content-home {
+    padding: 0.75rem 0rem;
+  }
+  .page-view-frontpage .view-id-home_page_banners > .view-content-row, .page-view-frontpage .home-boxes, .page-view-frontpage .views-view-grid > .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-view-frontpage .content-oira-profiles .views-field-title {
+    font-weight: bold;
+  }
+  .page-view-frontpage .content-oira-tools .views-item-columns-container.field--type-entity-reference {
+    margin-bottom: 0rem;
+  }
+  .page-view-frontpage .content-oira-tools .views-item-columns-container h3 {
+    margin-bottom: 0rem !important;
+  }
+  .page-view-frontpage .content-oira-tools .views-item-columns-container .partner-inner-group--data h4 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .page-view-frontpage .content-latest-news .col-sm-12 {
+    margin-bottom: 15px;
+  }
+  .page-view-frontpage .home-slider,
+.page-view-frontpage .header-menu-news,
+.page-view-frontpage .header-blocks,
+.page-view-frontpage .content-oira-partners,
+.page-view-frontpage .views-field-field-tool-link,
+.page-view-frontpage .see-more,
+.page-view-frontpage .more-link,
+.page-view-frontpage .materials-content-wrapper img {
+    display: none !important;
+  }
+
+  body.node--type-article .fix-paddings, body.node--type-news .fix-paddings {
+    padding: 0px;
+  }
+  body.node--type-article #block-menupagermainnavigation, body.node--type-article #block-backtonews, body.node--type-news #block-menupagermainnavigation, body.node--type-news #block-backtonews {
+    display: none;
+  }
+  body.node--type-article #block-views-block-related-resources-block-1, body.node--type-news #block-views-block-related-resources-block-1 {
+    border: none;
+  }
+  body.node--type-article div.right-menu, body.node--type-news div.right-menu {
+    padding: 0px 15px;
+  }
+  body.node--type-article div.right-menu .view-id-related_resources, body.node--type-news div.right-menu .view-id-related_resources {
+    padding: 0px 15px;
+  }
+
+  body.page-view-news .container {
+    min-width: unset !important;
+  }
+  body.page-view-news .view-content.row {
+    padding-left: 30px;
+  }
+  body.page-view-news .news__image, body.page-view-news .pagerer-container, body.page-view-news .view-footer {
+    display: none;
+  }
+
+  body.promotional-resources #block-headerviewpromotionalresourcestypes, body.page-view-promotional-materials-type #block-headerviewpromotionalresourcestypes {
+    padding: 0px 15px;
+  }
+  body.promotional-resources .oira-section, body.page-view-promotional-materials-type .oira-section {
+    background: transparent;
+    padding: 0px;
+  }
+  body.promotional-resources .view-promotional-materials-type .views-field-name a, body.page-view-promotional-materials-type .view-promotional-materials-type .views-field-name a {
+    margin-bottom: 0px;
+    border: none;
+    height: unset;
+  }
+  body.promotional-resources .view-promotional-materials-type .views-field-description__value, body.page-view-promotional-materials-type .view-promotional-materials-type .views-field-description__value {
+    padding-top: 0px;
+  }
+
+  body.page-view-promotional-resources-search #main-wrapper {
+    padding: 0px 15px;
+  }
+  body.page-view-promotional-resources-search #main-wrapper p.tag-country {
+    margin-bottom: 0px;
+  }
+  body.page-view-promotional-resources-search #main-wrapper #block-exposedformpromotional-resources-searchpage-1, body.page-view-promotional-resources-search #main-wrapper .resource-link, body.page-view-promotional-resources-search #main-wrapper div.file {
+    display: none;
+  }
+  body.page-view-promotional-resources-search #main-wrapper h4 {
+    font-weight: 400;
+  }
 }
-/* End media print */
 
 /*# sourceMappingURL=oira-print-version.css.map */

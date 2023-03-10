@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
     - field.field.node.article.field_article_type
+    - field.field.node.article.field_body_in_grey
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
     - field.field.node.article.field_image
@@ -46,6 +47,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_body_in_grey:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_summary_article:
     type: basic_string

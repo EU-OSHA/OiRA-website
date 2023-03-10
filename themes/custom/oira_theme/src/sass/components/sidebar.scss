@@ -24,6 +24,7 @@
       border-top: 2px solid $text-color-white;
       border-bottom: none;
       &:after{
+        font-family: 'Glyphicons Halflings';
         content: "\e252";
         display: inline-block;
         margin-left: 10px;
@@ -56,10 +57,12 @@
     cursor: pointer;
     &.clicked {
       &:after {
+        font-family: 'Glyphicons Halflings';
         content: "\e250";
       }
     }
     &:after {
+      font-family: 'Glyphicons Halflings';
       content: "\e252";
       margin-left: 10px;
     }
@@ -74,10 +77,12 @@
     aside {
       h2 {
         &:after {
+          font-family: 'Glyphicons Halflings';
           content: "\e250";
         }
         &.clicked {
           &:after {
+            font-family: 'Glyphicons Halflings';
             content: "\e252";
           }
         }
